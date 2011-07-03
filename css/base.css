@@ -55,7 +55,7 @@ table {
 	border-spacing: 0;
 }
 	
-/* General Layout	*/
+/* _____ General Layout	_____ */
 
 body {
 	background-color: #fff;
@@ -103,15 +103,13 @@ a, a:link {
 a:visited 	{color: #6685A3;}
 a:hover 	{text-decoration: underline;}
 
-/* Typography
+/* ----- Typography ----- */
 						
- - 14px body text with 20px of leading (and vertical measure)
-	
-*/
+/* - 14px body text with 20px of leading (and vertical measure) */
   		
 body {
 	color: #424242;
-    font-family: Corbel, "Trebuchet MS", sans-serif;
+    font-family: proxima-nova-1, proxima-nova-2, Corbel, "Trebuchet MS", sans-serif;
     font-size: 100%;		/* Base size = 16px */
     font-style: normal;
     }
