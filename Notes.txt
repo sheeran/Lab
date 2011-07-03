@@ -1,0 +1,34 @@
+Lab Tasks:
+
+1. Finish Intro Page
+	-- typeface?
+	
+2. Finish Typography Page
+	-- complete boilerplate text
+	-- finish all CSS
+	
+	>> Why does cloud image not appear...forbidden?
+	
+3. Typekit Page
+	-- Match layout of other pages (header)?
+	-- redo boilerplate text
+	-- rebuild Typekit kit
+		> Fonts?
+	-- add Typekit classes to my CSS
+	
+4. Modify site navigation lists to show LAB
+
+
+Add Mint
+Why are there two type.css files, one in root, and one in /css?
+
+18 May // OK. enough screwing around...finally setup version control:
+ - Main Repo on Beanstalk
+ - Working Copy "/Web Design/The Lab" --> via Cornerstone
+ - Coda linked up to both.
+ 
+29 May //changed to SFTP...but can't get the paths right;
+Local is The Lab/trunk/Lab Files/
+Remote is just /public_html/lab/   ... need them to somehow match..
+
+2 June // Ok the above is fixed.

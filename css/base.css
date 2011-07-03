@@ -1,0 +1,204 @@
+/* 
+Filename: base.css			
+Version: 1.2 // 2 Jul 2011	
+Notes:						
+- Reboot, now under source control with Git
+
+
+
+*/
+
+/* Meyer Reset of default styles			*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/* ol, ul {
+	list-style: none;
+} */
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+	
+/* General Layout	*/
+
+body {
+	background-color: #fff;
+	}
+	
+
+#header	{
+	height: 80px;
+	background-color: #313131;
+	color: #fff;
+	padding: 20px;
+	}
+	
+	h1			{font-size: 24px;}
+	#header p	{font-size: 14px;}
+	p.nav a		{color: #6685A3; font-style: italic;}
+	
+#wrap	{
+	width: 700px;
+	margin: 0 auto;
+	}
+	
+#content	{
+	float: left;
+	width: 68%;		/* 476px */
+	}
+
+#sidebar	{
+	float: right;
+	width: 28%;		/* 196px */
+}
+
+#footer	{
+	clear: both;
+}
+	
+/* Standard link styles */
+
+a, a:link { 
+	text-decoration: none; 
+	color: #003366;
+	font-weight: bold;
+	}
+
+a:visited 	{color: #6685A3;}
+a:hover 	{text-decoration: underline;}
+
+/* Typography
+						
+ - 14px body text with 20px of leading (and vertical measure)
+	
+*/
+  		
+body {
+	color: #424242;
+    font-family: Corbel, "Trebuchet MS", sans-serif;
+    font-size: 100%;		/* Base size = 16px */
+    font-style: normal;
+    }
+  		
+#header	{
+	margin-bottom: 1.25em; 	/* 20/16 = 1.25 */
+	}
+	
+#content	{
+	font-size: 0.875em;		/* 14/16 = 0.875 */
+	line-height: 1.4286em;	/* 20/14 = 1.4286 */
+	}
+  	
+#sidebar	{
+	font-size: 0.75em;		/* 12/16 = 0.75em */
+	line-height: 1.6667em;	/* 20/12 = 1.6667 */
+	}
+
+#footer	{
+	font-size: 0.75em;		/* 12/16 = 0.75em */
+	line-height: 1.6667em;	/* 20/12 = 1.6667 */
+	}
+
+h2 {
+	font-family: Constantia, Georgia, "Times New Roman", sans-serif;
+	font-size: 1.4286em;	/* 20/14 = 1.4268 */
+	line-height: 1.0em;
+	font-weight: normal;
+	color: #097054;
+	margin-bottom: 0;
+	}
+
+h3	{
+	font-size: 1.1428em;	/* 16/14 = 1.1428 */
+	line-height: 1.25em;	/* 20/16 = 1.25 */
+	margin-top: 1.875em;	/* 1.5: 30/16 = 1.875 */
+	margin-bottom: 0.625em;	/* 0.5: 10/16 = 0.625 */
+	}
+
+h4	{
+	font-size: 1.0714em;	/* 15/14 = 1.0714 */
+	line-height: 1.3333em;	/* 20/15 = 1.3333 */
+	font-weight: normal;
+	font-style: italic;
+	}
+
+p, ul, ol, dl {margin-bottom: 1.4286em;} /* 20px */
+
+p.date	{
+	font-family: Constantia, Georgia, "Times New Roman", sans-serif;
+	}
+
+p.meta	{
+	font-size: 0.8571em;	/* 12/14 = 0.8571 */
+	margin-bottom: 3.3333em	/* 40/12 = 3.3333em */
+	}
+
+#sidebar p,
+#sidebar ul,
+#sidebar ol,
+#sidebar dl	{margin-bottom: 1.6667em;}
+
+blockquote	{
+	margin: 1.4286em;
+	color: #777;
+	font-style: italic;
+	}
+	
+span.sc {font-variant: small-caps;}
+
+pre, code	{
+	font-family: Consolas, "Courier New", Monaco, monospace;
+	}
+	
+dt	{margin-top: 1.4286em;}
+#sidebar dt {margin-top: 1.6667em;}
+
+.px13	{font-size: 13px;}
+.px11	{font-size: 11px;}
+
+/* -- Images -- */
+
+#content img	{
+	margin: 1.4286em auto;
+	padding: 3px;
+	border: 1px solid #A9A9A9;
+	display: block;
+	text-align: center;
+	}    	
+

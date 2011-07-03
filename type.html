@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Typography</title>
+	<link rel="stylesheet" href="css/base.css" type="text/css" />
+	<script type="text/javascript" src="/mint/?js"></script>
+</head>
+
+<body>
+
+<div id="header">
+	<h1>The Proving Ground</h1>
+	<p>Project // General Typography</p>
+	<p class="nav"><a href="index.html">Return to The Lab</a></p>
+</div> <!-- close header -->
+
+<div id="wrap" >
+	
+	<div id="content">
+		<h2>Experiments in Web Typography, #296</h2>
+		<p class="date"><span class="sc">February 12, 1974</span></p>
+		
+		<p>This project is to provide some real world examples of different CSS typography techniques.Topics such as different typefaces, font sizes, leading, and practicing good typographical design. One area of interest are Richard Rutter&#8217;s articles about <a href="http://www.alistapart.com/articles/howtosizetextincss/">sizing type</a> with CSS and composing with a <a href="http://24ways.org/2006/compose-to-a-vertical-rhythm">vertical rhythm</a>. Currently, the left content div text is sized using ems to 14px with 20px of leading. All kinds of math going on to then ensure that a consistent 20px &#8220;vertical rhythm&#8221; (or multiple of it) is maintained throughout the various vertical margins of HTML elements, such as <code>h2</code>, <code>h3</code>, <code>ul</code> and so forth. Of course, there is also somewhat of a backlash against sizing text relatively using ems and multiple calls for going back to using pixels, partly due to the major browsers now using page zoom (which works) over text zoom (which IE refused to make work for text sized in pixels.) Oh, well. The work is done.</p>
+				
+		<p>Here are some examples of various text options to look at as the CSS for this page is tweaked. <em>This is emphasized text</em>. And here we have <strong>some strong text</strong>. I never get things right on the first try, so just to make sure that <strike>strikethrough text</strike> appears correct. The following is a keyboard apostrophe: I'll not use it again. And these are &#8220;typographically correct quotes.&#8221; A break in thought is indicted by an em dash&#8212;look at something shiny. Here is a link that I <a href="http://www.democrats.org">have never visited.</a></p>
+		
+		<blockquote>This is blockquoted text. The quick brown fox jumped over the lazy dog.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu malesuada ipsum. Nulla semper, nisi id accumsan rhoncus, velit dui consectetur nisi, ac congue eros mauris non diam. Praesent sit amet tempor tortor. Nam porttitor porttitor lectus vel porttitor.</blockquote>
+		
+		<h3>This is an H3 Heading with an ampersand &amp;</h3>
+		<p>I&#8217;m a fan of two techniques I learned from Robert Bringhurst&#8217;s <em>Elements of Typographic Style</em>: using old-style figures for numerals in text &#8212; 1974&#8211;1996 &#8212; and setting acronyms such as NRA and CIA in <span class="sc">small caps</span> versus ALL CAPS. Getting old-style figures just depends on selecting the right font; Georgia and Corbel are two good examples. Using <span class="sc">small caps</span> is slightly more difficult. In the previous sentences, I used a <code>span</code> element with a <code>font-variant</code> set to <code>small-caps</code>. The problem with this is a true small cap font is not being used - the browser just shrinks true capitals to a smaller size. Overcoming this limitation is part of my next <a href="typekit.html">project</a> involving Typekit.</p>
+
+		<p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+
+		<p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+
+		<p>0 1 2 3 4 5 6 7 8 9</p>
+		
+		<p>Let&#8217;s test some lists:</p>
+		
+		<ul>
+		   	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+		   	<li>Aliquam tincidunt mauris eu risus.</li>
+		   	<li>Vestibulum auctor dapibus neque. And some extra text to make the line wrap all the way around.</li>
+		</ul>
+			
+		<ol>
+		   	<li>Add footnotes</li>
+		   	<li>Test out <code>pre</code> block</li>
+		   	<li>Color for <code>code</code> elements</li>
+		   	<li>Finish Sidebar</li>
+		</ol>
+
+		<dl>
+			<dt>This is a definition term</dt>
+			<dd>And this is a definition description</dd>
+			<dt>Here is another definition term</dt>
+			<dd>And surprise! The definition description</dd>
+		</dl>
+		
+		<p>This is text wrapped in a <em>pre</em> block</p>
+		<pre>
+#content {
+  font-size: 0.875em;    /* 14/16 = 0.875 */
+  line-height: 1.4286em; /* 20/14 = 1.4286 */
+  }
+span.sc {font-variant: small-caps;}
+		</pre>
+		
+		<h4>A Subhead marked up with H4</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu malesuada ipsum. Nulla semper, nisi id accumsan rhoncus, velit dui consectetur nisi, ac congue eros mauris non diam. Praesent sit amet tempor tortor. Nam porttitor porttitor lectus vel porttitor. Sed justo nisl, tempus a pharetra a, tempor id lorem. Vivamus nec dui massa. Curabitur dolor tellus, dapibus sed porta eu, adipiscing eget lectus. Nunc a tortor erat, eu pharetra libero. Praesent ut nulla eu arcu vestibulum dictum et eget velit. Nunc gravida pellentesque elit, id ultrices augue blandit quis. Nam id suscipit metus. In vitae lorem mattis metus volutpat hendrerit. Donec non urna quam. Sed placerat ligula a nunc egestas placerat. Proin vel nunc sed augue sollicitudin luctus quis eu mi. Sed convallis erat eu ligula suscipit euismod. Nunc sit amet lacus eget ipsum adipiscing tempor.</p>
+		
+		<p class="meta">Filed under: <a href="#">Typography</a> | <a href="#">Link</a> | <a href="#">Comments (22)</a></p>
+
+		<h2>Another Entry Headline</h2>
+		<p class="date">February 06, 1972</p>
+		
+		<p>The above dateline span is <em>not</em> contained in a <code>class</code> of <span class="sc">small cap</span>. Images need to be sized correctly in the vertical to match the existing rhythm, which is 20 pixels. The image height + top/bottom padding + top/bottom border should be evenly divisible by twenty. The image below is 252 pixels tall (plus 3 pixels of padding and 1 pixel borders = 260 pixels) and 368 pixels wide. The content <code>div</code> is 476 pixels wide. Again, subtracting the 8 pixels of padding and border equals a max image width of 468 pixels.</p>
+		
+		<img src="img/cloud2.jpg" width="368" height="252" alt="picture of cloud" />
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu malesuada ipsum. Nulla semper, nisi id accumsan rhoncus, velit dui consectetur nisi, ac congue eros mauris non diam.</p>
+		
+		<p class="meta">Filed under: <a href="#">Photography</a> | <a href="#">Link</a> | <a href="#">Comments (22)</a></p>
+					       
+	</div> <!-- close content -->
+	<div id="sidebar">
+		<p>This sidebar paragraph is also sized using ems. The text should be 12px but still with 20px line-height equivalent in order to maintain the vertical rhythm of the main content section.</p>
+
+		<p class="px13">This is 13px text, declared absolutely as such. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu malesuada ipsum. Nulla semper, nisi id accumsan rhoncus, velit dui consectetur nisi, ac congue eros mauris non diam.</p>
+
+		<p class="px11">More absolutely sized text, this time 11 pixels. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu malesuada ipsum. Nulla semper, nisi id accumsan rhoncus, velit dui consectetur nisi, ac congue eros mauris non diam.</p>
+
+		<h4>Sidebar Headline 4</h4>
+		<ul>
+		   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+		   <li>Aliquam tincidunt mauris eu risus.</li>
+		   <li>Vestibulum auctor dapibus neque. And some extra text to make the line wrap all the way around.No special font sizing here. It should inherit whatever the sidebar is set to.</li>
+		   <li>The fourth list item</li>
+		</ul>
+
+		<dl>
+			<dt>This is a definition term</dt>
+			<dd>And this is a definition description. Now in the sidebar. Same as the <code>ul</code> above.</dd>
+		</dl>
+	</div> <!-- close sidebar -->
+	
+	<div id="footer">
+		<p>Under Construction | Powered by <a href="http://www.moveabletype.org">Movable Type</a> &amp; <a href="https://www.hostingmatters.com">Hosting Matters</a></p>
+	</div> <!-- close footer -->
+	
+</div> <!-- close wrap -->
+
+</body>
+</html>
