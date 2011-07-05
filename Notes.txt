@@ -4,14 +4,16 @@
 	-- List of links
 	
 - Typography Page
-	-- Fix leading due to 15px change
+	-- Currently, desired font size is separate for 'content' and 'sidebar' (independent, with body=100%/16px). 
+	   Could put 14px on 'wrap' and derive all from that. **Make a new branch**
+	-- 15px base size (and increased leading) Another branch?
 	-- Footnotes and Sidenotes
 	-- Finish Sidebar
 	-- embedded lists
 	
 - New Header?
 
-- Add Lab links to main
+- Add Lab links to main nav on nealsheeran.com
 
 - Add Mint Code to all pages
 
@@ -27,8 +29,6 @@ Other Projects:
 - Monospace font (pre, code) appears as serif font in Google Chrome
 - List items (and paras) with code elements appear to 1 pixel too large (21 vs 20), at least with Anonymous Pro
 	and Menlo
-- Currently, desired font size is separate for 'content' and 'sidebar' (independent, with body=100%/16px). 
-	Could put 14px on 'wrap' and derive all from that
 - Is all this em math worth it? Go back to pixels?
 		
 
