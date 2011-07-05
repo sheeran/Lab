@@ -113,14 +113,24 @@ body {
     font-size: 100%;		/* Base size = 16px */
     font-style: normal;
     }
+    
+em, i	{
+	font-style: italic;
+	font-weight: 400;
+	}
+	
+strong, b	{
+	font-size: normal;
+	font-weight: 700;
+	}
   		
 #header	{
 	margin-bottom: 1.25em; 	/* 20/16 = 1.25 */
 	}
 	
 #content	{
-	font-size: 0.875em;		/* 14/16 = 0.875 */
-	line-height: 1.4286em;	/* 20/14 = 1.4286 */
+	font-size: 0.875em;							/* 14/16 = 0.875 */
+	line-height: 1.4286em;						/* 20/14 = 1.4286 */
 	}
   	
 #sidebar	{
@@ -143,7 +153,7 @@ h2 {
 	}
 
 h3	{
-	font-size: 1.1428em;	/* 16/14 = 1.1428 */
+	font-size: 1.1429em;	/* 16/14 = 1.1429 */
 	line-height: 1.25em;	/* 20/16 = 1.25 */
 	margin-top: 1.875em;	/* 1.5: 30/16 = 1.875 */
 	margin-bottom: 0.625em;	/* 0.5: 10/16 = 0.625 */
@@ -182,6 +192,7 @@ span.sc {font-variant: small-caps;}
 
 pre, code	{
 	font-family: Consolas, "Courier New", Monaco, monospace;
+	color: #728905;
 	}
 	
 dt	{margin-top: 1.4286em;}
