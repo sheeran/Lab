@@ -26,6 +26,7 @@ Other Projects:
 - Responsive layout
 
 // Current Issues
+- Margins and sizes on sidebar is off: elements inheriting "#content" math, but sidebar is different.
 - Monospace font (pre, code) appears as serif font in Google Chrome
 - List items (and paras) with code elements appear to 1 pixel too large (21 vs 20), at least with Anonymous Pro
 	and Menlo

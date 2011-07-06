@@ -134,13 +134,13 @@ strong, b	{
 	}
   	
 #sidebar	{
-	font-size: 0.75em;		/* 12/16 = 0.75em */
-	line-height: 1.6667em;	/* 20/12 = 1.6667 */
+	font-size: 0.8125em;	/* 13/16 = 0.8125em */
+	line-height: 1.5385em;	/* 20/13 = 1.5385 */
 	}
 
 #footer	{
-	font-size: 0.75em;		/* 12/16 = 0.75em */
-	line-height: 1.6667em;	/* 20/12 = 1.6667 */
+	font-size: 0.8125em;	/* 13/16 = 0.8125em */
+	line-height: 1.5385em;	/* 20/13 = 1.5385 */
 	}
 
 h2 {
@@ -196,10 +196,9 @@ pre, code	{
 	}
 	
 dt	{margin-top: 1.4286em;}
+
 #sidebar dt {margin-top: 1.6667em;}
 
-.px13	{font-size: 13px;}
-.px11	{font-size: 11px;}
 
 /* -- Images -- */
 
