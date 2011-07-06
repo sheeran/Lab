@@ -219,3 +219,15 @@ dt	{margin-top: 1.4286em;}
 	text-align: center;
 	}    	
 
+/*  --Sidenotes -- */
+
+.sidenote {
+	font-size:12px;
+	font-style: italic;
+	line-height:20px;
+	margin-left:-220px;	/* moves over to the left */
+	overflow:hidden;
+	position:absolute;	/* removes from normal flow...rest of paragraph moves up 8*/
+	text-align:right;
+	width:200px;
+	}
