@@ -3,7 +3,7 @@ Filename: base.css
 Version: 1.2 // 2 Jul 2011	
 Notes:						
 - Reboot, now under source control with Git
-
+- Branch "wrap": move all text size under #wrap and derive
 
 
 */
@@ -128,18 +128,18 @@ strong, b	{
 	margin-bottom: 1.25em; 	/* 20/16 = 1.25 */
 	}
 	
-#content	{
+#wrap	{
 	font-size: 0.875em;							/* 14/16 = 0.875 */
 	line-height: 1.4286em;						/* 20/14 = 1.4286 */
 	}
   	
 #sidebar	{
-	font-size: 0.8125em;	/* 13/16 = 0.8125em */
+	font-size: 0.9286em;	/* 13/14 = 0.9286em */
 	line-height: 1.5385em;	/* 20/13 = 1.5385 */
 	}
 
 #footer	{
-	font-size: 0.8125em;	/* 13/16 = 0.8125em */
+	font-size: 0.9286em;	/* 13/14 = 0.9286em */
 	line-height: 1.5385em;	/* 20/13 = 1.5385 */
 	}
 
@@ -165,6 +165,14 @@ h4	{
 	font-weight: normal;
 	font-style: italic;
 	}
+	
+#sidebar h4	{
+	font-size: 1.1538em;	/* 15/13 = 1.1538 */
+	line-height: 1.3333em;	/* 20/15 = 1.3333 */
+	font-weight: normal;
+	font-style: italic;
+	}
+
 
 p, ul, ol, dl {margin-bottom: 1.4286em;} /* 20px */
 
@@ -173,14 +181,15 @@ p.date	{
 	}
 
 p.meta	{
-	font-size: 0.8571em;	/* 12/14 = 0.8571 */
-	margin-bottom: 3.3333em	/* 40/12 = 3.3333em */
+	font-size: 0.9286em;	/* 13/14 = 0.9286 */
+	line-height: 1.5385em;
+	margin-bottom: 3.0769em	/* 40/13 = 3.3333em */
 	}
 
 #sidebar p,
 #sidebar ul,
 #sidebar ol,
-#sidebar dl	{margin-bottom: 1.6667em;}
+#sidebar dl	{margin-bottom: 1.5385em;}
 
 blockquote	{
 	margin: 1.4286em;
@@ -197,7 +206,7 @@ pre, code	{
 	
 dt	{margin-top: 1.4286em;}
 
-#sidebar dt {margin-top: 1.6667em;}
+#sidebar dt {margin-top: 1.5385em}
 
 
 /* -- Images -- */
