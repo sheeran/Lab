@@ -8,6 +8,8 @@
 	-- Footnotes and Sidenotes
 	-- Finish Sidebar
 	-- embedded lists
+	-- Try in line elsewhere posts
+	-- Rather than a figuring out type width, put whatever and set an implicit width in img css? - didn't work
 	
 - New Header?
 

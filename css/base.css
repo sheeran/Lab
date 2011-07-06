@@ -217,7 +217,7 @@ dt	{margin-top: 1.4286em;}
 	border: 1px solid #A9A9A9;
 	display: block;
 	text-align: center;
-	}    	
+	}  	 	
 
 /*  --Sidenotes -- */
 
@@ -225,7 +225,8 @@ dt	{margin-top: 1.4286em;}
 	font-size:12px;
 	font-style: italic;
 	line-height:20px;
-	margin-left:-220px;	/* moves over to the left */
+	color: #797970;
+	margin-left:-230px;	/* moves over to the left */
 	overflow:hidden;
 	position:absolute;	/* removes from normal flow...rest of paragraph moves up 8*/
 	text-align:right;
