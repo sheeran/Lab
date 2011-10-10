@@ -1,11 +1,13 @@
 // Lab Tasks:
+
+- Use normalize.css instead of Meyer reset?
+- Covert entire lab to HTML5
 - Rewrite intro Page
 	-- Lists of things to do	
 	-- List of links
 	
 - Typography Page
 	-- 15px base size (and increased leading) Another branch?
-	-- Footnotes and Sidenotes
 	-- Finish Sidebar
 	-- embedded lists
 	-- Try in line elsewhere posts
@@ -27,15 +29,17 @@ Other Projects:
 
 // Current Issues
 - Too many text sizes for content sub-headings: 20, 16, 15, + 13px sidebar text
+	-- Use all caps (or small caps if available) for sub-headings, but keep same size?
 - Monospace font (pre, code) appears as serif font in Google Chrome
 - List items (and paras) with code elements appear to 1 pixel too large (21 vs 20), at least with Anonymous Pro
 	and Menlo
-- Is all this em math worth it? Go back to pixels?
+- Is all this em math worth it? Go back to pixels? Or least move all font-size/line-height to one section
 		
 
 
 // Closed Issues
 4 Jul 11 - emphasized and strong text...wasn't. Was being reset in new Meyer reset
+10 Oct 11 - footnotes and sidenotes. still working out maintaining vertical rhythm with hr element
 
 
 
