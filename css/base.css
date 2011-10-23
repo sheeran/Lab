@@ -1,49 +1,51 @@
 /* 
 Filename: base.css			
-Version: 1.2 // 2 Jul 2011	
+Version: 1.4 // 24 Oct 2011	
 Notes:						
 - Reboot, now under source control with Git
+- Aligned to 960: 10x69x30 grid. Text column is narrow. Try 960: 12x58x24?
 - Branch "wrap": move all text size under #wrap and derive
-
 
 */
 
-/* ----- Nomralize ----- */
+/* ----- Reset or Normalize ----- */
 
 @import "reset.css";
-
 	
 /* _____ General Layout	_____ */
 
 body {
-	background-color: #fff;
+	background-color: #fdf6e3;
 	}
 	
 
 #header	{
 	height: 80px;
-	background-color: #313131;
+	background-color: #586e75;
 	color: #fff;
 	padding: 20px;
 	}
 	
 	h1			{font-size: 24px;}
 	#header p	{font-size: 14px;}
-	p.nav a		{color: #6685A3; font-style: italic;}
+	p.nav a		{color: #268bd2; font-style: italic;}
 	
 #wrap	{
-	width: 700px;
+	width: 960px;
 	margin: 0 auto;
+	outline: 1px dotted red;
 	}
 	
 #content	{
 	float: left;
-	width: 68%;		/* 476px */
+	width: 366px;		/* 480px */
+	margin-left: 297px;
+	/* outline: 1px solid green */
 	}
 
 #sidebar	{
 	float: right;
-	width: 28%;		/* 196px */
+	width: 198px;		/* 240px */
 }
 
 #footer	{
@@ -54,7 +56,7 @@ body {
 
 a, a:link { 
 	text-decoration: none; 
-	color: #003366;
+	color: #268bd2;
 	font-weight: bold;
 	}
 
@@ -66,8 +68,8 @@ a:hover 	{text-decoration: underline;}
 /* - 14px body text with 20px of leading (and vertical measure) */
   		
 body {
-	color: #424242;
-    font-family: proxima-nova-1, proxima-nova-2, Corbel, "Trebuchet MS", sans-serif;
+	color: #073642;
+    font-family: proxima-nova-1, proxima-nova-2, Segoe, Corbel, "Trebuchet MS", sans-serif;
     font-size: 100%;		/* Base size = 16px */
     font-style: normal;
     }
@@ -91,12 +93,8 @@ strong, b	{
 	line-height: 1.4286em;	/* 20/14 = 1.4286 */
 	}
   	
-#sidebar	{
-	font-size: 0.9286em;	/* 13/14 = 0.9286em */
-	line-height: 1.5385em;	/* 20/13 = 1.5385 */
-	}
-
-#footer	{
+#sidebar,
+#footer		{
 	font-size: 0.9286em;	/* 13/14 = 0.9286em */
 	line-height: 1.5385em;	/* 20/13 = 1.5385 */
 	}
@@ -106,7 +104,7 @@ h2 {
 	font-size: 1.4286em;	/* 20/14 = 1.4268 */
 	line-height: 1.0em;
 	font-weight: normal;
-	color: #097054;
+	color: #2aa198;
 	margin-bottom: 0;
 	}
 
@@ -151,7 +149,7 @@ p.meta	{
 
 blockquote	{
 	margin: 1.4286em;
-	color: #777;
+	color: #586e75;
 	font-style: italic;
 	}
 	
@@ -159,7 +157,7 @@ span.sc {font-variant: small-caps;}
 
 pre, code	{
 	font-family: Consolas, "Courier New", Monaco, monospace;
-	color: #728905;
+	color: #859900;
 	}
 	
 dt	{margin-top: 1.4286em;}
@@ -183,12 +181,13 @@ dt	{margin-top: 1.4286em;}
 	font-size:12px;
 	font-style: italic;
 	line-height:20px;
-	color: #797970;
-	margin-left:-220px;	/* moves over to the left */
+	color: #586e75;
+	margin-left:-200px;	/* moves over to the left */
 	overflow:hidden;
 	position:absolute;	/* removes from normal flow...rest of paragraph moves up 8*/
-	text-align:right;
-	width:190px;
+	text-align: right;
+	width:168px;
+	outline: 1px solid blue;
 	}
 	
 /* ----- footnotes -----*/
@@ -221,3 +220,24 @@ a.fn	{
 	margin:0;
 	}
 
+
+/* ----- Colors by Solarized ----- 
+
+base03:	   #002b36;
+base02:    #073642;		Body Text Color
+base01:    #586e75;		Header background
+base00:    #657b83;
+base0:     #839496;
+base1:     #93a1a1;
+base2:     #eee8d5;
+base3:     #fdf6e3;		Body background
+yellow:    #b58900;
+orange:    #cb4b16;
+red:       #dc322f;
+magenta:   #d33682;
+violet:    #6c71c4;
+blue:      #268bd2;		Links
+cyan:      #2aa198;		h2 article titles
+green:     #859900;		Code and pre
+
+Thanks to Ethan Schoonover: http://ethanschoonover.com/solarized  */

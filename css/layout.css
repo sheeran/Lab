@@ -1,0 +1,63 @@
+@import url("normalize.css");
+
+/* -- Reset some elements -- */
+/* html, body, div, h1, h2, h3, ol, ul, p	{
+	margin: 0;
+	padding: 0;
+	}
+*/ 
+/* -- Layout -- */
+
+#wrap	{
+	width: 90%;
+	margin: 20px auto;
+	outline: 1px red dotted;
+	}
+	
+header	{background-color: #777;}
+	header h1	{
+		float: left;
+		width: 50%;
+		outline: 1px dotted green;
+		}
+	
+nav	{float: right;}
+	nav ul	{outline: 1px solid blue;}
+	nav ul li {
+		float: left;
+		width: 80px;
+		}
+
+#content	{
+	float: left;
+	width: 69%;
+	outline: 1px solid gray;
+	}
+	
+	.article	{
+		margin-left: 200px;
+		}
+	
+	.meta,
+	.sidenote	{
+		position: absolute;
+		width: 150px;
+		margin-left: -170px;
+		text-align: right;
+		outline: 1px solid green;
+		}
+	.date	{}
+	.tags	{}
+	
+.sidebar	{
+	float: right;
+	width: 29%;
+	outline: 1px solid cyan;
+	}
+	
+.footer		{
+	clear: both;
+	height: 60px;
+	background-color: #999;
+	}
+
