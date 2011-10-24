@@ -21,7 +21,7 @@ body {
 #header	{
 	height: 80px;
 	background-color: #586e75;
-	color: #fff;
+	color: #eee8d5;
 	padding: 20px;
 	}
 	
@@ -54,13 +54,17 @@ body {
 /* Standard link styles */
 
 a, a:link { 
-	text-decoration: none; 
-	color: #268bd2;
+	text-decoration: underline; 
+	color: #002b36;
 	font-weight: bold;
 	}
 
 a:visited 	{color: #6c71c4;}
-a:hover 	{text-decoration: underline;}
+a:hover 	{
+	text-decoration: none; 
+	color: #268bd2;
+	border-bottom: 1px dotted #268bd2;
+	}
 
 /* ----- Typography ----- */
 						
@@ -129,7 +133,7 @@ h4	{
 	}
 
 
-p, ul, ol, dl {margin-bottom: 1.4286em;} /* 20px */
+p, ul, ol, dl, dd {margin-bottom: 1.4286em;} /* 20px */
 
 p.date	{
 	font-family: Constantia, Georgia, "Times New Roman", sans-serif;
@@ -152,17 +156,15 @@ blockquote	{
 	font-style: italic;
 	}
 	
-span.sc {font-variant: small-caps;}
-
 pre, code	{
 	font-family: Consolas, "Courier New", Monaco, monospace;
 	color: #859900;
 	}
 	
-dt	{margin-top: 1.4286em;}
+span.sc {font-variant: small-caps;}
 
-#sidebar dt {margin-top: 1.5385em}
-
+span.update	{font-style: italic;}
+	
 
 /* ----- Images ----- */
 
@@ -204,7 +206,6 @@ a.fn	{
 .footnotes	{
 	font-size: 0.9286em;	/* 13/14 = 0.9286 */
 	line-height: 1.5385em;
-	
 	}
 
 .footnotes hr	{
@@ -212,7 +213,6 @@ a.fn	{
 	margin-right: 300px;
 	margin-top: 30px;
 	margin-bottom: 10px;
-
 	}
 	
 .footnotes ol {
