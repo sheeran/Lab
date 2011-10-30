@@ -1,44 +1,115 @@
 @import url("normalize.css");
 
 /* -- Reset some elements -- */
-/* html, body, div, h1, h2, h3, ol, ul, p	{
+ html, body, div, h1, h2, h3, ol, ul, p	{
 	margin: 0;
 	padding: 0;
 	}
-*/ 
+ 
 /* -- Layout -- */
 
 #wrap	{
 	width: 90%;
+	max-width: 960px;
 	margin: 20px auto;
-	outline: 1px red dotted;
+	font: 15px/20px "Segoe", Calibri, Lucida Grande, sans-serif;
 	}
 	
-header	{background-color: #777;}
+header	{
+	height: 40px;
+	margin-bottom: 20px;
+	}
+	
 	header h1	{
 		float: left;
 		width: 50%;
-		outline: 1px dotted green;
+		font-size: 36px;	
 		}
 	
-nav	{float: right;}
-	nav ul	{outline: 1px solid blue;}
-	nav ul li {
-		float: left;
-		width: 80px;
-		}
-
-#content	{
-	float: left;
-	width: 69%;
-	outline: 1px solid gray;
+nav	{
+	float: right;
+	width: 31.666667%;
 	}
 	
-	.article	{
-		margin-left: 200px;
+	nav ul	{}
+	nav ul li {
+		float: left;
+		width: 19.078947%;
+		margin-right: 7.894737%;
+		text-align: center;
 		}
+	nav ul li:last-child {margin-right: 0;}
+		
+#content	{
+	clear: both;
+	float: left;
+	width: 48.75%;
+	margin-left: 25.625%;
+	display: inline;
+	}
+
+#sidebar	{
+	float: right;
+	width: 23.125%;
+	}
 	
-	.meta,
+#footer		{
+	clear: both;
+	padding: 20px 0;
+	border-top: 1px dotted #999;
+	}
+	
+#footer p	{
+	float: left;
+	width: 23.125%;
+	margin-right: 2.5%;
+	}
+	
+#footer p:last-child	{margin-right: 0;}
+
+/* -- Specific Text Styles -- */
+
+.meta,
+.sidenote	{
+	float: left;
+	width: 35.043%;
+	margin-left: -40.1709%;
+	text-align: right;
+	}
+	
+.meta	{
+	margin-top: -40px;
+	}
+	
+.date	{
+	margin-top: 0;
+	}
+	
+ul.tags	{
+	list-style: none;
+	padding-top: 0;
+	}
+	
+h2,
+.article p	{
+	margin-bottom: 20px;
+	}
+	
+.tags,
+.sidenote,
+#sidebar,
+#footer	{
+	font-size: 13px;
+	}
+
+	
+/* -- Contain floats -- */
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/*	.meta,
 	.sidenote	{
 		position: absolute;
 		width: 150px;
@@ -48,16 +119,4 @@ nav	{float: right;}
 		}
 	.date	{}
 	.tags	{}
-	
-.sidebar	{
-	float: right;
-	width: 29%;
-	outline: 1px solid cyan;
-	}
-	
-.footer		{
-	clear: both;
-	height: 60px;
-	background-color: #999;
-	}
-
+*/
