@@ -13,6 +13,8 @@
 	max-width: 960px;
 	margin: 20px auto;
 	font: 15px/20px "Segoe", Calibri, Lucida Grande, sans-serif;
+	/* background-color: #fdf6e3; */
+	color: #073642;
 	}
 	
 header	{
@@ -78,7 +80,7 @@ nav	{
 	}
 	
 .meta	{
-	margin-top: -40px;
+	margin-top: -38px;
 	}
 	
 .date	{
@@ -88,6 +90,7 @@ nav	{
 ul.tags	{
 	list-style: none;
 	padding-top: 0;
+	margin-top: -1px;
 	}
 	
 h2,
@@ -102,6 +105,9 @@ h2,
 	font-size: 13px;
 	}
 
+img	{
+	width: 100%;
+	margin-bottom: 20px}
 	
 /* -- Contain floats -- */
 

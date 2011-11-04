@@ -18,16 +18,18 @@ body {
 	background-color: #fdf6e3;
 	}
 	
-#header	{
+#banner	{
 	height: 80px;
-	background-color: #586e75;
+	background-color: #657b83;
 	color: #eee8d5;
+	margin-bottom: 1.25em; 	/* 20/16 = 1.25 */
 	padding: 20px;
+	font-family: Segoe, Corbel, "Trebuchet MS", sans-serif;
 	}
 	
 	h1			{font-size: 24px;}
-	#header p	{font-size: 14px;}
-	p.nav a		{color: #268bd2; font-style: italic;}
+	#banner p	{font-size: 14px;}
+	p.nav a		{color: #eee8d5; font-style: italic;}
 	
 #wrap	{
 	width: 960px;
@@ -66,8 +68,7 @@ a:hover 	{
 	border-bottom: 1px dotted #268bd2;
 	}
 
-/* ----- Typography ----- */
-						
+/* ----- Typography ----- */						
 /* - 14px body text with 20px of leading (and vertical measure) */
   		
 body {
@@ -87,10 +88,6 @@ strong, b	{
 	font-weight: 700;
 	}
   		
-#header	{
-	margin-bottom: 1.25em; 	/* 20/16 = 1.25 */
-	}
-	
 #wrap	{
 	font-size: 0.875em;		/* 14/16 = 0.875 */
 	line-height: 1.4286em;	/* 20/14 = 1.4286 */
@@ -235,8 +232,8 @@ yellow:    #b58900;
 orange:    #cb4b16;
 red:       #dc322f;
 magenta:   #d33682;
-violet:    #6c71c4;
-blue:      #268bd2;		Links
+violet:    #6c71c4;		Links (Visited)
+blue:      #268bd2;		Links (Hover)
 cyan:      #2aa198;		h2 article titles
 green:     #859900;		Code and pre
 

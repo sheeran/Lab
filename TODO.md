@@ -22,6 +22,7 @@
 9. Multi-line article titles + new headline typeface
 10. Text shadow
 11. Solarized colors
+12. Incremental LH for the sidebar (5:4?)
 
 *Current Issues*
 
