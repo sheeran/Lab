@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="http://use.typekit.com/whw8six.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript" src="/mint/?js"></script>
+	<script type="text/javascript" src="js/syncotype.js"></script>
 
 </head>
 
@@ -25,9 +26,9 @@
 		<h2>Experiments in Web Typography, #296</h2>
 		<p class="date"><span class="sc">February 12, 1974</span></p>
 		
-		<p>This project is to provide some real world examples of different CSS typography techniques. Topics such as different typefaces, font sizes, leading, and practicing good typographical design. One area of interest are Richard Rutter&#8217;s articles about <a href="http://www.alistapart.com/articles/howtosizetextincss/">sizing type</a> with CSS and composing with a <a href="http://24ways.org/2006/compose-to-a-vertical-rhythm">vertical rhythm</a>. This <code>content div</code> will contain multiple HMTL elements such as <code>h2</code>, <code>h3</code>, <code>ul</code> and so forth in order to see how the vertical rhythm is maintained, which involves at lot of math. Of course, there is also somewhat of a backlash against sizing text relatively using ems and multiple calls for going back to using pixels, partly due to the major browsers now using page zoom (which works) over text zoom (which IE refused to make work for text sized in pixels.) Oh, well. The work is done.<a class="fn" href="#test_fn1" id="test_fnref1">1</a></p>
+		<p>This project is to provide some real world examples of different CSS typography techniques. Topics such as different typefaces, font sizes, leading, and practicing good typographical design. One area of interest is maintaining a vertical rhythm. Richard Rutter has written a <a href="http://www.alistapart.com/articles/howtosizetextincss/">few</a> <a href="http://24ways.org/2006/compose-to-a-vertical-rhythm">articles</a> about this, as well as <a href="http://www.alistapart.com/articles/settingtypeontheweb">Wilson Miner.</a> This <code>content div</code> will contain multiple HMTL elements such as <code>h2</code>, <code>h3</code>, <code>ul</code> and so forth in order to see how the vertical rhythm is maintained, which involves at lot of math. Of course, there is also somewhat of a backlash against sizing text relatively using ems and multiple calls for going back to using pixels, partly due to the major browsers now using page zoom (which works) over text zoom (which IE refused to make work for text sized in pixels.) Oh, well. The work is done.<a class="fn" href="#test_fn1" id="test_fnref1">1</a></p>
 						
-		<p><div class="sidenote">This is a little sidenote which should appear over in the left-hand margin. Stolen from <a href="http://kilianmuster.com/blog/apples-rise-and-fall-in-typography">Kilian Muster.</a> It has a negative left margin to move it left and is absolutey positioned to remove it from the normal flow and slide the next paragraph up. In the source, it appears between the two.</div></p>
+		<p><div class="sidenote">This is a little sidenote which should appear over in the left-hand margin. Stolen from <a href="http://kilianmuster.com/blog/apples-rise-and-fall-in-typography">Kilian Muster.</a> It has a negative left margin to move it left and is absolutely positioned to remove it from the normal flow and slide the next paragraph up. In the source, it appears between the first two paragraphs over there in the middle.</div></p>
 		
 		<p>Here are some examples of various text options to look at as the CSS for this page is tweaked. <em>This is emphasized text</em>. And here we have <strong>some strong text</strong>. I never get things right on the first try, so just to make sure that <strike>strikethrough text</strike> appears correct. The following is a keyboard apostrophe: I'll not use it again. And these are &#8220;typographically correct quotes.&#8221; A break in thought is indicted by an em dash&#8212;look at something shiny <a class="fn" href="#test_fn2" id="test_fnref2">2</a>. Here is a link that I <a href="http://www.democrats.org">have never visited.</a></p>
 		
@@ -64,13 +65,14 @@
 			<dd>And surprise! The definition description</dd>
 		</dl>
 		
+		<p><div class="sidenote"><em>Note:</em> one issue here is that any line of text that has a <code>code</code>or <code>pre</code>element actually has a height of 21 pixels, even though those elements are set to 20px. These 1 pixel errors add up and break the vertical rhythm farther down the page.</div></p>
 		<p>This is text wrapped in a <code>pre</code> block:</p>
 		<pre>
 #content {
   font-size: 0.875em;    /* 14/16 = 0.875 */
   line-height: 1.4286em; /* 20/14 = 1.4286 */
   }
-span.sc {font-variant: small-caps;}
+p, ol, ul {margin-bottom: 1.4286em;}
 		</pre>
 		
 		<h4>A Subhead marked up with H4</h4>
@@ -79,8 +81,8 @@ span.sc {font-variant: small-caps;}
 		<div class="footnotes">
 			<hr />
 			<ol>
-				<li id="test_fn1">This is the witty bit of footnote text. I like David Foster Wallace. <a href="#test_fnref1" title="Back up to main text">&#8629;</a></li>
-				<li id="test_fn2">I will have to make a KM or TE snippet that has all the required footnote list item markup ready to go. <a href="#test_fnref2" title="Back up to main text">&#8629;</a></li>
+				<li id="test_fn1">To display an overlay of the vetical rhythm, <a href="type.html#syncotype">Click here</a>, then refresh the page.<a href="#test_fnref1" title="Back up to main text">&#8629;</a></li>
+				<li id="test_fn2">I like David Foster Wallace and I like footnotes too. <a href="#test_fnref2" title="Back up to main text">&#8629;</a></li>
 
 			</ol>
 		</div>
@@ -92,7 +94,7 @@ span.sc {font-variant: small-caps;}
 		
 		<p>The above dateline span is <em>not</em> contained in a <code>class</code> of <span class="sc">small cap</span>. Images need to be sized correctly in the vertical to match the existing rhythm, which is 20 pixels. The image height + top/bottom padding + top/bottom border should be evenly divisible by twenty. The image below is 252 pixels tall (plus 3 pixels of padding and 1 pixel borders = 260 pixels) and 368 pixels wide. The content <code>div</code> is 410 pixels wide. Again, subtracting the 8 pixels of padding and border equals a max image width of 402 pixels.</p>
 		
-		<p><div class="sidenote">We can use these for image captions as well</div>
+		<p><div class="sidenote">We can use these sidenotes for image captions as well</div>
 		</p>
 		
 		<img src="img/cloud2.jpg" width="368" height="252" alt="picture of cloud" />
@@ -106,9 +108,7 @@ span.sc {font-variant: small-caps;}
 	</div> <!-- close content -->
 	
 	<div id="sidebar">
-		<p>This page is current set to 14px with a 20 pixel line-height. All vertical margins are equal to or a multiple of 20px, hence the consistent vertical rhythm. The typeface is currently <em>Proxima Nova</em>, care of <a href="http://typekit.com/">Typekit</a>.</p>
-		
-		<p>This sidebar paragraph is also sized using ems. The text should be 13px but still with 20px line-height equivalent in order to maintain the vertical rhythm of the main content section.</p>
+		<p>The main content column is currently set via ems to 14px with a 20 pixel line-height. All vertical margins are equal to or a multiple of 20px, to maintain the consistent vertical rhythm. The typeface is currently <em>Proxima Nova</em>, care of <a href="http://typekit.com/">Typekit</a>. This sidebar is also set to 13px, and a 20px line-height as well in order to maintain the rhythm of the main content section.</p>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Here is some <em>emphasized text</em> and this text should be <strong>strong and bold</strong>. Suspendisse eu malesuada ipsum. Nulla semper, nisi id accumsan rhoncus, velit dui consectetur nisi, ac congue eros mauris non diam.</p>
 
