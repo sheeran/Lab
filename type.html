@@ -26,7 +26,7 @@
 		<h2>Experiments in Web Typography, #296</h2>
 		<p class="date"><span class="sc">February 12, 1974</span></p>
 		
-		<p>This project is to provide some real world examples of different CSS typography techniques. Topics such as different typefaces, font sizes, leading, and practicing good typographical design. One area of interest is maintaining a vertical rhythm. Richard Rutter has written a <a href="http://www.alistapart.com/articles/howtosizetextincss/">few</a> <a href="http://24ways.org/2006/compose-to-a-vertical-rhythm">articles</a> about this, as well as <a href="http://www.alistapart.com/articles/settingtypeontheweb">Wilson Miner.</a> This <code>content div</code> will contain multiple HMTL elements such as <code>h2</code>, <code>h3</code>, <code>ul</code> and so forth in order to see how the vertical rhythm is maintained, which involves at lot of math. Of course, there is also somewhat of a backlash against sizing text relatively using ems and multiple calls for going back to using pixels, partly due to the major browsers now using page zoom (which works) over text zoom (which IE refused to make work for text sized in pixels.) Oh, well. The work is done.<a class="fn" href="#test_fn1" id="test_fnref1">1</a></p>
+		<p>This project is to provide some real world examples of different CSS typography techniques. Topics such as different typefaces, font sizes, leading, and practicing good typographical design. One area of interest is maintaining a vertical rhythm. Richard Rutter has written a <a href="http://www.alistapart.com/articles/howtosizetextincss/">few</a> <a href="http://24ways.org/2006/compose-to-a-vertical-rhythm">articles</a> about this, as well as <a href="http://www.alistapart.com/articles/settingtypeontheweb">Wilson Miner.</a> The line-height and bottom margin of all the HTML elements will be set to maintain this rhythm. This involves a lot of math since the font size and leading is set in ems. Of course, there is also somewhat of a backlash against sizing text relatively using ems and multiple calls for going back to using pixels, partly due to the major browsers now using page zoom (which works) over text zoom (which IE refused to make work for text sized in pixels.) Oh, well. The work is done. The CSS file is <a href="css/base.css">here,</a> and I have tried to keep it well-documented. <a class="fn" href="#test_fn1" id="test_fnref1">1</a></p>
 						
 		<p><div class="sidenote">This is a little sidenote which should appear over in the left-hand margin. Stolen from <a href="http://kilianmuster.com/blog/apples-rise-and-fall-in-typography">Kilian Muster.</a> It has a negative left margin to move it left and is absolutely positioned to remove it from the normal flow and slide the next paragraph up. In the source, it appears between the first two paragraphs over there in the middle.</div></p>
 		
@@ -43,6 +43,7 @@
 
 		<p>0 1 2 3 4 5 6 7 8 9</p>
 		
+		
 		<p>Let&#8217;s test some lists:</p>
 		
 		<ul>
@@ -53,11 +54,18 @@
 			
 		<ol>
 		   	<li>Add footnotes</li>
-		   	<li>Test out <code>pre</code> block</li>
+		   	<li>Test out <code>pre</code> block
+		   		<ol>
+		   		<li>Hey, a list within a list</li>
+		   		<li>I like outlines</li>
+		   		</ol>
+		   	</li>
 		   	<li>Color for <code>code</code> elements</li>
 		   	<li>Finish Sidebar</li>
 		</ol>
-
+		
+		<p><div class="sidenote"><em>Note:</em> one issue here is that any line of text that has a <code>code</code> or <code>pre</code> element actually has a height of 22 pixels, even though those elements are set to 20px. These 2 pixel errors add up and break the vertical rhythm farther down the page.</div></p>
+		
 		<dl>
 			<dt>This is a definition term</dt>
 			<dd>And this is a definition description</dd>
@@ -65,7 +73,6 @@
 			<dd>And surprise! The definition description</dd>
 		</dl>
 		
-		<p><div class="sidenote"><em>Note:</em> one issue here is that any line of text that has a <code>code</code>or <code>pre</code>element actually has a height of 21 pixels, even though those elements are set to 20px. These 1 pixel errors add up and break the vertical rhythm farther down the page.</div></p>
 		<p>This is text wrapped in a <code>pre</code> block:</p>
 		<pre>
 #content {
@@ -110,8 +117,7 @@ p, ol, ul {margin-bottom: 1.4286em;}
 	<div id="sidebar">
 		<p>The main content column is currently set via ems to 14px with a 20 pixel line-height. All vertical margins are equal to or a multiple of 20px, to maintain the consistent vertical rhythm. The typeface is currently <em>Proxima Nova</em>, care of <a href="http://typekit.com/">Typekit</a>. This sidebar is also set to 13px, and a 20px line-height as well in order to maintain the rhythm of the main content section.</p>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Here is some <em>emphasized text</em> and this text should be <strong>strong and bold</strong>. Suspendisse eu malesuada ipsum. Nulla semper, nisi id accumsan rhoncus, velit dui consectetur nisi, ac congue eros mauris non diam.</p>
-
+		<p class="increment">This paragraph uses incremental leading (via <a href="http://www.markboulton.co.uk/journal/comments/incremental-leading">Mark Boulton</a>.) Every fifth line of sidebar text lines up with every fourth line of main content. This can used if one thinks (and in this current page, I don&#8217;t) that maintaining the vertical rhythm opens up the smaller sidebar (or sidenotes in the left margin) too much. But rather than just blindly setting a smaller line-height, the sidebar line-height will still be aligned with the main content in a 5:4 ratio.</p>
 		<h4>Sidebar Headline 4</h4>
 		<ul>
 		   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>

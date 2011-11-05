@@ -10,7 +10,16 @@ Notes:
 
 /* ----- Reset or Normalize ----- */
 
-@import "reset.css";
+@import "normalize.css";
+
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6,
+p, ol, ul, li, blockquote,
+dl, dt, dd, pre, code, img	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	}
 	
 /* _____ General Layout	_____ */
 
@@ -149,6 +158,11 @@ p.meta	{
 #sidebar ol,
 #sidebar dl	{margin-bottom: 1.5385em;}
 
+#sidebar p.increment	{
+	line-height: 1.230769em; /* 16px of LH for a 5:4 ratio */
+	margin-bottom: 2.4615em; /* just used to put follow on elements back on 20px LH */
+	}
+
 blockquote	{
 	margin: 1.4286em;
 	color: #586e75;
@@ -163,6 +177,17 @@ pre, code	{
 span.sc {font-variant: small-caps;}
 
 span.update	{font-style: italic;}
+
+ol,
+ul	{
+	margin-left: 1.4286em;
+	}
+
+ol li ol	{
+	list-style: upper-alpha;
+	margin-left: 2.5714em;
+	margin-bottom: 0;
+	}
 	
 
 /* ----- Images ----- */
@@ -179,16 +204,16 @@ span.update	{font-style: italic;}
 /*  ----- Sidenotes ----- */
 
 .sidenote {
-	font-size:12px;
+	font-size:13px;
 	font-style: italic;
 	line-height:20px;
 	color: #586e75;
-	margin-left:-188px;	/* moves over to the left */
+	margin-left:-246px;	/* moves over to the left -- 188 is 1 gutter */
 	overflow:hidden;
 	position:absolute;	/* removes from normal flow...rest of paragraph moves up */
 	text-align: right;
 	width:164px;
-	/*outline: 1px solid blue;*/
+	/* outline: 1px solid blue; */
 	}
 	
 /* ----- footnotes -----*/
