@@ -38,7 +38,7 @@ body {
 	line-height: 20px;
 	}
 	
-	h1			{font-size: 24px;}
+	h1			{font-size: 24px; font-weight: normal;}
 	p.nav		{margin-bottom: 0;}
 	p.nav a		{color: #eee8d5; font-style: italic;}
 	
@@ -152,6 +152,10 @@ p.meta	{
 	line-height: 1.5385em;
 	margin-bottom: 3.0769em	/* 40/13 = 3.3333em */
 	}
+	
+.shadow	{
+	text-shadow: 1px 2px 1px #FAFAFA;
+	}
 
 #sidebar p,
 #sidebar ul,
@@ -171,6 +175,8 @@ blockquote	{
 	
 pre, code	{
 	font-family: Consolas, "Courier New", Monaco, monospace;
+	font-size: 14px;		/* 14/16 = 0.875 */
+	line-height: 20px;	/* 20/14 = 1.4286 */
 	color: #859900;
 	}
 	

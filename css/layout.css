@@ -24,7 +24,7 @@ header	{
 	
 	header h1	{
 		float: left;
-		width: 50%;
+		width: 49%;
 		font-size: 36px;	
 		}
 	
@@ -33,7 +33,6 @@ nav	{
 	width: 31.666667%;
 	}
 	
-	nav ul	{}
 	nav ul li {
 		float: left;
 		width: 19.078947%;
@@ -49,6 +48,8 @@ nav	{
 	margin-left: 25.625%;
 	display: inline;
 	}
+	
+.article	{margin-bottom: 40px;}
 
 #sidebar	{
 	float: right;
@@ -59,6 +60,7 @@ nav	{
 	clear: both;
 	padding: 20px 0;
 	border-top: 1px dotted #999;
+	margin-top: 40px;
 	}
 	
 #footer p	{
@@ -77,6 +79,7 @@ nav	{
 	width: 35.043%;
 	margin-left: -40.1709%;
 	text-align: right;
+	font-style: italic;
 	}
 	
 .meta	{
@@ -93,10 +96,15 @@ ul.tags	{
 	margin-top: -1px;
 	}
 	
+	
 h2,
-.article p	{
+.article p,
+.article ol li,
+.article ul li	{
 	margin-bottom: 20px;
 	}
+	
+.article .meta ul.tags li {margin-bottom: 0;}
 	
 .tags,
 .sidenote,
@@ -106,9 +114,129 @@ h2,
 	}
 
 img	{
+	float: right;
 	width: 100%;
 	margin-bottom: 20px}
 	
+ol, ul	{margin-left: 20px;}
+	
+/* -- Media Queries -- */
+
+@media only screen and (max-width: 680px)  {
+	#wrap	{
+		width: auto;
+		margin: 10px 24px;}
+		
+	nav	{width: 49%;}
+	
+	#content	{
+		width: 64.8763%;
+		margin-left: 0;
+		
+		}
+	#sidebar	{
+		width: 25.9494%;
+		}
+	/* .sock	{float: right;} */
+	
+	#footer p	{
+		width: 48.1013%;
+		clear: left;
+		float: left;
+		margin-bottom: 20px;
+		}
+		
+		#footer p.two,
+		#footer p.four	{
+		clear: right;
+		float: right;
+		margin-right: 0;
+		}
+		
+	.meta,
+	.sidenote	{
+		float: none;
+		width: 100%;
+		margin-top: 0;
+		margin-left: 0;
+		text-align: left;
+		}
+		
+	ul.tags		{margin-bottom: 10px; margin-left: 0;}
+	ul.tags li	{display: inline;}
+	
+	
+}
+
+@media only screen and (max-width: 380px)  {
+	#wrap	{
+		width: auto;
+		margin: 10px 10px;
+		}
+	
+	header	{height: auto;}
+		
+	header h1	{
+		float:none;
+		width: auto;
+		font-size: 24px;
+		text-align: center;
+		}
+		
+	header nav	{
+		float:none;
+		width: auto;
+		margin: 20px 0;
+		}
+	
+	nav	ul	{margin: 0 40px;}
+		
+	nav ul li	{
+		float: none;
+		display: inline;
+		}
+	
+	#content	{
+		float: none;
+		width: auto;
+		margin-left: 0;
+		padding-top: 20px;
+		}
+		
+	#sidebar	{
+		float: none;
+		width: auto;
+		}
+		
+	#footer p	{
+		float: none;
+		width: auto;
+		margin-bottom: 20px;
+		}
+		
+		#footer p.two,
+		#footer p.four	{
+		float: none;
+		margin-right: 0;
+		}
+		
+	.meta,
+	.sidenote	{
+		float: none;
+		width: 100%;
+		margin-top: 0;
+		margin-left: 0;
+		text-align: left;
+		}
+		
+	ul.tags		{margin-bottom: 10px; margin-left: 0;}
+	ul.tags li	{display: inline;}
+	
+	
+}
+
+
+
 /* -- Contain floats -- */
 
 .clearfix:before, .clearfix:after { content: ""; display: table; }

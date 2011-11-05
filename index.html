@@ -8,13 +8,27 @@
 	
 	<style type="text/css">
 		h2	{margin-bottom: 20px;}
-		dd.off	{color: #717171; font-style: italic;}
-		#sidebar h3	{margin-top: 0;}
+		#sidebar h3	{margin-top: 0; border-bottom: 1px dotted #073642;}
 		#sidebar ul	{list-style: none;}
+		ul.pinboard {margin-left: 0;}
+		ul.pinboard a,
+		ul.pinboard a:link,
+		ul.pinboard	a:visited {
+			color: #002b36;
+			font-weight: normal;
+			text-decoration: none;
+			}
+		ul.pinboard a:hover	{
+			text-decoration: none; 
+			color: #268bd2;
+			border-bottom: 1px dotted #268bd2;
+			}
 	</style>
 	<script type="text/javascript" src="http://use.typekit.com/whw8six.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript" src="/mint/?js"></script>
+	<script type="text/javascript" src="js/syncotype.js"></script>
+
 
 </head>
 
@@ -88,7 +102,7 @@
 			<dt><a href="http://chengyinliu.com/whatfont.html">WhatFont</a></dt>
 			<dd>Javascript bookmarklet for identifying fonts on web pages.</dd>
 			<dt><a href="http://samuel.bowles.es/2007/08/syncotype/">Syncotype</a></dt>
-			<dd>Another Javascript bookmarklet, this one for displaying a horizontal grid for maintaining a consistent vertical rhythm (see the <a href="type.html">Typography page</a>. I used the original by Rob Goodlatte forever, but in the course of writing this page, I found Samuel Bowles improved version.</dd>
+			<dd>Another Javascript bookmarklet, this one for displaying a horizontal grid for maintaining a consistent vertical rhythm (see the <a href="type.html">Typography page</a>.) I used the original by Rob Goodlatte forever, but in the course of writing this page, I found Samuel Bowles improved version.</dd>
 		</dl>
 	
 	</div> <!-- close content -->
@@ -118,7 +132,7 @@
 	</div> <!-- close sidebar -->
 		
 	<div id="footer">
-		<p><em>This page last updated on 2 Jul 11.</em></p>
+		<p><em>This page last updated on 5 Nov 11.</em></p>
 	</div> <!-- close footer -->
 	
 </div> <!-- close wrap -->
