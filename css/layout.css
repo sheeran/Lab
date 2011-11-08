@@ -1,18 +1,18 @@
 @import url("normalize.css");
 
-/* -- Reset some elements -- */
+/* !----- Reset some elements ----- */
  html, body, div, h1, h2, h3, ol, ul, p	{
 	margin: 0;
 	padding: 0;
 	}
  
-/* -- Layout -- */
+/* !----- Layout ----- */
 
 #wrap	{
 	width: 90%;
 	max-width: 960px;
 	margin: 20px auto;
-	font: 15px/20px "Segoe", Calibri, Lucida Grande, sans-serif;
+	font: 16px/24px "Segoe", Calibri, Lucida Grande, sans-serif;
 	/* background-color: #fdf6e3; */
 	color: #073642;
 	}
@@ -20,12 +20,16 @@
 header	{
 	height: 40px;
 	margin-bottom: 20px;
+	border-bottom: 1px dotted #999;
 	}
 	
 	header h1	{
 		float: left;
 		width: 49%;
-		font-size: 36px;	
+		font-size: 36px;
+		font-weight: bold;
+		text-shadow: 1px 1px 0.5px #cbcbcb;
+		letter-spacing: 0.1em;	
 		}
 	
 nav	{
@@ -33,7 +37,8 @@ nav	{
 	width: 31.666667%;
 	}
 	
-	nav ul li {
+	nav ul		{margin-left: 0;}
+	nav ul li 	{
 		float: left;
 		width: 19.078947%;
 		margin-right: 7.894737%;
@@ -71,7 +76,7 @@ nav	{
 	
 #footer p:last-child	{margin-right: 0;}
 
-/* -- Specific Text Styles -- */
+/* !----- Specific Text Styles ----- */
 
 .meta,
 .sidenote	{
@@ -110,7 +115,7 @@ h2,
 .sidenote,
 #sidebar,
 #footer	{
-	font-size: 13px;
+	font-size: 14px;
 	}
 
 img	{
@@ -120,7 +125,7 @@ img	{
 	
 ol, ul	{margin-left: 20px;}
 	
-/* -- Media Queries -- */
+/* !----- Media Queries ----- */
 
 @media only screen and (max-width: 680px)  {
 	#wrap	{
@@ -128,6 +133,8 @@ ol, ul	{margin-left: 20px;}
 		margin: 10px 24px;}
 		
 	nav	{width: 49%;}
+	
+	header h1 {font-size: 24px;}
 	
 	#content	{
 		width: 64.8763%;
@@ -189,11 +196,13 @@ ol, ul	{margin-left: 20px;}
 		margin: 20px 0;
 		}
 	
-	nav	ul	{margin: 0 40px;}
+	nav	ul	{margin: 0;}
 		
 	nav ul li	{
 		float: none;
 		display: inline;
+		margin-left: 7.894737%;
+		margin-right: 0;
 		}
 	
 	#content	{
@@ -231,13 +240,12 @@ ol, ul	{margin-left: 20px;}
 		
 	ul.tags		{margin-bottom: 10px; margin-left: 0;}
 	ul.tags li	{display: inline;}
-	
-	
+		
 }
 
 
 
-/* -- Contain floats -- */
+/* !----- Contain floats ----- */
 
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
@@ -254,3 +262,4 @@ ol, ul	{margin-left: 20px;}
 	.date	{}
 	.tags	{}
 */
+

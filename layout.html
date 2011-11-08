@@ -78,11 +78,11 @@
 				</ul>
 			</div> <!-- close .meta -->
 			<div class="entry">
-				<p>The main Lab page and the Typography Page are fixed width, aligned to a 960px grid. This page is laid out on a flexible grid, thanks to Ethan Marcotte's excellent book <a href="http://www.abookapart.com/products/responsive-web-design"><em>Responsive Web Design</em></a>. The grid itself (and defined by the <code>#wrap</code> element) is 960 pixels wide. The grid consists of 12 columns of 58px each, with 24px gutters. To see the grid, click the button in the upper right corner of the browser window. Another tool I&#8217;ve used is a bookmarklet from <a href="http://javascriptgrid.org/">Javascript.org</a> that I keep in my bookmark bar in Safari. The former is good in that users can see it and also has an option&mdash;currently disabled&mdash;to also display horizontal lines so that the layout grid and the vertical scale can be displayed at the same time. The latter is less obtrusive and good for development work.</a></p>
+				<p>The main Lab page and the Typography Page are fixed width, aligned to a 960px grid. This page is laid out on a flexible grid, thanks to Ethan Marcotte's excellent book <a href="http://www.abookapart.com/products/responsive-web-design"><em>Responsive Web Design</em></a>. The grid itself (and defined by the <code>#wrap</code> element) is 960 pixels wide. The grid consists of 12 columns of 58px each, with 24px gutters. To see the grid, click the button in the upper right corner of the browser window. Another tool I&#8217;ve used is a bookmarklet from <a href="http://javascriptgrid.org/">Javascript.org</a> that I keep in my bookmark bar in Safari. The former is good in that users can see it and also has an option&#8212;currently disabled&#8212;to display horizontal lines so that the layout grid and the vertical scale can be displayed at the same time. The latter is less obtrusive and good for development work.</p>
 
 				<p>The width of the <code>content</code> and <code>sidebar</code> elements in pixels is determined by how many columns and gutters each takes up. These pixel widths are then converted to percentages so that when the browser window is narrowed below 960px, the proportions are maintained. The center <code>content</code> is floated left, but has a left margin equal to 3 columns and three gutters. The article dates, tags and sidenotes are then floated left as well, but with negative left margins. The math here can get out of hand, so I use an Excel spreadsheet that does it all for me. I set the parameters of the grid, and the desired width of elements and it spits out the necessary widths which I put in the <a href="css/layout.css">CSS</a>. </p>
 				
-				<p>And yes, typographically this page isn&#8217;t much to look at&mdash;that&#8217;s what the <a href="type.html">Typography</a> page is for&mdash;but it makes the CSS is easier for me to tweak. Eventually the two best of both pages will merge. </p>
+				<p>And yes, typographically this page isn&#8217;t much to look at&#8212;that&#8217;s what the <a href="type.html">Typography</a> page is for&#8212;but it makes the CSS easier for me to tweak. Eventually the best of both pages will merge.</p>
 				
 				<img src="img/rock.png" alt="picture of cloud" />
 
@@ -126,8 +126,8 @@ lobortis. Suspendisse nec est quis neque fringilla gravida.</p>
 	</div> <!-- close .sidebar -->
 	
 	<div id="footer" class="clearfix">
-	<div class="sock">
-		<p class="one">These paragraphs in the footers also have widths aligned to the grid and set in percentages. Their right margins are equal to a one gutter (24px currently), except for the last one, which is zero.</p>
+	
+		<p class="one">These paragraphs in the footers also have widths aligned to the grid and set in percentages. they are all floated left and their right margins are equal to a one gutter (24px currently), except for the last one, which is zero.</p>
 		<p class="two">Two. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Aliquam id libero elit. Quisque bibendum urna vel quam dapibus sed facilisis
 justo convallis. In tempus ante lobortis nibh ornare vel adipiscing odio
@@ -140,7 +140,7 @@ lobortis. Suspendisse nec est quis neque fringilla gravida.</p>
 Aliquam id libero elit. Quisque bibendum urna vel quam dapibus sed facilisis
 justo convallis. In tempus ante lobortis nibh ornare vel adipiscing odio
 lobortis. Suspendisse nec est quis neque fringilla gravida.</p>
-	</div>
+	
 	</div> <!-- close footer-->
 </div> <!-- close wrap -->
 
