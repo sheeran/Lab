@@ -1,10 +1,10 @@
 # Lab Tasks
 
 ## Main Lab Page
-1. Redo layout: header
-2. Convert to HTML 5?
-3. Break down css into: rest base, layout, type + each specific project
-4. Re-write copy: intro, projects, resources, current list
+	1. Redo layout: header
+	2. Convert to HTML 5?
+	3. Break down css into: rest base, layout, type + each specific project
+	4. Re-write copy: intro, projects, resources, current list
 
 ## Typography Page
 *Note: use git branches for major changes*
