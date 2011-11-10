@@ -28,17 +28,18 @@ body {
 	}
 	
 #banner	{
-	height: 80px;
+	height: 72px;	/* 3 x 24 = 72 */
 	background-color: #657b83;
 	color: #eee8d5;
-	margin-bottom: 20px;
-	padding: 20px;
+	margin-bottom: 24px;
+	padding: 12px;
 	font-family: Segoe, Corbel, "Trebuchet MS", sans-serif;
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 16px;
+	line-height: 24px;
 	}
 	
 	h1			{font-size: 24px; font-weight: normal;}
+	#banner p	{margin-bottom: 12px;}
 	p.nav		{margin-bottom: 0;}
 	p.nav a		{color: #eee8d5; font-style: italic;}
 	
@@ -99,58 +100,59 @@ strong, b	{
 	font-weight: 700;
 	}
   		
-#wrap	{
-	font-size: 0.875em;		/* 14/16 = 0.875 */
-	line-height: 1.4286em;	/* 20/14 = 1.4286 */
+#content	{
+	font-size: 1.0em;			/* 16/16 = 1.0 */
+	line-height: 1.5em;			/* 24/16 = 1.5 */
 	}
   	
 #sidebar,
 #footer		{
-	font-size: 0.9286em;	/* 13/14 = 0.9286em */
-	line-height: 1.5385em;	/* 20/13 = 1.5385 */
+	font-size: 0.8750em;		/* 14/16 = 0.8750em */
+	line-height: 1.714285714em;	/* 24/14 = 1.714285714em */
 	}
 
 h2 {
 	font-family: Constantia, Georgia, "Times New Roman", sans-serif;
-	font-size: 1.4286em;	/* 20/14 = 1.4268 */
-	line-height: 1.0em;
+	font-size: 1.5em;			/* 24/16 = 1.5 */
+	line-height: 1.0em; 		/* 24/24 = 1.0 */
 	font-weight: normal;
 	color: #2aa198;
 	margin-bottom: 0;
 	}
 
 h3	{
-	font-size: 1.1429em;	/* 16/14 = 1.1429 */
-	line-height: 1.25em;	/* 20/16 = 1.25 */
-	margin-top: 1.875em;	/* 1.5: 30/16 = 1.875 */
-	margin-bottom: 0.625em;	/* 0.5: 10/16 = 0.625 */
+	font-size: 1.1250em;		/* 16/14 = 1.1429 */
+	line-height: 1.333333333em;	/* 20/16 = 1.25 */
+	margin-top: 2.0em;			/* 1.5: 36/18 = 2.0 */
+	margin-bottom: 0.666666667em;		/* 0.5: 12/18 = 0.66667 */
 	}
 
 h4	{
-	font-size: 1.0714em;	/* 15/14 = 1.0714 */
-	line-height: 1.3333em;	/* 20/15 = 1.3333 */
+	font-size: 1.0em;			/* 16/16 = 1.0 */
+	line-height: 1.5em;			/* 24/16 = 1.5 */
+	margin-bottom: 0;
 	font-weight: normal;
 	font-style: italic;
 	}
 	
 #sidebar h4	{
-	font-size: 1.1538em;	/* 15/13 = 1.1538 */
-	line-height: 1.3333em;	/* 20/15 = 1.3333 */
+	font-size: 1.142857143em;	/* 16/14 = 1.142857 */
+	line-height: 1.5em;			/* 24/16 = 1.5 */
 	font-weight: normal;
 	font-style: italic;
 	}
 
 
-p, ul, ol, dl, dd {margin-bottom: 1.4286em;} /* 20px */
+p, ul, ol, dl, dd {margin-bottom: 1.5em;} /* 24px */
 
 p.date	{
 	font-family: Constantia, Georgia, "Times New Roman", sans-serif;
 	}
 
 p.meta	{
-	font-size: 0.9286em;	/* 13/14 = 0.9286 */
-	line-height: 1.5385em;
-	margin-bottom: 3.0769em	/* 40/13 = 3.3333em */
+	font-size: 0.875em;			/* 14/16 = 0.9286 */
+	line-height: 1.714285714em;	/* 24/14 = 1.714285714 */
+	margin-bottom: 3.428571em;	/* 48/14 = 3.428571 */
 	}
 	
 .shadow	{
@@ -160,23 +162,23 @@ p.meta	{
 #sidebar p,
 #sidebar ul,
 #sidebar ol,
-#sidebar dl	{margin-bottom: 1.5385em;}
+#sidebar dl	{margin-bottom: 1.714286em;}
 
 #sidebar p.increment	{
-	line-height: 1.230769em; /* 16px of LH for a 5:4 ratio */
-	margin-bottom: 2.4615em; /* just used to put follow on elements back on 20px LH */
+	line-height: 1.371429em; /* 16px of LH for a 5:4 ratio */
+	margin-bottom: 22px; /* just used to put follow on elements back on 20px LH */
 	}
 
 blockquote	{
-	margin: 1.4286em;
+	margin: 1.5em;
 	color: #586e75;
 	font-style: italic;
 	}
 	
 pre, code	{
 	font-family: Consolas, "Courier New", Monaco, monospace;
-	font-size: 14px;		/* 14/16 = 0.875 */
-	line-height: 20px;	/* 20/14 = 1.4286 */
+	font-size: 16px;		/* 14/16 = 0.875 */
+	line-height: 24px;		/* 20/14 = 1.4286 */
 	color: #859900;
 	}
 	
@@ -186,7 +188,7 @@ span.update	{font-style: italic;}
 
 ol,
 ul	{
-	margin-left: 1.4286em;
+	margin-left: 1.5em;
 	}
 
 ol li ol	{
@@ -199,7 +201,7 @@ ol li ol	{
 /* ----- Images ----- */
 
 #content img	{
-	margin: 1.4286em auto;
+	margin: 1.5em auto;
 	padding: 4px;
 	background-color: #eee8d5;
 	border: 1px solid #A9A9A9;
@@ -210,11 +212,11 @@ ol li ol	{
 /*  ----- Sidenotes ----- */
 
 .sidenote {
-	font-size:13px;
+	font-size:14px;
 	font-style: italic;
-	line-height:20px;
+	line-height:24px;
 	color: #586e75;
-	margin-left:-246px;	/* moves over to the left -- 188 is 1 gutter */
+	margin-left:-188px;	/* moves over to the left -- 188 is 1 gutter */
 	overflow:hidden;
 	position:absolute;	/* removes from normal flow...rest of paragraph moves up */
 	text-align: right;
@@ -234,8 +236,8 @@ a.fn	{
 	}
 	
 .footnotes	{
-	font-size: 0.9286em;	/* 13/14 = 0.9286 */
-	line-height: 1.5385em;
+	font-size: 14px;	/* 13/14 = 0.9286 */
+	line-height: 24px;
 	}
 
 .footnotes hr	{
@@ -247,7 +249,7 @@ a.fn	{
 	
 .footnotes ol {
 	padding: 0;
-	margin: 0 0 1.5385em 0;
+	margin: 0 0 24px 0;
 	}
 
 

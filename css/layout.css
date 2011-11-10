@@ -43,6 +43,7 @@ nav	{
 		width: 19.078947%;
 		margin-right: 7.894737%;
 		text-align: center;
+		text-transform: uppercase;
 		}
 	nav ul li:last-child {margin-right: 0;}
 		

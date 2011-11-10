@@ -1,16 +1,16 @@
 # Lab Tasks
 
 ## Main Lab Page
-	1. Redo layout: header
-	2. Convert to HTML 5?
-	3. Break down css into: rest base, layout, type + each specific project
-	4. Re-write copy: intro, projects, resources, current list
+1. Redo layout: header
+2. Convert to HTML 5?
+3. Break down css into: rest base, layout, type + each specific project
+4. Re-write copy: intro, projects, resources, current list
 
 ## Typography Page
 *Note: use git branches for major changes*
 
 1. Rewrite copy
-2. 15px base font size...redo vert rhythm spreadsheet
+2. 16px base font size...redo vert rhythm spreadsheet (24)
 3. Redo article sub-headings
 3. Move text size and line-height to one section for easier changing? (or variables with LESS?)
 4. Finish footnotes

@@ -21,7 +21,7 @@ var Syncotype = {
 	},
 	Spacing: {
 		ID: 'syncotype_spacing',
-		Default: 20,
+		Default: 24,
 		Min: 5
 	}
 };
