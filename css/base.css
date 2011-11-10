@@ -1,10 +1,8 @@
 /* 
 Filename: base.css			
-Version: 1.4 // 24 Oct 2011	
+Version: 1.4A // 10 Nov 2011 --> Branch "font16_24"	
 Notes:						
-- Reboot, now under source control with Git
-- Aligned to 960: 10x69x30 grid. Text column is narrow. Try 960: 12x58x24? especially if going to 15px
-- Branch "wrap": move all text size under #wrap and derive
+- fontsize now 16px with 24px vertical rhythm
 
 */
 
