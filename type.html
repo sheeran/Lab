@@ -64,7 +64,7 @@
 		   	<li>Finish Sidebar</li>
 		</ol>
 		
-		<p><div class="sidenote"><em>Note:</em> one issue here is that any line of text that has a <code>code</code> or <code>pre</code> element actually has a height of 22 pixels, even though those elements are set to 20px. These 2 pixel errors add up and break the vertical rhythm farther down the page.</div></p>
+		<p><div class="sidenote"><em>Note:</em> one issue here is that any line of text that has a <code>code</code> or <code>pre</code> element actually has a height of 25 or 27 pixels, even though those elements are set to 24px. These 1-2 pixel errors add up and break the vertical rhythm farther down the page. I finally found the fix <a href="https://github.com/h5bp/html5-boilerplate/issues/656#issuecomment-1761788">here</a> and it involves explicitly setting the line height to 1 on inline code elements and the standard vertical rhythm on code elements within <code>pre</code> blocks.</code></div></p>
 		
 		<dl>
 			<dt>This is a definition term</dt>
@@ -99,7 +99,7 @@ p, ol, ul {margin-bottom: 1.4286em;}
 		<h2>Another Entry Headline</h2>
 		<p class="date">February 06, 1972</p>
 		
-		<p>The above dateline span is <em>not</em> contained in a <code>class</code> of <span class="sc">small cap</span>. Images need to be sized correctly in the vertical to match the existing rhythm, which is 20 pixels. The image height + top/bottom padding + top/bottom border should be evenly divisible by twenty. The image below is 252 pixels tall (plus 3 pixels of padding and 1 pixel borders = 260 pixels) and 368 pixels wide. The content <code>div</code> is 410 pixels wide. Again, subtracting the 8 pixels of padding and border equals a max image width of 402 pixels.</p>
+		<p>The above dateline span is <em>not</em> contained in a <code>class</code> of <span class="sc">small cap</span>. Images need to be sized correctly in the vertical to match the existing rhythm, which is 24 pixels. The image height + top/bottom padding + top/bottom border should be evenly divisible by twenty-four. The image below is 252 pixels tall (plus 4 pixels of padding and 1 pixel borders = 260 pixels) and 402 pixels wide. The content <code>div</code> is 410 pixels wide. Again, subtracting the 8 pixels of padding and border equals a max image width of 402 pixels.</p>
 		
 		<p><div class="sidenote">We can use these sidenotes for image captions as well</div>
 		</p>
@@ -115,9 +115,9 @@ p, ol, ul {margin-bottom: 1.4286em;}
 	</div> <!-- close content -->
 	
 	<div id="sidebar">
-		<p>The main content column is currently set via ems to 14px with a 20 pixel line-height. All vertical margins are equal to or a multiple of 20px, to maintain the consistent vertical rhythm. The typeface is currently <em>Proxima Nova</em>, care of <a href="http://typekit.com/">Typekit</a>. This sidebar is also set to 13px, and a 20px line-height as well in order to maintain the rhythm of the main content section.</p>
+		<p>The main content column is currently set via ems to 16px with a 24 pixel line-height. All vertical margins are equal to or a multiple of 24px, to maintain the consistent vertical rhythm. The typeface is currently <em>Proxima Nova</em>, care of <a href="http://typekit.com/">Typekit</a>. This sidebar is set to 14px, and a 20px line-height as well in order to maintain the rhythm of the main content section.</p>
 
-		<p class="increment">This paragraph uses incremental leading (via <a href="http://www.markboulton.co.uk/journal/comments/incremental-leading">Mark Boulton</a>.) Every fifth line of sidebar text lines up with every fourth line of main content. This can used if one thinks (and in this current page, I don&#8217;t) that maintaining the vertical rhythm opens up the smaller sidebar (or sidenotes in the left margin) too much. But rather than just blindly setting a smaller line-height, the sidebar line-height will still be aligned with the main content in a 5:4 ratio.</p>
+		<p class="increment">This paragraph uses incremental leading (via <a href="http://www.markboulton.co.uk/journal/comments/incremental-leading">Mark Boulton</a>.) Every fifth line of sidebar text lines up with every fourth line of main content. This can used if one thinks that maintaining the vertical rhythm opens up the smaller sidebar (and the sidenotes in the left margin) too much. But rather than just blindly setting a smaller line-height, the sidebar line-height will still be aligned with the main content in a 5:4 ratio.</p>
 		<h4>Sidebar Headline 4</h4>
 		<ul>
 		   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>

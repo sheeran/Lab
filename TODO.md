@@ -10,23 +10,19 @@
 *Note: use git branches for major changes*
 
 1. Rewrite copy
-2. 16px base font size...redo vert rhythm spreadsheet (24)
 3. Redo article sub-headings
 3. Move text size and line-height to one section for easier changing? (or variables with LESS?)
 4. Finish footnotes
 5. Change sidenotes to floats
 6. Finish sidebar: "status of page"
-7. Lists within lists
 8. Try inline Elsewhere posts
 9. Multi-line article titles + new headline typeface
 10. Text shadow
 11. Solarized colors
-12. Incremental LH for the sidebar (5:4?) - looks too tight
 
 *Current Issues*
 
 - Too many text sizes for subheadings...use caps/emphasis/bold
-- List items (and paras) with code elements appear 2px too big (Anonymous, Menlo)
 - footnotes `hr` affects vert rhythm --> Get rid of hr?
 
 ## Layout Page
@@ -46,7 +42,8 @@
 
 - 4 Jul 11 - emphasized and strong text...wasn't. Was being reset in new Meyer reset
 - 10 Oct 11 - footnotes and sidenotes. still working out maintaining vertical rhythm with hr element
-- 5 Nov 11 - - Monospace font appears as serif in Google Chrome...normalize.css fixed
+- 5 Nov 11 - Monospace font appears as serif in Google Chrome...normalize.css fixed
+- 11 Nov 11 - Fixed code element line-height by explicitly setting to "1", see CSS.
 
 ### Misc Notes
 

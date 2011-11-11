@@ -79,7 +79,7 @@ a:hover 	{
 	}
 
 /* ----- Typography ----- */						
-/* - 14px body text with 20px of leading (and vertical measure) */
+/* - 16px body text with 24px of leading (and vertical measure) */
   		
 body {
 	color: #073642;
@@ -88,7 +88,7 @@ body {
     font-style: normal;
     }
     
-em, i	{
+/* em, i	{
 	font-style: italic;
 	font-weight: 400;
 	}
@@ -96,7 +96,7 @@ em, i	{
 strong, b	{
 	font-size: normal;
 	font-weight: 700;
-	}
+	} */
   		
 #content	{
 	font-size: 1.0em;			/* 16/16 = 1.0 */
@@ -174,11 +174,14 @@ blockquote	{
 	}
 	
 pre, code	{
-	font-family: Consolas, "Courier New", Monaco, monospace;
-	font-size: 16px;		/* 14/16 = 0.875 */
-	line-height: 24px;		/* 20/14 = 1.4286 */
+	font-family: Consolas, Menlo, "Courier New", monospace, sans-serif;
+	font-size: 1em;		
 	color: #859900;
 	}
+	
+	/* https://github.com/h5bp/html5-boilerplate/issues/656#issuecomment-1761788 */
+	code		{line-height: 1;}
+	pre code	{line-height: 1.5em;}
 	
 span.sc {font-variant: small-caps;}
 
@@ -202,7 +205,7 @@ ol li ol	{
 	margin: 1.5em auto;
 	padding: 4px;
 	background-color: #eee8d5;
-	border: 1px solid #A9A9A9;
+	border: 1px solid #657b83;
 	display: block;
 	text-align: center;
 	}  	 	
@@ -210,9 +213,9 @@ ol li ol	{
 /*  ----- Sidenotes ----- */
 
 .sidenote {
-	font-size:14px;
+	font-size: 0.8750em;
 	font-style: italic;
-	line-height:24px;
+	line-height: 1.714285714em;
 	color: #586e75;
 	margin-left:-188px;	/* moves over to the left -- 188 is 1 gutter */
 	overflow:hidden;
@@ -234,20 +237,22 @@ a.fn	{
 	}
 	
 .footnotes	{
-	font-size: 14px;	/* 13/14 = 0.9286 */
+	font-size: 0.8750em;
 	line-height: 24px;
 	}
 
 .footnotes hr	{
 	border-top: 1px solid #073642;
 	margin-right: 300px;
-	margin-top: 30px;
-	margin-bottom: 10px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	padding: 0;
 	}
 	
 .footnotes ol {
 	padding: 0;
-	margin: 0 0 24px 0;
+	margin-bottom: 1.714285714em;
+	margin-left: 1.714285714em;
 	}
 
 
