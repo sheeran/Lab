@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
 	<title>The Lab: Layout Test</title>
 	
 	<link rel="stylesheet" href="css/layout.css">
-	<link href="css/hugrid.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/hugrid.css">
 	
-	<meta name="viewport" content="initial-scale=1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	
-	<script type="text/javascript" src="/mint/?js"></script>
-	<script src="js/jquery-1.6.2.min.js"></script>
-	<script src="js/hugrid.js"></script>
-	<script type="text/javascript">
-    $(document).ready(function() {
-        pageUnits = 'px';
-        colUnits = 'px';
-        gridonload = 'off';
-        pagewidth = 960;
-        columns = 12;
-        columnwidth = 58;
-        gutterwidth = 24;
-        pagetopmargin = 120;
-        rowheight = 24;
-        makehugrid();
-        setgridonload();
-    });
-</script>
-</head>
+	</head>
 
 <body id="lab_flex">
 
@@ -150,6 +132,32 @@ lobortis. Suspendisse nec est quis neque fringilla gravida.</p>
 	
 	</div> <!-- close footer-->
 </div> <!-- close wrap -->
+
+	<script type="text/javascript" src="/mint/?js"></script>
+	<script src="js/jquery-1.6.2.min.js"></script>
+	<script src="js/hugrid.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function() {
+        pageUnits = 'px';
+        colUnits = 'px';
+        gridonload = 'off';
+        pagewidth = 960;
+        columns = 12;
+        columnwidth = 58;
+        gutterwidth = 24;
+        pagetopmargin = 120;
+        rowheight = 24;
+        makehugrid();
+        setgridonload();
+    });
+	</script>
+	<script>
+    	var _gaq=[['_setAccount','UA-10767310-1'],['_trackPageview'],['_trackPageLoadTime']];
+    	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    	s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+
 
 </body>
 </html>

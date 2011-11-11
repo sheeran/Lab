@@ -63,9 +63,7 @@
 		   	<li>Color for <code>code</code> elements</li>
 		   	<li>Finish Sidebar</li>
 		</ol>
-		
-		<p><div class="sidenote"><em>Note:</em> one issue here is that any line of text that has a <code>code</code> or <code>pre</code> element actually has a height of 25 or 27 pixels, even though those elements are set to 24px. These 1-2 pixel errors add up and break the vertical rhythm farther down the page. I finally found the fix <a href="https://github.com/h5bp/html5-boilerplate/issues/656#issuecomment-1761788">here</a> and it involves explicitly setting the line height to 1 on inline code elements and the standard vertical rhythm on code elements within <code>pre</code> blocks.</code></div></p>
-		
+				
 		<dl>
 			<dt>This is a definition term</dt>
 			<dd>And this is a definition description</dd>
@@ -82,7 +80,7 @@
 p, ol, ul {margin-bottom: 1.4286em;}</pre>
 		
 		<h4>A Subhead marked up with H4</h4>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu malesuada ipsum. Nulla semper, nisi id accumsan rhoncus, velit dui consectetur nisi, ac congue eros mauris non diam. Praesent sit amet tempor tortor. Nam porttitor porttitor lectus vel porttitor. Sed justo nisl, tempus a pharetra a, tempor id lorem. Vivamus nec dui massa. Curabitur dolor tellus, dapibus sed porta eu, adipiscing eget lectus. Nunc a tortor erat, eu pharetra libero. Praesent ut nulla eu arcu vestibulum dictum et eget velit. Nunc gravida pellentesque elit, id ultrices augue blandit quis. Nam id suscipit metus. In vitae lorem mattis metus volutpat hendrerit. Donec non urna quam. Sed placerat ligula a nunc egestas placerat. Proin vel nunc sed augue sollicitudin luctus quis eu mi. Sed convallis erat eu ligula suscipit euismod. Nunc sit amet lacus eget ipsum adipiscing tempor.</p>
+		<p>One issue that came up was that any line of text that has a <code>code</code> or <code>pre</code> element actually had a height of 25 or 27 pixels, even though those elements are set to 24px. These 1-2 pixel errors add up and break the vertical rhythm farther down the page. I finally found the fix <a href="https://github.com/h5bp/html5-boilerplate/issues/656#issuecomment-1761788">here</a> and it involves explicitly setting the line height to 1 on inline code elements and the standard vertical rhythm on code elements within <code>pre</code> blocks.</p>
 		
 		<div class="footnotes">
 			<hr />
@@ -144,6 +142,13 @@ p, ol, ul {margin-bottom: 1.4286em;}</pre>
 	</div> <!-- close footer -->
 	
 </div> <!-- close wrap -->
+
+	<script>
+		var _gaq=[['_setAccount','UA-10767310-1'],['_trackPageview'],['_trackPageLoadTime']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
 
 </body>
 </html>

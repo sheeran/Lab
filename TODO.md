@@ -12,7 +12,6 @@
 1. Rewrite copy
 3. Redo article sub-headings
 3. Move text size and line-height to one section for easier changing? (or variables with LESS?)
-4. Finish footnotes
 5. Change sidenotes to floats
 6. Finish sidebar: "status of page"
 8. Try inline Elsewhere posts
@@ -23,7 +22,7 @@
 *Current Issues*
 
 - Too many text sizes for subheadings...use caps/emphasis/bold
-- footnotes `hr` affects vert rhythm --> Get rid of hr?
+
 
 ## Layout Page
 1. Convert to HTML5 elements

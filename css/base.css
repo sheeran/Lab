@@ -44,24 +44,22 @@ body {
 #wrap	{
 	width: 960px;
 	margin: 0 auto;
-	/* outline: 1px dotted red; */
 	}
 	
 #content	{
 	float: left;
 	width: 410px;		
 	margin-left: 246px;
-	/*outline: 1px solid green*/
 	}
 
 #sidebar	{
 	float: right;
 	width: 222px;		
-}
+	}
 
 #footer	{
 	clear: both;
-}
+	}
 	
 /* Standard link styles */
 
@@ -112,7 +110,7 @@ strong, b	{
 h2 {
 	font-family: Constantia, Georgia, "Times New Roman", sans-serif;
 	font-size: 1.5em;			/* 24/16 = 1.5 */
-	line-height: 1.0em; 		/* 24/24 = 1.0 */
+	line-height: 1.0em;			/* 24/24 = 1.0 */
 	font-weight: normal;
 	color: #2aa198;
 	margin-bottom: 0;
@@ -163,8 +161,8 @@ p.meta	{
 #sidebar dl	{margin-bottom: 1.714286em;}
 
 #sidebar p.increment	{
-	line-height: 1.371429em; /* 16px of LH for a 5:4 ratio */
-	margin-bottom: 20px; /* just used to put follow on elements back on 24px LH */
+	line-height: 1.371429em; 	/* 16px of LH for a 5:4 ratio */
+	margin-bottom: 20px; 		/* just used to put follow on elements back on 24px LH */
 	}
 
 blockquote	{
@@ -223,7 +221,6 @@ ol li ol	{
 	position:absolute;	/* removes from normal flow...rest of paragraph moves up */
 	text-align: right;
 	width:164px;
-	/* outline: 1px solid blue; */
 	}
 	
 /* ----- footnotes -----*/
