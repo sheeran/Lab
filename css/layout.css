@@ -1,10 +1,39 @@
-@import url("normalize.css");
+/* 
+Filename: base.css			
+Version: 1.4A // 10 Nov 2011 --> Branch "font16_24"	
+Notes:						
+- fontsize now 16px with 24px vertical rhythm
 
-/* !----- Reset some elements ----- */
- html, body, div, h1, h2, h3, ol, ul, p	{
+*/
+
+/* ----- Reset or Normalize ----- */
+
+@import "normalize.css";
+
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6,
+p, ol, ul, li, blockquote,
+dl, dt, dd, pre, code, img	{
 	margin: 0;
 	padding: 0;
+	border: 0;
 	}
+ 
+#banner	{
+	height: 72px;	/* 3 x 24 = 72 */
+	background-color: #657b83;
+	color: #eee8d5;
+	margin-bottom: 24px;
+	padding: 12px;
+	font-family: Segoe, Corbel, "Trebuchet MS", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	}
+	
+	h1			{font-size: 24px; font-weight: normal;}
+	#banner p	{margin-bottom: 0;}
+	p.nav		{margin-bottom: 0;}
+	p.nav a		{color: #eee8d5; font-style: italic;}
  
 /* !----- Layout ----- */
 
@@ -18,8 +47,8 @@
 	}
 	
 header	{
-	height: 40px;
-	margin-bottom: 20px;
+	height: 48px;
+	margin-bottom: 23px;
 	border-bottom: 1px dotted #999;
 	}
 	
@@ -55,7 +84,7 @@ nav	{
 	display: inline;
 	}
 	
-.article	{margin-bottom: 40px;}
+.article	{margin-bottom: 48px;}
 
 #sidebar	{
 	float: right;
@@ -64,9 +93,9 @@ nav	{
 	
 #footer		{
 	clear: both;
-	padding: 20px 0;
+	padding: 24px 0;
 	border-top: 1px dotted #999;
-	margin-top: 40px;
+	margin-top: 48px;
 	}
 	
 #footer p	{
@@ -79,6 +108,13 @@ nav	{
 
 /* !----- Specific Text Styles ----- */
 
+.article h2	{
+	float: right;
+	width: 100%;
+	font-size: 24px;
+	line-height: 1em;
+	}
+
 .meta,
 .sidenote	{
 	float: left;
@@ -89,17 +125,17 @@ nav	{
 	}
 	
 .meta	{
-	margin-top: -38px;
+	margin-top: 0;
 	}
 	
 .date	{
-	margin-top: 0;
+	padding-top: 3px;
 	}
 	
 ul.tags	{
 	list-style: none;
 	padding-top: 0;
-	margin-top: -1px;
+	margin-top: 0;
 	}
 	
 	
@@ -107,9 +143,14 @@ h2,
 .article p,
 .article ol li,
 .article ul li	{
-	margin-bottom: 20px;
+	margin-bottom: 24px;
 	}
 	
+h3	{
+	font-size: 18px;
+	margin-bottom: 24px;}
+	
+.article .meta p.date	{margin-bottom: 21px;}
 .article .meta ul.tags li {margin-bottom: 0;}
 	
 .tags,
@@ -118,14 +159,29 @@ h2,
 #footer	{
 	font-size: 14px;
 	}
-
-img	{
+	
+pre, code	{
+	font-family: Consolas, Menlo, "Courier New", monospace, sans-serif;
+	font-size: 1em;		
+	color: #859900;
+	margin-bottom: 24px;
+	}
+	
+	/* https://github.com/h5bp/html5-boilerplate/issues/656#issuecomment-1761788 */
+	code		{line-height: 1;}
+	pre code	{line-height: 1.5em;}
+	
+.article img	{
 	float: right;
-	width: 100%;
-	margin-bottom: 20px}
+	width: 97.863248%;
+	background-color: #eee8d5;
+	border: 1px solid #657b83;
+	padding: 4px;
+	margin-bottom: 24px;
+	}
 	
 ol, ul	{margin-left: 20px;}
-	
+	 	
 /* !----- Media Queries ----- */
 
 @media only screen and (max-width: 680px)  {
@@ -252,15 +308,6 @@ ol, ul	{margin-left: 20px;}
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
 
-/*	.meta,
-	.sidenote	{
-		position: absolute;
-		width: 150px;
-		margin-left: -170px;
-		text-align: right;
-		outline: 1px solid green;
-		}
-	.date	{}
-	.tags	{}
-*/
-
+.clboth	{clear:both;}
+.clright {clear: right;}
+.clleft	{clear: left;}

@@ -37,7 +37,7 @@ body {
 	}
 	
 	h1			{font-size: 24px; font-weight: normal;}
-	#banner p	{margin-bottom: 12px;}
+	#banner p	{margin-bottom: 0;}
 	p.nav		{margin-bottom: 0;}
 	p.nav a		{color: #eee8d5; font-style: italic;}
 	
@@ -164,7 +164,7 @@ p.meta	{
 
 #sidebar p.increment	{
 	line-height: 1.371429em; /* 16px of LH for a 5:4 ratio */
-	margin-bottom: 22px; /* just used to put follow on elements back on 20px LH */
+	margin-bottom: 20px; /* just used to put follow on elements back on 24px LH */
 	}
 
 blockquote	{
@@ -177,6 +177,7 @@ pre, code	{
 	font-family: Consolas, Menlo, "Courier New", monospace, sans-serif;
 	font-size: 1em;		
 	color: #859900;
+	margin-bottom: 1.5em;
 	}
 	
 	/* https://github.com/h5bp/html5-boilerplate/issues/656#issuecomment-1761788 */
