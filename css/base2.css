@@ -81,7 +81,7 @@ a:hover 	{
   		
 body {
 	color: #073642;
-    font-family: proxima-nova-1, proxima-nova-2, Segoe, Corbel, "Trebuchet MS", sans-serif;
+    font-family: ff-tisa-web-pro, Segoe, Corbel, "Trebuchet MS", sans-serif;
     font-size: 100%;		/* Base size = 16px */
     font-style: normal;
     }
@@ -108,12 +108,14 @@ strong, b	{
 	}
 
 h2 {
-	font-family: Georgia, "Times New Roman", sans-serif;
-	font-size: 1.5em;			/* 24/16 = 1.5 */
-	line-height: 1.0em;			/* 24/24 = 1.0 */
+	font-family: alternate-gothic-no-2-d, Georgia, "Times New Roman", sans-serif;
+	font-size: 2.0em;			/* 32/16 = 1.5 */
+	line-height: 1.0em;			/* 32/24 = 1.0 */
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 1px #FAFAFA;
 	font-weight: normal;
 	color: #2aa198;
-	margin-bottom: 0;
+	margin-bottom: -7px;		/* Need to convert this */
 	}
 
 h3	{
@@ -142,7 +144,7 @@ h4	{
 p, ul, ol, dl, dd {margin-bottom: 1.5em;} /* 24px */
 
 p.date	{
-	font-family: Constantia, Georgia, "Times New Roman", sans-serif;
+	/* font-family: Constantia, Georgia, "Times New Roman", sans-serif; */
 	}
 
 p.meta	{
@@ -173,7 +175,7 @@ blockquote	{
 	
 pre, code	{
 	font-family: "DejaVu Sans Mono", Consolas, Menlo, "Courier New", monospace, sans-serif;
-	font-size: 15px;	
+	font-size: 14px;	
 	color: #859900;
 	margin-bottom: 1.5em;
 	}

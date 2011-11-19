@@ -58,7 +58,7 @@ header	{
 		font-size: 36px;
 		font-weight: bold;
 		text-shadow: 1px 1px 0.5px #cbcbcb;
-		letter-spacing: 0.1em;	
+		letter-spacing: 0.1em;
 		}
 	
 nav	{
@@ -232,7 +232,7 @@ ol, ul	{margin-left: 20px;}
 	
 }
 
-@media only screen and (max-width: 380px)  {
+@media only screen and (max-width: 480px)  {
 	#wrap	{
 		width: auto;
 		margin: 10px 10px;

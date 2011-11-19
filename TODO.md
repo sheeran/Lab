@@ -5,6 +5,7 @@
 2. Convert to HTML 5?
 3. Break down css into: rest base, layout, type + each specific project
 4. Re-write copy: intro, projects, resources, current list
+5. Do the footer
 
 ## Typography Page
 *Note: use git branches for major changes*
@@ -17,7 +18,14 @@
 8. Try inline Elsewhere posts
 9. Multi-line article titles + new headline typeface
 10. Text shadow
-11. Solarized colors
+11. Solarized colors - dark on light?
+12. If changing 'code' elements to Georgia, dial down font size
+13. Box, padding, border around code elements?
+
+## Typography Page 2
+
+1. code side is too big --> 14px works better than 15.
+2. Need to tweak h2 text-shadow
 
 *Current Issues*
 
@@ -29,6 +37,8 @@
 2. Need to tweak the triggers. Earlier on 680.
 3. Fix Nav in 380
 4. Add list of RWD sites
+5. Document CSS file with comments
+6. Check out [Semantic Grid System](http://semantic.gs/) and implement 
 
 ## Other Projects to do
 
