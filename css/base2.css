@@ -22,7 +22,7 @@ dl, dt, dd, pre, code, img	{
 /* _____ General Layout	_____ */
 
 body {
-	background-color: #fdf6e3;
+	background: #fdf6e3 url(img/bg.jpg);
 	}
 	
 #banner	{
@@ -112,7 +112,7 @@ h2 {
 	font-size: 2.0em;			/* 32/16 = 1.5 */
 	line-height: 1.0em;			/* 32/24 = 1.0 */
 	letter-spacing: 1px;
-	text-shadow: 1px 1px 1px #FAFAFA;
+	text-shadow: 0px 1px 1px rgba(123, 160, 161, 0.93);
 	font-weight: normal;
 	color: #2aa198;
 	margin-bottom: -7px;		/* Need to convert this */
@@ -154,7 +154,7 @@ p.meta	{
 	}
 	
 .shadow	{
-	text-shadow: 1px 2px 1px #FAFAFA;
+	text-shadow: 1px 1px 1px #FAFAFA;
 	}
 
 #sidebar p,
