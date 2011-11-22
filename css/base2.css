@@ -119,8 +119,8 @@ h2 {
 	}
 
 h3	{
-	font-size: 1.1250em;		/* 16/14 = 1.1429 */
-	line-height: 1.333333333em;	/* 20/16 = 1.25 */
+	font-size: 1.125em;			/* 18/16 = 1.125 */
+	line-height: 1.33333333em;	/* 24/18 = 1.333 */
 	margin-top: 2.0em;			/* 1.5: 36/18 = 2.0 */
 	margin-bottom: 0.666666667em;		/* 0.5: 12/18 = 0.66667 */
 	}
@@ -223,6 +223,10 @@ ol li ol	{
 	position:absolute;	/* removes from normal flow...rest of paragraph moves up */
 	text-align: right;
 	width:164px;
+	}
+	
+.noted	{
+	float: right;
 	}
 	
 /* ----- footnotes -----*/

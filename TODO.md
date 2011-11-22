@@ -2,7 +2,6 @@
 
 ## Main Lab Page
 1. Redo layout: header
-2. Convert to HTML 5?
 3. Break down css into: rest base, layout, type + each specific project
 4. Re-write copy: intro, projects, resources, current list
 5. Do the footer
@@ -10,27 +9,20 @@
 ## Typography Page
 *Note: use git branches for major changes*
 
-1. Rewrite copy
-3. Redo article sub-headings
-3. Move text size and line-height to one section for easier changing? (or variables with LESS?)
-5. Change sidenotes to floats
-6. Finish sidebar: "status of page"
-8. Try inline Elsewhere posts
-9. Multi-line article titles + new headline typeface
-10. Text shadow
-11. Solarized colors - dark on light?
-12. If changing 'code' elements to Georgia, dial down font size
-13. Box, padding, border around code elements?
+1. Move text size and line-height to one section for easier changing? (or variables with LESS?)
+2. Change sidenotes to floats
+3. Finish sidebar: "status of page"
+4. Try inline Elsewhere posts
+5. Multi-line article titles + new headline typeface
+6. Text shadow
+7. Solarized colors - dark on light?
+8. If changing 'code' elements to Georgia, dial down font size
+9. Box, padding, border around code elements?
 
 ## Typography Page 2
 
 1. code side is too big --> 14px works better than 15.
 2. Need to tweak h2 text-shadow
-
-*Current Issues*
-
-- Too many text sizes for subheadings...use caps/emphasis/bold
-
 
 ## Layout Page
 1. Convert to HTML5 elements
@@ -46,6 +38,12 @@
 	-- Full use of new HTML 5 elements --> convert existing pages to HTML5?
 - Modernizer
 - JQuery
+- Less / SASS / Compass
+- Prototype Pages
+	-- Home Page / Index
+	-- Single Article
+	-- Archives
+	-- About
 
 ### Closed Issues
 

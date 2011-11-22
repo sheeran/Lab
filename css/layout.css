@@ -124,6 +124,10 @@ nav	{
 	font-style: italic;
 	}
 	
+.noted	{
+	float: right;
+	}
+	
 .meta	{
 	margin-top: 0;
 	}
