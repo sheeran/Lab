@@ -1,9 +1,9 @@
 /* 
-Filename: base.css			
-Version: 1.4A // 10 Nov 2011 --> Branch "font16_24"	
+Filename: base2.css			
+Version: 1.4B // 20 Feb 12 --> Branch "font16_24"	
 Notes:						
 - fontsize now 16px with 24px vertical rhythm
-
+- Add sub-bullets to unordered lists
 */
 
 /* ----- Reset or Normalize ----- */
@@ -195,6 +195,12 @@ ul	{
 
 ol li ol	{
 	list-style: upper-alpha;
+	margin-left: 2.5714em;
+	margin-bottom: 0;
+	}
+	
+ul li ul	{
+	list-style: circle;
 	margin-left: 2.5714em;
 	margin-bottom: 0;
 	}

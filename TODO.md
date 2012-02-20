@@ -5,6 +5,7 @@
 3. Break down css into: rest base, layout, type + each specific project
 4. Re-write copy: intro, projects, resources, current list
 5. Do the footer
+6. Images don't work for lab.nealsheeran subdomain - change to full path?
 
 ## Typography Page
 *Note: use git branches for major changes*
@@ -18,11 +19,14 @@
 7. Solarized colors - dark on light?
 8. If changing 'code' elements to Georgia, dial down font size
 9. Box, padding, border around code elements?
+10. Change footnote markup to MMD
+11. Get a validation error with div.sidenote inside p...just use p.sidenote instead?
 
 ## Typography Page 2
 
 1. code side is too big --> 14px works better than 15.
 2. Need to tweak h2 text-shadow
+3. Merge two typography pages
 
 ## Layout Page
 1. Convert to HTML5 elements
