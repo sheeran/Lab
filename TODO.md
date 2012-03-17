@@ -19,14 +19,14 @@
 7. Solarized colors - dark on light?
 8. If changing 'code' elements to Georgia, dial down font size
 9. Box, padding, border around code elements?
-10. Change footnote markup to MMD
-11. Get a validation error with div.sidenote inside p...just use p.sidenote instead?
 
 ## Typography Page 2
 
 1. code side is too big --> 14px works better than 15.
-2. Need to tweak h2 text-shadow
+2. Need to tweak h2 text-shadow --> or pick new headline font
 3. Merge two typography pages
+4. Add a third page, with multiple heading and body sizes
+
 
 ## Layout Page
 1. Convert to HTML5 elements
@@ -55,7 +55,10 @@
 - 10 Oct 11 - footnotes and sidenotes. still working out maintaining vertical rhythm with hr element
 - 5 Nov 11 - Monospace font appears as serif in Google Chrome...normalize.css fixed
 - 11 Nov 11 - Fixed code element line-height by explicitly setting to "1", see CSS.
+- 17 Mar 12 - Changed footnote format to MMD and got rid of div.sidenote inside p element (first sidenote - did not validate)
 
 ### Misc Notes
 
 Remote Path = /home/nsheeran/public_html/lab/
+
+This is a Sublime Text 2 FTP test. again

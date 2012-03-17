@@ -237,7 +237,7 @@ ul li ul	{
 	
 /* ----- footnotes -----*/
 
-a.fn	{
+a.footnote	{
 	border-bottom: none;
 	font-size: 75%;
     line-height: 0;
@@ -245,6 +245,8 @@ a.fn	{
     vertical-align: baseline;
     top: -0.5em;
 	}
+
+a.reversefootnote	{text-decoration: none;}
 	
 .footnotes	{
 	font-size: 0.8750em;
