@@ -1,0 +1,69 @@
+
+// GRIDS
+$col_tot: 10;
+$column: 60px;
+$gutter: 40px;
+$margin: $gutter/2;
+$max-width: (($col_tot * ($column + $gutter))- $gutter);
+
+@function perc($width, $container-width: $max-width){
+	@return percentage($width / $container-width);
+}
+
+@mixin col($no-cols, $parent-width: $max-width){
+	width: percentage(($no-cols * ($column + $gutter) - $gutter) / $parent-width);
+}
+
+@mixin col-fl($no-cols, $parent-width: $max-width){
+	float: left;
+	width: percentage(($no-cols * ($column + $gutter) - $gutter) / $parent-width);
+	margin-right: percentage($gutter / $parent-width);
+}
+
+@mixin clearfix {
+    *zoom:1;
+    &:before, &:after
+    {
+      content: "";
+      display:table;
+    }
+
+    &:after
+    {
+      clear:both;
+    }
+  }
+// TYPOGRAPHY
+
+$base-font: 16px;
+$base-lh: 24px;
+
+	// Desired = Target / Context
+
+@function em($target, $context: $base-font){
+	@if $target == 0 {@return 0}
+	@return $target / $context + 0em;
+}
+
+@function lh($amount: 1, $context: $base-lh){
+	@return em($base-lh * $amount, $context)
+}
+
+// Colors by Solarized
+
+$base03:    #002b36; // Links - Normal 
+$base02:    #073642; // Body Text
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5; // Image Frame Background
+$base3:     #fdf6e3; // Background
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4; // Links - Visited
+$blue:      #268bd2; // Links - Hover
+$cyan:      #2aa198; // Article Titles
+$green:     #859900; // Code and Pre
