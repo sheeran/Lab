@@ -27,6 +27,10 @@
 3. Merge two typography pages
 4. Add a third page, with multiple heading and body sizes
 
+## Make a Separate Typekit Test Page ##
+
+1. Title Samples, Body Samples...different colors/sizes, etc
+
 
 ## Layout Page
 1. Convert to HTML5 elements
