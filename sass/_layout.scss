@@ -24,16 +24,12 @@ body {
   @include clearfix;
 }
 
-.articles {             // Need to rename this to something for the whole site
+.list {             
   @include col-fl(5);   
 }
 
-.else   {               // Need to rename this to something for the whole site
-  @include col-fl(5);
-}
-
 footer  {
-  clear: both;
+  @include clearfix;
 }
 
 .intro  {
@@ -76,10 +72,18 @@ nav     {
   ul li:last-child  {margin-right: 0;} 
 }
 
+/* ---------- @Footer ---------- */
+
+/* ---------- @Home Page - SHORT ---------- */
+
+.articles li {
+  margin-bottom: $base-lh;
+  }
+
 /* ---------- @Full Article Page ---------- */
 
 .full-article{
-	@include col-fl (6);
+	@include col-fl (7);
 	@include push(3, 3);
 }
 

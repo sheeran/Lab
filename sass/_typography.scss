@@ -7,18 +7,36 @@
 
 // Default Link Styles
 
+a, a:link, a:visited {
+  color: $link-color;
+  font-weight: bold;
+  text-decoration: none;
+  }
+  
+a:hover {
+  color: $link-color-hover;
+  border-bottom: 1px dotted $link-color-hover;
+  }
 
 // Headings
 
-h2, .h2 {
+h2 {
   font-size: em(20);
   line-height: lh(1, 20);
   }
   
+h2 a,
+h2 a:link,
+h2 a:visited  {color: $title-color;}
+
+h2 a:hover  {color: $link-color-hover;}
+  
+  
 h3  {
-  font-size: em(24);
-  line-height: lh(1, 24);
-  margin-bottom: lh(1, 24);
+  font-weight: normal;
+  font-size: em(20);
+  line-height: lh(1, 20);
+  margin-bottom: lh(1, 20);
   }
   
 .full-article h2 {
@@ -29,6 +47,7 @@ h3  {
   }
   
 .entry h3 {
+  font-weight: bold;
   font-size: em(18);
   line-height: lh(1, 18);
   margin-top: lh(1.5, 18);
@@ -47,6 +66,12 @@ p, blockquote, ol, ul, pre  {
   margin-bottom: $base-lh;
   }
   
+blockquote  {
+  color: $light-color;
+  font-style: italic;
+  margin: $base-lh;
+  }
+  
 .meta,
 .sidenote,
 .caption  {
@@ -59,7 +84,7 @@ p, blockquote, ol, ul, pre  {
   
 .date  {
   color: $text-color;
-  font-weight: bold;
+  font-style: normal;
   font-size: em(18, 14);
   line-height: lh(1, 18);
   margin-bottom: lh(1, 18);

@@ -384,18 +384,18 @@ body {
   #content:after {
     clear: both; }
 
-.articles {
-  float: left;
-  width: 40.20833333%;
-  margin-right: 2.5%; }
-
-.else {
+.list {
   float: left;
   width: 40.20833333%;
   margin-right: 2.5%; }
 
 footer {
-  clear: both; }
+  *zoom: 1; }
+  footer:before, footer:after {
+    content: "";
+    display: table; }
+  footer:after {
+    clear: both; }
 
 .intro {
   float: left;
@@ -440,10 +440,15 @@ nav {
   nav ul li:last-child {
     margin-right: 0; }
 
+/* ---------- @Footer ---------- */
+/* ---------- @Home Page - SHORT ---------- */
+.articles li {
+  margin-bottom: 1.5em; }
+
 /* ---------- @Full Article Page ---------- */
 .full-article {
   float: left;
-  width: 48.75%;
+  width: 57.29166667%;
   margin-right: 2.5%;
   margin-left: 25.625%; }
 
@@ -460,14 +465,32 @@ nav {
   text-align: right; }
 
 /* ---------- @Typography ---------- */
-h2, .h2 {
+a, a:link, a:visited {
+  color: #002b36;
+  font-weight: bold;
+  text-decoration: none; }
+
+a:hover {
+  color: #268bd2;
+  border-bottom: 1px dotted #268bd2; }
+
+h2 {
   font-size: 1.25em;
   line-height: 1.2em; }
 
+h2 a,
+h2 a:link,
+h2 a:visited {
+  color: #2aa198; }
+
+h2 a:hover {
+  color: #268bd2; }
+
 h3 {
-  font-size: 1.5em;
-  line-height: 1em;
-  margin-bottom: 1em; }
+  font-weight: normal;
+  font-size: 1.25em;
+  line-height: 1.2em;
+  margin-bottom: 1.2em; }
 
 .full-article h2 {
   color: #2aa198;
@@ -476,6 +499,7 @@ h3 {
   margin-bottom: 1em; }
 
 .entry h3 {
+  font-weight: bold;
   font-size: 1.125em;
   line-height: 1.33333333em;
   margin-top: 2em;
@@ -489,6 +513,11 @@ h3 {
 p, blockquote, ol, ul, pre {
   margin-bottom: 1.5em; }
 
+blockquote {
+  color: #586e75;
+  font-style: italic;
+  margin: 1.5em; }
+
 .meta,
 .sidenote,
 .caption {
@@ -500,7 +529,7 @@ p, blockquote, ol, ul, pre {
 
 .date {
   color: #073642;
-  font-weight: bold;
+  font-style: normal;
   font-size: 1.28571429em;
   line-height: 1.33333333em;
   margin-bottom: 1.33333333em; }
