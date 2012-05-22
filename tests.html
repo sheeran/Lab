@@ -1,103 +1,68 @@
 <!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-       More info: h5bp.com/b/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>The Lab: HTML5 and CSS3 Experiments</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
-  <link rel="stylesheet" href="css/tests.css">
+  <title>Random Test Page</title>
   
-  <!-- All JavaScript at the bottom, except this Modernizr build incl. Respond.js
-       Respond is a polyfill for min/max-width media queries. Modernizr enables HTML5 elements & feature detects; 
-       for optimal performance, create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/test.css">
+  <link rel="stylesheet" href="css/hugrid.css">
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 
-<body>
-
-<div id="banner">
-	<h1>The Laboratory</h1>
-	<p>Project // HTML5 and CSS3 Experiments</p>
-	<p class="nav"><a href="index.html">Return to The Lab</a></p>
-</div> <!-- close banner -->
-
+<body id="article">
 <div id="wrap">
+  <header class="logo">
+    <section class="masthead">
+      <h1>Neal Sheeran</h1>
+      <p class="tagline">Rants, Raves, and Geekery</p>  
+    </section>
+    <nav>
+      <ul>
+        <li class="home_tab"><a href="home.html">Home</a></li>
+        <li class="blog_tab"><a href="">Blog</a></li>
+        <li class="lab_tab"><a href="">Lab</a></li>
+        <li class="about_tab"><a href="">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-	<header>
-		<hgroup>
-			<h1>Another Site Title</h1>
-			<p class="tagline"></p>
-		</hgroup>
-		<nav>
-			<ul>
-			</ul>
-		</nav>
-	</header>
-	
-	<section class="content">
-		<article>
-			<h2>One Article to Rule them All</h2>
-			<header>
-				<time datetime=2012-11-11 pubdate>11 November 2012</time>
-				<ul class="tags">
-					<li>HTML5</li>
-					<li>CSS3</li>
-					<li>Buffonery</li>
-				</ul>
-			</header>
-			<p>This here page is marked up with new HTML5 elements such as <code>header</code>, <code>nave</code>, <code>article</code>, and even <code>time</code>, which they have apparently already <a href="http://www.brucelawson.co.uk/2011/goodbye-html5-time-hello-data/">gotten rid of</a>.</p>
-			
-<!-- Font sizing with rem -- http://snook.ca/archives/html_and_css/font-size-with-rem -->	
-		</article>
-	</section>
-	
-	<aside>
-	</aside>
-	
-	<footer>
-	</footer>
+  <div id="content">
+  <h2>This is a Level Two Headline</h2>
+  <p>My own personal boilerplate. Contains things such as <em>emphasized text</em> as well as <strong>strong text</strong>. As Danny DeVito said in David Mamet&#8217;s <em>Heist</em>: &#8220;everybody needs money, that&#8217;s why they call it money.&#8221;</p>
+  
+  
+  </div><!-- close content -->
+  
+  <footer>
+  
+  </footer>
+</div> <!-- close wrap -->
 
-</div> <!-- close #wrap -->
-	
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
-
-  <!-- scripts concatenated and minified via build script
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
-  end scripts -->
-
-  <script>
-    var _gaq=[['_setAccount','UA-10767310-1'],['_trackPageview'],['_trackPageLoadTime']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
+<!-- JavaScript at the bottom for fast page loading -->
+<script type="text/javascript" src="/mint/?js"></script>
+<script src="js/jquery-1.6.2.min.js"></script>
+<script src="js/hugrid.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        pageUnits = 'px';
+        colUnits = 'px';
+        gridonload = 'off';
+        pagewidth = 960;
+        columns = 12;
+        columnwidth = 58;
+        gutterwidth = 24;
+        pagetopmargin = 24;
+        rowheight = 24;
+        makehugrid();
+        setgridonload();
+    });
   </script>
-
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
-       chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7 ]>
-    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
+<!-- end scripts -->
 
 </body>
 </html>

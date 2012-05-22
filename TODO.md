@@ -2,10 +2,10 @@
 
 ## Main Lab Page
 1. Redo layout: header
-3. Break down css into: rest base, layout, type + each specific project
-4. Re-write copy: intro, projects, resources, current list
-5. Do the footer
-6. Images don't work for lab.nealsheeran subdomain - change to full path?
+2. Break down css into: rest base, layout, type + each specific project
+3. Re-write copy: intro, projects, resources, current list
+4. Do the footer
+5. Images don't work for lab.nealsheeran subdomain - change to full path?
 
 ## Typography Page
 *Note: use git branches for major changes*
@@ -27,18 +27,27 @@
 3. Merge two typography pages
 4. Add a third page, with multiple heading and body sizes
 
-## Make a Separate Typekit Test Page ##
-
-1. Title Samples, Body Samples...different colors/sizes, etc
-
-
 ## Layout Page
 1. Convert to HTML5 elements
 2. Need to tweak the triggers. Earlier on 680.
 3. Fix Nav in 380
 4. Add list of RWD sites
 5. Document CSS file with comments
-6. Check out [Semantic Grid System](http://semantic.gs/) and implement 
+6. Check out [Semantic Grid System](http://semantic.gs/) and implement
+
+## Prototypes
+1. Logo Image won't work at smaller sizes
+2. Revamp .scss file setup (320)
+3. Customize "normalize.css" - remove comments and reduce to single lines since it is imported
+4. Use display: inline-block instead of floats? http://designshack.net/articles/css/whats-the-deal-with-display-inline-block/
+4a. Use box-style: border-box?
+5. Use HTML5 figure/figcaption? Effect with responsive images
+6. Adaptive Images?
+7. Redo HTML5 structure
+  -- Move Lab to this structure
+  -- Build basic reusable templates
+8. Remove h2 from home page list of articles and replace with .h2 class?
+9. Add css3 mixins
 
 ## Other Projects to do
 

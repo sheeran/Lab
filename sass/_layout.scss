@@ -1,0 +1,98 @@
+// =================================================
+// Site-Wide Layout
+// Version: 1.0
+// =================================================
+
+/* ---------- @Layout ---------- */
+
+// html { }
+body {
+  background: $body-color url(img/bg.jpg);
+  color: $text-color;
+  font-family: $serif-ff;
+  font-size: em(16);
+  line-height: $base-lh;
+}
+
+#wrap {
+  @include col(12);
+  max-width: $max-width;
+  margin: $gutter auto;
+}
+
+#content  { 
+  @include clearfix;
+}
+
+.articles {             // Need to rename this to something for the whole site
+  @include col-fl(5);   
+}
+
+.else   {               // Need to rename this to something for the whole site
+  @include col-fl(5);
+}
+
+footer  {
+  clear: both;
+}
+
+.intro  {
+  @include col-fl(5);
+}
+
+.social {
+ @include col-fl(2);
+ @include last;
+}
+
+/* ---------- @Masthead ---------- */
+
+header.masthead    {
+  height: em(72);
+  margin-bottom: em(24);
+  @include clearfix;
+}
+
+.logo   {
+  @include col-fl(4);
+}
+
+h1  {                   //Move to _typography partial?
+  font-size: em(36);
+  line-height: lh(2,36);
+  //@include hide-text;
+}
+
+// p.tagline { }
+
+nav     {
+  @include col-fr(4);
+  line-height: em(48);
+  ul li {
+    float: left;
+    @include subcol(1,4);
+    margin-right: 24px  // Convert to percent?
+    }
+  ul li:last-child  {margin-right: 0;} 
+}
+
+/* ---------- @Full Article Page ---------- */
+
+.full-article{
+	@include col-fl (6);
+	@include push(3, 3);
+}
+
+.full-article h2 {
+	float: right;
+	width: 100%;
+}
+
+.meta,
+.sidenote,
+.caption  {
+	float: left;
+	@include subcol(2,6);
+	@include pull(2,6);
+	text-align: right;
+}

@@ -1,0 +1,137 @@
+// =================================================
+// Variables and Mixins
+// Version: 1.0
+// =================================================
+
+// 1. TYPOGRAPHY -----------------------------------
+
+$base-font	: 16;
+$base-lh		: 1.5em;  // 16 * 1.5 = 24px
+$base-vr    : $base-font * $base-lh;
+
+$serif-ff		: "ff-tisa-web-pro", Georgia, serif;
+$sans-ff    : "proxima-nova", Corbel, sans-serif;
+$title-ff 	: "adelle", Georgia, serif;
+$code-ff  	: "DejaVu Sans Mono", Consolas, Menlo, "Courier New", monospace, sans-serif;
+
+// Convert Pixels to EMs (Desired = Target / Context)
+@function em($target, $context: $base-font){
+	@if $target == 0 {@return 0}
+	@return $target / $context + 0em;
+}
+
+// Maintain vertical rhythm with Line Height - '$amount' can be used as a multipler
+@function lh($amount: 1, $context: $base-lh){
+	@return em($base-vr * $amount, $context)
+}
+
+// This assumes font-size = 62.5% on html element
+@mixin rem($size) {
+  font-size: $size + px;
+  font-size: ($size / 10) + rem;
+}
+
+
+// 2. COLOR ----------------------------------------
+
+$body-color	      : #fdf6e3; // base3
+$text-color	      : #073642; // base02
+$light-color	    : #586e75; // base01
+$title-color	    : #2aa198; // cyan
+$code-color	      : #859900; // green
+
+$link-color			  : #002b36; // base03
+$link-color-visit : #6c71c4; // violet
+$link-color-hover : #268bd2; // blue
+$link-color-focus	: darken($link-color-hover, 10%);
+
+$accent-color		  : #eee8d5; // base2
+$accent-border	  : #657b83; // base00
+
+		// -- SOLARIZED --
+		// base03:    #002b36; 
+		// base02:    #073642; 
+		// base01:    #586e75;
+		// base00:    #657b83;
+		// base0:     #839496;
+		// base1:     #93a1a1;
+		// base2:     #eee8d5; 
+		// base3:     #fdf6e3;
+		// yellow:    #b58900;
+		// orange:    #cb4b16;
+		// red:       #dc322f;
+		// magenta:   #d33682;
+		// violet:    #6c71c4;
+		// blue:      #268bd2;
+		// cyan:      #2aa198;
+		// green:     #859900;
+		
+// 3. GRID ----------------------------------------
+
+$col_tot  : 12;
+$column   : 58px;
+$gutter   : 24px;
+
+$max-width: (($col_tot * ($column + $gutter))- $gutter);
+$margin: $gutter / 2;
+
+// Use for elements that are children of the max-width element (wrap)
+@mixin col($no-cols, $parent-width: $max-width){
+	width: percentage(($no-cols * ($column + $gutter) - $gutter) / $parent-width);
+}
+
+// Use for sub-elements, as their width is determined by their parent element
+// TODO: Need a mixin to calc margin for these -- no longer based on max-width
+@mixin subcol($no-cols, $parent-columns){
+  width: percentage(($no-cols * ($column + $gutter) - $gutter) / (($parent-columns * ($column + $gutter))- $gutter));
+  }
+
+// Creates the main content elements, with left floats and right margins
+@mixin col-fl($no-cols, $parent-width: $max-width){
+	float: left;
+	width: percentage(($no-cols * ($column + $gutter) - $gutter) / $parent-width);
+	margin-right: percentage($gutter / $parent-width);
+}
+
+// Same as above, but floats right with left margins
+@mixin col-fr($no-cols, $parent-width: $max-width){
+	float: right;
+	width: percentage(($no-cols * ($column + $gutter) - $gutter) / $parent-width);
+	margin-left: percentage($gutter / $parent-width);
+}
+
+
+// Pushes a floated element right with a large left margin (full-article)
+@mixin push($no-cols, $no-gutter){
+  margin-left: percentage((($no-cols * $column)+($no-gutter * $gutter)) / $max-width);
+  }
+  
+// Sort of tricky...used by elements such as .meta & .sidenote, that are pulled left into
+//   left margin created by 'push' mixin above.
+// BP is the left edge of element is pulled it's own width plus one gutter
+// Negative margin % = Element width + 1 gutter / **Parent width**, hence 'no-col' (without 
+//     subtracting one gutter) variable to determine element width and 'parent-cols' to 
+//     determine likewise
+@mixin pull($no-cols, $parent-columns){
+  margin-left: (percentage($no-cols * ($column + $gutter) / (($parent-columns * ($column + $gutter))- $gutter))) * -1;
+  }
+
+@mixin clearfix {
+  *zoom:1;
+  &:before, &:after {content: ""; display:table;}
+  &:after {clear:both;}
+  }
+  
+@mixin last {
+  margin-right:0;
+}
+  
+// 4. General Mixins ------------------------------
+  
+@mixin hide-text {
+  background-color: transparent;
+  border:           0;
+  color:            transparent;
+  font:             0/0 a;
+  text-shadow:      none;
+}
