@@ -141,3 +141,19 @@ p.text-case4 {
 
 p.text-case5 {
   font-family: Georgia, sans-serif; }
+
+/* ----- Code Styles ----- */
+pre.code-case1 {
+  font-family: "Anonymous Pro", monospace; }
+
+pre.code-case2 {
+  font-family: "DejaVu Sans Mono", monospace; }
+
+pre.code-case3 {
+  font-family: Inconsolata, monospace; }
+
+pre.code-case4 {
+  font-family: Monaco, monospace; }
+
+pre.code-case5 {
+  font-family: Consolas, monospace; }

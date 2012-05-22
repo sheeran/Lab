@@ -33,6 +33,15 @@ $text-case3-ff:		  "ff-tisa-web-pro";
 $text-case4-ff:		  Corbel;
 $text-case5-ff:		  $base-font-family;
 
+// Code Samples
+
+$code-case1-ff:     "Anonymous Pro", monospace;
+$code-case2-ff:     "DejaVu Sans Mono", monospace;
+$code-case3-ff:     Inconsolata, monospace;
+$code-case4-ff:     Monaco, monospace;
+$code-case5-ff:     Consolas, monospace;
+
+
 /* ----- Baseline Page Styles ----- */
 body	{
 	font-size: $base-font-size;
@@ -119,3 +128,12 @@ p.text-case2	{font-family:  $text-case2-ff;}
 p.text-case3	{font-family:  $text-case3-ff;}
 p.text-case4	{font-family:  $text-case4-ff;}
 p.text-case5	{font-family:  $text-case5-ff;}
+
+/* ----- Code Styles ----- */
+
+pre.code-case1  {font-family: $code-case1-ff;}
+pre.code-case2  {font-family: $code-case2-ff;}
+pre.code-case3  {font-family: $code-case3-ff;}
+pre.code-case4  {font-family: $code-case4-ff;}
+pre.code-case5  {font-family: $code-case5-ff;}
+
