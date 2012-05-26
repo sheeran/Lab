@@ -2,10 +2,11 @@
 
 ## Main Lab Page
 1. Redo layout: header
-2. Break down css into: rest base, layout, type + each specific project
+2. Re-do layout - three columns **incorporate new prototype HTML strucure **
 3. Re-write copy: intro, projects, resources, current list
 4. Do the footer
 5. Images don't work for lab.nealsheeran subdomain - change to full path?
+6. Resources on separate page?
 
 ## Typography Page
 *Note: use git branches for major changes*
@@ -13,7 +14,6 @@
 1. Move text size and line-height to one section for easier changing? (or variables with LESS?)
 2. Change sidenotes to floats
 3. Finish sidebar: "status of page"
-4. Try inline Elsewhere posts
 5. Multi-line article titles + new headline typeface
 6. Text shadow
 7. Solarized colors - dark on light?
@@ -22,7 +22,7 @@
 
 ## Typography Page 2
 
-1. code side is too big --> 14px works better than 15.
+1. Code side is too big --> 14px works better than 15.
 2. Need to tweak h2 text-shadow --> or pick new headline font
 3. Merge two typography pages
 
@@ -32,27 +32,41 @@
 3. Fix Nav in 380
 4. Add list of RWD sites
 5. Document CSS file with comments
-6. Check out [Semantic Grid System](http://semantic.gs/) and implement
 
 ## Prototypes
-1. Logo Image won't work at smaller sizes
-3. Customize "normalize.css" - remove comments and reduce to single lines since it is imported
-4. Use display: inline-block instead of floats? http://designshack.net/articles/css/whats-the-deal-with-display-inline-block/
-4a. Use box-style: border-box?
-5. Use HTML5 figure/figcaption? Effect with responsive images
-6. Adaptive Images?
-7. Redo HTML5 structure
+
+### General
+1. RESPONSIVE...mobile or desktop first
+2. Image replacement on logo or web-font?
+3. Nav indications for current page...Nav font?
+
+### Home Page
+1. Build second version with full posts and embedded Else posts
+2. Finish the footer
+3. Add search, RSS feeds
+
+### Single Article
+1. Use HTML5 <article> element?
+2. Need the following tested...make a second test entry:
+	- Code
+	- lists within lists
+3. Footnotes, and side notes, w/ p.noted
+4. Use HTML5 figure/figcaption? Effect with responsive images
+5. Adaptive Images?
+6. Redo HTML5 structure
   -- Move Lab to this structure
   -- Build basic reusable templates
-9. Add css3 mixins
-10. Add second article page with more text samples
-11. Second home page...long form, with embedded elsewhere links
-12. Do the damn footer
+7. Add css3 mixins
+
+### MISC
+1. Figure out inline-block. http://designshack.net/articles/css/whats-the-deal-with-display-inline-block/
+2. Use box-style: border box?
 
 ## Other Projects to do
 
 - HTML5 / CSS3 test page
-	-- Full use of new HTML 5 elements --> convert existing pages to HTML5?
+- Sass mixins test
+- Color palettes
 
 
 ### Closed Issues
@@ -67,4 +81,3 @@
 
 Remote Path = /home/nsheeran/public_html/lab/
 
-This is a Sublime Text 2 FTP test. again

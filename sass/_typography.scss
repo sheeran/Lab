@@ -10,16 +10,25 @@
 a, a:link, a:visited {
   color: $link-color;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
   }
   
 a:hover {
   color: $link-color-hover;
   border-bottom: 1px dotted $link-color-hover;
+  text-decoration: none;
   }
 
-// Headings
+/* -- Headings -- */
 
+// Main Header Logo
+h1  {
+  font-size: em(36);
+  line-height: lh(2,36);
+  //@include hide-text;
+}
+
+// Article Titles
 h2 {
   font-size: em(20);
   line-height: lh(1, 20);
@@ -27,11 +36,11 @@ h2 {
   
 h2 a,
 h2 a:link,
-h2 a:visited  {color: $title-color;}
+h2 a:visited  {color: $title-color; text-decoration: none;}
 
 h2 a:hover  {color: $link-color-hover;}
   
-  
+// Section Headings on Home / Subheadings in articles  
 h3  {
   font-weight: normal;
   font-size: em(20);
@@ -60,7 +69,7 @@ h3  {
   margin-bottom: lh(1, 16);
   }
 
-// Text style
+/* -- Text Styles -- */
 
 p, blockquote, ol, ul, pre  {
   margin-bottom: $base-lh;
@@ -81,11 +90,13 @@ blockquote  {
   line-height: lh(1, 14);
   margin-bottom: lh(1, 14);
   }
-  
+// FIXME: Align Date and Headline baseline  
 .date  {
   color: $text-color;
   font-style: normal;
   font-size: em(18, 14);
   line-height: lh(1, 18);
-  margin-bottom: lh(1, 18);
+  margin-bottom: lh(1, 18);   
   }
+
+// Lists, pre and code blocks

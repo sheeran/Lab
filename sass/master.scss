@@ -6,7 +6,15 @@
 // Reset
 @import "normalize";
 @import "normalizeplus";
+
+// Main Variable and Mixin file
 @import "variables";
+
+// Design Specific
 @import "layout";
 @import "typography";
 @import "elements";
+
+// TODO: How to implement RWD Media Queries?
+// Mobile first or desktop?
+// Each breakpoint in separate .scss file (like 320 and up)?

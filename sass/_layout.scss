@@ -23,6 +23,7 @@ body {
 #content  { 
   @include clearfix;
 }
+// TODO: Include a #sidebar div for possible use (About page)?;
 
 .list {             
   @include col-fl(5);   
@@ -50,16 +51,9 @@ header.masthead    {
 }
 
 .logo   {
-  @include col-fl(4);
+  @include col-fl(6);
 }
 
-h1  {                   //Move to _typography partial?
-  font-size: em(36);
-  line-height: lh(2,36);
-  //@include hide-text;
-}
-
-// p.tagline { }
 
 nav     {
   @include col-fr(4);
@@ -69,6 +63,7 @@ nav     {
     @include subcol(1,4);
     margin-right: 24px  // Convert to percent?
     }
+    
   ul li:last-child  {margin-right: 0;} 
 }
 

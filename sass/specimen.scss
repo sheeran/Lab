@@ -103,9 +103,15 @@ p	{
 	}
 	
 em  {font-style: italic;}
-.smallcaps  {font-variant: small-caps;}
-
 strong  {font-weight: bold;}
+
+.smallcaps  {
+	font-variant: small-caps;
+	text-transform: lowercase;
+	font-size: $base-font-size + 2;
+	}
+
+
 
 /* ----- Title Styles ----- */
 

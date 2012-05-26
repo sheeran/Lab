@@ -99,11 +99,13 @@ p {
 em {
   font-style: italic; }
 
-.smallcaps {
-  font-variant: small-caps; }
-
 strong {
   font-weight: bold; }
+
+.smallcaps {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-size: 18px; }
 
 /* ----- Title Styles ----- */
 h3 {
