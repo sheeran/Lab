@@ -49,7 +49,7 @@
 3. Add search, RSS feeds
 
 ### Single Article
-1. Use HTML5 <article> element? Same for Else posts wit different class.
+1. Use HTML5 <article> element? Same for Else posts with different class.
 2. Need the following tested...make a second test entry:
 	- Code
 	- lists within lists

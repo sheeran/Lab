@@ -363,7 +363,7 @@ ul {
   list-style: none; }
 
 /* ======================== All Resets Complete =================================== */
-/* ---------- @Layout ---------- */
+/* ---------- @ Side-wide Layout ---------- */
 body {
   background: #fdf6e3 url(img/bg.jpg);
   color: #073642;
@@ -375,38 +375,6 @@ body {
   width: 100%;
   max-width: 960px;
   margin: 24px auto; }
-
-#content {
-  *zoom: 1; }
-  #content:before, #content:after {
-    content: "";
-    display: table; }
-  #content:after {
-    clear: both; }
-
-.list {
-  float: left;
-  width: 40.20833333%;
-  margin-right: 2.5%; }
-
-footer {
-  *zoom: 1; }
-  footer:before, footer:after {
-    content: "";
-    display: table; }
-  footer:after {
-    clear: both; }
-
-.intro {
-  float: left;
-  width: 40.20833333%;
-  margin-right: 2.5%; }
-
-.social {
-  float: left;
-  width: 14.58333333%;
-  margin-right: 2.5%;
-  margin-right: 0; }
 
 /* -- Masthead -- */
 header.masthead {
@@ -437,11 +405,81 @@ nav {
     margin-right: 0; }
 
 /* -- Footer -- */
-/* -- Home Page - SHORT -- */
+/* ---------- @Short Homepage ---------- */
+#home-short #content {
+  *zoom: 1; }
+  #home-short #content:before, #home-short #content:after {
+    content: "";
+    display: table; }
+  #home-short #content:after {
+    clear: both; }
+
+.list {
+  float: left;
+  width: 40.20833333%;
+  margin-right: 2.5%; }
+
+footer {
+  *zoom: 1; }
+  footer:before, footer:after {
+    content: "";
+    display: table; }
+  footer:after {
+    clear: both; }
+
+.intro {
+  float: left;
+  width: 40.20833333%;
+  margin-right: 2.5%; }
+
+.social {
+  float: left;
+  width: 14.58333333%;
+  margin-right: 2.5%;
+  margin-right: 0; }
+
 .articles li {
   margin-bottom: 1.5em; }
 
-/* -- Full Article Page -- */
+/* ---------- @Long Homepage ---------- */
+#home-long #content {
+  float: left;
+  width: 65.83333333%;
+  margin-right: 2.5%; }
+
+#home-long #sidebar {
+  float: right;
+  width: 23.125%;
+  margin-left: 2.5%;
+  margin-right: 0; }
+
+#home-long article {
+  width: 74.05063%;
+  float: left;
+  margin-left: 25.94937%; }
+
+#home-long article h2 {
+  float: right;
+  width: 100%; }
+
+#home-long .meta,
+#home-long .sidenote,
+#home-long .caption {
+  float: left;
+  width: 29.91453%;
+  margin-left: -35.04274%;
+  text-align: right; }
+
+#home-long footer {
+  clear: both; }
+
+#home-long h2 {
+  color: #2aa198;
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 1em; }
+
+/* ---------- @Full Article Page ---------- */
 .full-article {
   float: left;
   width: 57.29166667%;

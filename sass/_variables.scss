@@ -86,7 +86,7 @@ $margin: $gutter / 2;
   width: percentage(($no-cols * ($column + $gutter) - $gutter) / (($parent-columns * ($column + $gutter))- $gutter));
   }
 
-// Creates the main content elements, with left floats and right margins
+// Creates the main content elements, with left floats and right marginsp
 @mixin col-fl($no-cols, $parent-width: $max-width){
 	float: left;
 	width: percentage(($no-cols * ($column + $gutter) - $gutter) / $parent-width);
@@ -102,6 +102,7 @@ $margin: $gutter / 2;
 
 
 // Pushes a floated element right with a large left margin (full-article)
+// FIXME: This only works for direct childen of max-width element;
 @mixin push($no-cols, $no-gutter){
   margin-left: percentage((($no-cols * $column)+($no-gutter * $gutter)) / $max-width);
   }

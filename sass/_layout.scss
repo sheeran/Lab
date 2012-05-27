@@ -3,7 +3,7 @@
 // Version: 1.0
 // =================================================
 
-/* ---------- @Layout ---------- */
+/* ---------- @ Side-wide Layout ---------- */
 
 // html { }
 body {
@@ -20,27 +20,8 @@ body {
   margin: $gutter auto;
 }
 
-#content  { 
-  @include clearfix;
-}
+
 // TODO: Include a #sidebar div for possible use (About page)?;
-
-.list {             
-  @include col-fl(5);   
-}
-
-footer  {
-  @include clearfix;
-}
-
-.intro  {
-  @include col-fl(5);
-}
-
-.social {
- @include col-fl(2);
- @include last;
-}
 
 /* -- Masthead -- */
 
@@ -69,13 +50,77 @@ nav     {
 
 /* -- Footer -- */
 
-/* -- Home Page - SHORT -- */
+/* ---------- @Short Homepage ---------- */
+
+#home-short #content  { 
+  @include clearfix;
+}
+
+.list {             
+  @include col-fl(5);   
+}
+
+footer  {
+  @include clearfix;
+}
+
+.intro  {
+  @include col-fl(5);
+}
+
+.social {
+ @include col-fl(2);
+ @include last;
+}
 
 .articles li {
   margin-bottom: $base-lh;
   }
+  
+/* ---------- @Long Homepage ---------- */
 
-/* -- Full Article Page -- */
+#home-long #content {
+  @include col-fl(8);
+}
+
+#home-long #sidebar {
+  @include col-fr(3);
+  @include last;
+}
+
+#home-long article {
+  width: 74.05063%;
+  float: left;
+  margin-left: 25.94937%;
+}
+
+#home-long article h2 {
+	float: right;
+	width: 100%;
+}
+
+#home-long .meta,
+#home-long .sidenote,
+#home-long .caption  {
+	float: left;
+	width: 29.91453%;
+	margin-left: -35.04274%;
+	text-align: right;
+}
+ 
+#home-long footer {
+  clear: both;  
+}
+
+// FIXME: This will have to move to typography, just testing here;
+#home-long h2 {
+  color: $title-color;
+  font-size: em(24);
+  line-height: lh(1, 24);
+  margin-bottom: lh(1, 24);
+  }
+
+/* ---------- @Full Article Page ---------- */
 
 .full-article{
 	@include col-fl (7);
