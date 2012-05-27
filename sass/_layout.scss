@@ -42,7 +42,7 @@ footer  {
  @include last;
 }
 
-/* ---------- @Masthead ---------- */
+/* -- Masthead -- */
 
 header.masthead    {
   height: em(72);
@@ -63,19 +63,19 @@ nav     {
     @include subcol(1,4);
     margin-right: 24px  // Convert to percent?
     }
-    
+
   ul li:last-child  {margin-right: 0;} 
 }
 
-/* ---------- @Footer ---------- */
+/* -- Footer -- */
 
-/* ---------- @Home Page - SHORT ---------- */
+/* -- Home Page - SHORT -- */
 
 .articles li {
   margin-bottom: $base-lh;
   }
 
-/* ---------- @Full Article Page ---------- */
+/* -- Full Article Page -- */
 
 .full-article{
 	@include col-fl (7);

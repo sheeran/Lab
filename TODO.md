@@ -39,24 +39,24 @@
 1. RESPONSIVE...mobile or desktop first
 2. Image replacement on logo or web-font?
 3. Nav indications for current page...Nav font?
+4. Refine overall HTML5 structure --> make template --> convert Lab home page
+5. Add CSS3 mixins to variables.scss
 
 ### Home Page
 1. Build second version with full posts and embedded Else posts
 2. Finish the footer
+	- Move outside of wrap and make light text on dark background
 3. Add search, RSS feeds
 
 ### Single Article
-1. Use HTML5 <article> element?
+1. Use HTML5 <article> element? Same for Else posts wit different class.
 2. Need the following tested...make a second test entry:
 	- Code
 	- lists within lists
 3. Footnotes, and side notes, w/ p.noted
 4. Use HTML5 figure/figcaption? Effect with responsive images
 5. Adaptive Images?
-6. Redo HTML5 structure
-  -- Move Lab to this structure
-  -- Build basic reusable templates
-7. Add css3 mixins
+6. Text shadow on h2 Article titles
 
 ### MISC
 1. Figure out inline-block. http://designshack.net/articles/css/whats-the-deal-with-display-inline-block/

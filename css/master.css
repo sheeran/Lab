@@ -408,7 +408,7 @@ footer {
   margin-right: 2.5%;
   margin-right: 0; }
 
-/* ---------- @Masthead ---------- */
+/* -- Masthead -- */
 header.masthead {
   height: 4.5em;
   margin-bottom: 1.5em;
@@ -436,12 +436,12 @@ nav {
   nav ul li:last-child {
     margin-right: 0; }
 
-/* ---------- @Footer ---------- */
-/* ---------- @Home Page - SHORT ---------- */
+/* -- Footer -- */
+/* -- Home Page - SHORT -- */
 .articles li {
   margin-bottom: 1.5em; }
 
-/* ---------- @Full Article Page ---------- */
+/* -- Full Article Page -- */
 .full-article {
   float: left;
   width: 57.29166667%;
