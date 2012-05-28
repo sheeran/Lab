@@ -555,11 +555,6 @@ h3 {
 p, blockquote, ol, ul, pre {
   margin-bottom: 1.5em; }
 
-blockquote {
-  color: #586e75;
-  font-style: italic;
-  margin: 1.5em; }
-
 .meta,
 .sidenote,
 .caption {
@@ -575,6 +570,40 @@ blockquote {
   font-size: 1.28571429em;
   line-height: 1.33333333em;
   margin-bottom: 1.33333333em; }
+
+blockquote {
+  color: #586e75;
+  font-style: italic;
+  margin: 1.5em; }
+
+.entry ol,
+.entry ul {
+  margin-left: 1.5em; }
+
+.entry ul {
+  list-style: disc; }
+
+.entry ol li ol {
+  list-style: upper-alpha;
+  margin-left: 2.5714em;
+  margin-bottom: 0; }
+
+.entry ul li ul {
+  list-style: circle;
+  margin-left: 2.5714em;
+  margin-bottom: 0; }
+
+.entry .test {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em; }
+
+.entry ul.test li:before {
+  content: "\00BB \0020"; }
+
+.noted {
+  float: right; }
 
 /* ---------- @Elements ---------- */
 .full-article img {

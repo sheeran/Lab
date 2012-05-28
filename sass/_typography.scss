@@ -75,12 +75,6 @@ p, blockquote, ol, ul, pre  {
   margin-bottom: $base-lh;
   }
   
-blockquote  {
-  color: $light-color;
-  font-style: italic;
-  margin: $base-lh;
-  }
-  
 .meta,
 .sidenote,
 .caption  {
@@ -98,5 +92,52 @@ blockquote  {
   line-height: lh(1, 18);
   margin-bottom: lh(1, 18);   
   }
+  
+blockquote  {
+  color: $light-color;
+  font-style: italic;
+  margin: $base-lh;
+  }
 
-// Lists, pre and code blocks
+// Lists
+
+.entry ol,
+.entry ul	{
+	margin-left: 1.5em;
+	}
+	
+.entry ul  {
+  list-style: disc;
+}
+
+// TODO: Convert these to em functions
+.entry ol li ol	{
+	list-style: upper-alpha;
+	margin-left: 2.5714em;
+	margin-bottom: 0;
+	}
+	
+.entry ul li ul	{
+	list-style: circle;
+	margin-left: 2.5714em;
+	margin-bottom: 0;
+	}
+	
+.entry .test  {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+  }
+  
+.entry ul.test li:before {
+	content: "\00BB \0020";
+	}
+	
+// Code
+
+// Sidenotes and Footnotes
+
+.noted  {
+  float: right;
+  }
