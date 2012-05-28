@@ -1,0 +1,168 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Second Article Page</title>
+  
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../css/master.css">
+  <link rel="stylesheet" href="../css/hugrid.css">
+  <script src="../js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+
+<body id="article">
+<div id="wrap">
+  <header class="masthead">
+    <section class="logo">
+      <h1><a href="http://www.nealsheeran.com">Neal Sheeran</a></h1>
+      <p class="tagline">Rants, Raves, and Geekery</p>  
+    </section>
+    <nav>
+      <ul>
+        <li class="home_tab"><a href="home.html">Home</a></li>
+        <li class="blog_tab"><a href="">Blog</a></li>
+        <li class="lab_tab"><a href="">Lab</a></li>
+        <li class="about_tab"><a href="">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+
+  <section class="full-article"> 
+  <!--  TODO: Use <article> element for full article? -->
+    <h2>A Long Article Title to See the Effects of it Wrapping</h2>
+    <header class="meta">
+      <p class="date"><time datetime=2012-04-23 pubdate>April 23, 2012</time></p>
+      <!-- TODO: These tags are actually links -->
+      <ul class="tags">
+        <li>design</li>
+        <li>typography</li>
+        <li>software</li>
+        <li>rants</li>
+      </ul>
+    </header>
+      <section class="entry">
+      <p>Here we have a second article to test out some additional HTML elements. A key thing to look for will be maintaining the overall vertical rhythm throughout the page. This is usually done by setting the bottom margins on most elements equal to to the line-height.</p>
+
+      <ol>
+        <li>Lists, obviously.</li>
+        <li>Footnotes and sidenotes</li>
+        <li>Inline code as well as code blocks</li>
+        <li>This is a somewhat long line of text, full of superfluous and unnecessary words drafted and crafted for the sole purpose of making this line wrap</li>
+        <li>Here is an unordered list within a list:
+          <ol>
+            <li>This is sub-tem one</li>
+            <li>And this is sub-item two</li>
+            <li>Last, but not least, sub-item three</li>
+          </ol>
+         </li>
+      </ol>
+      
+      <p>Typographic purists say that the bullets and numbers for lists should lie outside the left edge of the body text and hang in the margin.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> I&#8217;m not sure I agree. Maybe it is years of Microsoft Word automatically doing otherwise, maybe it is keeping those markers out of the grid gutter and away from the sidenotes and image captions that are over there. Whatever. Here is an unordered list of authors I like:</p>
+      
+      <ul>
+        <li>David Foster Wallace. His non-fiction long form writing is excellent. Tried a bit of his fiction and it didn&#8217;t really stick.</li>
+        <li>Michael Lewis - anything.</li>
+        <li>Dennis Lehane. One of the best crime and fiction writers out there.</li>
+        <li>James Ellroy is good too, especially the <em>LA Quartet</em>:&hellip;
+          <ul>
+            <li>The Black Dahlia</li>
+            <li>The Big Nowhere</li>
+            <li>LA Confidential</li>
+            <li>White Jazz</li>
+          </ul>
+        </li>
+      </ul>
+      
+      <p>A quick test list using CSS-generated content to insert a character as the bullet:</p>
+      
+      <ul class="test">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+      </ul> 
+      
+      <h3>Code Elements</h3>
+      
+      <p>Things to think about when marking up <code>code</code> elements such as <code>section</code> and <code>article</code> include what monospace font to use and whether or not to use a different color. Here is a <code>pre</code> block:</p>
+      
+      <pre>
+h1 {
+  font-size: 2.25em;
+  line-height: 1.33333333em; 
+  }</pre>
+      
+      <p>And this one is block enclosed in both <code>pre</code> and <code>code</code>:</p>
+      
+      <pre>
+      <code>
+blockquote {
+  color: #586e75;
+  font-style: italic;
+  margin: 1.5em; 
+  }      </code></pre>
+  
+      <div class="footnotes">
+			<hr />
+			<ol>
+				<li id="fn:1">The eminent Robert Bringhurst, author of <em>Elements of Typographic Style</em> being one of them.<a href="#fnref:1" title="Return to article" class="reversefootnote">&#160;&#8617;</a></li>
+				<li id="fn:2"><a href="#fnref:2" title="Return to article" class="reversefootnote">&#160;&#8617;</a></li>
+
+			</ol>
+		</div>
+            
+    </section><!-- close entry -->
+  </section> <!-- close full-article -->
+  
+  </div><!-- close content -->
+  
+  <footer>
+    <section class="intro">
+      <h5>Intro</h5>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit. Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum.</p>  
+  </section>
+
+    <section class="intro">
+      <h5>More Intro</h5>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit. Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum.</p>  
+    </section>
+
+    <section class="social">
+      <h5>Further Afield</h5>
+      <ul>
+        <li class="twitter"><a href="https://twitter.com/#!/nealsheeran">Twitter</a></li>
+        <li class="pinboard"><a href="http://pinboard.in/u:nbsheeran/">Pinboard</a></li>
+        <li class="flickr"><a href="http://www.flickr.com/photos/sheeran/">Flickr</a></li>
+        <li class="facebook"><a href="http://www.facebook.com/neal.sheeran">Facebook</a></li>
+      </ul>
+    </section><!-- close social -->
+  </footer>
+</div> <!-- close wrap -->
+
+<!-- JavaScript at the bottom for fast page loading -->
+<script src="../js/libs/jquery-1.7.1.min.js"></script>
+<script src="../js/hugrid.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        pageUnits = 'px';
+        colUnits = 'px';
+        gridonload = 'off';
+        pagewidth = 960;
+        columns = 12;
+        columnwidth = 58;
+        gutterwidth = 24;
+        pagetopmargin = 24;
+        rowheight = 24;
+        makehugrid();
+        setgridonload();
+    });
+  </script>
+<!-- end scripts -->
+
+</body>
+</html>
