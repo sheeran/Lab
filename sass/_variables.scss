@@ -12,7 +12,7 @@ $base-vr    : $base-font * $base-lh;
 $serif-ff		: "ff-tisa-web-pro", Georgia, serif;
 $sans-ff    : "proxima-nova", Corbel, sans-serif;
 $title-ff 	: "adelle", Georgia, serif;
-$code-ff  	: "DejaVu Sans Mono", Consolas, Menlo, "Courier New", monospace, sans-serif;
+$code-ff  	: "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, sans-serif;
 
 // Convert Pixels to EMs (Desired = Target / Context)
 @function em($target, $context: $base-font){

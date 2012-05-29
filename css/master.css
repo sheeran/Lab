@@ -602,11 +602,54 @@ blockquote {
 .entry ul.test li:before {
   content: "\00BB \0020"; }
 
+.sc {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 1.125em; }
+
+pre, code {
+  color: #859900;
+  font-family: "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, sans-serif;
+  font-size: 0.875em;
+  margin-bottom: 1.71428571em; }
+
+pre {
+  background-color: #eee8d5;
+  border: 1px solid #657b83;
+  padding: 0.78571429em 1.71428571em; }
+
+code {
+  line-height: 1; }
+
+pre code {
+  line-height: 1.5em; }
+
 .noted {
   float: right; }
 
+a.footnote {
+  border-bottom: none;
+  font-size: 90%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.4em; }
+
+a.reversefootnote {
+  text-decoration: none; }
+
+.footnotes hr {
+  display: block;
+  margin: 1.375em 0;
+  width: 140px;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #657b83;
+  border-bottom: 1px solid white; }
+
 /* ---------- @Elements ---------- */
-.full-article img {
+.entry img {
   float: right;
   width: 97.863248%;
   background-color: #eee8d5;

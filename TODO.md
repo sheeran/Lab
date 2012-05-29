@@ -7,6 +7,7 @@
 4. Do the footer
 5. Images don't work for lab.nealsheeran subdomain - change to full path?
 6. Resources on separate page?
+7. Post link to GitHub repo
 
 ## Typography Page
 *Note: use git branches for major changes*
@@ -50,10 +51,8 @@
 
 ### Single Article
 1. Use HTML5 <article> element? Same for Else posts with different class.
-2. Need the following tested...make a second test entry:
-	- Code
-	- lists within lists
-3. Footnotes, and side notes, w/ p.noted
+2. Sidenotes on right side? Push...
+3. Smaller text size for Footnotes.
 4. Use HTML5 figure/figcaption? Effect with responsive images
 5. Adaptive Images?
 6. Text shadow on h2 Article titles
