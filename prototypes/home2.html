@@ -69,9 +69,24 @@
       
       </section> 
     </article>
+    
+    <article class="else">
+      <h2>A Link to Some Cool Site</h2>
+      <header class="meta">
+        <p class="date"><time datetime=2012-05-27 pubdate>May 30, 2012</time></p>
+        <!-- TODO: These tags are actually links -->
+        <ul class="tags">
+          <li>software</li>
+          <li>writing</li>
+        </ul>
+      </header>
+      <section class="entry">
+        <p>Short commentary about the above link. Check it out.</p>
+      </section>
+
+    </article>
 
   </div>  <!-- close content -->  
-
 
   <div id="sidebar">
     <h3>Elsewhere</h3>
@@ -94,13 +109,15 @@
   <footer>
   <!-- TODO: What is actually going into the footer? -->
     <section class="intro">
-      <h3>Intro</h3>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit. Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum.</p>  
+      <h3>Twitter</h3>
+      <div id="tweets">
+      <p>Tweets should be loading&hellip;if they don&#8217;t, go here.</p>
+      </div>
     </section>
     
     <section class="intro">
-      <h3>More Intro</h3>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit. Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum.</p>  
+      <h3>Pinboard</h3>
+      <script language="javascript" src="http://pinboard.in//widgets/v1/linkroll/?user=nbsheeran&count=5"></script>
     </section>
     
     <section class="social">
@@ -113,12 +130,13 @@
       </ul>
     </section><!-- close social -->
   </footer>
+
 </div> <!-- close wrap -->
 
 <!-- JavaScript at the bottom for fast page loading -->
 <script src="../js/libs/jquery-1.7.1.min.js"></script>
 <script src="../js/hugrid.js"></script>
-  <script type="text/javascript">
+<script type="text/javascript">
     $(document).ready(function() {
         pageUnits = 'px';
         colUnits = 'px';
@@ -133,6 +151,21 @@
         setgridonload();
     });
   </script>
+  
+<script 
+ src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js" 
+ type="text/javascript">
+</script>
+<script type="text/javascript" charset="utf-8">
+getTwitters('tweets', { 
+  id: 'nealsheeran', 
+  count: 5, 
+  enableLinks: true, 
+  ignoreReplies: true, 
+  clearContents: true,
+  template: '%text% <a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/">%time%</a>'
+});
+</script>
 <!-- end scripts -->
 
 </body>

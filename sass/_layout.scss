@@ -48,7 +48,12 @@ nav     {
   ul li:last-child  {margin-right: 0;} 
 }
 
+#content  {
+  margin-bottom: 72px;  
+}
+
 /* -- Footer -- */
+
 
 /* ---------- @Short Homepage ---------- */
 
@@ -105,6 +110,7 @@ footer  {
 	float: left;
 	width: 29.91453%;
 	margin-left: -35.04274%;
+	margin-bottom: 0;
 	text-align: right;
 }
  

@@ -42,6 +42,7 @@
 3. Nav indications for current page...Nav font?
 4. Refine overall HTML5 structure --> make template --> convert Lab home page
 5. Add CSS3 mixins to variables.scss
+6. Add a mixin for Mark Boulton's LH change?
 
 ### Home Page
 1. Build second version with full posts and embedded Else posts

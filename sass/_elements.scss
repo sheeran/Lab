@@ -13,3 +13,50 @@
 	padding: 4px;
 	margin-bottom: em(24);
 	}
+	
+// Pinboard links
+
+.pin-item   {
+  font-size: em(14);
+  line-height: lh(1, 14);
+
+    p {
+      line-height: lh(1.0, 14);
+      margin-bottom: 12px;
+    }
+       
+    a {
+      text-decoration: none;
+    }  
+}
+
+a.pin-title {
+  color: $link-color-hover;
+  font-weight: normal;
+}
+
+.pin-description  {
+  line-height: lh(1.0, 14);
+}
+
+a.pin-tag  {
+  color: #cb4b16;
+  font-size: em(12, 14);
+  font-weight: normal;
+}
+
+//Twitter.js
+
+#tweets {
+  font-size: em(14);  
+}
+
+#tweets ul li {
+  margin-bottom: 12px;
+}
+
+#tweets a {
+  color: $link-color-hover;
+  font-weight: normal;
+  text-decoration: none;
+}

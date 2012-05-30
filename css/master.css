@@ -404,6 +404,9 @@ nav {
   nav ul li:last-child {
     margin-right: 0; }
 
+#content {
+  margin-bottom: 72px; }
+
 /* -- Footer -- */
 /* ---------- @Short Homepage ---------- */
 #home-short #content {
@@ -468,6 +471,7 @@ footer {
   float: left;
   width: 29.91453%;
   margin-left: -35.04274%;
+  margin-bottom: 0;
   text-align: right; }
 
 #home-long footer {
@@ -500,7 +504,7 @@ footer {
 
 /* ---------- @Typography ---------- */
 a, a:link, a:visited {
-  color: #002b36;
+  color: #268bd2;
   font-weight: bold;
   text-decoration: underline; }
 
@@ -656,3 +660,35 @@ a.reversefootnote {
   border: 1px solid #657b83;
   padding: 4px;
   margin-bottom: 1.5em; }
+
+.pin-item {
+  font-size: 0.875em;
+  line-height: 1.71428571em; }
+  .pin-item p {
+    line-height: 1.71428571em;
+    margin-bottom: 12px; }
+  .pin-item a {
+    text-decoration: none; }
+
+a.pin-title {
+  color: #268bd2;
+  font-weight: normal; }
+
+.pin-description {
+  line-height: 1.71428571em; }
+
+a.pin-tag {
+  color: #cb4b16;
+  font-size: 0.85714286em;
+  font-weight: normal; }
+
+#tweets {
+  font-size: 0.875em; }
+
+#tweets ul li {
+  margin-bottom: 12px; }
+
+#tweets a {
+  color: #268bd2;
+  font-weight: normal;
+  text-decoration: none; }
