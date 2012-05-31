@@ -8,7 +8,7 @@
 // Default Link Styles
 
 a, a:link, a:visited {
-  color: $link-color-hover;
+  color: $link-color;
   font-weight: bold;
   text-decoration: underline;
   }
@@ -186,3 +186,11 @@ a.reversefootnote	{text-decoration: none;}
   border-top : 1px solid $accent-border;
   border-bottom : 1px solid rgb(255,255,255);
   }
+
+// Footer 
+// FIXME: Testing incremental leading here  
+footer p {
+  font-size: em(15);
+  line-height: incr(15, 4, 5);
+}
+

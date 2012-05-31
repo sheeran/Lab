@@ -6,8 +6,8 @@
 // 1. TYPOGRAPHY -----------------------------------
 
 $base-font	: 16;
-$base-lh		: 1.5em;  // 16 * 1.5 = 24px
-$base-vr    : $base-font * $base-lh;
+$base-lh		: 1.5em;  
+$base-vr    : 24;  // 16 * 1.5 = 24px
 
 $serif-ff		: "ff-tisa-web-pro", Georgia, serif;
 $sans-ff    : "proxima-nova", Corbel, sans-serif;
@@ -21,8 +21,15 @@ $code-ff  	: "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, san
 }
 
 // Maintain vertical rhythm with Line Height - '$amount' can be used as a multipler
+// TODO: combine these into a mix-in that includes the Line-height and margin properties?
 @function lh($amount: 1, $context: $base-lh){
 	@return em($base-vr * $amount, $context)
+}
+
+// Incremental Leading
+// Every 'x' line of affected element will align with every 'y' line of main text
+@function incr($new-size: 14, $x: 4, $y: 5){
+  @return 1em * (($base-vr / $new-size) * ($x / $y))
 }
 
 // This assumes font-size = 62.5% on html element

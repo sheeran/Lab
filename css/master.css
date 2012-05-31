@@ -504,7 +504,7 @@ footer {
 
 /* ---------- @Typography ---------- */
 a, a:link, a:visited {
-  color: #268bd2;
+  color: #002b36;
   font-weight: bold;
   text-decoration: underline; }
 
@@ -651,6 +651,10 @@ a.reversefootnote {
   border: 0;
   border-top: 1px solid #657b83;
   border-bottom: 1px solid white; }
+
+footer p {
+  font-size: 0.9375em;
+  line-height: 1.28em; }
 
 /* ---------- @Elements ---------- */
 .entry img {

@@ -117,7 +117,7 @@ $_width: $_columns * ($_column-width + $_gutter);
 // So wrapper( column count, center ?, subtract)
 @mixin wrapper($columns: $_columns, $center:true, $_subtract:0)
 {
-  // Because this is a wrapper, we don't need the outer gutter - we need the full width
+  // Because this is a wrapper, we dont need the outer gutter - we need the full width
   $getWrapperWidth: get_width($columns, false);
   // In case there is a need to subtract the wrapper
   $wrapperWidth: $getWrapperWidth - $_subtract;
