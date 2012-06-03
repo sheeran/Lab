@@ -419,8 +419,14 @@ nav {
 
 .list {
   float: left;
-  width: 40.20833333%;
+  width: 31.66666667%;
   margin-right: 2.5%; }
+
+.further {
+  float: left;
+  width: 31.66666667%;
+  margin-right: 2.5%;
+  margin-right: 0; }
 
 footer {
   *zoom: 1; }
@@ -535,7 +541,7 @@ h3 {
   font-weight: normal;
   font-size: 1.25em;
   line-height: 1.2em;
-  margin-bottom: 1.2em; }
+  margin-bottom: 0; }
 
 .full-article h2 {
   color: #2aa198;
@@ -558,6 +564,13 @@ h3 {
 /* -- Text Styles -- */
 p, blockquote, ol, ul, pre {
   margin-bottom: 1.5em; }
+
+.light {
+  color: #586e75;
+  font-size: 0.875em;
+  font-style: italic;
+  line-height: 1.71428571em;
+  margin-bottom: 1.71428571em; }
 
 .meta,
 .sidenote,
@@ -665,34 +678,33 @@ footer p {
   padding: 4px;
   margin-bottom: 1.5em; }
 
-.pin-item {
+#tweets,
+#pinboard_linkroll {
   font-size: 0.875em;
-  line-height: 1.71428571em; }
-  .pin-item p {
-    line-height: 1.71428571em;
-    margin-bottom: 12px; }
-  .pin-item a {
-    text-decoration: none; }
+  line-height: 1.37142857em; }
 
+#tweets {
+  padding-top: 4.2px;
+  margin-bottom: 2.74285714em; }
+
+#tweets ul li {
+  margin-bottom: 1.37142857em; }
+
+#tweets a,
 a.pin-title {
   color: #268bd2;
-  font-weight: normal; }
+  font-weight: normal;
+  text-decoration: none; }
 
-.pin-description {
-  line-height: 1.71428571em; }
+#pinboard_linkroll {
+  padding-top: 5px; }
+
+.pin-item {
+  margin-bottom: 1.37142857em; }
+  .pin-item p {
+    margin-bottom: 0; }
 
 a.pin-tag {
   color: #cb4b16;
-  font-size: 0.85714286em;
-  font-weight: normal; }
-
-#tweets {
-  font-size: 0.875em; }
-
-#tweets ul li {
-  margin-bottom: 12px; }
-
-#tweets a {
-  color: #268bd2;
   font-weight: normal;
   text-decoration: none; }

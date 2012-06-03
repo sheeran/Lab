@@ -63,7 +63,12 @@ nav     {
 }
 
 .list {             
-  @include col-fl(5);   
+  @include col-fl(4);   
+}
+
+.further {
+  @include col-fl(4);
+  @include last;
 }
 
 footer  {

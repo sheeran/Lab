@@ -44,7 +44,7 @@ h3  {
   font-weight: normal;
   font-size: em(20);
   line-height: lh(1, 20);
-  margin-bottom: lh(1, 20);
+  margin-bottom: 0;
   }
   
 .full-article h2 {
@@ -73,6 +73,14 @@ h3  {
 p, blockquote, ol, ul, pre  {
   margin-bottom: $base-lh;
   }
+  
+.light  {
+  color: $light-color;
+  font-size: em(14);
+  font-style: italic;
+  line-height: lh(1.0, 14);
+  margin-bottom: lh(1.0, 14);
+}
   
 .meta,
 .sidenote,
@@ -189,6 +197,7 @@ a.reversefootnote	{text-decoration: none;}
 
 // Footer 
 // FIXME: Testing incremental leading here  
+
 footer p {
   font-size: em(15);
   line-height: incr(15, 4, 5);

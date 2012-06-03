@@ -13,50 +13,47 @@
 	padding: 4px;
 	margin-bottom: em(24);
 	}
-	
-// Pinboard links
 
-.pin-item   {
+//Twitter.js and Pinboard Links
+
+#tweets,
+#pinboard_linkroll {
   font-size: em(14);
-  line-height: lh(1, 14);
-
-    p {
-      line-height: lh(1.0, 14);
-      margin-bottom: 12px;
-    }
-       
-    a {
-      text-decoration: none;
-    }  
+  line-height: incr(14, 4, 5);
 }
-
-a.pin-title {
-  color: $link-color-hover;
-  font-weight: normal;
-}
-
-.pin-description  {
-  line-height: lh(1.0, 14);
-}
-
-a.pin-tag  {
-  color: #cb4b16;
-  font-size: em(12, 14);
-  font-weight: normal;
-}
-
-//Twitter.js
 
 #tweets {
-  font-size: em(14);  
+  padding-top: 4.2px;
+  margin-bottom: 2 * incr(14, 4, 5);
 }
 
 #tweets ul li {
-  margin-bottom: 12px;
+  margin-bottom: incr(14, 4, 5);
 }
 
-#tweets a {
+#tweets a,
+a.pin-title {
   color: $link-color-hover;
   font-weight: normal;
   text-decoration: none;
 }
+	
+
+#pinboard_linkroll  {
+  padding-top: 5px;
+}
+
+.pin-item   {
+  margin-bottom: incr(14, 4, 5);
+
+    p {margin-bottom: 0;}
+       
+}
+
+a.pin-tag  {
+  color: #cb4b16;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+
