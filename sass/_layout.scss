@@ -71,8 +71,27 @@ nav     {
   @include last;
 }
 
+// Full width footer
 footer  {
+  background: #073642;
+  color: #93a1a1;
+  border-top: 4px solid $accent-border;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  }
+
+footer .inner {
+  @include col(12);
   @include clearfix;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.fine-print {
+  clear: left;
+  color: #268bd2;
+  border-top: 1px dotted $accent-color;
+  padding-top: 5px;
 }
 
 .intro  {
@@ -124,18 +143,11 @@ footer  {
   clear: both;  
 }
 
-// FIXME: This will have to move to typography, just testing here;
-#home-long h2 {
-  color: $title-color;
-  font-size: em(24);
-  line-height: lh(1, 24);
-  margin-bottom: lh(1, 24);
-  }
 
 /* ---------- @Full Article Page ---------- */
 
 .full-article{
-	@include col-fl (7);
+	@include col-fl (6);
 	@include push(3, 3);
 }
 

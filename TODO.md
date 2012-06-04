@@ -10,7 +10,6 @@
 7. Post link to GitHub repo
 
 ## Typography Page
-*Note: use git branches for major changes*
 
 1. Move text size and line-height to one section for easier changing? (or variables with LESS?)
 2. Change sidenotes to floats
@@ -28,7 +27,6 @@
 3. Merge two typography pages
 
 ## Layout Page
-1. Convert to HTML5 elements
 2. Need to tweak the triggers. Earlier on 680.
 3. Fix Nav in 380
 4. Add list of RWD sites
@@ -37,18 +35,18 @@
 ## Prototypes
 
 ### General
-1. RESPONSIVE...mobile or desktop first
-2. Image replacement on logo or web-font?
+1. RESPONSIVE...mobile or desktop first?
+2. Image replacement on logo or web-font? Text Shadow?
 3. Nav indications for current page...Nav font?
 4. Refine overall HTML5 structure --> make template --> convert Lab home page
 5. Add CSS3 mixins to variables.scss
-6. Add a mixin for Mark Boulton's LH change?
+6. Awesome icon fonts
+7. Re-do grid mixins like susy
 
 ### Home Page
-1. Build second version with full posts and embedded Else posts
-2. Finish the footer
+1. Finish the footer
 	- Move outside of wrap and make light text on dark background
-3. Add search, RSS feeds
+2. Add search, RSS feeds
 
 ### Single Article
 1. Use HTML5 <article> element? Same for Else posts with different class.

@@ -18,6 +18,13 @@ a:hover {
   border-bottom: 1px dotted $link-color-hover;
   text-decoration: none;
   }
+  
+header a,
+header a:link,
+header a:visited  {
+  text-decoration: none;
+  -webkit-transition: border .5s ease-out;
+  }
 
 /* -- Headings -- */
 
@@ -25,6 +32,8 @@ a:hover {
 h1  {
   font-size: em(36);
   line-height: lh(2,36);
+  text-transform: uppercase;
+  text-shadow: 0px 2px 0px #fffbf3;
   //@include hide-text;
 }
 
@@ -46,7 +55,8 @@ h3  {
   line-height: lh(1, 20);
   margin-bottom: 0;
   }
-  
+
+#home-long h2,  
 .full-article h2 {
   color: $title-color;
   font-size: em(24);
@@ -114,7 +124,7 @@ blockquote  {
 	}
 	
 .entry ul  {
-  list-style: disc;
+  list-style: square;
 }
 
 // TODO: Convert these to em functions
@@ -134,8 +144,8 @@ blockquote  {
 .entry .test  {
   list-style: none;
   margin-left: 0;
-  padding-left: 1em;
-  text-indent: -1em;
+  padding-left: 1.5em;
+  text-indent: -1.0em;
   }
   
 .entry ul.test li:before {

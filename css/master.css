@@ -367,7 +367,7 @@ ul {
 body {
   background: #fdf6e3 url(img/bg.jpg);
   color: #073642;
-  font-family: "ff-tisa-web-pro", Georgia, serif;
+  font-family: "ff-tisa-web-pro", Cambria, Georgia, serif;
   font-size: 1em;
   line-height: 1.5em; }
 
@@ -429,12 +429,28 @@ nav {
   margin-right: 0; }
 
 footer {
-  *zoom: 1; }
-  footer:before, footer:after {
+  background: #073642;
+  color: #93a1a1;
+  border-top: 4px solid #657b83;
+  padding-top: 24px;
+  padding-bottom: 24px; }
+
+footer .inner {
+  width: 100%;
+  *zoom: 1;
+  max-width: 960px;
+  margin: 0 auto; }
+  footer .inner:before, footer .inner:after {
     content: "";
     display: table; }
-  footer:after {
+  footer .inner:after {
     clear: both; }
+
+.fine-print {
+  clear: left;
+  color: #268bd2;
+  border-top: 1px dotted #eee8d5;
+  padding-top: 5px; }
 
 .intro {
   float: left;
@@ -483,16 +499,10 @@ footer {
 #home-long footer {
   clear: both; }
 
-#home-long h2 {
-  color: #2aa198;
-  font-size: 1.5em;
-  line-height: 1em;
-  margin-bottom: 1em; }
-
 /* ---------- @Full Article Page ---------- */
 .full-article {
   float: left;
-  width: 57.29166667%;
+  width: 48.75%;
   margin-right: 2.5%;
   margin-left: 25.625%; }
 
@@ -519,10 +529,18 @@ a:hover {
   border-bottom: 1px dotted #268bd2;
   text-decoration: none; }
 
+header a,
+header a:link,
+header a:visited {
+  text-decoration: none;
+  -webkit-transition: border .5s ease-out; }
+
 /* -- Headings -- */
 h1 {
   font-size: 2.25em;
-  line-height: 1.33333333em; }
+  line-height: 1.33333333em;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 0px #fffbf3; }
 
 h2 {
   font-size: 1.25em;
@@ -543,6 +561,7 @@ h3 {
   line-height: 1.2em;
   margin-bottom: 0; }
 
+#home-long h2,
 .full-article h2 {
   color: #2aa198;
   font-size: 1.5em;
@@ -598,7 +617,7 @@ blockquote {
   margin-left: 1.5em; }
 
 .entry ul {
-  list-style: disc; }
+  list-style: square; }
 
 .entry ol li ol {
   list-style: upper-alpha;
@@ -613,7 +632,7 @@ blockquote {
 .entry .test {
   list-style: none;
   margin-left: 0;
-  padding-left: 1em;
+  padding-left: 1.5em;
   text-indent: -1em; }
 
 .entry ul.test li:before {
@@ -708,3 +727,6 @@ a.pin-tag {
   color: #cb4b16;
   font-weight: normal;
   text-decoration: none; }
+
+a.pin-tag:hover {
+  border-bottom: 1px dotted #cb4b16; }
