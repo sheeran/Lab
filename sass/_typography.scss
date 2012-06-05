@@ -23,7 +23,7 @@ header a,
 header a:link,
 header a:visited  {
   text-decoration: none;
-  -webkit-transition: border .5s ease-out;
+  -webkit-transition: border 1s ease-in;
   }
 
 /* -- Headings -- */
@@ -211,5 +211,12 @@ a.reversefootnote	{text-decoration: none;}
 footer p {
   font-size: em(15);
   line-height: incr(15, 4, 5);
+}
+
+.fine-print {
+  clear: left;
+  color: #268bd2;
+  border-top: 1px dotted $accent-color;
+  padding-top: 5px;
 }
 

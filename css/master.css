@@ -367,7 +367,7 @@ ul {
 body {
   background: #fdf6e3 url(img/bg.jpg);
   color: #073642;
-  font-family: "ff-tisa-web-pro", Cambria, Georgia, serif;
+  font-family: "proxima-nova", Corbel, sans-serif;
   font-size: 1em;
   line-height: 1.5em; }
 
@@ -408,6 +408,25 @@ nav {
   margin-bottom: 72px; }
 
 /* -- Footer -- */
+footer {
+  clear: both;
+  background: #073642;
+  color: #93a1a1;
+  border-top: 4px solid #657b83;
+  padding-top: 24px;
+  padding-bottom: 24px; }
+
+footer .inner {
+  width: 100%;
+  *zoom: 1;
+  max-width: 960px;
+  margin: 0 auto; }
+  footer .inner:before, footer .inner:after {
+    content: "";
+    display: table; }
+  footer .inner:after {
+    clear: both; }
+
 /* ---------- @Short Homepage ---------- */
 #home-short #content {
   *zoom: 1; }
@@ -427,30 +446,6 @@ nav {
   width: 31.66666667%;
   margin-right: 2.5%;
   margin-right: 0; }
-
-footer {
-  background: #073642;
-  color: #93a1a1;
-  border-top: 4px solid #657b83;
-  padding-top: 24px;
-  padding-bottom: 24px; }
-
-footer .inner {
-  width: 100%;
-  *zoom: 1;
-  max-width: 960px;
-  margin: 0 auto; }
-  footer .inner:before, footer .inner:after {
-    content: "";
-    display: table; }
-  footer .inner:after {
-    clear: both; }
-
-.fine-print {
-  clear: left;
-  color: #268bd2;
-  border-top: 1px dotted #eee8d5;
-  padding-top: 5px; }
 
 .intro {
   float: left;
@@ -533,7 +528,7 @@ header a,
 header a:link,
 header a:visited {
   text-decoration: none;
-  -webkit-transition: border .5s ease-out; }
+  -webkit-transition: border 1s ease-in; }
 
 /* -- Headings -- */
 h1 {
@@ -687,6 +682,12 @@ a.reversefootnote {
 footer p {
   font-size: 0.9375em;
   line-height: 1.28em; }
+
+.fine-print {
+  clear: left;
+  color: #268bd2;
+  border-top: 1px dotted #eee8d5;
+  padding-top: 5px; }
 
 /* ---------- @Elements ---------- */
 .entry img {

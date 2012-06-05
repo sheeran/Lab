@@ -55,6 +55,8 @@
 4. Use HTML5 figure/figcaption? Effect with responsive images
 5. Adaptive Images?
 6. Text shadow on h2 Article titles
+7. Comments
+8. A table example?
 
 ### MISC
 1. Figure out inline-block. http://designshack.net/articles/css/whats-the-deal-with-display-inline-block/
@@ -63,7 +65,6 @@
 ## Other Projects to do
 
 - HTML5 / CSS3 test page
-- Sass mixins test
 - Color palettes
 
 

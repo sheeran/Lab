@@ -9,7 +9,7 @@
 body {
   background: $body-color url(img/bg.jpg);
   color: $text-color;
-  font-family: $serif-ff;
+  font-family: $sans-ff;
   font-size: em(16);
   line-height: $base-lh;
 }
@@ -54,7 +54,22 @@ nav     {
 
 /* -- Footer -- */
 
-// TODO: Put Standard footer layout here...once I figure out what it is
+// Full width footer
+footer  {
+  clear: both;
+  background: #073642;
+  color: #93a1a1;
+  border-top: 4px solid $accent-border;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  }
+
+footer .inner {
+  @include col(12);
+  @include clearfix;
+  max-width: $max-width;
+  margin: 0 auto;
+  }
 
 /* ---------- @Short Homepage ---------- */
 
@@ -71,28 +86,6 @@ nav     {
   @include last;
 }
 
-// Full width footer
-footer  {
-  background: #073642;
-  color: #93a1a1;
-  border-top: 4px solid $accent-border;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  }
-
-footer .inner {
-  @include col(12);
-  @include clearfix;
-  max-width: $max-width;
-  margin: 0 auto;
-}
-
-.fine-print {
-  clear: left;
-  color: #268bd2;
-  border-top: 1px dotted $accent-color;
-  padding-top: 5px;
-}
 
 .intro  {
   @include col-fl(5);
