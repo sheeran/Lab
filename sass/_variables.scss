@@ -1,6 +1,6 @@
 // =================================================
 // Variables and Mixins
-// Version: 1.0
+// Version: 1.1
 // =================================================
 
 // 1. TYPOGRAPHY -----------------------------------
@@ -43,6 +43,8 @@ $code-ff  	: "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, san
 
 $body-color	      : #fdf6e3; // base3
 $text-color	      : #073642; // base02
+$body-color-dark  : #073642; // base02
+$text-color-dark  : #93a1a1; // base1
 $light-color	    : #586e75; // base01
 $title-color	    : #2aa198; // cyan
 $code-color	      : #859900; // green
@@ -75,64 +77,31 @@ $accent-border	  : #657b83; // base00
 		
 // 3. GRID ----------------------------------------
 
-$col_tot  : 12;
-$column   : 58px;
-$gutter   : 24px;
+// Baseline Susy Variables
+$total-columns  : 4;
+$column-width   : 4em;
+$gutter-width   : 1.5em;
+$grid-padding   : $gutter-width;
 
-$max-width: (($col_tot * ($column + $gutter))- $gutter);
-$margin: $gutter / 2;
+// Additional Susy Variables
+$show-grid-backgrounds  : true;
+$grid-background-column-color: lighten($body-color, 3%);
+//$grid-background-column-color: rgba(100, 100, 225, 0.10);
+$container-width        : false;
+$container-style        : magic;
 
-// Use for elements that are children of the max-width element (wrap)
-@mixin col($no-cols, $parent-width: $max-width){
-	width: percentage(($no-cols * ($column + $gutter) - $gutter) / $parent-width);
-}
+// A Few More Variables
+$break-1			  : 8;
+$break-2        : 12;
 
-// Use for sub-elements, as their width is determined by their parent element
-// TODO: Need a mixin to calc margin for these -- no longer based on max-width
-@mixin subcol($no-cols, $parent-columns){
-  width: percentage(($no-cols * ($column + $gutter) - $gutter) / (($parent-columns * ($column + $gutter))- $gutter));
-  }
+$post-cols		  : 5;
 
-// Creates the main content elements, with left floats and right marginsp
-@mixin col-fl($no-cols, $parent-width: $max-width){
-	float: left;
-	width: percentage(($no-cols * ($column + $gutter) - $gutter) / $parent-width);
-	margin-right: percentage($gutter / $parent-width);
-}
-
-// Same as above, but floats right with left margins
-@mixin col-fr($no-cols, $parent-width: $max-width){
-	float: right;
-	width: percentage(($no-cols * ($column + $gutter) - $gutter) / $parent-width);
-	margin-left: percentage($gutter / $parent-width);
-}
-
-
-// Pushes a floated element right with a large left margin (full-article)
-// FIXME: This only works for direct childen of max-width element;
-@mixin push($no-cols, $no-gutter){
-  margin-left: percentage((($no-cols * $column)+($no-gutter * $gutter)) / $max-width);
-  }
-  
-// Sort of tricky...used by elements such as .meta & .sidenote, that are pulled left into
-//   left margin created by 'push' mixin above.
-// BP is the left edge of element is pulled it's own width plus one gutter
-// Negative margin % = Element width + 1 gutter / **Parent width**, hence 'no-col' (without 
-//     subtracting one gutter) variable to determine element width and 'parent-cols' to 
-//     determine likewise
-@mixin pull($no-cols, $parent-columns){
-  margin-left: (percentage($no-cols * ($column + $gutter) / (($parent-columns * ($column + $gutter))- $gutter))) * -1;
-  }
 
 @mixin clearfix {
   *zoom:1;
   &:before, &:after {content: ""; display:table;}
   &:after {clear:both;}
   }
-  
-@mixin last {
-  margin-right:0;
-}
   
 // 4. General Mixins ------------------------------
   

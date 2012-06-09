@@ -1,11 +1,10 @@
 // =================================================
 // Site-Wide Layout
-// Version: 1.0
+// Version: 1.1
 // =================================================
 
-/* ---------- @ Side-wide Layout ---------- */
+/* ---------- @Mobile First Layout ---------- */
 
-// html { }
 body {
   background: $body-color url(img/bg.jpg);
   color: $text-color;
@@ -15,145 +14,52 @@ body {
 }
 
 #wrap {
-  @include col(12);
-  max-width: $max-width;
-  margin: $gutter auto;
-}
-
-
-// TODO: Include a #sidebar div for possible use (About page)?;
-
-/* -- Masthead -- */
-
-header.masthead    {
-  height: em(72);
-  margin-bottom: em(24);
-  @include clearfix;
-}
-
-.logo   {
-  @include col-fl(6);
-}
-
-
-nav     {
-  @include col-fr(4);
-  line-height: em(48);
-  ul li {
-    float: left;
-    @include subcol(1,4);
-    margin-right: 24px  // Convert to percent?
+  @include container ($total-columns, $break-1, $break-2);
+  @include susy-grid-background;
+  @include at-breakpoint($break-1)  {
+    @include susy-grid-background;
     }
-
-  ul li:last-child  {margin-right: 0;} 
+  @include at-breakpoint($break-2)  {
+    @include susy-grid-background;    
+    }
 }
 
-#content  {
-  margin-bottom: 72px;  
+.primary-nav  {@include clearfix;}
+
+.primary-nav li {
+  @include span-columns(1);
+  text-align: center;
+  text-transform: uppercase;
+  &:last-child {margin-right: 0;}
 }
 
-/* -- Footer -- */
-
-// Full width footer
 footer  {
   clear: both;
-  background: #073642;
-  color: #93a1a1;
+  background: $body-color-dark;
+  color: $text-color-dark;
   border-top: 4px solid $accent-border;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  }
+  padding-top: 1.5em;
+}
 
 footer .inner {
-  @include col(12);
-  @include clearfix;
-  max-width: $max-width;
-  margin: 0 auto;
-  }
+  @include container ($total-columns, $break-1, $break-2);
 
-/* ---------- @Short Homepage ---------- */
-
-#home-short #content  { 
-  @include clearfix;
-}
-
-.list {             
-  @include col-fl(4);   
-}
-
-.further {
-  @include col-fl(4);
-  @include last;
 }
 
 
-.intro  {
-  @include col-fl(5);
-}
+/* ---------- @Break-1 = 8 Columns ---------- */
 
-.social {
- @include col-fl(2);
- @include last;
-}
-
-.articles li {
-  margin-bottom: $base-lh;
-  }
+@include at-breakpoint($break-1)  {
   
-/* ---------- @Long Homepage ---------- */
+  header    {@include clearfix;}
+  .logo     {@include span-columns(4, $break-1);}
+  nav       {@include span-columns(4 omega, $break-1);}
+  .posts    {@include span-columns(4, $break-1);}
+  .else-list{@include span-columns(4 omega, $break-1);}
+  .social   {clear: both; @include clearfix;}
+  .twitter  {@include span-columns(4, $break-1);}
+  .pinboard {@include span-columns(4 omega, $break-1);}
 
-#home-long #content {
-  @include col-fl(8);
 }
 
-#home-long #sidebar {
-  @include col-fr(3);
-  @include last;
-}
-
-#home-long article {
-  width: 74.05063%;
-  float: left;
-  margin-left: 25.94937%;
-}
-
-#home-long article h2 {
-	float: right;
-	width: 100%;
-}
-
-#home-long .meta,
-#home-long .sidenote,
-#home-long .caption  {
-	float: left;
-	width: 29.91453%;
-	margin-left: -35.04274%;
-	margin-bottom: 0;
-	text-align: right;
-}
- 
-#home-long footer {
-  clear: both;  
-}
-
-
-/* ---------- @Full Article Page ---------- */
-
-.full-article{
-	@include col-fl (6);
-	@include push(3, 3);
-}
-
-.full-article h2 {
-	float: right;
-	width: 100%;
-}
-
-.meta,
-.sidenote,
-.caption  {
-	float: left;
-	@include subcol(2,6);
-	@include pull(2,6);
-	text-align: right;
-}
+/* ---------- @Break-2 = 12 Columns ---------- */
