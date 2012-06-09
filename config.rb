@@ -1,4 +1,6 @@
 # Require any additional compass plugins here.
+require 'susy'
+require '/Library/Ruby/Gems/1.8/gems/susy-1.0.rc.1/lib/susy.rb'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
