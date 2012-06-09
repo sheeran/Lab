@@ -45,7 +45,6 @@
 
 ### Home Page
 1. Finish the footer
-	- Move outside of wrap and make light text on dark background
 2. Add search, RSS feeds
 
 ### Single Article

@@ -394,12 +394,12 @@ header.masthead {
 
 nav {
   float: right;
-  width: 31.66666667%;
+  width: 31.666667%;
   margin-left: 2.5%;
   line-height: 3em; }
   nav ul li {
     float: left;
-    width: 19.07894737%;
+    width: 19.078947%;
     margin-right: 24px; }
   nav ul li:last-child {
     margin-right: 0; }
@@ -438,23 +438,23 @@ footer .inner {
 
 .list {
   float: left;
-  width: 31.66666667%;
+  width: 31.666667%;
   margin-right: 2.5%; }
 
 .further {
   float: left;
-  width: 31.66666667%;
+  width: 31.666667%;
   margin-right: 2.5%;
   margin-right: 0; }
 
 .intro {
   float: left;
-  width: 40.20833333%;
+  width: 40.208333%;
   margin-right: 2.5%; }
 
 .social {
   float: left;
-  width: 14.58333333%;
+  width: 14.583333%;
   margin-right: 2.5%;
   margin-right: 0; }
 
@@ -464,7 +464,7 @@ footer .inner {
 /* ---------- @Long Homepage ---------- */
 #home-long #content {
   float: left;
-  width: 65.83333333%;
+  width: 65.833333%;
   margin-right: 2.5%; }
 
 #home-long #sidebar {
@@ -509,8 +509,8 @@ footer .inner {
 .sidenote,
 .caption {
   float: left;
-  width: 29.91452991%;
-  margin-left: -35.04273504%;
+  width: 29.91453%;
+  margin-left: -35.042735%;
   text-align: right; }
 
 /* ---------- @Typography ---------- */
@@ -533,7 +533,7 @@ header a:visited {
 /* -- Headings -- */
 h1 {
   font-size: 2.25em;
-  line-height: 1.33333333em;
+  line-height: 1.333333em;
   text-transform: uppercase;
   text-shadow: 0px 2px 0px #fffbf3; }
 
@@ -566,9 +566,9 @@ h3 {
 .entry h3 {
   font-weight: bold;
   font-size: 1.125em;
-  line-height: 1.33333333em;
+  line-height: 1.333333em;
   margin-top: 2em;
-  margin-bottom: 0.66666667em; }
+  margin-bottom: 0.666667em; }
 
 .entry h4 {
   font-weight: normal;
@@ -583,8 +583,8 @@ p, blockquote, ol, ul, pre {
   color: #586e75;
   font-size: 0.875em;
   font-style: italic;
-  line-height: 1.71428571em;
-  margin-bottom: 1.71428571em; }
+  line-height: 1.714286em;
+  margin-bottom: 1.714286em; }
 
 .meta,
 .sidenote,
@@ -592,15 +592,15 @@ p, blockquote, ol, ul, pre {
   color: #586e75;
   font-style: italic;
   font-size: 0.875em;
-  line-height: 1.71428571em;
-  margin-bottom: 1.71428571em; }
+  line-height: 1.714286em;
+  margin-bottom: 1.714286em; }
 
 .date {
   color: #073642;
   font-style: normal;
-  font-size: 1.28571429em;
-  line-height: 1.33333333em;
-  margin-bottom: 1.33333333em; }
+  font-size: 1.285714em;
+  line-height: 1.333333em;
+  margin-bottom: 1.333333em; }
 
 blockquote {
   color: #586e75;
@@ -642,12 +642,12 @@ pre, code {
   color: #859900;
   font-family: "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, sans-serif;
   font-size: 0.875em;
-  margin-bottom: 1.71428571em; }
+  margin-bottom: 1.714286em; }
 
 pre {
   background-color: #eee8d5;
   border: 1px solid #657b83;
-  padding: 0.78571429em 1.71428571em; }
+  padding: 0.785714em 1.714286em; }
 
 code {
   line-height: 1; }
@@ -701,14 +701,14 @@ footer p {
 #tweets,
 #pinboard_linkroll {
   font-size: 0.875em;
-  line-height: 1.37142857em; }
+  line-height: 1.371429em; }
 
 #tweets {
   padding-top: 4.2px;
-  margin-bottom: 2.74285714em; }
+  margin-bottom: 2.742857em; }
 
 #tweets ul li {
-  margin-bottom: 1.37142857em; }
+  margin-bottom: 1.371429em; }
 
 #tweets a,
 a.pin-title {
@@ -720,7 +720,7 @@ a.pin-title {
   padding-top: 5px; }
 
 .pin-item {
-  margin-bottom: 1.37142857em; }
+  margin-bottom: 1.371429em; }
   .pin-item p {
     margin-bottom: 0; }
 
