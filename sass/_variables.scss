@@ -5,14 +5,14 @@
 
 // 1. TYPOGRAPHY -----------------------------------
 
-$base-font	: 16;
-$base-lh		: 1.5em;  
+$base-font  : 16;
+$base-lh    : 1.5em;  
 $base-vr    : 24;  // 16 * 1.5 = 24px
 
-$serif-ff		: "ff-tisa-web-pro", Cambria, Georgia, serif;
+$serif-ff   : "ff-tisa-web-pro", Cambria, Georgia, serif;
 $sans-ff    : "proxima-nova", Corbel, sans-serif;
-$title-ff 	: "adelle", Georgia, serif;
-$code-ff  	: "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, sans-serif;
+$title-ff   : "adelle", Georgia, serif;
+$code-ff    : "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, sans-serif;
 
 // Convert Pixels to EMs (Desired = Target / Context)
 @function em($target, $context: $base-font){
@@ -41,39 +41,47 @@ $code-ff  	: "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, san
 
 // 2. COLOR ----------------------------------------
 
-$body-color	      : #fdf6e3; // base3
-$text-color	      : #073642; // base02
-$body-color-dark  : #073642; // base02
-$text-color-dark  : #93a1a1; // base1
-$light-color	    : #586e75; // base01
-$title-color	    : #2aa198; // cyan
-$code-color	      : #859900; // green
+$body-color       : #fdf6e3; // base3
+$text-color       : #586e75; // base01
 
-$link-color			  : #002b36; // base03
+$body-color-dark  : #002b36; // base03
+$text-color-dark  : #839496; // base0
+
+$light-color      : #93a1a1; // base1
+$title-color      : #2aa198; // cyan
+$code-color       : #859900; // green
+
+$link-color       : #073642; // base02
 $link-color-visit : #6c71c4; // violet
 $link-color-hover : #268bd2; // blue
-$link-color-focus	: darken($link-color-hover, 10%);
+$link-color-focus : darken($link-color-hover, 10%);
 
-$accent-color		  : #eee8d5; // base2
-$accent-border	  : #657b83; // base00
+$accent-color     : #eee8d5; // base2
+$accent-border    : #93a1a1; // base1
+$accent-color-dark: #586e75; // base01
 
-		// -- SOLARIZED --
-		// base03:    #002b36; 
-		// base02:    #073642; 
-		// base01:    #586e75;
-		// base00:    #657b83;
-		// base0:     #839496;
-		// base1:     #93a1a1;
-		// base2:     #eee8d5; 
-		// base3:     #fdf6e3;
-		// yellow:    #b58900;
-		// orange:    #cb4b16;
-		// red:       #dc322f;
-		// magenta:   #d33682;
-		// violet:    #6c71c4;
-		// blue:      #268bd2;
-		// cyan:      #2aa198;
-		// green:     #859900;
+$heading-text-color : darken($link-color-hover, 15%);
+$tag-color        : #dc322f; // red
+
+	// -- SOLARIZED --
+  // -- http://ethanschoonover.com/solarized --
+
+	// base03:    #002b36; Dark Background 
+	// base02:    #073642; Accent Color - Dark
+	// base01:    #586e75; Body Text - Light
+	// base00:    #657b83; 
+	// base0:     #839496; Body Text - Dark
+	// base1:     #93a1a1; Light Color
+	// base2:     #eee8d5; Accent Color
+	// base3:     #fdf6e3; Light Background
+	// yellow:    #b58900;
+	// orange:    #cb4b16;
+	// red:       #dc322f; Tags
+	// magenta:   #d33682;
+	// violet:    #6c71c4;
+	// blue:      #268bd2; Links
+	// cyan:      #2aa198; Article Titles
+	// green:     #859900; Code, Pre Elements
 		
 // 3. GRID ----------------------------------------
 
@@ -86,16 +94,13 @@ $grid-padding   : $gutter-width;
 // Additional Susy Variables
 $show-grid-backgrounds  : true;
 $grid-background-column-color: lighten($body-color, 3%);
-//$grid-background-column-color: rgba(100, 100, 225, 0.10);
 $container-width        : false;
 $container-style        : magic;
 
 // A Few More Variables
 $break-1			  : 8;
 $break-2        : 12;
-
-$post-cols		  : 5;
-
+$post-columns	  : 6;
 
 @mixin clearfix {
   *zoom:1;

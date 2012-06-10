@@ -7,8 +7,19 @@
 
 // Main Header
 
-// Main Nav
+.masthead { margin-bottom: $base-lh; }
+//.tagline  {margin-bottom: 0; }
 
+// Main Nav
+.primary-nav  {
+  font-size: em(18);
+  line-height: lh(1, 18);
+  padding-top: em(12, 18);
+
+  li a {
+    display: block;
+  }
+}
 // Main Footer
 
 
@@ -59,11 +70,11 @@ a.pin-title {
 }
 
 a.pin-tag  {
-  color: #cb4b16;
+  color: $tag-color;
   font-weight: normal;
   text-decoration: none;
 }  
 
-  a.pin-tag:hover {border-bottom: 1px dotted #cb4b16;}
+a.pin-tag:hover {border-bottom: 1px dotted $tag-color;}
 
 

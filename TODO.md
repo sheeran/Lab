@@ -1,8 +1,7 @@
 # Lab Tasks
 
 ## Main Lab Page
-1. Redo layout: header
-2. Re-do layout - three columns **incorporate new prototype HTML strucure **
+1. Re-do layout - three columns **incorporate new prototype HTML strucure **
 3. Re-write copy: intro, projects, resources, current list
 4. Do the footer
 5. Images don't work for lab.nealsheeran subdomain - change to full path?
@@ -10,18 +9,14 @@
 7. Post link to GitHub repo
 
 ## Typography Page
-
-1. Move text size and line-height to one section for easier changing? (or variables with LESS?)
-2. Change sidenotes to floats
-3. Finish sidebar: "status of page"
-5. Multi-line article titles + new headline typeface
-6. Text shadow
+1. Finish sidebar: "status of page"
+2. Multi-line article titles + new headline typeface
+3. Text shadow
 7. Solarized colors - dark on light?
 8. If changing 'code' elements to Georgia, dial down font size
 9. Box, padding, border around code elements?
 
 ## Typography Page 2
-
 1. Code side is too big --> 14px works better than 15.
 2. Need to tweak h2 text-shadow --> or pick new headline font
 3. Merge two typography pages
@@ -35,17 +30,22 @@
 ## Prototypes
 
 ### General
-1. RESPONSIVE...mobile or desktop first?
-2. Image replacement on logo or web-font? Text Shadow?
-3. Nav indications for current page...Nav font?
-4. Refine overall HTML5 structure --> make template --> convert Lab home page
-5. Add CSS3 mixins to variables.scss
-6. Awesome icon fonts
-7. Re-do grid mixins like susy
+1. Image replacement on logo or web-font? Text Shadow?
+2. Nav indications for current page...Nav font?
+3. Refine overall HTML5 structure --> make template --> convert Lab home page
+4. Add CSS3 mixins to variables.scss
+5. Awesome icon fonts
+6. Do the footer
+7. Add Archive Page
+8. Add About Page
 
 ### Home Page
-1. Finish the footer
+1. Tweak section H3s
 2. Add search, RSS feeds
+3. Versions:
+	- 1) Summary of both Articles, Else + Twitter and PB
+	- 2) Standard Long with full Articles + separate Else
+	- 3) Long with in-line Else posts? 
 
 ### Single Article
 1. Use HTML5 <article> element? Same for Else posts with different class.
@@ -63,7 +63,6 @@
 
 ## Other Projects to do
 
-- HTML5 / CSS3 test page
 - Color palettes
 
 

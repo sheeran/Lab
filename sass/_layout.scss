@@ -8,13 +8,14 @@
 body {
   background: $body-color url(img/bg.jpg);
   color: $text-color;
-  font-family: $sans-ff;
+  font-family: $serif-ff;
   font-size: em(16);
   line-height: $base-lh;
 }
 
 #wrap {
   @include container ($total-columns, $break-1, $break-2);
+  margin-top: $base-lh;
   @include susy-grid-background;
   @include at-breakpoint($break-1)  {
     @include susy-grid-background;
@@ -37,13 +38,12 @@ footer  {
   clear: both;
   background: $body-color-dark;
   color: $text-color-dark;
-  border-top: 4px solid $accent-border;
+  border-top: 5px solid $accent-color-dark;
   padding-top: 1.5em;
 }
 
 footer .inner {
   @include container ($total-columns, $break-1, $break-2);
-
 }
 
 
@@ -54,12 +54,23 @@ footer .inner {
   header    {@include clearfix;}
   .logo     {@include span-columns(4, $break-1);}
   nav       {@include span-columns(4 omega, $break-1);}
-  .posts    {@include span-columns(4, $break-1);}
+  .posts-list   {@include span-columns(4, $break-1);}
   .else-list{@include span-columns(4 omega, $break-1);}
   .social   {clear: both; @include clearfix;}
   .twitter  {@include span-columns(4, $break-1);}
   .pinboard {@include span-columns(4 omega, $break-1);}
 
+  article   {
+    @include span-columns($post-columns, $break-1);
+    @include push(2, $break-1);}
+  article h2 {float: right; width: 100%;}
+  .meta,
+  .sidenote,
+  .caption  {
+    @include span-columns(2, $post-columns);
+    @include pull(2, $post-columns);
+    text-align: right;
+  }
 }
 
 /* ---------- @Break-2 = 12 Columns ---------- */

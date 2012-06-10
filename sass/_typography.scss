@@ -9,7 +9,7 @@
 
 a, a:link, a:visited {
   color: $link-color;
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: underline;
   }
   
@@ -23,7 +23,6 @@ header a,
 header a:link,
 header a:visited  {
   text-decoration: none;
-  -webkit-transition: border 1s ease-in;
   }
 
 /* -- Headings -- */
@@ -33,7 +32,8 @@ h1  {
   font-size: em(36);
   line-height: lh(2,36);
   text-transform: uppercase;
-  text-shadow: 0px 2px 0px #fffbf3;
+  letter-spacing: 0.08em;
+  text-shadow: 0px 3px 2px $accent-color;
   //@include hide-text;
 }
 
@@ -46,18 +46,35 @@ h2 {
 h2 a,
 h2 a:link,
 h2 a:visited  {color: $title-color; text-decoration: none;}
-h2 a:hover  {color: $link-color-hover;}
+h2 a:hover    {color: $link-color-hover;}
   
-// Section Headings on Home / Subheadings in articles  
-h3  {
+// Section Headings on Home 
+.heading  {
+  @include clearfix;
+  border-bottom: 5px solid $accent-color;
+  margin-bottom: 19px;
+}
+
+.heading h3  {
+  float: left;
   font-weight: normal;
   font-size: em(20);
+  color: $heading-text-color;
   line-height: lh(1, 20);
+  font-style: italic;
   margin-bottom: 0;
   }
 
+.description {
+  float: right;
+  text-align: right;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+// Article Titles and Subheadings
 #home-long h2,  
-.full-article h2 {
+article h2 {
   color: $title-color;
   font-size: em(24);
   line-height: lh(1, 24);
@@ -80,7 +97,7 @@ h3  {
 
 /* -- Text Styles -- */
 
-p, blockquote, ol, ul, pre  {
+p, blockquote, ol, ul, pre, dl  {
   margin-bottom: $base-lh;
   }
   
@@ -89,31 +106,15 @@ p, blockquote, ol, ul, pre  {
   font-size: em(14);
   font-style: italic;
   line-height: lh(1.0, 14);
-  margin-bottom: lh(1.0, 14);
 }
-  
-.meta,
-.sidenote,
-.caption  {
-  color: $light-color;
-  font-style: italic;
-  font-size: em(14);
-  line-height: lh(1, 14);
-  margin-bottom: lh(1, 14);
-  }
-// FIXME: Align Date and Headline baseline  
-.date  {
-  color: $text-color;
-  font-style: normal;
-  font-size: em(18, 14);
-  line-height: lh(1, 18);
-  margin-bottom: lh(1, 18);   
-  }
-  
+    
 blockquote  {
   color: $light-color;
   font-style: italic;
-  margin: $base-lh;
+  padding-left: 0.7em;
+  border-left: 3px solid $accent-color;
+  margin-left: 0.7em;
+  margin-bottom: $base-lh;
   }
 
 // Lists
@@ -179,6 +180,27 @@ pre code {line-height: 1.5em;}
 
 // Sidenotes and Footnotes
 
+.meta,
+.sidenote,
+.caption  {
+  color: $light-color;
+  font-style: italic;
+  font-size: em(14);
+  line-height: lh(1, 14);
+  margin-bottom: lh(1, 14);
+  }
+
+.date  {
+  color: $text-color;
+  font-style: normal;
+  font-size: em(18, 14);
+  line-height: lh(1, 18);
+  margin-bottom: lh(1, 18);
+  margin-top: 2px;   
+  }
+
+.tags {margin-top: -2px;}
+
 .noted  {
   float: right;
   }
@@ -215,8 +237,8 @@ footer p {
 
 .fine-print {
   clear: left;
-  color: #268bd2;
-  border-top: 1px dotted $accent-color;
+  color: $light-color;
+  border-top: 1px dotted #586e75;
   padding-top: 5px;
 }
 
