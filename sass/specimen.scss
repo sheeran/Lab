@@ -23,7 +23,8 @@ $title-case1-ff:		"adelle";
 $title-case2-ff:		"proxima-nova";
 $title-case3-ff:		"ff-tisa-web-pro";
 $title-case4-ff:		"alternate-gothic-no-3-d";
-$title-case5-ff:		$base-font-family;	
+$title-case5-ff:		$base-font-family;
+$title-case6-ff:		"bebas-neue";	
 
 // TEXT Samples
 
@@ -124,8 +125,21 @@ h3	{
 h3.title-case1	{font-family: $title-case1-ff;}
 h3.title-case2	{font-family: $title-case2-ff;}
 h3.title-case3	{font-family: $title-case3-ff;}
-h3.title-case4	{font-family: $title-case4-ff;}
+h3.title-case4	{
+	font-family: $title-case4-ff;
+	font-size: 48px;
+	line-height: 48px;
+	letter-spacing: 0.08em;
+}
+
 h3.title-case5	{font-family: $title-case5-ff;}
+
+h3.title-case6	{
+	font-family: $title-case6-ff;
+	font-size: 48px;
+	line-height: 48px;
+	letter-spacing: 0.08em;
+}
 
 /* ----- Text Styles ----- */
 

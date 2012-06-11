@@ -123,10 +123,19 @@ h3.title-case3 {
   font-family: "ff-tisa-web-pro"; }
 
 h3.title-case4 {
-  font-family: "alternate-gothic-no-3-d"; }
+  font-family: "alternate-gothic-no-3-d";
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0.08em; }
 
 h3.title-case5 {
   font-family: Georgia, sans-serif; }
+
+h3.title-case6 {
+  font-family: "bebas-neue";
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0.08em; }
 
 /* ----- Text Styles ----- */
 p.text-case1 {
