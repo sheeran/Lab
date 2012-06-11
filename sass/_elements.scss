@@ -6,20 +6,34 @@
 /* ---------- @Site-wide Elements ---------- */
 
 // Main Header
-
-.masthead { margin-bottom: $base-lh; }
-//.tagline  {margin-bottom: 0; }
+// TODO: Move H1 styling here???
+.masthead {
+  box-sizing: border-box; 
+  margin-bottom: $base-lh; 
+}
+.tagline  { margin-bottom: 0; }
 
 // Main Nav
-.primary-nav  {
-  font-size: em(18);
-  line-height: lh(1, 18);
-  padding-top: em(12, 18);
 
-  li a {
-    display: block;
-  }
+nav {
+  font-size: em(18);
+  line-height: lh(2, 18);
+  margin-bottom: lh(1.2, 18);
 }
+
+.primary-nav  {
+  padding-top: em(12, 18);
+  margin-bottom: 0;
+
+  li { line-height: 24px;}
+  li a { display: block; }
+  li a:hover { border-bottom: 5px solid $link-color-hover; }
+}
+
+#home .home_tab,
+#lab .lab_tab,
+#about .about_tab { border-bottom: 5px solid $light-color;}
+
 // Main Footer
 
 

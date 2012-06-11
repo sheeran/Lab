@@ -770,14 +770,31 @@ footer p {
 
 /* ---------- @Site-wide Elements ---------- */
 .masthead {
+  box-sizing: border-box;
   margin-bottom: 1.5em; }
 
-.primary-nav {
+.tagline {
+  margin-bottom: 0; }
+
+nav {
   font-size: 1.125em;
-  line-height: 1.33333333em;
-  padding-top: 0.66666667em; }
+  line-height: 2.66666667em;
+  margin-bottom: 1.6em; }
+
+.primary-nav {
+  padding-top: 0.66666667em;
+  margin-bottom: 0; }
+  .primary-nav li {
+    line-height: 24px; }
   .primary-nav li a {
     display: block; }
+  .primary-nav li a:hover {
+    border-bottom: 5px solid #268bd2; }
+
+#home .home_tab,
+#lab .lab_tab,
+#about .about_tab {
+  border-bottom: 5px solid #93a1a1; }
 
 /* ---------- @Elements ---------- */
 .entry img {
