@@ -63,7 +63,7 @@ $accent-color-dark: #586e75; // base01
 $heading-text-color : darken($link-color-hover, 15%);
 $tag-color        : #dc322f; // red
 
-	// -- SOLARIZED --
+	// -- SOLARIZED -----------------------------
   // -- http://ethanschoonover.com/solarized --
 
 	// base03:    #002b36; Dark Background 
@@ -87,8 +87,8 @@ $tag-color        : #dc322f; // red
 
 // Baseline Susy Variables
 $total-columns  : 4;
-$column-width   : 4em;
-$gutter-width   : 1.5em;
+$column-width   : 58px;
+$gutter-width   : 24px;
 $grid-padding   : $gutter-width;
 
 // Additional Susy Variables
@@ -97,9 +97,10 @@ $grid-background-column-color: lighten($body-color, 3%);
 $container-width        : false;
 $container-style        : magic;
 
-// A Few More Variables
-$break-1			  : 8;
-$break-2        : 12;
+// A Few More Variables. Above defaults = 20.5em max width = 328px
+$break-0        : 6;   // 6 = 34.5em = 552px
+$break-1			  : 8;   // 8 = 45.5em = 728px
+$break-2        : 12;  // 12 = 67.5em = 1080px, hence need early trigger??
 $post-columns	  : 6;
 
 @mixin clearfix {

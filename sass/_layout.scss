@@ -3,7 +3,7 @@
 // Version: 1.1
 // =================================================
 
-/* ---------- @Mobile First Layout ---------- */
+/* -------- @Mobile First Layout (328px) --------- */
 
 body {
   background: $body-color url(img/bg.jpg);
@@ -14,9 +14,12 @@ body {
 }
 
 #wrap {
-  @include container ($total-columns, $break-1, $break-2);
+  @include container ($total-columns, $break-0, $break-1, $break-2);
   margin-top: $base-lh;
   @include susy-grid-background;
+  @include at-breakpoint($break-0)  {
+    @include susy-grid-background;
+    }
   @include at-breakpoint($break-1)  {
     @include susy-grid-background;
     }
@@ -25,7 +28,8 @@ body {
     }
 }
 
-.primary-nav  {@include clearfix;}
+nav { @include clearfix; }
+//.primary-nav  { @include span-columns(4); }
 
 .primary-nav li {
   @include span-columns(1);
@@ -43,19 +47,27 @@ footer  {
 }
 
 footer .inner {
-  @include container ($total-columns, $break-1, $break-2);
+  @include container ($total-columns, $break-0, $break-1, $break-2);
 }
 
+/* -------- @Break-0 = 6 Columns (504px) --------- */
 
-/* ---------- @Break-1 = 8 Columns ---------- */
+@include at-breakpoint($break-0) {
+  nav {@include squish(1,1,6);}
+  .heading  { @include clearfix; }
+  .heading h3  { float: left; }
+  .description { float: right; text-align: right; }
+}
+
+/* -------- @Break-1 = 8 Columns (680px) --------- */
 
 @include at-breakpoint($break-1)  {
   
   header    {@include clearfix;}
   .logo     {@include span-columns(4, $break-1);}
-  nav       {@include span-columns(4 omega, $break-1);}
+  nav       {@include span-columns(4 omega, $break-1); margin-left: 0;}
   .posts-list   {@include span-columns(4, $break-1);}
-  .else-list{@include span-columns(4 omega, $break-1);}
+  .else-list    {@include span-columns(4 omega, $break-1);}
   .social   {clear: both; @include clearfix;}
   .twitter  {@include span-columns(4, $break-1);}
   .pinboard {@include span-columns(4 omega, $break-1);}
@@ -73,4 +85,8 @@ footer .inner {
   }
 }
 
-/* ---------- @Break-2 = 12 Columns ---------- */
+/* -------- @Break-2 = 12 Columns (1032px) -------- */
+
+@include at-breakpoint($break-2)  {
+  nav {@include span-columns(4 omega, $break-2); margin-left: 0;}
+}

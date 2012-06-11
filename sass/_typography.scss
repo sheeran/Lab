@@ -32,9 +32,9 @@ h1  {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   text-shadow: 0px 3px 2px $accent-color;
-  @include at-breakpoint($break-1){
-    font-size: em(36);
-    line-height: lh(2,36);
+  @include at-breakpoint($break-0) {
+    font-size: em(38); 
+    line-height: lh(2,38);
   }
 }
 
@@ -51,7 +51,7 @@ h2 a:hover    {color: $link-color-hover;}
   
 // Section Headings on Home 
 .heading  {
-  @include clearfix;
+  //@include clearfix;
   border-bottom: 5px solid $accent-color;
   margin-bottom: 19px;
 }
@@ -63,13 +63,11 @@ h2 a:hover    {color: $link-color-hover;}
   line-height: lh(1, 20);
   font-style: italic;
   margin-bottom: 0;
-  @include at-breakpoint($break-1) { float: left; }
 }
 
 .description {
   margin-top: 2px;
   margin-bottom: 0;
-  @include at-breakpoint($break-1) { float: right; text-align: right; }
 }
 
 // Article Titles and Subheadings

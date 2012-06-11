@@ -31,13 +31,14 @@
 
 ### General
 1. Image replacement on logo or web-font? Text Shadow?
-2. Nav indications for current page...Nav font?
 3. Refine overall HTML5 structure --> make template --> convert Lab home page
 4. Add CSS3 mixins to variables.scss
 5. Awesome icon fonts
 6. Do the footer
 7. Add Archive Page
 8. Add About Page
+9. Assign title variable to H1 and H3s with appropriate sans fallback (Bebas from TK)
+10. Need to tweak $break-2 back a bit to get full layout at 1024 - iPad Landscape
 
 ### Home Page
 1. Tweak section H3s
@@ -56,10 +57,11 @@
 6. Text shadow on h2 Article titles
 7. Comments
 8. A table example?
+9. Get tags inline
 
 ### MISC
 1. Figure out inline-block. http://designshack.net/articles/css/whats-the-deal-with-display-inline-block/
-2. Use box-style: border box?
+2. Use box-sizing: border box?
 
 ## Other Projects to do
 
