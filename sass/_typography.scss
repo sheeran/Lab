@@ -21,20 +21,21 @@ a:hover {
   
 header a,
 header a:link,
-header a:visited  {
-  text-decoration: none;
-  }
+header a:visited  { text-decoration: none; }
 
 /* -- Headings -- */
 
 // Main Header Logo
 h1  {
-  font-size: em(36);
-  line-height: lh(2,36);
+  font-size: em(32);
+  line-height: lh(2,32);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   text-shadow: 0px 3px 2px $accent-color;
-  //@include hide-text;
+  @include at-breakpoint($break-1){
+    font-size: em(36);
+    line-height: lh(2,36);
+  }
 }
 
 // Article Titles
@@ -56,20 +57,19 @@ h2 a:hover    {color: $link-color-hover;}
 }
 
 .heading h3  {
-  float: left;
   font-weight: normal;
   font-size: em(20);
   color: $heading-text-color;
   line-height: lh(1, 20);
   font-style: italic;
   margin-bottom: 0;
-  }
+  @include at-breakpoint($break-1) { float: left; }
+}
 
 .description {
-  float: right;
-  text-align: right;
   margin-top: 2px;
   margin-bottom: 0;
+  @include at-breakpoint($break-1) { float: right; text-align: right; }
 }
 
 // Article Titles and Subheadings
