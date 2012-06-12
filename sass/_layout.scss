@@ -38,6 +38,11 @@ nav { @include clearfix; }
   &:last-child {margin-right: 0;}
 }
 
+.tags li {
+  display: inline; 
+  margin-right: 5px;
+}
+
 footer  {
   clear: both;
   background: $body-color-dark;
@@ -66,6 +71,7 @@ footer .inner {
   header    {@include clearfix;}
   .logo     {@include span-columns(4, $break-1);}
   nav       {@include span-columns(4 omega, $break-1); margin-left: 0;}
+
   .posts-list   {@include span-columns(4, $break-1);}
   .else-list    {@include span-columns(4 omega, $break-1);}
   .social   {clear: both; @include clearfix;}
@@ -83,10 +89,24 @@ footer .inner {
     @include pull(2, $post-columns);
     text-align: right;
   }
+
+  .tags li {display: block; margin-right: 0;}
+
 }
 
 /* -------- @Break-2 = 12 Columns (1032px) -------- */
 
 @include at-breakpoint($break-2)  {
   nav {@include span-columns(4 omega, $break-2); margin-left: 0;}
+
+  .posts-list,
+  .else-list { @include span-columns(4, $break-2);}
+  .social {clear: none; @include span-columns(4 omega, $break-2);}
+  .twitter,
+  .pinboard {@include span-columns(4, 4);}
+
+  article {
+    @include span-columns ($post-columns, $break-2);
+    @include push(3, $break-2);
+  }
 }
