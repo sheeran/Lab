@@ -16,17 +16,19 @@ body {
 #wrap {
   @include container ($total-columns, $break-0, $break-1, $break-2);
   margin-top: $base-lh;
-  @include susy-grid-background;
-  @include at-breakpoint($break-0)  {
-    @include susy-grid-background;
-    }
-  @include at-breakpoint($break-1)  {
-    @include susy-grid-background;
-    }
-  @include at-breakpoint($break-2)  {
-    @include susy-grid-background;    
-    }
+//  @include susy-grid-background;
+//  @include at-breakpoint($break-0)  {
+//    @include susy-grid-background;
+//    }
+//  @include at-breakpoint($break-1)  {
+//    @include susy-grid-background;
+//    }
+//  @include at-breakpoint($break-2)  {
+//    @include susy-grid-background;    
+//    }
 }
+
+#content { padding-top: 2px; }
 
 nav { @include clearfix; }
 //.primary-nav  { @include span-columns(4); }
@@ -37,6 +39,8 @@ nav { @include clearfix; }
   text-transform: uppercase;
   &:last-child {margin-right: 0;}
 }
+
+.date { margin-bottom:0;}
 
 .tags li {
   display: inline; 
@@ -58,10 +62,18 @@ footer .inner {
 /* -------- @Break-0 = 6 Columns (504px) --------- */
 
 @include at-breakpoint($break-0) {
-  nav {@include squish(1,1,6);}
+  nav {
+    @include squish(1,1,6);
+    transition-property: margin;  
+    transition-duration: 500ms;  
+    transition-timing-function: ease-out;  
+    -webkit-transition-property: margin;  
+    -webkit-transition-duration: 500ms;  
+  }
   .heading  { @include clearfix; }
   .heading h3  { float: left; }
   .description { float: right; text-align: right; }
+  
 }
 
 /* -------- @Break-1 = 8 Columns (680px) --------- */
@@ -90,6 +102,7 @@ footer .inner {
     text-align: right;
   }
 
+  .date { margin-bottom: lh(1, 18); }
   .tags li {display: block; margin-right: 0;}
 
 }

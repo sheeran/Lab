@@ -27,7 +27,15 @@ nav {
 
   li { line-height: 24px;}
   li a { display: block; }
-  li a:hover { border-bottom: 5px solid $link-color-hover; }
+  li a:hover { 
+    border-bottom: 5px solid $link-color-hover; 
+    transition-property: all;  
+    transition-duration: 500ms;  
+    transition-timing-function: ease-in;  
+    -webkit-transition-property: border;  
+    -webkit-transition-duration: 500ms;  
+
+  }
 }
 
 #home .home_tab,
@@ -37,6 +45,10 @@ nav {
 #home .home_tab a:hover,
 #lab .lab_tab a:hover,
 #about .about_tab a:hover { border-bottom: 0;}
+
+
+// Hidden border so content does not move down
+#article .home_tab { border-bottom: 5px solid $body-color;}
 
 // Main Footer
 

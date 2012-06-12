@@ -75,6 +75,7 @@ h2 a:hover    {color: $link-color-hover;}
 article h2 {
   color: $title-color;
   font-size: em(24);
+  font-weight: normal;
   line-height: lh(1, 24);
   margin-bottom: lh(1, 24);
   }
@@ -193,17 +194,16 @@ pre code {line-height: 1.5em;}
   font-style: normal;
   font-size: em(18, 14);
   line-height: lh(1, 18);
-  margin-bottom: lh(1, 18);
+//  margin-bottom: lh(1, 18);
   margin-top: 2px;   
   }
 
-.tags {margin-top: -2px;}
+.tags {
+  margin-top: -2px;
+  padding-bottom: 2px;
+  margin-bottom: lh(1, 14);}
 
-
-
-.noted  {
-  float: right;
-  }
+.noted  { float: right; }
   
 a.footnote	{
 	border-bottom: none;
