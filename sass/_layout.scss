@@ -23,9 +23,9 @@ body {
 //  @include at-breakpoint($break-1)  {
 //    @include susy-grid-background;
 //    }
-//  @include at-breakpoint($break-2)  {
-//    @include susy-grid-background;    
-//    }
+  @include at-breakpoint($break-2)  {
+    @include susy-grid-background;    
+    }
 }
 
 #content { padding-top: 2px; }

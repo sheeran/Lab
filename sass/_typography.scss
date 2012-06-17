@@ -194,7 +194,6 @@ pre code {line-height: 1.5em;}
   font-style: normal;
   font-size: em(18, 14);
   line-height: lh(1, 18);
-//  margin-bottom: lh(1, 18);
   margin-top: 2px;   
   }
 
@@ -204,7 +203,12 @@ pre code {line-height: 1.5em;}
   margin-bottom: lh(1, 14);}
 
 .noted  { float: right; }
-  
+
+.footnotes  {
+  font-size: em(14);
+  line-height: lh(1, 14);
+} 
+
 a.footnote	{
 	border-bottom: none;
 	font-size: 90%;
@@ -218,13 +222,13 @@ a.reversefootnote	{text-decoration: none;}
   
 .footnotes hr {
   display : block; 
-  margin : em(22) 0;
-  width: 140px;
+  margin : em(24) 0;
+  width: columns(3, $post-columns);
   padding : 0;
   height : 1px; 
   border : 0; 
-  border-top : 1px solid $accent-border;
-  border-bottom : 1px solid rgb(255,255,255);
+  border-top : 2px solid $accent-border;
+  //border-bottom : 1px solid rgb(255,255,255);
   }
 
 // Footer 
