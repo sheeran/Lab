@@ -246,3 +246,9 @@ footer p {
   padding-top: 5px;
 }
 
+// Smaller size and incremental leading for Else
+
+.else {
+  font-size: em(14);
+  line-height: incr(14, 4, 5);
+}

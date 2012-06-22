@@ -23,12 +23,12 @@ body {
 //  @include at-breakpoint($break-1)  {
 //    @include susy-grid-background;
 //    }
-  @include at-breakpoint($break-2)  {
-    @include susy-grid-background;    
-    }
+//  @include at-breakpoint($break-2)  {
+//    @include susy-grid-background;    
+//    }
 }
 
-#content { padding-top: 2px; }
+#content {@include clearfix; padding-top: 2px; }
 
 nav { @include clearfix; }
 //.primary-nav  { @include span-columns(4); }
@@ -104,7 +104,7 @@ footer .inner {
 
   .date { margin-bottom: lh(1, 18); }
   .tags li {display: block; margin-right: 0;}
-
+  
 }
 
 /* -------- @Break-2 = 12 Columns (1032px) -------- */
@@ -112,9 +112,9 @@ footer .inner {
 @include at-breakpoint($break-2)  {
   nav {@include span-columns(4 omega, $break-2); margin-left: 0;}
 
-  .posts-list,
-  .else-list { @include span-columns(4, $break-2);}
-  .social {clear: none; @include span-columns(4 omega, $break-2);}
+  .posts-list { @include span-columns(5, $break-2);}
+  .else-list  { @include span-columns(4, $break-2);}
+  .social {clear: none; @include span-columns(3 omega, $break-2);}
   .twitter,
   .pinboard {@include span-columns(4, 4);}
 
