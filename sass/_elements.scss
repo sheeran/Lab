@@ -64,7 +64,7 @@ nav {
 	margin-bottom: em(24);
 	}
 
-//Twitter.js and Pinboard Links
+// Twitter.js and Pinboard Links
 
 #tweets,
 #pinboard_linkroll {
@@ -107,4 +107,72 @@ a.pin-tag  {
 
 a.pin-tag:hover {border-bottom: 1px dotted $tag-color;}
 
+// Comments
 
+.comments {
+  padding-top: 3.0em;
+  margin-bottom: 3.0em;
+}
+  
+.comment-text p:last-child  { margin-bottom: lh(0.5, 16); }
+
+.comment-data {
+  position: relative;
+  padding-bottom: em(10,16);
+  border-bottom: 3px solid $accent-color;
+  margin-bottom: lh(1.0, 16);
+  
+}
+
+.comment-date {
+  display: inline-block; 
+  margin-left: 0.5em;
+  color: $light-color;
+}
+  
+.comment-number {
+  display: block;     
+  position: absolute;
+  bottom: 10px;
+  right:0;
+  font-size: em(24);
+  font-style: italic;
+}
+
+.comment-number a { color: $accent-color; text-decoration: none; }
+.comment-number a:hover { color: $link-color-hover;}
+.jabba .comment-number a { color: $tag-color; text-decoration: none;}
+.jabba .comment-number a:hover { color: $tag-color;}
+
+//.jabba {
+//  border-left: 5px solid $accent-border;
+//  padding-left: 0.5em;
+//  box-sizing: border-box;
+//}
+
+@include at-breakpoint($break-1)  {
+  .comment      { clear: both;}
+  
+  .comment-text { 
+    float: right; 
+    width: 100%;
+    padding-bottom: 0;
+    border-bottom: 3px solid $accent-color; 
+    margin-bottom: 21px;
+  }
+  
+  .comment-text p:last-child  { margin-bottom: lh(1.0,16); }
+  
+  .comment-data {
+    @include span-columns(2, $post-columns);
+    @include pull(2, $post-columns);
+    text-align: right;
+    border-bottom: none;
+    margin-bottom: 0
+  }
+  
+  .comment-number {
+    position: static;
+    //display: block;
+  }
+}
