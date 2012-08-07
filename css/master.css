@@ -608,7 +608,7 @@ footer .inner {
   .pinboard {
     width: 100%;
     float: left;
-    margin-right: 7.31707317%;
+    margin-right: 10%;
     display: inline; }
 
   article {
@@ -616,7 +616,42 @@ footer .inner {
     float: left;
     margin-right: 2.3255814%;
     display: inline;
-    margin-left: 25.58139535%; } }
+    margin-left: 25.58139535%; }
+
+  .posts-full {
+    width: 65.89147287%;
+    float: left;
+    margin-right: 2.3255814%;
+    display: inline; }
+
+  .sidebar {
+    width: 23.25581395%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1.5em;
+    display: inline; }
+
+  #home-long .social {
+    clear: none;
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1.5em;
+    display: inline; }
+
+  #home-long .twitter,
+  #home-long .pinboard {
+    width: 100%;
+    float: left;
+    margin-right: 10%;
+    display: inline; }
+
+  #home-long article {
+    width: 74.11764706%;
+    float: left;
+    margin-right: 3.52941176%;
+    display: inline;
+    margin-left: 25.88235294%; } }
 /* ---------- @Typography ---------- */
 a, a:link, a:visited {
   color: #073642;
@@ -822,6 +857,12 @@ footer p {
   font-size: 0.875em;
   line-height: 1.37142857em; }
 
+.linked h2:hover {
+  font-style: italic; }
+
+.posts-full article {
+  margin-bottom: 3em; }
+
 /* ---------- @Site-wide Elements ---------- */
 .masthead {
   box-sizing: border-box;
@@ -867,6 +908,13 @@ nav {
 .entry img {
   float: right;
   width: 97.863248%;
+  background-color: #eee8d5;
+  border: 1px solid #93a1a1;
+  padding: 4px;
+  margin-bottom: 1.5em; }
+
+.art {
+  width: 99.031008%;
   background-color: #eee8d5;
   border: 1px solid #93a1a1;
   padding: 4px;

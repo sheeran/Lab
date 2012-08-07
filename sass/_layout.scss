@@ -116,10 +116,23 @@ footer .inner {
   .else-list  { @include span-columns(4, $break-2);}
   .social {clear: none; @include span-columns(3 omega, $break-2);}
   .twitter,
-  .pinboard {@include span-columns(4, 4);}
+  .pinboard {@include span-columns(3, 3);}
 
   article {
     @include span-columns ($post-columns, $break-2);
     @include push(3, $break-2);
+  }
+  
+  // For Full,Single Page:
+
+  .posts-full { @include span-columns (8, $break-2);}
+  .sidebar    { @include span-columns(3 omega, $break-2);}
+  #home-long .social {clear: none; @include span-columns(3 omega, 3);}
+  #home-long .twitter,
+  #home-long .pinboard {@include span-columns(3, 3);}
+
+  #home-long article {
+    @include span-columns ($post-columns, 8);
+    @include push(2, 8);
   }
 }

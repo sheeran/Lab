@@ -247,8 +247,18 @@ footer p {
 }
 
 // Smaller size and incremental leading for Else
-
+// .else is the dl class on summary homepage
 .else {
   font-size: em(14);
   line-height: incr(14, 4, 5);
 }
+
+// .linked is for else-style article elements on full/single page
+
+.linked h2:hover {
+  font-style: italic;
+}
+
+// Need some space between posts on full/single page
+
+.posts-full article { margin-bottom: 2 * $base-lh;}

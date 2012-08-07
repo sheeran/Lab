@@ -45,8 +45,8 @@
 2. Add search, RSS feeds
 3. Versions:
 	- 1) Summary of both Articles, Else + Twitter and PB
-	- 2) Standard Long with full Articles + separate Else
-	- 3) Long with in-line Else posts? 
+	- 2) Long with in-line Else posts?
+4. Specfic link-lest/else styling on full/single page
 
 ### Single Article
 1. Use HTML5 <article> element? Same for Else posts with different class.
@@ -55,9 +55,8 @@
 4. Use HTML5 figure/figcaption? Effect with responsive images
 5. Adaptive Images?
 6. Text shadow on h2 Article titles
-7. Comments
+7. Comments (comment number, specific styling for my comments)
 8. A table example?
-9. Get tags inline
 
 ### MISC
 1. Figure out inline-block. http://designshack.net/articles/css/whats-the-deal-with-display-inline-block/
