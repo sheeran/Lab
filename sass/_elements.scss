@@ -38,17 +38,18 @@ nav {
   }
 }
 
-#home .home_tab,
+#posts .post_tab,
 #lab .lab_tab,
 #about .about_tab { border-bottom: 5px solid $accent-color;}
 
 #home .home_tab a:hover,
+#posts .post_tab a:hover,
 #lab .lab_tab a:hover,
 #about .about_tab a:hover { border-bottom: 0;}
 
 
 // Hidden border so content does not move down
-#article .home_tab { border-bottom: 5px solid $body-color;}
+//#article .home_tab { border-bottom: 5px solid $body-color;}
 
 // Main Footer
 
