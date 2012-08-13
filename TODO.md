@@ -58,6 +58,8 @@
 7. Comments (comment number, specific styling for my comments)
 8. A table example?
 
+### Archive Page
+
 ### MISC
 1. Figure out inline-block. http://designshack.net/articles/css/whats-the-deal-with-display-inline-block/
 2. Use box-sizing: border box?

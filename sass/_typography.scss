@@ -23,6 +23,12 @@ header a,
 header a:link,
 header a:visited  { text-decoration: none; }
 
+.tagslist li a,
+.tagslist li a { text-decoration: none;}
+
+footer a,
+footer a:link { color: $link-color-hover;}
+
 /* -- Headings -- */
 
 // Main Header Logo
@@ -148,8 +154,9 @@ blockquote  {
   text-indent: -1.0em;
   }
   
-.entry ul.test li:before {
-	content: "\00BB \0020";
+.entry ul.test li:before,
+.test-list li.linked h2:after {
+	content: "\0020 \00BB ";
 	}
 	
 .sc {
@@ -234,7 +241,8 @@ a.reversefootnote	{text-decoration: none;}
 // Footer 
 // FIXME: Testing incremental leading here  
 
-footer p {
+footer p,
+footer ul {
   font-size: em(15);
   line-height: incr(15, 4, 5);
 }
