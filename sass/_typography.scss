@@ -44,11 +44,11 @@ h1  {
   }
 }
 
-// Article Titles
-h2 {
-  font-size: em(20);
-  line-height: lh(1, 20);
-  }
+// Article Titles on Home SUMMARY - DELETE
+//h2 {
+//  font-size: em(20);
+//  line-height: lh(1, 20);
+//  }
   
 h2 a,
 h2 a:link,
@@ -77,7 +77,7 @@ h2 a:hover    {color: $link-color-hover;}
 }
 
 // Article Titles and Subheadings
-#home-long h2,  
+//#home-long h2,  
 article h2 {
   color: $title-color;
   font-size: em(24);
@@ -85,6 +85,15 @@ article h2 {
   line-height: lh(1, 24);
   margin-bottom: lh(1, 24);
   }
+
+    .linked h2  { 
+      color: $tag-color; // Color for the :after content -- >>;
+      font-size: em(20);
+      line-height: lh(1, 20);
+      margin-bottom: lh(1, 20);
+      }
+
+    .archives .linked h2 { margin-bottom: 0;}
   
 .entry h3 {
   font-weight: bold;
@@ -98,6 +107,13 @@ article h2 {
   font-weight: normal;
   text-transform: uppercase;
   margin-bottom: lh(1, 16);
+  }
+
+.entry h5 {
+  font-weight: bold;
+  font-size: em(19);
+  font-variant: small-caps;
+  text-transform: lowercase;
   }
 
 /* -- Text Styles -- */
@@ -155,7 +171,8 @@ blockquote  {
   }
   
 .entry ul.test li:before,
-.test-list li.linked h2:after {
+//.test-list li.linked h2:after, 
+article.linked h2:after{
 	content: "\0020 \00BB ";
 	}
 	
@@ -193,7 +210,8 @@ pre code {line-height: 1.5em;}
   font-style: italic;
   font-size: em(14);
   line-height: lh(1, 14);
-  margin-bottom: lh(1, 14);
+  //margin-bottom: lh(1, 14);
+  @include clearfix;
   }
 
 .date  {
@@ -207,9 +225,12 @@ pre code {line-height: 1.5em;}
 .tags {
   margin-top: -2px;
   padding-bottom: 2px;
-  margin-bottom: lh(1, 14);}
+  //margin-bottom: lh(1, 14);
+}
 
-.noted  { float: right; }
+.noted  { float: right; @include clearfix;}
+
+.noted-on-right { float: left; @include clearfix;}
 
 .footnotes  {
   font-size: em(14);
@@ -270,3 +291,4 @@ footer ul {
 // Need some space between posts on full/single page
 
 .posts-full article { margin-bottom: 2 * $base-lh;}
+footer { margin-top: 48px}

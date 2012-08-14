@@ -39,6 +39,9 @@
 8. Add About Page
 9. Assign title variable to H1 and H3s with appropriate sans fallback (Bebas from TK)
 10. Need to tweak $break-2 back a bit to get full layout at 1024 - iPad Landscape
+11. REFACTOR SASS
+  - Consolidate Elsewhere/LL styles in one place
+12. Vertical Ryhthm is out of wack - main picture
 
 ### Home Page
 1. Tweak section H3s
@@ -46,7 +49,8 @@
 3. Versions:
 	- 1) Summary of both Articles, Else + Twitter and PB
 	- 2) Long with in-line Else posts?
-4. Specfic link-lest/else styling on full/single page
+4. Specfic link-list/else styling on full/single page
+5. How to link to my link-list/else posts?
 
 ### Single Article
 1. Use HTML5 <article> element? Same for Else posts with different class.

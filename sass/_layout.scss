@@ -16,19 +16,21 @@ body {
 #wrap {
   @include container ($total-columns, $break-0, $break-1, $break-2);
   margin-top: $base-lh;
-  @include susy-grid-background;
-  @include at-breakpoint($break-0)  {
-    @include susy-grid-background;
-    }
-  @include at-breakpoint($break-1)  {
-    @include susy-grid-background;
-    }
-  @include at-breakpoint($break-2)  {
-    @include susy-grid-background;    
-    }
+//  @include susy-grid-background;
+//  @include at-breakpoint($break-0)  {
+//    @include susy-grid-background;
+//    }
+//  @include at-breakpoint($break-1)  {
+//    @include susy-grid-background;
+//    }
+//  @include at-breakpoint($break-2)  {
+//    @include susy-grid-background;    
+//    }
 }
 
-#content {@include clearfix; padding-top: 2px; }
+#content {@include clearfix; padding-top: 0px; }
+
+.logo { text-align: center;}
 
 nav { @include clearfix; }
 //.primary-nav  { @include span-columns(4); }
@@ -70,6 +72,7 @@ footer .inner {
 /* -------- @Break-0 = 6 Columns (504px) --------- */
 
 @include at-breakpoint($break-0) {
+  
   nav {
     @include squish(1,1,6);
     transition-property: margin;  
@@ -102,7 +105,7 @@ footer .inner {
 @include at-breakpoint($break-1)  {
   
   header    {@include clearfix;}
-  .logo     {@include span-columns(4, $break-1);}
+  .logo     {@include span-columns(4, $break-1); text-align: left;}
   nav       {@include span-columns(4 omega, $break-1); margin-left: 0;}
 
   .posts-list   {@include span-columns(4, $break-1);}
@@ -141,7 +144,7 @@ footer .inner {
     text-align: right;
   }
 
-  //.tagslist li { display: block;}
+.tagslist li { display: block;}
 
 // Footer
   .intro  { @include span-columns(4, $break-1);}
@@ -165,18 +168,24 @@ footer .inner {
     @include push(3, $break-2);
   }
 
+// Experiment
+  .sidenoteright  {
+    @include span-columns (2 omega, $post-columns);
+    @include pull(2, $post-columns, right);
+  }
+
 // Archives Page 
 
   .archives  { @include span-columns(8, $break-2);}
   #posts .sidebar { @include span-columns(3 omega, $break-2);}
   .test-list {
-    @include span-columns(8, 8);
+    @include span-columns(6, 8);
     @include push(2, 8);
   }
 
   .entrydate  { 
-    @include span-columns(2, 8);
-    @include pull(2, 8);
+    @include span-columns(2, 6);
+    @include pull(2, 6);
     text-align: right;
   }
 
