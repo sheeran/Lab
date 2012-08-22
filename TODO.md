@@ -33,6 +33,7 @@
 1. Image replacement on logo or web-font? Text Shadow?
 3. Refine overall HTML5 structure --> make template --> convert Lab home page
 4. Add CSS3 mixins to variables.scss
+  - import compass?
 5. Awesome icon fonts
 6. Do the footer
 7. Add Archive Page
@@ -41,7 +42,10 @@
 10. Need to tweak $break-2 back a bit to get full layout at 1024 - iPad Landscape
 11. REFACTOR SASS
   - Consolidate Elsewhere/LL styles in one place
+  - Split breakpoints into separate partials?
 12. Vertical Ryhthm is out of wack - main picture
+13. Add MINT code to each page.
+14. Update Susy to latest version...where?
 
 ### Home Page
 1. Tweak section H3s

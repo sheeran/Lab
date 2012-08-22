@@ -47,6 +47,24 @@ nav {
 #lab .lab_tab a:hover,
 #about .about_tab a:hover { border-bottom: 0;}
 
+// Search Box
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.search {
+  margin: 0;
+  padding: 0;
+  width: 148px;
+}
+
+fieldset  {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
 
 // Hidden border so content does not move down
 //#article .home_tab { border-bottom: 5px solid $body-color;}

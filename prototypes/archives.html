@@ -34,10 +34,10 @@
   
   <div id="content">
     <section class="archives">
-      <div class="heading">
+      <!-- <div class="heading">
         <h3>Archive of Entries</h3>
         <p class="description light">Subscribe to RSS Feed</p>
-      </div>
+      </div> -->
       <!-- TODO: Rename 'test-list' -->
       <ul class="test-list">
         <li><h2><a href="article.html">This is a Blog Post Title</a></h2><span class="entrydate light">July 27, 2012</span><span class="entrytags light">design, typography, software, rants</span></li>
@@ -65,6 +65,18 @@
 
     <section class="sidebar">
       <div class="heading">
+        <h3>Search</h3>
+        <p class="description light"></p>
+      </div>
+
+      <form action="http://google.com/search" method="get">
+        <fieldset role="search">
+          <input type="hidden" name="q" value="site:www.nealsheeran.com/test/" />
+          <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+        </fieldset>
+      </form>
+      
+      <div class="heading">
         <h3>Tags</h3>
         <p class="description light"></p>
       </div>
@@ -90,6 +102,9 @@
         <li><a href="#">typography</a></li>
         <li><a href="#">writing</a></li>
       </ul>
+
+      
+
     </section> <!-- close sidebar -->
   </div>  <!-- close content -->    
 </div> <!-- close wrap -->

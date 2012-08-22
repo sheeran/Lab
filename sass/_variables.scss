@@ -93,7 +93,7 @@ $grid-padding   : $gutter-width;
 
 // Additional Susy Variables
 $show-grid-backgrounds  : true;
-$grid-background-column-color: lighten($body-color, 3%);
+$grid-background-column-color: lighten($body-color, 2%);
 $container-width        : false;
 $container-style        : magic;
 
@@ -111,7 +111,7 @@ $post-columns	  : 6;
   
 // 4. General Mixins ------------------------------
   
-@mixin hide-text {
+@mixin hide-text {  // Can't use em-based margins on a element using this
   background-color: transparent;
   border:           0;
   color:            transparent;
