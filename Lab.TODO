@@ -1,0 +1,51 @@
+
+The Laboratory:
+
+New Design Prototypes:
+  
+ General
+ ✔ Turn into full-up Sublime Project @done (12-10-20 21:21)
+ ☐ Finish Footer
+ ☐ Add About Page
+ ☐ Refactor SCSS
+   ☐ Consolidate Elsewhere styles in one place
+   ☐ Break out variables and mixins / add inuit.css keepers
+   ☐ Add css3 mixins to variables.scss...or use compass?
+ ☐ Assign title variable for H2s, with appropriate sans fallback
+ ☐ Fix vertical rhythm
+ ☐ Need to tweak $break-2 back a bit to get full layout at 1024
+ ☐ Add Mint to each page
+ ☐ Change to rem mixin?
+ ☐ Icon fonts?
+
+ Home Page
+ ☐ Add search, RSS feeds
+
+ Single Article Page
+ ☐ Adaptive Images?
+ ☐ Figure/figure caption
+ ☐ Text Shadow on titles
+
+ Archives Page
+ ☐ Differentiate Elsewhere posts
+
+Main Lab Homepage:
+ ☐ Re-do layout and update HTML(5) and CSS structure
+   ☐ Match HTML structure to Octopress?
+   ☐ Baseline Sass starter files
+   ✔ Break out projects into folders? @done (12-12-11 01:12)
+ ☐ Unified masthead, project menu?
+ ☐ Rewrite copy
+ ☐ Do the footer
+ ☐ Link to GitHub Repo
+
+Typography:
+ ☐ Fix headline typeface and multiline articles
+ ☐ Text shadow for headlines?
+ ☐ Dark-on-light Solarized version?
+ ☐ Compass typography tests
+ ☐ Fix title on version 2 page
+
+ Misc:
+ ☐ Remove un-needed Javascript from all pages
+ ☐ HTML Tables
