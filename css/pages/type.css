@@ -1,14 +1,14 @@
 /* 
-Filename: base2.css			
-Version: 1.4B // 20 Feb 12 --> Branch "font16_24"	
+Filename: base.css			
+Version: 1.4A // 10 Nov 2011 --> Branch "font16_24"	
 Notes:						
 - fontsize now 16px with 24px vertical rhythm
-- Add sub-bullets to unordered lists
+
 */
 
 /* ----- Reset or Normalize ----- */
 
-@import "normalize.css";
+@import "../normalize.css";
 
 html, body, div, span, 
 h1, h2, h3, h4, h5, h6,
@@ -22,7 +22,7 @@ dl, dt, dd, pre, code, img	{
 /* _____ General Layout	_____ */
 
 body {
-	background: #fdf6e3 url(img/bg.jpg);
+	background-color: #fdf6e3;
 	}
 	
 #banner	{
@@ -81,7 +81,7 @@ a:hover 	{
   		
 body {
 	color: #073642;
-    font-family: ff-tisa-web-pro, Segoe, Corbel, "Trebuchet MS", sans-serif;
+    font-family: proxima-nova-1, proxima-nova-2, Segoe, Corbel, "Trebuchet MS", sans-serif;
     font-size: 100%;		/* Base size = 16px */
     font-style: normal;
     }
@@ -108,19 +108,17 @@ strong, b	{
 	}
 
 h2 {
-	font-family: alternate-gothic-no-2-d, Georgia, "Times New Roman", sans-serif;
-	font-size: 2.0em;			/* 32/16 = 1.5 */
-	line-height: 1.0em;			/* 32/24 = 1.0 */
-	letter-spacing: 1px;
-	text-shadow: 0px 1px 1px rgba(123, 160, 161, 0.93);
+	font-family: Georgia, "Times New Roman", sans-serif;
+	font-size: 1.5em;			/* 24/16 = 1.5 */
+	line-height: 1.0em;			/* 24/24 = 1.0 */
 	font-weight: normal;
 	color: #2aa198;
-	margin-bottom: -7px;		/* Need to convert this */
+	margin-bottom: 0;
 	}
 
 h3	{
-	font-size: 1.125em;			/* 18/16 = 1.125 */
-	line-height: 1.33333333em;	/* 24/18 = 1.333 */
+	font-size: 1.1250em;		/* 16/14 = 1.1429 */
+	line-height: 1.333333333em;	/* 20/16 = 1.25 */
 	margin-top: 2.0em;			/* 1.5: 36/18 = 2.0 */
 	margin-bottom: 0.666666667em;		/* 0.5: 12/18 = 0.66667 */
 	}
@@ -144,7 +142,7 @@ h4	{
 p, ul, ol, dl, dd {margin-bottom: 1.5em;} /* 24px */
 
 p.date	{
-	/* font-family: Constantia, Georgia, "Times New Roman", sans-serif; */
+	font-family: Constantia, Georgia, "Times New Roman", sans-serif;
 	}
 
 p.meta	{
@@ -154,7 +152,7 @@ p.meta	{
 	}
 	
 .shadow	{
-	text-shadow: 1px 1px 1px #FAFAFA;
+	text-shadow: 1px 2px 1px #FAFAFA;
 	}
 
 #sidebar p,
@@ -175,7 +173,7 @@ blockquote	{
 	
 pre, code	{
 	font-family: "DejaVu Sans Mono", Consolas, Menlo, "Courier New", monospace, sans-serif;
-	font-size: 14px;	
+	font-size: 15px;	
 	color: #859900;
 	margin-bottom: 1.5em;
 	}
@@ -199,13 +197,6 @@ ol li ol	{
 	margin-bottom: 0;
 	}
 	
-ul li ul	{
-	list-style: circle;
-	margin-left: 2.5714em;
-	margin-bottom: 0;
-	}
-	
-
 /* ----- Images ----- */
 
 #content img	{
@@ -231,13 +222,9 @@ ul li ul	{
 	width:164px;
 	}
 	
-.noted	{
-	float: right;
-	}
-	
 /* ----- footnotes -----*/
 
-a.footnote	{
+a.fn	{
 	border-bottom: none;
 	font-size: 75%;
     line-height: 0;
@@ -245,8 +232,6 @@ a.footnote	{
     vertical-align: baseline;
     top: -0.5em;
 	}
-
-a.reversefootnote	{text-decoration: none;}
 	
 .footnotes	{
 	font-size: 0.8750em;
