@@ -1,0 +1,77 @@
+// =================================================
+// Variables and Mixins
+// Version: 1.1
+// =================================================
+
+// 1. TYPOGRAPHY -----------------------------------
+
+// Convert Pixels to EMs (Desired = Target / Context)
+
+@function em($target, $context: $base-font){
+	@if $target == 0 {@return 0}
+	@return ($target / $context) + 0em;
+  }
+
+
+// Maintain vertical rhythm with Line Height - '$amount' can be used as a multipler
+// TODO: combine these into a mix-in that includes the Line-height and margin properties?
+
+@function lh($amount: 1, $context: $base-lh){
+	@return em($base-vr * $amount, $context)
+  }
+
+
+// Incremental Leading
+// Every 'x' line of affected element will align with every 'y' line of main text
+
+@function incr($new-size: 14, $x: 4, $y: 5){
+  @return (1em * (($base-vr / $new-size) * ($x / $y)))
+  }
+
+
+// This assumes font-size = 62.5% on html element
+
+@mixin rem($size: 16){
+  font-size : #{$size}px;
+  font-size : #{$size / 10}rem; 
+  }
+
+// 2. General Mixins ------------------------------
+
+@mixin clearfix {
+  *zoom:1;
+  &:before, &:after {content: " "; display:table;}
+  &:after {clear:both;}
+  }
+    
+@mixin hide-text {  // Can't use em-based margins on an element using this
+  background-color: transparent;
+  border:           0;
+  color:            transparent;
+  font:             0/0 a;
+  text-shadow:      none;
+  }
+
+@mixin rounded($radius:4px) {
+  -webkit-border-radius : $radius;
+     -moz-border-radius : $radius;
+          border-radius : $radius; 
+  }
+
+@mixin drop-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $alpha: 0.1) {
+  -webkit-box-shadow : $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+     -moz-box-shadow : $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+          box-shadow : $x-axis $y-axis $blur rgba(0, 0, 0, $alpha); 
+  }
+
+// Add percentage of white to a color
+@function tint($color, $percent){
+  @return mix(white, $color, $percent);
+}
+
+// Add percentage of black to a color
+@function shade($color, $percent){
+  @return mix(black, $color, $percent);
+}
+
+

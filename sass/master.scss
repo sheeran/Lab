@@ -3,21 +3,32 @@
 // Version: 1.0
 // =================================================
 
+// =================================================
+// Thanks to Eric Meyer, Nicolas Gallagher, HTML5BP,
+// Andy Clark (320 and Up), Harry Roberts (inuit.css), 
+// Foundation, and Bourbon. Much borrowed from them.
+// =================================================
+
 // External Imports
 @import "susy";
 
 // Reset
-@import "normalize";
-@import "normalizeplus";
+@import "resets/normalize_v2";
+//@import "resets/normalizeplus";
 
 // Main Variable and Mixin file
 @import "base/variables";
+@import "base/mixins";
+@import "base/global";
+
+//@import "base/helpers";
 
 // Design Specific
-@import "layout";
-@import "typography";
-@import "elements";
+@import "site/layout";
+@import "site/typography";
+@import "site/elements";
+@import "site/comments";
 
-// TODO: How to implement RWD Media Queries?
-// Mobile first or desktop?
-// Each breakpoint in separate .scss file (like 320 and up)?
+//For likely removal
+@import "site/testing";
+

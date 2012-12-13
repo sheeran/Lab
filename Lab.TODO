@@ -20,6 +20,7 @@ New Design Prototypes:
 
  Home Page
  ☐ Add search, RSS feeds
+ ☐ Need to make tags with articles into links
 
  Single Article Page
  ☐ Adaptive Images?
@@ -27,7 +28,8 @@ New Design Prototypes:
  ☐ Text Shadow on titles
 
  Archives Page
- ☐ Differentiate Elsewhere posts
+ ☐ Differentiate Elsewhere posts - added .linked to <li> element
+ ☐ Need to make tags with articles into links
 
 Main Lab Homepage:
  ☐ Re-do layout and update HTML(5) and CSS structure

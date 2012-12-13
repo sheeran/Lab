@@ -1,42 +1,26 @@
 // =================================================
 // Variables and Mixins
-// Version: 1.1
+// Version: 1.2
 // =================================================
 
 // 1. TYPOGRAPHY -----------------------------------
 
+$base-perc  : 100%;  // Set to 62.5% for the 'html' element to use 'rem' mixin 
 $base-font  : 16;
 $base-lh    : 1.5em;  
-$base-vr    : 24;  // 16 * 1.5 = 24px
+$base-vr    : 24;    // 16 * 1.5 = 24px
 
 $serif-ff   : "ff-tisa-web-pro", Cambria, Georgia, serif;
 $sans-ff    : "proxima-nova", Corbel, sans-serif;
 $title-ff   : "adelle", Georgia, serif;
 $code-ff    : "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, sans-serif;
 
-// Convert Pixels to EMs (Desired = Target / Context)
-@function em($target, $context: $base-font){
-	@if $target == 0 {@return 0}
-	@return $target / $context + 0em;
-}
-
-// Maintain vertical rhythm with Line Height - '$amount' can be used as a multipler
-// TODO: combine these into a mix-in that includes the Line-height and margin properties?
-@function lh($amount: 1, $context: $base-lh){
-	@return em($base-vr * $amount, $context)
-}
-
-// Incremental Leading
-// Every 'x' line of affected element will align with every 'y' line of main text
-@function incr($new-size: 14, $x: 4, $y: 5){
-  @return 1em * (($base-vr / $new-size) * ($x / $y))
-}
-
-// This assumes font-size = 62.5% on html element
-@mixin rem($size) {
-  font-size: $size + px;
-  font-size: ($size / 10) + rem;
-}
+$h1-size    : 32; // Site Title
+$h2-size    : 24; // Article Titles
+$h3-size    : 18; // Article Sub-heading
+$h4-size    : 16; // Article Sub-heading
+$h5-size    : 19; // Article Sub-heading (Small Caps)
+//$h6-size    : ;
 
 
 // 2. COLOR ----------------------------------------
@@ -63,25 +47,25 @@ $accent-color-dark: #586e75; // base01
 $heading-text-color : darken($link-color-hover, 15%);
 $tag-color        : #dc322f; // red
 
-	// -- SOLARIZED -----------------------------
-  // -- http://ethanschoonover.com/solarized --
+// -- SOLARIZED -----------------------------------
+// -- http://ethanschoonover.com/solarized --------
 
-	// base03:    #002b36; Dark Background 
-	// base02:    #073642; Accent Color - Dark
-	// base01:    #586e75; Body Text - Light
-	// base00:    #657b83; 
-	// base0:     #839496; Body Text - Dark
-	// base1:     #93a1a1; Light Color
-	// base2:     #eee8d5; Accent Color
-	// base3:     #fdf6e3; Light Background
-	// yellow:    #b58900;
-	// orange:    #cb4b16;
-	// red:       #dc322f; Tags
-	// magenta:   #d33682;
-	// violet:    #6c71c4;
-	// blue:      #268bd2; Links
-	// cyan:      #2aa198; Article Titles
-	// green:     #859900; Code, Pre Elements
+// base03:    #002b36; Dark Background 
+// base02:    #073642; Accent Color - Dark
+// base01:    #586e75; Body Text - Light
+// base00:    #657b83; 
+// base0:     #839496; Body Text - Dark
+// base1:     #93a1a1; Light Color
+// base2:     #eee8d5; Accent Color
+// base3:     #fdf6e3; Light Background
+// yellow:    #b58900;
+// orange:    #cb4b16;
+// red:       #dc322f; Tags
+// magenta:   #d33682;
+// violet:    #6c71c4;
+// blue:      #268bd2; Links
+// cyan:      #2aa198; Article Titles
+// green:     #859900; Code, Pre Elements
 		
 // 3. GRID ----------------------------------------
 
@@ -92,29 +76,13 @@ $gutter-width   : 1.5em;
 $grid-padding   : $gutter-width;
 
 // Additional Susy Variables
-$show-grid-backgrounds  : true;
+$show-grid-backgrounds  : false;
 $grid-background-column-color: lighten($body-color, 2%);
 $container-width        : false;
 $container-style        : magic;
 
-// A Few More Variables. Above defaults = 20.5em max width = 328px
+// Breakpoints. Above defaults = 20.5em max width = 328px
 $break-0        : 6;   // 6 = 34.5em = 552px
 $break-1			  : 8;   // 8 = 45.5em = 728px
 $break-2        : 12;  // 12 = 67.5em = 1080px, hence need early trigger??
 $post-columns	  : 6;
-
-@mixin clearfix {
-  *zoom:1;
-  &:before, &:after {content: ""; display:table;}
-  &:after {clear:both;}
-  }
-  
-// 4. General Mixins ------------------------------
-  
-@mixin hide-text {  // Can't use em-based margins on a element using this
-  background-color: transparent;
-  border:           0;
-  color:            transparent;
-  font:             0/0 a;
-  text-shadow:      none;
-}

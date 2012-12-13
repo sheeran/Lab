@@ -3,15 +3,8 @@
 // Version: 1.1
 // =================================================
 
-/* -------- @Mobile First Layout (328px) --------- */
 
-body {
-  background: $body-color url(img/bg.jpg);
-  color: $text-color;
-  font-family: $serif-ff;
-  font-size: em(16);
-  line-height: $base-lh;
-}
+/* -------- @Mobile First Layout (328px) --------- */
 
 #wrap {
   @include container ($total-columns, $break-0, $break-1, $break-2);
@@ -49,21 +42,17 @@ nav { @include clearfix; }
   margin-right: 5px;
 }
 
+.posts-full article { margin-bottom: 2 * $base-lh;}
+
 // Archive Page
 
 .entrydate,
 .entrytags  { display: block;}
 .entrytags  { margin-bottom:24px;}
+.test-list   { margin-left: 0; }
 .tagslist li  { display: inline;}
 
 // Footer
-footer  {
-  clear: both;
-  background: $body-color-dark;
-  color: $text-color-dark;
-  border-top: 5px solid $accent-color-dark;
-  padding-top: 1.5em;
-}
 
 footer .inner {
   @include container ($total-columns, $break-0, $break-1, $break-2);
@@ -188,8 +177,6 @@ footer .inner {
     @include pull(2, 6);
     text-align: right;
   }
-
-  .tagslist li { display: block;}
 
   // Footer
 

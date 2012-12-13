@@ -1,0 +1,64 @@
+// =================================================
+// Site-wide Global Styles
+// Version: 1.0
+// =================================================
+
+html, body, div, span, object,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, ol, ul, dl, dt, dd, pre,
+img, figure, 
+a, em, i, strong, b, code, abbr, cite,
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  }
+
+html {
+  font-size: $base-perc;
+}
+
+body {
+  background: $body-color url(img/bg.jpg);
+  color: $text-color;
+  font-family: $serif-ff;
+  font-size: em(16);
+  line-height: $base-lh;
+}
+
+// Default Link Styles
+
+a, a:link, a:visited {
+  color: $link-color;
+  font-weight: normal;
+  text-decoration: underline;
+  }
+  
+a:hover {
+  color: $link-color-hover;
+  border-bottom: 1px dotted $link-color-hover;
+  text-decoration: none;
+  }
+
+// Lists
+
+ol,
+ul  { margin-left: $base-lh; }
+
+ul  {list-style: none;}
+
+.entry ul  { list-style: square; }
+
+.entry ul li ul {
+  list-style: circle;
+  margin-left: (2 * $base-lh);
+  margin-bottom: 0;
+  }
+
+ol li ol {
+  list-style: upper-alpha;
+  margin-left: (2 * $base-lh);
+  margin-bottom: 0;
+  }
+

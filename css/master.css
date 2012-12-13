@@ -1,8 +1,10 @@
-/* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
-/* =============================================================================
+/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
-/* Corrects block display not defined in IE6/7/8/9 & FF3 */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
 article,
 aside,
 details,
@@ -16,154 +18,135 @@ section,
 summary {
   display: block; }
 
-/* Corrects inline-block display not defined in IE6/7/8/9 & FF3 */
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
 audio,
 canvas,
 video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1; }
+  display: inline-block; }
 
-/* Prevents modern browsers from displaying 'audio' without controls
- * Remove excess height in iOS5 devices */
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
 audio:not([controls]) {
   display: none;
   height: 0; }
 
-/* Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
- * Known issue: no IE6 support */
+/**
+ * Address styling not present in IE 8/9.
+ */
 [hidden] {
   display: none; }
 
-/* =============================================================================
+/* ==========================================================================
    Base
    ========================================================================== */
-/* 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
- *    http://clagnut.com/blog/348/#c790
- * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
- *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
  */
 html {
-  font-size: 100%;
+  font-family: sans-serif;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
   -ms-text-size-adjust: 100%;
   /* 2 */ }
 
-/* Addresses font-family inconsistency between 'textarea' and other form elements. */
-html,
-button,
-input,
-select,
-textarea {
-  font-family: sans-serif; }
-
-/* Addresses margins handled incorrectly in IE6/7 */
+/**
+ * Remove default margin.
+ */
 body {
   margin: 0; }
 
-/* =============================================================================
+/* ==========================================================================
    Links
    ========================================================================== */
-/* Addresses outline displayed oddly in Chrome */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
 a:focus {
   outline: thin dotted; }
 
-/* Improves readability when focused and also mouse hovered in all browsers
- * people.opera.com/patrickl/experiments/keyboard/test */
-a:hover,
-a:active {
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
   outline: 0; }
 
-/* =============================================================================
+/* ==========================================================================
    Typography
    ========================================================================== */
-/* Addresses font sizes and margins set differently in IE6/7
- * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5 */
+/**
+ * Address variable `h1` font size within `section` and `article` contexts in
+ * Firefox 4+, Safari 5, and Chrome.
+ */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+  font-size: 2em; }
 
-h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0; }
-
-h3 {
-  font-size: 1.17em;
-  margin: 1em 0; }
-
-h4 {
-  font-size: 1em;
-  margin: 1.33em 0; }
-
-h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0; }
-
-h6 {
-  font-size: 0.75em;
-  margin: 2.33em 0; }
-
-/* Addresses styling not present in IE7/8/9, S5, Chrome */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
 abbr[title] {
   border-bottom: 1px dotted; }
 
-/* Addresses style set to 'bolder' in FF3+, S4/5, Chrome */
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
 b,
 strong {
   font-weight: bold; }
 
-blockquote {
-  margin: 1em 40px; }
-
-/* Addresses styling not present in S5, Chrome */
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
 dfn {
   font-style: italic; }
 
-/* Addresses styling not present in IE6/7/8/9 */
+/**
+ * Address styling not present in IE 8/9.
+ */
 mark {
   background: #ff0;
   color: #000; }
 
-/* Addresses margins set differently in IE6/7 */
-p,
-pre {
-  margin: 1em 0; }
-
-/* Corrects font family set oddly in IE6, S4/5, Chrome
- * en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
-pre,
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
 code,
 kbd,
+pre,
 samp {
   font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
   font-size: 1em; }
 
-/* Improves readability of pre-formatted text in all browsers */
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word; }
 
-/* 1. Addresses CSS quotes not supported in IE6/7
- * 2. Addresses quote property not supported in S4 */
-/* 1 */
+/**
+ * Set consistent quote types.
+ */
 q {
-  quotes: none; }
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
 
-/* 2 */
-q:before,
-q:after {
-  content: '';
-  content: none; }
-
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
 small {
-  font-size: 75%; }
+  font-size: 80%; }
 
-/* Prevents sub and sup affecting line-height in all browsers
- * gist.github.com/413930 */
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
 sub,
 sup {
   font-size: 75%;
@@ -177,139 +160,114 @@ sup {
 sub {
   bottom: -0.25em; }
 
-/* =============================================================================
-   Lists
-   ========================================================================== */
-/* Addresses margins set differently in IE6/7 */
-dl,
-menu,
-ol,
-ul {
-  margin: 1em 0; }
-
-dd {
-  margin: 0 0 0 40px; }
-
-/* Addresses paddings set differently in IE6/7 */
-menu,
-ol,
-ul {
-  padding: 0 0 0 40px; }
-
-/* Corrects list images handled incorrectly in IE7 */
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none; }
-
-/* =============================================================================
+/* ==========================================================================
    Embedded content
    ========================================================================== */
-/* 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
- * 2. Improves image quality when scaled in IE7
- *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
-*/
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
 img {
-  border: 0;
-  /* 1 */
-  -ms-interpolation-mode: bicubic;
-  /* 2 */ }
+  border: 0; }
 
-/* Corrects overflow displayed oddly in IE9 */
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
 svg:not(:root) {
   overflow: hidden; }
 
-/* =============================================================================
+/* ==========================================================================
    Figures
    ========================================================================== */
-/* Addresses margin not present in IE6/7/8/9, S5, O11 */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
 figure {
   margin: 0; }
 
-/* =============================================================================
+/* ==========================================================================
    Forms
    ========================================================================== */
-/* Corrects margin displayed oddly in IE6/7 */
-form {
-  margin: 0; }
-
-/* Define consistent border, margin, and padding */
+/**
+ * Define consistent border, margin, and padding.
+ */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
-/* 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3
- * 3. Corrects alignment displayed oddly in IE6/7 */
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
 legend {
   border: 0;
   /* 1 */
   padding: 0;
-  white-space: normal;
-  /* 2 */
-  *margin-left: -7px;
-  /* 3 */ }
+  /* 2 */ }
 
-/* 1. Corrects font size not being inherited in all browsers
- * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
- * 3. Improves appearance and consistency in all browsers */
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
 button,
 input,
 select,
 textarea {
-  font-size: 100%;
+  font-family: inherit;
   /* 1 */
-  margin: 0;
+  font-size: 100%;
   /* 2 */
-  vertical-align: baseline;
-  /* 3 */
-  *vertical-align: middle;
+  margin: 0;
   /* 3 */ }
 
-/* Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet */
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
 button,
 input {
-  line-height: normal;
-  /* 1 */ }
+  line-height: normal; }
 
-/* 1. Improves usability and consistency of cursor style between image-type 'input' and others
- * 2. Corrects inability to style clickable 'input' types in iOS
- * 3. Removes inner spacing in IE7 without affecting normal text inputs
- *    Known issue: inner spacing remains in IE6 */
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
 button,
-input[type="button"],
+html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  cursor: pointer;
-  /* 1 */
   -webkit-appearance: button;
   /* 2 */
-  *overflow: visible;
+  cursor: pointer;
   /* 3 */ }
 
-/* Re-set default cursor for disabled elements */
+/**
+ * Re-set default cursor for disabled elements.
+ */
 button[disabled],
-input[disabled] {
+html input[disabled] {
   cursor: default; }
 
-/* 1. Addresses box sizing set to content-box in IE8/9
- * 2. Removes excess padding in IE8/9
- * 3. Removes excess padding in IE7
-      Known issue: excess padding remains in IE6 */
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */
-  *height: 13px;
-  /* 3 */
-  *width: 13px;
-  /* 3 */ }
+  /* 2 */ }
 
-/* 1. Addresses appearance set to searchfield in S5, Chrome
- * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -318,36 +276,42 @@ input[type="search"] {
   /* 2 */
   box-sizing: content-box; }
 
-/* Removes inner padding and search cancel button in S5, Chrome on OS X */
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button {
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-/* Removes inner padding and border in FF3+
- * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+/**
+ * Remove inner padding and border in Firefox 4+.
  */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* 1. Removes default vertical scrollbar in IE6/7/8/9
- * 2. Improves readability and alignment in all browsers */
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
 textarea {
   overflow: auto;
   /* 1 */
   vertical-align: top;
   /* 2 */ }
 
-/* =============================================================================
+/* ==========================================================================
    Tables
    ========================================================================== */
-/* Remove most spacing between table cells */
+/**
+ * Remove most spacing between table cells.
+ */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* ---------- @Normalize Further ---------- */
 html, body, div, span, object,
 h1, h2, h3, h4, h5, h6,
 p, blockquote, ol, ul, dl, dt, dd, pre,
@@ -359,11 +323,9 @@ footer, header, hgroup, menu, nav, section {
   padding: 0;
   border: 0; }
 
-ul {
-  list-style: none; }
+html {
+  font-size: 100%; }
 
-/* ======================== All Resets Complete =================================== */
-/* -------- @Mobile First Layout (328px) --------- */
 body {
   background: #fdf6e3 url(img/bg.jpg);
   color: #586e75;
@@ -371,6 +333,37 @@ body {
   font-size: 1em;
   line-height: 1.5em; }
 
+a, a:link, a:visited {
+  color: #073642;
+  font-weight: normal;
+  text-decoration: underline; }
+
+a:hover {
+  color: #268bd2;
+  border-bottom: 1px dotted #268bd2;
+  text-decoration: none; }
+
+ol,
+ul {
+  margin-left: 1.5em; }
+
+ul {
+  list-style: none; }
+
+.entry ul {
+  list-style: square; }
+
+.entry ul li ul {
+  list-style: circle;
+  margin-left: 3em;
+  margin-bottom: 0; }
+
+ol li ol {
+  list-style: upper-alpha;
+  margin-left: 3em;
+  margin-bottom: 0; }
+
+/* -------- @Mobile First Layout (328px) --------- */
 #wrap {
   *zoom: 1;
   max-width: 20.5em;
@@ -380,13 +373,6 @@ body {
   padding-left: 1.5em;
   padding-right: 1.5em;
   margin-top: 1.5em;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, #fef9ed), color-stop(19.5122%, #fef9ed), color-stop(19.5122%, rgba(0, 0, 0, 0)), color-stop(26.82927%, rgba(0, 0, 0, 0)), color-stop(26.82927%, #fef9ed), color-stop(46.34146%, #fef9ed), color-stop(46.34146%, rgba(0, 0, 0, 0)), color-stop(53.65854%, rgba(0, 0, 0, 0)), color-stop(53.65854%, #fef9ed), color-stop(73.17073%, #fef9ed), color-stop(73.17073%, rgba(0, 0, 0, 0)), color-stop(80.4878%, rgba(0, 0, 0, 0)), color-stop(80.4878%, #fef9ed), color-stop(100%, #fef9ed), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 19.5122%, rgba(0, 0, 0, 0) 19.5122%, rgba(0, 0, 0, 0) 26.82927%, #fef9ed 26.82927%, #fef9ed 46.34146%, rgba(0, 0, 0, 0) 46.34146%, rgba(0, 0, 0, 0) 53.65854%, #fef9ed 53.65854%, #fef9ed 73.17073%, rgba(0, 0, 0, 0) 73.17073%, rgba(0, 0, 0, 0) 80.4878%, #fef9ed 80.4878%, #fef9ed 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 19.5122%, rgba(0, 0, 0, 0) 19.5122%, rgba(0, 0, 0, 0) 26.82927%, #fef9ed 26.82927%, #fef9ed 46.34146%, rgba(0, 0, 0, 0) 46.34146%, rgba(0, 0, 0, 0) 53.65854%, #fef9ed 53.65854%, #fef9ed 73.17073%, rgba(0, 0, 0, 0) 73.17073%, rgba(0, 0, 0, 0) 80.4878%, #fef9ed 80.4878%, #fef9ed 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 19.5122%, rgba(0, 0, 0, 0) 19.5122%, rgba(0, 0, 0, 0) 26.82927%, #fef9ed 26.82927%, #fef9ed 46.34146%, rgba(0, 0, 0, 0) 46.34146%, rgba(0, 0, 0, 0) 53.65854%, #fef9ed 53.65854%, #fef9ed 73.17073%, rgba(0, 0, 0, 0) 73.17073%, rgba(0, 0, 0, 0) 80.4878%, #fef9ed 80.4878%, #fef9ed 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 19.5122%, rgba(0, 0, 0, 0) 19.5122%, rgba(0, 0, 0, 0) 26.82927%, #fef9ed 26.82927%, #fef9ed 46.34146%, rgba(0, 0, 0, 0) 46.34146%, rgba(0, 0, 0, 0) 53.65854%, #fef9ed 53.65854%, #fef9ed 73.17073%, rgba(0, 0, 0, 0) 73.17073%, rgba(0, 0, 0, 0) 80.4878%, #fef9ed 80.4878%, #fef9ed 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 19.5122%, rgba(0, 0, 0, 0) 19.5122%, rgba(0, 0, 0, 0) 26.82927%, #fef9ed 26.82927%, #fef9ed 46.34146%, rgba(0, 0, 0, 0) 46.34146%, rgba(0, 0, 0, 0) 53.65854%, #fef9ed 53.65854%, #fef9ed 73.17073%, rgba(0, 0, 0, 0) 73.17073%, rgba(0, 0, 0, 0) 80.4878%, #fef9ed 80.4878%, #fef9ed 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-position: left top;
   -webkit-background-origin: content;
   -moz-background-origin: content;
   -ms-background-origin: content-box;
@@ -413,13 +399,6 @@ body {
       _width: 64.5em; } }
   @media (min-width: 34.5em) {
     #wrap {
-      background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, #fef9ed), color-stop(12.69841%, #fef9ed), color-stop(12.69841%, rgba(0, 0, 0, 0)), color-stop(17.46032%, rgba(0, 0, 0, 0)), color-stop(17.46032%, #fef9ed), color-stop(30.15873%, #fef9ed), color-stop(30.15873%, rgba(0, 0, 0, 0)), color-stop(34.92063%, rgba(0, 0, 0, 0)), color-stop(34.92063%, #fef9ed), color-stop(47.61905%, #fef9ed), color-stop(47.61905%, rgba(0, 0, 0, 0)), color-stop(52.38095%, rgba(0, 0, 0, 0)), color-stop(52.38095%, #fef9ed), color-stop(65.07937%, #fef9ed), color-stop(65.07937%, rgba(0, 0, 0, 0)), color-stop(69.84127%, rgba(0, 0, 0, 0)), color-stop(69.84127%, #fef9ed), color-stop(82.53968%, #fef9ed), color-stop(82.53968%, rgba(0, 0, 0, 0)), color-stop(87.30159%, rgba(0, 0, 0, 0)), color-stop(87.30159%, #fef9ed), color-stop(100.0%, #fef9ed), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 12.69841%, rgba(0, 0, 0, 0) 12.69841%, rgba(0, 0, 0, 0) 17.46032%, #fef9ed 17.46032%, #fef9ed 30.15873%, rgba(0, 0, 0, 0) 30.15873%, rgba(0, 0, 0, 0) 34.92063%, #fef9ed 34.92063%, #fef9ed 47.61905%, rgba(0, 0, 0, 0) 47.61905%, rgba(0, 0, 0, 0) 52.38095%, #fef9ed 52.38095%, #fef9ed 65.07937%, rgba(0, 0, 0, 0) 65.07937%, rgba(0, 0, 0, 0) 69.84127%, #fef9ed 69.84127%, #fef9ed 82.53968%, rgba(0, 0, 0, 0) 82.53968%, rgba(0, 0, 0, 0) 87.30159%, #fef9ed 87.30159%, #fef9ed 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 12.69841%, rgba(0, 0, 0, 0) 12.69841%, rgba(0, 0, 0, 0) 17.46032%, #fef9ed 17.46032%, #fef9ed 30.15873%, rgba(0, 0, 0, 0) 30.15873%, rgba(0, 0, 0, 0) 34.92063%, #fef9ed 34.92063%, #fef9ed 47.61905%, rgba(0, 0, 0, 0) 47.61905%, rgba(0, 0, 0, 0) 52.38095%, #fef9ed 52.38095%, #fef9ed 65.07937%, rgba(0, 0, 0, 0) 65.07937%, rgba(0, 0, 0, 0) 69.84127%, #fef9ed 69.84127%, #fef9ed 82.53968%, rgba(0, 0, 0, 0) 82.53968%, rgba(0, 0, 0, 0) 87.30159%, #fef9ed 87.30159%, #fef9ed 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 12.69841%, rgba(0, 0, 0, 0) 12.69841%, rgba(0, 0, 0, 0) 17.46032%, #fef9ed 17.46032%, #fef9ed 30.15873%, rgba(0, 0, 0, 0) 30.15873%, rgba(0, 0, 0, 0) 34.92063%, #fef9ed 34.92063%, #fef9ed 47.61905%, rgba(0, 0, 0, 0) 47.61905%, rgba(0, 0, 0, 0) 52.38095%, #fef9ed 52.38095%, #fef9ed 65.07937%, rgba(0, 0, 0, 0) 65.07937%, rgba(0, 0, 0, 0) 69.84127%, #fef9ed 69.84127%, #fef9ed 82.53968%, rgba(0, 0, 0, 0) 82.53968%, rgba(0, 0, 0, 0) 87.30159%, #fef9ed 87.30159%, #fef9ed 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-      background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 12.69841%, rgba(0, 0, 0, 0) 12.69841%, rgba(0, 0, 0, 0) 17.46032%, #fef9ed 17.46032%, #fef9ed 30.15873%, rgba(0, 0, 0, 0) 30.15873%, rgba(0, 0, 0, 0) 34.92063%, #fef9ed 34.92063%, #fef9ed 47.61905%, rgba(0, 0, 0, 0) 47.61905%, rgba(0, 0, 0, 0) 52.38095%, #fef9ed 52.38095%, #fef9ed 65.07937%, rgba(0, 0, 0, 0) 65.07937%, rgba(0, 0, 0, 0) 69.84127%, #fef9ed 69.84127%, #fef9ed 82.53968%, rgba(0, 0, 0, 0) 82.53968%, rgba(0, 0, 0, 0) 87.30159%, #fef9ed 87.30159%, #fef9ed 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-      background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 12.69841%, rgba(0, 0, 0, 0) 12.69841%, rgba(0, 0, 0, 0) 17.46032%, #fef9ed 17.46032%, #fef9ed 30.15873%, rgba(0, 0, 0, 0) 30.15873%, rgba(0, 0, 0, 0) 34.92063%, #fef9ed 34.92063%, #fef9ed 47.61905%, rgba(0, 0, 0, 0) 47.61905%, rgba(0, 0, 0, 0) 52.38095%, #fef9ed 52.38095%, #fef9ed 65.07937%, rgba(0, 0, 0, 0) 65.07937%, rgba(0, 0, 0, 0) 69.84127%, #fef9ed 69.84127%, #fef9ed 82.53968%, rgba(0, 0, 0, 0) 82.53968%, rgba(0, 0, 0, 0) 87.30159%, #fef9ed 87.30159%, #fef9ed 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-      background-position: left top;
       -webkit-background-origin: content;
       -moz-background-origin: content;
       -ms-background-origin: content-box;
@@ -430,13 +409,6 @@ body {
       background-clip: content-box; } }
   @media (min-width: 45.5em) {
     #wrap {
-      background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, #fef9ed), color-stop(9.41176%, #fef9ed), color-stop(9.41176%, rgba(0, 0, 0, 0)), color-stop(12.94118%, rgba(0, 0, 0, 0)), color-stop(12.94118%, #fef9ed), color-stop(22.35294%, #fef9ed), color-stop(22.35294%, rgba(0, 0, 0, 0)), color-stop(25.88235%, rgba(0, 0, 0, 0)), color-stop(25.88235%, #fef9ed), color-stop(35.29412%, #fef9ed), color-stop(35.29412%, rgba(0, 0, 0, 0)), color-stop(38.82353%, rgba(0, 0, 0, 0)), color-stop(38.82353%, #fef9ed), color-stop(48.23529%, #fef9ed), color-stop(48.23529%, rgba(0, 0, 0, 0)), color-stop(51.76471%, rgba(0, 0, 0, 0)), color-stop(51.76471%, #fef9ed), color-stop(61.17647%, #fef9ed), color-stop(61.17647%, rgba(0, 0, 0, 0)), color-stop(64.70588%, rgba(0, 0, 0, 0)), color-stop(64.70588%, #fef9ed), color-stop(74.11765%, #fef9ed), color-stop(74.11765%, rgba(0, 0, 0, 0)), color-stop(77.64706%, rgba(0, 0, 0, 0)), color-stop(77.64706%, #fef9ed), color-stop(87.05882%, #fef9ed), color-stop(87.05882%, rgba(0, 0, 0, 0)), color-stop(90.58824%, rgba(0, 0, 0, 0)), color-stop(90.58824%, #fef9ed), color-stop(100%, #fef9ed), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 9.41176%, rgba(0, 0, 0, 0) 9.41176%, rgba(0, 0, 0, 0) 12.94118%, #fef9ed 12.94118%, #fef9ed 22.35294%, rgba(0, 0, 0, 0) 22.35294%, rgba(0, 0, 0, 0) 25.88235%, #fef9ed 25.88235%, #fef9ed 35.29412%, rgba(0, 0, 0, 0) 35.29412%, rgba(0, 0, 0, 0) 38.82353%, #fef9ed 38.82353%, #fef9ed 48.23529%, rgba(0, 0, 0, 0) 48.23529%, rgba(0, 0, 0, 0) 51.76471%, #fef9ed 51.76471%, #fef9ed 61.17647%, rgba(0, 0, 0, 0) 61.17647%, rgba(0, 0, 0, 0) 64.70588%, #fef9ed 64.70588%, #fef9ed 74.11765%, rgba(0, 0, 0, 0) 74.11765%, rgba(0, 0, 0, 0) 77.64706%, #fef9ed 77.64706%, #fef9ed 87.05882%, rgba(0, 0, 0, 0) 87.05882%, rgba(0, 0, 0, 0) 90.58824%, #fef9ed 90.58824%, #fef9ed 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 9.41176%, rgba(0, 0, 0, 0) 9.41176%, rgba(0, 0, 0, 0) 12.94118%, #fef9ed 12.94118%, #fef9ed 22.35294%, rgba(0, 0, 0, 0) 22.35294%, rgba(0, 0, 0, 0) 25.88235%, #fef9ed 25.88235%, #fef9ed 35.29412%, rgba(0, 0, 0, 0) 35.29412%, rgba(0, 0, 0, 0) 38.82353%, #fef9ed 38.82353%, #fef9ed 48.23529%, rgba(0, 0, 0, 0) 48.23529%, rgba(0, 0, 0, 0) 51.76471%, #fef9ed 51.76471%, #fef9ed 61.17647%, rgba(0, 0, 0, 0) 61.17647%, rgba(0, 0, 0, 0) 64.70588%, #fef9ed 64.70588%, #fef9ed 74.11765%, rgba(0, 0, 0, 0) 74.11765%, rgba(0, 0, 0, 0) 77.64706%, #fef9ed 77.64706%, #fef9ed 87.05882%, rgba(0, 0, 0, 0) 87.05882%, rgba(0, 0, 0, 0) 90.58824%, #fef9ed 90.58824%, #fef9ed 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 9.41176%, rgba(0, 0, 0, 0) 9.41176%, rgba(0, 0, 0, 0) 12.94118%, #fef9ed 12.94118%, #fef9ed 22.35294%, rgba(0, 0, 0, 0) 22.35294%, rgba(0, 0, 0, 0) 25.88235%, #fef9ed 25.88235%, #fef9ed 35.29412%, rgba(0, 0, 0, 0) 35.29412%, rgba(0, 0, 0, 0) 38.82353%, #fef9ed 38.82353%, #fef9ed 48.23529%, rgba(0, 0, 0, 0) 48.23529%, rgba(0, 0, 0, 0) 51.76471%, #fef9ed 51.76471%, #fef9ed 61.17647%, rgba(0, 0, 0, 0) 61.17647%, rgba(0, 0, 0, 0) 64.70588%, #fef9ed 64.70588%, #fef9ed 74.11765%, rgba(0, 0, 0, 0) 74.11765%, rgba(0, 0, 0, 0) 77.64706%, #fef9ed 77.64706%, #fef9ed 87.05882%, rgba(0, 0, 0, 0) 87.05882%, rgba(0, 0, 0, 0) 90.58824%, #fef9ed 90.58824%, #fef9ed 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 9.41176%, rgba(0, 0, 0, 0) 9.41176%, rgba(0, 0, 0, 0) 12.94118%, #fef9ed 12.94118%, #fef9ed 22.35294%, rgba(0, 0, 0, 0) 22.35294%, rgba(0, 0, 0, 0) 25.88235%, #fef9ed 25.88235%, #fef9ed 35.29412%, rgba(0, 0, 0, 0) 35.29412%, rgba(0, 0, 0, 0) 38.82353%, #fef9ed 38.82353%, #fef9ed 48.23529%, rgba(0, 0, 0, 0) 48.23529%, rgba(0, 0, 0, 0) 51.76471%, #fef9ed 51.76471%, #fef9ed 61.17647%, rgba(0, 0, 0, 0) 61.17647%, rgba(0, 0, 0, 0) 64.70588%, #fef9ed 64.70588%, #fef9ed 74.11765%, rgba(0, 0, 0, 0) 74.11765%, rgba(0, 0, 0, 0) 77.64706%, #fef9ed 77.64706%, #fef9ed 87.05882%, rgba(0, 0, 0, 0) 87.05882%, rgba(0, 0, 0, 0) 90.58824%, #fef9ed 90.58824%, #fef9ed 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 9.41176%, rgba(0, 0, 0, 0) 9.41176%, rgba(0, 0, 0, 0) 12.94118%, #fef9ed 12.94118%, #fef9ed 22.35294%, rgba(0, 0, 0, 0) 22.35294%, rgba(0, 0, 0, 0) 25.88235%, #fef9ed 25.88235%, #fef9ed 35.29412%, rgba(0, 0, 0, 0) 35.29412%, rgba(0, 0, 0, 0) 38.82353%, #fef9ed 38.82353%, #fef9ed 48.23529%, rgba(0, 0, 0, 0) 48.23529%, rgba(0, 0, 0, 0) 51.76471%, #fef9ed 51.76471%, #fef9ed 61.17647%, rgba(0, 0, 0, 0) 61.17647%, rgba(0, 0, 0, 0) 64.70588%, #fef9ed 64.70588%, #fef9ed 74.11765%, rgba(0, 0, 0, 0) 74.11765%, rgba(0, 0, 0, 0) 77.64706%, #fef9ed 77.64706%, #fef9ed 87.05882%, rgba(0, 0, 0, 0) 87.05882%, rgba(0, 0, 0, 0) 90.58824%, #fef9ed 90.58824%, #fef9ed 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-      background-position: left top;
       -webkit-background-origin: content;
       -moz-background-origin: content;
       -ms-background-origin: content-box;
@@ -447,13 +419,6 @@ body {
       background-clip: content-box; } }
   @media (min-width: 67.5em) {
     #wrap {
-      background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, #fef9ed), color-stop(6.20155%, #fef9ed), color-stop(6.20155%, rgba(0, 0, 0, 0)), color-stop(8.52713%, rgba(0, 0, 0, 0)), color-stop(8.52713%, #fef9ed), color-stop(14.72868%, #fef9ed), color-stop(14.72868%, rgba(0, 0, 0, 0)), color-stop(17.05426%, rgba(0, 0, 0, 0)), color-stop(17.05426%, #fef9ed), color-stop(23.25581%, #fef9ed), color-stop(23.25581%, rgba(0, 0, 0, 0)), color-stop(25.5814%, rgba(0, 0, 0, 0)), color-stop(25.5814%, #fef9ed), color-stop(31.78295%, #fef9ed), color-stop(31.78295%, rgba(0, 0, 0, 0)), color-stop(34.10853%, rgba(0, 0, 0, 0)), color-stop(34.10853%, #fef9ed), color-stop(40.31008%, #fef9ed), color-stop(40.31008%, rgba(0, 0, 0, 0)), color-stop(42.63566%, rgba(0, 0, 0, 0)), color-stop(42.63566%, #fef9ed), color-stop(48.83721%, #fef9ed), color-stop(48.83721%, rgba(0, 0, 0, 0)), color-stop(51.16279%, rgba(0, 0, 0, 0)), color-stop(51.16279%, #fef9ed), color-stop(57.36434%, #fef9ed), color-stop(57.36434%, rgba(0, 0, 0, 0)), color-stop(59.68992%, rgba(0, 0, 0, 0)), color-stop(59.68992%, #fef9ed), color-stop(65.89147%, #fef9ed), color-stop(65.89147%, rgba(0, 0, 0, 0)), color-stop(68.21705%, rgba(0, 0, 0, 0)), color-stop(68.21705%, #fef9ed), color-stop(74.4186%, #fef9ed), color-stop(74.4186%, rgba(0, 0, 0, 0)), color-stop(76.74419%, rgba(0, 0, 0, 0)), color-stop(76.74419%, #fef9ed), color-stop(82.94574%, #fef9ed), color-stop(82.94574%, rgba(0, 0, 0, 0)), color-stop(85.27132%, rgba(0, 0, 0, 0)), color-stop(85.27132%, #fef9ed), color-stop(91.47287%, #fef9ed), color-stop(91.47287%, rgba(0, 0, 0, 0)), color-stop(93.79845%, rgba(0, 0, 0, 0)), color-stop(93.79845%, #fef9ed), color-stop(100.0%, #fef9ed), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 6.20155%, rgba(0, 0, 0, 0) 6.20155%, rgba(0, 0, 0, 0) 8.52713%, #fef9ed 8.52713%, #fef9ed 14.72868%, rgba(0, 0, 0, 0) 14.72868%, rgba(0, 0, 0, 0) 17.05426%, #fef9ed 17.05426%, #fef9ed 23.25581%, rgba(0, 0, 0, 0) 23.25581%, rgba(0, 0, 0, 0) 25.5814%, #fef9ed 25.5814%, #fef9ed 31.78295%, rgba(0, 0, 0, 0) 31.78295%, rgba(0, 0, 0, 0) 34.10853%, #fef9ed 34.10853%, #fef9ed 40.31008%, rgba(0, 0, 0, 0) 40.31008%, rgba(0, 0, 0, 0) 42.63566%, #fef9ed 42.63566%, #fef9ed 48.83721%, rgba(0, 0, 0, 0) 48.83721%, rgba(0, 0, 0, 0) 51.16279%, #fef9ed 51.16279%, #fef9ed 57.36434%, rgba(0, 0, 0, 0) 57.36434%, rgba(0, 0, 0, 0) 59.68992%, #fef9ed 59.68992%, #fef9ed 65.89147%, rgba(0, 0, 0, 0) 65.89147%, rgba(0, 0, 0, 0) 68.21705%, #fef9ed 68.21705%, #fef9ed 74.4186%, rgba(0, 0, 0, 0) 74.4186%, rgba(0, 0, 0, 0) 76.74419%, #fef9ed 76.74419%, #fef9ed 82.94574%, rgba(0, 0, 0, 0) 82.94574%, rgba(0, 0, 0, 0) 85.27132%, #fef9ed 85.27132%, #fef9ed 91.47287%, rgba(0, 0, 0, 0) 91.47287%, rgba(0, 0, 0, 0) 93.79845%, #fef9ed 93.79845%, #fef9ed 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 6.20155%, rgba(0, 0, 0, 0) 6.20155%, rgba(0, 0, 0, 0) 8.52713%, #fef9ed 8.52713%, #fef9ed 14.72868%, rgba(0, 0, 0, 0) 14.72868%, rgba(0, 0, 0, 0) 17.05426%, #fef9ed 17.05426%, #fef9ed 23.25581%, rgba(0, 0, 0, 0) 23.25581%, rgba(0, 0, 0, 0) 25.5814%, #fef9ed 25.5814%, #fef9ed 31.78295%, rgba(0, 0, 0, 0) 31.78295%, rgba(0, 0, 0, 0) 34.10853%, #fef9ed 34.10853%, #fef9ed 40.31008%, rgba(0, 0, 0, 0) 40.31008%, rgba(0, 0, 0, 0) 42.63566%, #fef9ed 42.63566%, #fef9ed 48.83721%, rgba(0, 0, 0, 0) 48.83721%, rgba(0, 0, 0, 0) 51.16279%, #fef9ed 51.16279%, #fef9ed 57.36434%, rgba(0, 0, 0, 0) 57.36434%, rgba(0, 0, 0, 0) 59.68992%, #fef9ed 59.68992%, #fef9ed 65.89147%, rgba(0, 0, 0, 0) 65.89147%, rgba(0, 0, 0, 0) 68.21705%, #fef9ed 68.21705%, #fef9ed 74.4186%, rgba(0, 0, 0, 0) 74.4186%, rgba(0, 0, 0, 0) 76.74419%, #fef9ed 76.74419%, #fef9ed 82.94574%, rgba(0, 0, 0, 0) 82.94574%, rgba(0, 0, 0, 0) 85.27132%, #fef9ed 85.27132%, #fef9ed 91.47287%, rgba(0, 0, 0, 0) 91.47287%, rgba(0, 0, 0, 0) 93.79845%, #fef9ed 93.79845%, #fef9ed 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 6.20155%, rgba(0, 0, 0, 0) 6.20155%, rgba(0, 0, 0, 0) 8.52713%, #fef9ed 8.52713%, #fef9ed 14.72868%, rgba(0, 0, 0, 0) 14.72868%, rgba(0, 0, 0, 0) 17.05426%, #fef9ed 17.05426%, #fef9ed 23.25581%, rgba(0, 0, 0, 0) 23.25581%, rgba(0, 0, 0, 0) 25.5814%, #fef9ed 25.5814%, #fef9ed 31.78295%, rgba(0, 0, 0, 0) 31.78295%, rgba(0, 0, 0, 0) 34.10853%, #fef9ed 34.10853%, #fef9ed 40.31008%, rgba(0, 0, 0, 0) 40.31008%, rgba(0, 0, 0, 0) 42.63566%, #fef9ed 42.63566%, #fef9ed 48.83721%, rgba(0, 0, 0, 0) 48.83721%, rgba(0, 0, 0, 0) 51.16279%, #fef9ed 51.16279%, #fef9ed 57.36434%, rgba(0, 0, 0, 0) 57.36434%, rgba(0, 0, 0, 0) 59.68992%, #fef9ed 59.68992%, #fef9ed 65.89147%, rgba(0, 0, 0, 0) 65.89147%, rgba(0, 0, 0, 0) 68.21705%, #fef9ed 68.21705%, #fef9ed 74.4186%, rgba(0, 0, 0, 0) 74.4186%, rgba(0, 0, 0, 0) 76.74419%, #fef9ed 76.74419%, #fef9ed 82.94574%, rgba(0, 0, 0, 0) 82.94574%, rgba(0, 0, 0, 0) 85.27132%, #fef9ed 85.27132%, #fef9ed 91.47287%, rgba(0, 0, 0, 0) 91.47287%, rgba(0, 0, 0, 0) 93.79845%, #fef9ed 93.79845%, #fef9ed 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-      background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 6.20155%, rgba(0, 0, 0, 0) 6.20155%, rgba(0, 0, 0, 0) 8.52713%, #fef9ed 8.52713%, #fef9ed 14.72868%, rgba(0, 0, 0, 0) 14.72868%, rgba(0, 0, 0, 0) 17.05426%, #fef9ed 17.05426%, #fef9ed 23.25581%, rgba(0, 0, 0, 0) 23.25581%, rgba(0, 0, 0, 0) 25.5814%, #fef9ed 25.5814%, #fef9ed 31.78295%, rgba(0, 0, 0, 0) 31.78295%, rgba(0, 0, 0, 0) 34.10853%, #fef9ed 34.10853%, #fef9ed 40.31008%, rgba(0, 0, 0, 0) 40.31008%, rgba(0, 0, 0, 0) 42.63566%, #fef9ed 42.63566%, #fef9ed 48.83721%, rgba(0, 0, 0, 0) 48.83721%, rgba(0, 0, 0, 0) 51.16279%, #fef9ed 51.16279%, #fef9ed 57.36434%, rgba(0, 0, 0, 0) 57.36434%, rgba(0, 0, 0, 0) 59.68992%, #fef9ed 59.68992%, #fef9ed 65.89147%, rgba(0, 0, 0, 0) 65.89147%, rgba(0, 0, 0, 0) 68.21705%, #fef9ed 68.21705%, #fef9ed 74.4186%, rgba(0, 0, 0, 0) 74.4186%, rgba(0, 0, 0, 0) 76.74419%, #fef9ed 76.74419%, #fef9ed 82.94574%, rgba(0, 0, 0, 0) 82.94574%, rgba(0, 0, 0, 0) 85.27132%, #fef9ed 85.27132%, #fef9ed 91.47287%, rgba(0, 0, 0, 0) 91.47287%, rgba(0, 0, 0, 0) 93.79845%, #fef9ed 93.79845%, #fef9ed 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-      background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, #fef9ed 0%, #fef9ed 6.20155%, rgba(0, 0, 0, 0) 6.20155%, rgba(0, 0, 0, 0) 8.52713%, #fef9ed 8.52713%, #fef9ed 14.72868%, rgba(0, 0, 0, 0) 14.72868%, rgba(0, 0, 0, 0) 17.05426%, #fef9ed 17.05426%, #fef9ed 23.25581%, rgba(0, 0, 0, 0) 23.25581%, rgba(0, 0, 0, 0) 25.5814%, #fef9ed 25.5814%, #fef9ed 31.78295%, rgba(0, 0, 0, 0) 31.78295%, rgba(0, 0, 0, 0) 34.10853%, #fef9ed 34.10853%, #fef9ed 40.31008%, rgba(0, 0, 0, 0) 40.31008%, rgba(0, 0, 0, 0) 42.63566%, #fef9ed 42.63566%, #fef9ed 48.83721%, rgba(0, 0, 0, 0) 48.83721%, rgba(0, 0, 0, 0) 51.16279%, #fef9ed 51.16279%, #fef9ed 57.36434%, rgba(0, 0, 0, 0) 57.36434%, rgba(0, 0, 0, 0) 59.68992%, #fef9ed 59.68992%, #fef9ed 65.89147%, rgba(0, 0, 0, 0) 65.89147%, rgba(0, 0, 0, 0) 68.21705%, #fef9ed 68.21705%, #fef9ed 74.4186%, rgba(0, 0, 0, 0) 74.4186%, rgba(0, 0, 0, 0) 76.74419%, #fef9ed 76.74419%, #fef9ed 82.94574%, rgba(0, 0, 0, 0) 82.94574%, rgba(0, 0, 0, 0) 85.27132%, #fef9ed 85.27132%, #fef9ed 91.47287%, rgba(0, 0, 0, 0) 91.47287%, rgba(0, 0, 0, 0) 93.79845%, #fef9ed 93.79845%, #fef9ed 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-      background-position: left top;
       -webkit-background-origin: content;
       -moz-background-origin: content;
       -ms-background-origin: content-box;
@@ -467,7 +432,7 @@ body {
   *zoom: 1;
   padding-top: 0px; }
   #content:before, #content:after {
-    content: "";
+    content: " ";
     display: table; }
   #content:after {
     clear: both; }
@@ -478,7 +443,7 @@ body {
 nav {
   *zoom: 1; }
   nav:before, nav:after {
-    content: "";
+    content: " ";
     display: table; }
   nav:after {
     clear: both; }
@@ -500,6 +465,9 @@ nav {
   display: inline;
   margin-right: 5px; }
 
+.posts-full article {
+  margin-bottom: 3em; }
+
 .entrydate,
 .entrytags {
   display: block; }
@@ -507,15 +475,11 @@ nav {
 .entrytags {
   margin-bottom: 24px; }
 
+.test-list {
+  margin-left: 0; }
+
 .tagslist li {
   display: inline; }
-
-footer {
-  clear: both;
-  background: #002b36;
-  color: #839496;
-  border-top: 5px solid #586e75;
-  padding-top: 1.5em; }
 
 footer .inner {
   *zoom: 1;
@@ -556,7 +520,7 @@ footer .inner {
   .heading {
     *zoom: 1; }
     .heading:before, .heading:after {
-      content: "";
+      content: " ";
       display: table; }
     .heading:after {
       clear: both; }
@@ -591,7 +555,7 @@ footer .inner {
   header {
     *zoom: 1; }
     header:before, header:after {
-      content: "";
+      content: " ";
       display: table; }
     header:after {
       clear: both; }
@@ -628,7 +592,7 @@ footer .inner {
     clear: both;
     *zoom: 1; }
     .social:before, .social:after {
-      content: "";
+      content: " ";
       display: table; }
     .social:after {
       clear: both; }
@@ -799,9 +763,6 @@ footer .inner {
     margin-left: -34.92063%;
     text-align: right; }
 
-  .tagslist li {
-    display: block; }
-
   .intro {
     width: 31.78295%;
     float: left;
@@ -858,17 +819,7 @@ footer .inner {
     margin-right: 3.52941%;
     display: inline;
     margin-left: 25.88235%; } }
-/* ---------- @Typography ---------- */
-a, a:link, a:visited {
-  color: #073642;
-  font-weight: normal;
-  text-decoration: underline; }
-
-a:hover {
-  color: #268bd2;
-  border-bottom: 1px dotted #268bd2;
-  text-decoration: none; }
-
+/* ------------- @Links ------------ */
 header a,
 header a:link,
 header a:visited {
@@ -882,7 +833,16 @@ footer a,
 footer a:link {
   color: #268bd2; }
 
-/* -- Headings -- */
+h2 a,
+h2 a:link,
+h2 a:visited {
+  color: #2aa198;
+  text-decoration: none; }
+
+h2 a:hover {
+  color: #268bd2; }
+
+/* ---------- @Typography ---------- */
 h1 {
   font-size: 2em;
   line-height: 1.5em;
@@ -894,32 +854,7 @@ h1 {
       font-size: 2.375em;
       line-height: 1.26316em; } }
 
-h2 a,
-h2 a:link,
-h2 a:visited {
-  color: #2aa198;
-  text-decoration: none; }
-
-h2 a:hover {
-  color: #268bd2; }
-
-.heading {
-  border-bottom: 5px solid #eee8d5;
-  margin-bottom: 19px; }
-
-.heading h3 {
-  font-weight: normal;
-  font-size: 1.25em;
-  color: #1a6091;
-  line-height: 1.2em;
-  font-style: italic;
-  margin-bottom: 0; }
-
-.description {
-  margin-top: 2px;
-  margin-bottom: 0; }
-
-article h2 {
+h2 {
   color: #2aa198;
   font-size: 1.5em;
   font-weight: normal;
@@ -931,8 +866,12 @@ article h2 {
   font-size: 1.25em;
   line-height: 1.2em;
   margin-bottom: 1.2em; }
+  .linked h2:hover {
+    font-style: italic; }
+  .linked h2:after {
+    content: "\0020 \00BB "; }
 
-.archives .linked h2 {
+.archives .test-list h2 {
   margin-bottom: 0; }
 
 .entry h3 {
@@ -953,15 +892,17 @@ article h2 {
   font-variant: small-caps;
   text-transform: lowercase; }
 
+.label {
+  font-weight: normal;
+  font-size: 1.25em;
+  line-height: 1.2em;
+  font-style: italic;
+  color: #1a6091;
+  margin-bottom: 0; }
+
 /* -- Text Styles -- */
 p, blockquote, ol, ul, pre, dl {
   margin-bottom: 1.5em; }
-
-.light {
-  color: #93a1a1;
-  font-size: 0.875em;
-  font-style: italic;
-  line-height: 1.71429em; }
 
 blockquote {
   color: #93a1a1;
@@ -971,37 +912,24 @@ blockquote {
   margin-left: 0.7em;
   margin-bottom: 1.5em; }
 
-.entry ol,
-.entry ul {
-  margin-left: 1.5em; }
-
-.entry ul {
-  list-style: square; }
-
-.entry ol li ol {
-  list-style: upper-alpha;
-  margin-left: 2.5714em;
-  margin-bottom: 0; }
-
-.entry ul li ul {
-  list-style: circle;
-  margin-left: 2.5714em;
-  margin-bottom: 0; }
-
-.entry .test {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 1.5em;
-  text-indent: -1em; }
-
-.entry ul.test li:before,
-article.linked h2:after {
-  content: "\0020 \00BB "; }
+.light {
+  color: #93a1a1;
+  font-size: 0.875em;
+  font-style: italic;
+  line-height: 1.71429em; }
 
 .sc {
   text-transform: lowercase;
   font-variant: small-caps;
-  font-size: 1.125em; }
+  font-size: 1.1875em; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+  padding: 0; }
 
 pre, code {
   color: #859900;
@@ -1033,7 +961,7 @@ pre code {
   .sidenote:after,
   .caption:before,
   .caption:after {
-    content: "";
+    content: " ";
     display: table; }
   .meta:after,
   .sidenote:after,
@@ -1049,24 +977,16 @@ pre code {
 
 .tags {
   margin-top: -2px;
+  margin-left: 0;
   padding-bottom: 2px; }
 
 .noted {
   float: right;
   *zoom: 1; }
   .noted:before, .noted:after {
-    content: "";
+    content: " ";
     display: table; }
   .noted:after {
-    clear: both; }
-
-.noted-on-right {
-  float: left;
-  *zoom: 1; }
-  .noted-on-right:before, .noted-on-right:after {
-    content: "";
-    display: table; }
-  .noted-on-right:after {
     clear: both; }
 
 .footnotes {
@@ -1084,14 +1004,14 @@ a.footnote {
 a.reversefootnote {
   text-decoration: none; }
 
-.footnotes hr {
+.fn-hr {
   display: block;
   margin: 1.5em 0;
   width: 47.61905%;
   padding: 0;
   height: 1px;
   border: 0;
-  border-top: 2px solid #93a1a1; }
+  border-top: 1px solid #93a1a1; }
 
 footer p,
 footer ul {
@@ -1100,22 +1020,8 @@ footer ul {
 
 .fine-print {
   clear: left;
-  color: #93a1a1;
   border-top: 1px dotted #586e75;
   padding-top: 5px; }
-
-.else {
-  font-size: 0.875em;
-  line-height: 1.37143em; }
-
-.linked h2:hover {
-  font-style: italic; }
-
-.posts-full article {
-  margin-bottom: 3em; }
-
-footer {
-  margin-top: 48px; }
 
 /* ---------- @Site-wide Elements ---------- */
 .masthead {
@@ -1133,7 +1039,8 @@ nav {
 
 .primary-nav {
   padding-top: 0.66667em;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-left: 0; }
   .primary-nav li {
     line-height: 24px; }
   .primary-nav li a {
@@ -1171,7 +1078,25 @@ fieldset {
   padding: 0;
   border: none; }
 
+footer {
+  margin-top: 48px;
+  padding-top: 1.5em;
+  background: #002b36;
+  color: #839496;
+  border-top: 5px solid #586e75; }
+
 /* ---------- @Elements ---------- */
+.heading {
+  border-bottom: 5px solid #eee8d5;
+  margin-bottom: 19px; }
+
+.description {
+  margin-top: 2px;
+  margin-bottom: 0; }
+
+.tagslist {
+  margin-left: 0; }
+
 .entry img {
   float: right;
   width: 97.863248%;
@@ -1287,3 +1212,15 @@ a.pin-tag:hover {
 
   .comment-number {
     position: static; } }
+.else {
+  font-size: 0.875em;
+  line-height: 1.37143em; }
+
+.noted-on-right {
+  float: left;
+  *zoom: 1; }
+  .noted-on-right:before, .noted-on-right:after {
+    content: " ";
+    display: table; }
+  .noted-on-right:after {
+    clear: both; }

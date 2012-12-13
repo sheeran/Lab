@@ -1,0 +1,15 @@
+// =================================================
+// Testing Elements - Possible Deletion
+// Version: 1.0
+// =================================================
+
+// Smaller size and incremental leading for Else
+// .else is the dl class on summary homepage
+.else {
+  font-size: em(14);
+  line-height: incr(14, 4, 5);
+}
+
+.noted-on-right { float: left; @include clearfix;}
+
+// Note: Remove test elements from layout.scss (such as comments)
