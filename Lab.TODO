@@ -1,54 +1,80 @@
 
 The Laboratory:
 
+ ☐ Overall HTML structure:
+ Match to Octopress (with redesign going to Octopress)
+ Match to New Design and then change Octopress to that?
+ ☐ Sass structure:
+   ☐ Organize/separate Lab from Prototypes?
+   ☐ Rename 'master.scss'
+ ☐ Kit files for footer, header...from Prototype design
+ ☐ Find new Vertical Rhythm helper.
+ ☐ Organize Typekit
+
+
 New Design Prototypes:
   
- General
- ✔ Turn into full-up Sublime Project @done (12-10-20 21:21)
+ General:
+ ☐ Convert type mixins to inuit.css
  ☐ Finish Footer
- ☐ Add About Page
- ☐ Refactor SCSS
-   ☐ Consolidate Elsewhere styles in one place
-   ☐ Break out variables and mixins / add inuit.css keepers
-   ☐ Add css3 mixins to variables.scss...or use compass?
+ ☐ Refactor Prototype-specific Sass
+ ☐ Address all TODO / FIXME things
  ☐ Assign title variable for H2s, with appropriate sans fallback
  ☐ Fix vertical rhythm
  ☐ Need to tweak $break-2 back a bit to get full layout at 1024
  ☐ Add Mint to each page
- ☐ Change to rem mixin?
  ☐ Icon fonts?
+ ☐ Remove all Sass for two-list version of site
+ ☐ Add About Page
 
- Home Page
+ Home Page:
  ☐ Add search, RSS feeds
+ ☐ Covert footnote HTML to kramdown format
  ☐ Need to make tags with articles into links
+ ☐ Will article list have 'more' links for all entries?
+   ☐ Could protect sidenotes/image captions
 
- Single Article Page
- ☐ Adaptive Images?
+ Single Article Page:
  ☐ Figure/figure caption
- ☐ Text Shadow on titles
+ ☐ Fancy <hr>'s ?
+ ☐ Text Shadow on titles?
+ ☐ Adaptive Images?
 
- Archives Page
- ☐ Differentiate Elsewhere posts - added .linked to <li> element
+ Archives List Page:
  ☐ Need to make tags with articles into links
+ ☐ Need sample category list page?
 
 Main Lab Homepage:
- ☐ Re-do layout and update HTML(5) and CSS structure
-   ☐ Match HTML structure to Octopress?
-   ☐ Baseline Sass starter files
-   ✔ Break out projects into folders? @done (12-12-11 01:12)
- ☐ Unified masthead, project menu?
  ☐ Rewrite copy
+   ☐ Projects
+   ☐ Tools
+   ☐ Resources
+   ☐ Github
  ☐ Do the footer
- ☐ Link to GitHub Repo
+ ☐ Link to GitHub Repo  
 
-Typography:
- ☐ Fix headline typeface and multiline articles
- ☐ Text shadow for headlines?
- ☐ Dark-on-light Solarized version?
- ☐ Compass typography tests
- ☐ Fix title on version 2 page
+Pages:
+
+  Typography
+   ☐ Fix headline typeface and multiline articles
+   ☐ Text shadow for headlines?
+   ☐ Dark-on-light Solarized version?
+   ☐ Compass typography tests
+   ☐ Fix title on version 2 page
+
+  Specimans
+  ☐ Headlines: More, bigger sizes, Sentence Case
+  ☐ Text: different sizes
+
+  ADD Compass Vertical Rhythm Page
 
  Misc:
  ☐ Remove un-needed Javascript from all pages
  ☐ HTML Tables
  ☐ Write the README when I finish. Make repo public and publish
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+ ✔ Differentiate Elsewhere posts - added .linked to <li> element @done (13-01-26 13:57)
+ ✔ Turn into full-up Sublime Project @done (12-10-20 21:21)
+ ✔ Break out projects into folders? @done (12-12-11 01:12)

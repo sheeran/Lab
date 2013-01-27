@@ -146,11 +146,11 @@ footer .inner {
 @include at-breakpoint($break-2)  {
   nav {@include span-columns(4 omega, $break-2); margin-left: 0;}
 
-  .posts-list { @include span-columns(5, $break-2);}
-  .else-list  { @include span-columns(4, $break-2);}
-  .social {clear: none; @include span-columns(3 omega, $break-2);}
-  .twitter,
-  .pinboard {@include span-columns(3, 3);}
+  .posts-list { @include span-columns(5, $break-2);} // Del
+  .else-list  { @include span-columns(4, $break-2);} // Del
+  //.social {clear: none; @include span-columns(3 omega, $break-2);}
+  //.twitter,
+  //.pinboard {@include span-columns(3, 3);}
 
   article {
     @include span-columns ($post-columns, $break-2);
