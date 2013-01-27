@@ -610,16 +610,6 @@ footer .inner {
     margin-right: 0;
     margin-left: 0; }
 
-  .posts-list {
-    width: 48.23529%;
-    float: left;
-    margin-right: 3.52941%; }
-
-  .else-list {
-    width: 48.23529%;
-    float: right;
-    margin-right: 0; }
-
   .social {
     clear: both;
     *zoom: 1; }
@@ -675,9 +665,6 @@ footer .inner {
     float: right;
     margin-right: 0; }
 
-  .test-list {
-    margin-left: 34.92063%; }
-
   .entrydate {
     width: 46.34146%;
     float: left;
@@ -710,15 +697,33 @@ footer .inner {
     margin-right: 0;
     margin-left: 0; }
 
-  .posts-list {
-    width: 40.31008%;
+  .posts-full {
+    width: 65.89147%;
     float: left;
     margin-right: 2.32558%; }
 
-  .else-list {
-    width: 31.78295%;
+  .sidebar {
+    width: 23.25581%;
+    float: right;
+    margin-right: 0; }
+
+  .social {
+    clear: none;
+    width: 100%;
+    float: right;
+    margin-right: 0; }
+
+  .twitter,
+  .pinboard {
+    width: 100%;
     float: left;
-    margin-right: 2.32558%; }
+    margin-right: 10%; }
+
+  #home-long article {
+    width: 74.11765%;
+    float: left;
+    margin-right: 3.52941%;
+    margin-left: 25.88235%; }
 
   article {
     width: 48.83721%;
@@ -736,11 +741,6 @@ footer .inner {
     width: 65.89147%;
     float: left;
     margin-right: 2.32558%; }
-
-  #posts .sidebar {
-    width: 23.25581%;
-    float: right;
-    margin-right: 0; }
 
   .test-list {
     width: 74.11765%;
@@ -771,35 +771,7 @@ footer .inner {
     margin-right: 0; }
 
   .fine-print {
-    clear: both; }
-
-  .posts-full {
-    width: 65.89147%;
-    float: left;
-    margin-right: 2.32558%; }
-
-  .sidebar {
-    width: 23.25581%;
-    float: right;
-    margin-right: 0; }
-
-  #home-long .social {
-    clear: none;
-    width: 100%;
-    float: right;
-    margin-right: 0; }
-
-  #home-long .twitter,
-  #home-long .pinboard {
-    width: 100%;
-    float: left;
-    margin-right: 10%; }
-
-  #home-long article {
-    width: 74.11765%;
-    float: left;
-    margin-right: 3.52941%;
-    margin-left: 25.88235%; } }
+    clear: both; } }
 /* ------------- @Links ------------ */
 header a,
 header a:link,
