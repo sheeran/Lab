@@ -76,8 +76,10 @@ h1 {
 h2 {
   font-size: 20px;
   line-height: 1.2em;
+  margin-top: 1.5em;
   margin-bottom: 1.2em;
-  border-bottom: 1px dotted #555; }
+  border-bottom: 1px dotted #555;
+  font-style: italic; }
 
 p {
   margin-bottom: 1.5em; }
@@ -109,7 +111,7 @@ strong {
 
 /* ----- Title Styles ----- */
 h3 {
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1em;
   color: #004400; }
 
@@ -123,19 +125,13 @@ h3.title-case3 {
   font-family: "ff-tisa-web-pro"; }
 
 h3.title-case4 {
-  font-family: "alternate-gothic-no-3-d";
-  font-size: 48px;
-  line-height: 48px;
-  letter-spacing: 0.08em; }
+  font-family: "alternate-gothic-no-3-d"; }
 
 h3.title-case5 {
   font-family: Georgia, sans-serif; }
 
 h3.title-case6 {
-  font-family: "bebas-neue";
-  font-size: 48px;
-  line-height: 48px;
-  letter-spacing: 0.08em; }
+  font-family: "bebas-neue"; }
 
 /* ----- Text Styles ----- */
 p.text-case1 {
@@ -154,6 +150,9 @@ p.text-case5 {
   font-family: Georgia, sans-serif; }
 
 /* ----- Code Styles ----- */
+pre {
+  font-size: 14px; }
+
 pre.code-case1 {
   font-family: "Anonymous Pro", monospace; }
 

@@ -15,7 +15,7 @@ $caption-color:		  lighten($base-font-color, 20);
 
 // TITLE Samples
 
-$title-font-size: 	24px;
+$title-font-size: 	28px;
 $title-line-height:	1.0em;	//add a function that keeps LH in sync with vert rhythm?
 $title-font-color: 	#040;
 
@@ -36,6 +36,7 @@ $text-case5-ff:		  $base-font-family;
 
 // Code Samples
 
+$code-font-size:    14px;
 $code-case1-ff:     "Anonymous Pro", monospace;
 $code-case2-ff:     "DejaVu Sans Mono", monospace;
 $code-case3-ff:     Inconsolata, monospace;
@@ -80,8 +81,10 @@ h1	{
 h2	{
 	font-size: $h2-size;
 	line-height: 1.2em;
+	margin-top: 1.5em;
 	margin-bottom: 1.2em;
 	border-bottom: 1px dotted #555;
+	font-style: italic;
 	}
 
 p	{
@@ -125,21 +128,9 @@ h3	{
 h3.title-case1	{font-family: $title-case1-ff;}
 h3.title-case2	{font-family: $title-case2-ff;}
 h3.title-case3	{font-family: $title-case3-ff;}
-h3.title-case4	{
-	font-family: $title-case4-ff;
-	font-size: 48px;
-	line-height: 48px;
-	letter-spacing: 0.08em;
-}
-
+h3.title-case4	{font-family: $title-case4-ff;}
 h3.title-case5	{font-family: $title-case5-ff;}
-
-h3.title-case6	{
-	font-family: $title-case6-ff;
-	font-size: 48px;
-	line-height: 48px;
-	letter-spacing: 0.08em;
-}
+h3.title-case6	{font-family: $title-case6-ff;}
 
 /* ----- Text Styles ----- */
 
@@ -150,6 +141,10 @@ p.text-case4	{font-family:  $text-case4-ff;}
 p.text-case5	{font-family:  $text-case5-ff;}
 
 /* ----- Code Styles ----- */
+
+pre {
+	font-size: $code-font-size;
+}
 
 pre.code-case1  {font-family: $code-case1-ff;}
 pre.code-case2  {font-family: $code-case2-ff;}
