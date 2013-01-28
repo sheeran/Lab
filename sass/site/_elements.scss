@@ -155,3 +155,18 @@ a.pin-tag  {
 
 a.pin-tag:hover {border-bottom: 1px dotted $tag-color;}
 
+// Pinboard Links on Lab Home Page
+
+ul.pinboard {margin-left: 0;}
+ul.pinboard a,
+ul.pinboard a:link,
+ul.pinboard a:visited {
+  color: #002b36;
+  font-weight: normal;
+  text-decoration: underline;
+  }
+ul.pinboard a:hover {
+  text-decoration: none; 
+  color: #268bd2;
+  border-bottom: 1px dotted #268bd2;
+  }

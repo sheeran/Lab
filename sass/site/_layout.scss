@@ -49,7 +49,8 @@ nav { @include clearfix; }
 .entrytags  { display: block;}
 .entrytags  { margin-bottom:24px;}
 .test-list   { margin-left: 0; }
-.tagslist li  { display: inline;}
+.tagslist li,
+.pinboard li  { display: inline;}
 
 // Footer
 
@@ -97,8 +98,8 @@ footer .inner {
   nav       {@include span-columns(4 omega, $break-1); margin-left: 0;}
 
   .social   {clear: both; @include clearfix;}
-  .twitter  {@include span-columns(4, $break-1);}
-  .pinboard {@include span-columns(4 omega, $break-1);}
+  .sb-module      {@include span-columns(4, $break-1);}
+  .sb-module-end  {@include span-columns(4 omega, $break-1);}
 
   article   {
     @include span-columns($post-columns, $break-1);
@@ -128,7 +129,8 @@ footer .inner {
     text-align: right;
   }
 
-.tagslist li { display: block;}
+.tagslist li,
+.pinboard li { display: block;}
 
 // Footer
   .intro  { @include span-columns(4, $break-1);}
@@ -141,11 +143,12 @@ footer .inner {
 @include at-breakpoint($break-2)  {
   nav {@include span-columns(4 omega, $break-2); margin-left: 0;}
 
-  .posts-full { @include span-columns(8, $break-2);} // Same as Line 
+  .posts-full { @include span-columns(8, $break-2);}
+  
   .sidebar    { @include span-columns(3 omega, $break-2);}
   .social {clear: none; @include span-columns(3 omega, 3);}
-  .twitter,
-  .pinboard {@include span-columns(3, 3);}
+  .sb-module,
+  .sb-module-end {@include span-columns(3, 3);}
 
   #home-long article {
     @include span-columns ($post-columns, 8);
