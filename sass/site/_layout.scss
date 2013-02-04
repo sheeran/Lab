@@ -41,7 +41,7 @@ nav { @include clearfix; }
   margin-right: 5px;
 }
 
-.posts-full article { margin-bottom: 2 * $base-lh;}
+.posts-full article { margin-bottom: 2 * $base-lh;}  // NOTE: Old, replace with inuit.scss mixin
 
 // Archive Page
 

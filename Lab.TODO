@@ -25,9 +25,8 @@ The Laboratory:
    ☐ Organize/separate Lab from Prototypes?
    ☐ Rename 'master.scss'
  ☐ Kit files for footer, header...from Prototype design
- ☐ Find new Vertical Rhythm helper.
+ ☐ Find new Vertical Rhythm Safari/Chrome helper.
  ☐ Organize Typekit
-
 
 New Design Prototypes:
   
@@ -41,6 +40,7 @@ New Design Prototypes:
  ☐ Need to tweak $break-2 back a bit to get full layout at 1024
  ☐ Add Mint to each page
  ☐ Icon fonts?
+ ☐ Typekit
  ☐ Add About Page
 
  Home Page:
@@ -51,14 +51,19 @@ New Design Prototypes:
    ☐ Could protect sidenotes/image captions
 
  Single Article Page:
+ ☐ Covert footnote HTML to kramdown format
  ☐ Figure/figure caption
- ☐ Fancy <hr>'s ?
+ ☐ Fancy <hr>'s ? or use inuit.css (in objects/rules.scss)
  ☐ Text Shadow on titles?
  ☐ Adaptive Images?
 
  Archives List Page:
  ☐ Need to make tags with articles into links
  ☐ Need sample category list page?
+
+ Migrate to Octopress:
+ ☐ Keep syntax coloring
+ ☐ Keep pagination?
 
 Main Lab Homepage:
  ☐ Rewrite copy

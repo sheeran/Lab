@@ -22,6 +22,8 @@ h2 a:hover    {color: $link-color-hover;}
 
 /* ---------- @Typography ---------- */
 
+// NOTE: Old, replace with inuit.scss mixin
+
 h1  {
   font-size: em($h1-size);
   line-height: lh(2,$h1-size);
@@ -95,11 +97,11 @@ blockquote  {
   font-style: italic;
   padding-left: 0.7em;
   border-left: 3px solid $accent-color;
-  margin-left: 0.7em;
+  margin-left: 0.7em;  //FIXME: Remove margin and have border flush left;
   margin-bottom: $base-lh;
   }
 
-.light  {
+.light  {   // TODO: Rename this as well, and move to elements with the rest of sb-module stuff?;
   color: $light-color;
   font-size: em(14);
   font-style: italic;
@@ -113,12 +115,12 @@ blockquote  {
   }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin : em(24) 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin : em(24) 0;
+  padding: 0;
 }
 	
 // Code
