@@ -18,6 +18,11 @@
 .left, .fl  { float: left; }
 .right, .fr { float: right; }
 
+.muted{
+    opacity:0.5;
+    filter:alpha(opacity = 50);
+}
+
 // Hide from both screenreaders and browsers: h5bp.com/u
 .hidden {
     display: none !important;

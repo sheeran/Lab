@@ -26,7 +26,6 @@
 .logo { text-align: center;}
 
 nav { @include clearfix; }
-//.primary-nav  { @include span-columns(4); }
 
 .primary-nav li {
   @include span-columns(1);
@@ -42,7 +41,7 @@ nav { @include clearfix; }
   margin-right: 5px;
 }
 
-.posts-full article { margin-bottom: 2 * $base-lh;}
+.posts-full article { margin-bottom: 2 * $base-lh;}  // NOTE: Old, replace with inuit.scss mixin
 
 // Archive Page
 
@@ -50,7 +49,8 @@ nav { @include clearfix; }
 .entrytags  { display: block;}
 .entrytags  { margin-bottom:24px;}
 .test-list   { margin-left: 0; }
-.tagslist li  { display: inline;}
+.tagslist li,
+.pinboard li  { display: inline;}
 
 // Footer
 
@@ -97,15 +97,15 @@ footer .inner {
   .logo     {@include span-columns(4, $break-1); text-align: left;}
   nav       {@include span-columns(4 omega, $break-1); margin-left: 0;}
 
-  .posts-list   {@include span-columns(4, $break-1);}
-  .else-list    {@include span-columns(4 omega, $break-1);}
   .social   {clear: both; @include clearfix;}
-  .twitter  {@include span-columns(4, $break-1);}
-  .pinboard {@include span-columns(4 omega, $break-1);}
+  .sb-module      {@include span-columns(4, $break-1);}
+  .sb-module-end  {@include span-columns(4 omega, $break-1);}
 
   article   {
     @include span-columns($post-columns, $break-1);
-    @include push(2, $break-1);}
+    @include push(2, $break-1);
+  }
+
   article h2 {float: right; width: 100%;}
   .meta,
   .sidenote,
@@ -122,18 +122,15 @@ footer .inner {
 
   .archives  { @include span-columns(6, $break-1);}
   #posts .sidebar { @include span-columns(2 omega, $break-1);}
-  .test-list {
-    //@include span-columns(4, 6);
-    @include push(2, 6);
-  }
-
+  
   .entrydate  { 
     @include span-columns(2, 4);
     @include pull(2, 4);
     text-align: right;
   }
 
-.tagslist li { display: block;}
+.tagslist li,
+.pinboard li { display: block;}
 
 // Footer
   .intro  { @include span-columns(4, $break-1);}
@@ -146,13 +143,20 @@ footer .inner {
 @include at-breakpoint($break-2)  {
   nav {@include span-columns(4 omega, $break-2); margin-left: 0;}
 
-  .posts-list { @include span-columns(5, $break-2);} // Del
-  .else-list  { @include span-columns(4, $break-2);} // Del
-  //.social {clear: none; @include span-columns(3 omega, $break-2);}
-  //.twitter,
-  //.pinboard {@include span-columns(3, 3);}
+  .posts-full { @include span-columns(8, $break-2);}
+  
+  .sidebar    { @include span-columns(3 omega, $break-2);}
+  .social {clear: none; @include span-columns(3 omega, 3);}
+  .sb-module,
+  .sb-module-end {@include span-columns(3, 3);}
 
-  article {
+  #home-long article {
+    @include span-columns ($post-columns, 8);
+    @include push(2, 8);
+  }
+
+// Single article page
+  article { 
     @include span-columns ($post-columns, $break-2);
     @include push(3, $break-2);
   }
@@ -166,7 +170,7 @@ footer .inner {
 // Archives Page 
 
   .archives  { @include span-columns(8, $break-2);}
-  #posts .sidebar { @include span-columns(3 omega, $break-2);}
+
   .test-list {
     @include span-columns(6, 8);
     @include push(2, 8);
@@ -184,17 +188,5 @@ footer .inner {
   .stuff  { @include span-columns(4, $break-2);}
   .crap   { @include span-columns(4 omega, $break-2);}
   .fine-print { clear: both;}
-  
-  // For Full,Single Page:
-
-  .posts-full { @include span-columns(8, $break-2);}
-  .sidebar    { @include span-columns(3 omega, $break-2);}
-  #home-long .social {clear: none; @include span-columns(3 omega, 3);}
-  #home-long .twitter,
-  #home-long .pinboard {@include span-columns(3, 3);}
-
-  #home-long article {
-    @include span-columns ($post-columns, 8);
-    @include push(2, 8);
-  }
+   
 }

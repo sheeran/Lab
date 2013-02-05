@@ -1,16 +1,32 @@
 
 The Laboratory:
 
- ☐ Overall HTML structure:
+ ☐ Overall HTML structure - portable classes that can be used across entire site:
  Match to Octopress (with redesign going to Octopress)
  Match to New Design and then change Octopress to that?
+ * Watch for OP plugin output and don't change if not necessary
+  - <div.content> change to 'main'? modularize these "blocks"
+    - Blog Home:
+      <section.posts-full>                           @12: 6 wide, push 2 + SB 3
+        <article>                 @8: 6 wide, push 2 @12: 6 wide, push 2 + SB 3
+        <article>
+      <section.sidebar>                              @12: 3 wide
+    - Single Page:
+      <article>                                      @12: 6 wide, push 3 (no SB)                     
+      *No Sidebar*
+    - Archives Page:
+      <section.archives>          @8: 6 wide + SB 2  @12: 8 wide + SB 3
+        <ul.test-list> @6: 4w,p2  --> same           @12: 6 wide, push 2
+      <section.sidebar>           @8: 2 wide         @12: 3 wide
+
+     --> Need a basic module that is full width at 4,6,8 and 8 cols @12 with 3col sidebar
+ 
  ☐ Sass structure:
    ☐ Organize/separate Lab from Prototypes?
    ☐ Rename 'master.scss'
  ☐ Kit files for footer, header...from Prototype design
- ☐ Find new Vertical Rhythm helper.
+ ☐ Find new Vertical Rhythm Safari/Chrome helper.
  ☐ Organize Typekit
-
 
 New Design Prototypes:
   
@@ -19,12 +35,11 @@ New Design Prototypes:
  ☐ Finish Footer
  ☐ Refactor Prototype-specific Sass
  ☐ Address all TODO / FIXME things
- ☐ Assign title variable for H2s, with appropriate sans fallback
  ☐ Fix vertical rhythm
  ☐ Need to tweak $break-2 back a bit to get full layout at 1024
  ☐ Add Mint to each page
  ☐ Icon fonts?
- ☐ Remove all Sass for two-list version of site
+ ☐ Assign title variable for H2s, with appropriate sans fallback
  ☐ Add About Page
 
  Home Page:
@@ -35,8 +50,9 @@ New Design Prototypes:
    ☐ Could protect sidenotes/image captions
 
  Single Article Page:
+ ☐ Covert footnote HTML to kramdown format
  ☐ Figure/figure caption
- ☐ Fancy <hr>'s ?
+ ☐ Fancy <hr>'s ? or use inuit.css (in objects/rules.scss)
  ☐ Text Shadow on titles?
  ☐ Adaptive Images?
 
@@ -44,12 +60,15 @@ New Design Prototypes:
  ☐ Need to make tags with articles into links
  ☐ Need sample category list page?
 
+ Migrate to Octopress:
+ ☐ Keep syntax coloring
+ ☐ Keep pagination?
+
 Main Lab Homepage:
  ☐ Rewrite copy
-   ☐ Projects
    ☐ Tools
-   ☐ Resources
    ☐ Github
+ ☐ Tweak <dt> sizes, make a tad bigger
  ☐ Do the footer
  ☐ Link to GitHub Repo  
 
@@ -63,18 +82,25 @@ Pages:
    ☐ Fix title on version 2 page
 
   Specimans
-  ☐ Headlines: More, bigger sizes, Sentence Case
-  ☐ Text: different sizes
 
   ADD Compass Vertical Rhythm Page
 
  Misc:
  ☐ Remove un-needed Javascript from all pages
+ ☐ Remove all experimental Sass (comments)
  ☐ HTML Tables
  ☐ Write the README when I finish. Make repo public and publish
 
+
+
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ Typecast specimens for Typekit @done (13-02-05 00:02)
+ ✔ Headlines: More, bigger sizes, Sentence Case @done (13-02-05 00:02)
+ ✔ Use inuit.css font mixins here. @done (13-02-05 00:02)
+ ✔ Remove all Sass for two-list version of site @done (13-01-27 20:50)
+ ✔ Projects @done (13-01-27 20:51)
+ ✔ Resources @done (13-01-27 20:51)
  ✔ Differentiate Elsewhere posts - added .linked to <li> element @done (13-01-26 13:57)
  ✔ Turn into full-up Sublime Project @done (12-10-20 21:21)
  ✔ Break out projects into folders? @done (12-12-11 01:12)

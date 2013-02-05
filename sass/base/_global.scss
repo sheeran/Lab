@@ -15,6 +15,7 @@ footer, header, hgroup, menu, nav, section {
   border: 0;
   }
 
+// NOTE: Old, replace with inuit.scss mixin
 html {
   font-size: $base-perc;
 }
@@ -43,6 +44,7 @@ a:hover {
 
 // Lists
 
+// NOTE: Old, replace with inuit.scss mixin
 ol,
 ul  { margin-left: $base-lh; }
 

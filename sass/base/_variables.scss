@@ -21,7 +21,7 @@ $h2-size    : 24; // Article Titles
 $h3-size    : 18; // Article Sub-heading
 $h4-size    : 16; // Article Sub-heading
 $h5-size    : 19; // Article Sub-heading (Small Caps)
-//$h6-size    : ;
+//$h6-size    : ; // TODO: Use these in the footer or something?
 
 
 // 2. COLOR ----------------------------------------
@@ -45,7 +45,7 @@ $accent-color     : #eee8d5; // base2
 $accent-border    : #93a1a1; // base1
 $accent-color-dark: #586e75; // base01
 
-$heading-text-color : darken($link-color-hover, 15%);
+$heading-text-color : darken($link-color-hover, 15%); //TODO: Rename this to 'module label' somthing.
 $tag-color        : #dc322f; // red
 
 // -- SOLARIZED -----------------------------------
@@ -77,7 +77,7 @@ $gutter-width   : 1.5em;
 $grid-padding   : $gutter-width;
 
 // Additional Susy Variables
-$show-grid-backgrounds  : true;
+$show-grid-backgrounds  : false;
 $grid-background-column-color: lighten($body-color, 2%);
 $container-width        : false;
 $container-style        : magic;

@@ -98,7 +98,7 @@ footer  {
 	background-color: $accent-color;
 	border: 1px solid $accent-border;
 	padding: 4px;
-	margin-bottom: em(24);
+	margin-bottom: em(24); // NOTE: Old, replace with inuit.scss mixin
 	}
 
 .art  {
@@ -106,14 +106,14 @@ footer  {
   background-color: $accent-color;
   border: 1px solid $accent-border;
   padding: 4px;
-  margin-bottom: em(24);
+  margin-bottom: em(24); // NOTE: Old, replace with inuit.scss mixin
 }
 
 // Twitter.js and Pinboard Links
-
+// NOTE: Old, replace with inuit.scss mixin
 #tweets,
 #pinboard_linkroll {
-  font-size: em(14);
+  font-size: em(14); 
   line-height: incr(14, 4, 5);
 }
 
@@ -148,10 +148,26 @@ a.pin-title {
 }
 
 a.pin-tag  {
-  color: $tag-color;
+  color: $tag-color; // FIXME: Do these PB tags really need to be red?;
   font-weight: normal;
   text-decoration: none;
 }  
 
 a.pin-tag:hover {border-bottom: 1px dotted $tag-color;}
 
+// Pinboard Links on Lab Home Page
+// FIXME: Variable for these PB link colors?;
+
+ul.pinboard {margin-left: 0;}
+ul.pinboard a,
+ul.pinboard a:link,
+ul.pinboard a:visited {
+  color: #002b36;
+  font-weight: normal;
+  text-decoration: underline;
+  }
+ul.pinboard a:hover {
+  text-decoration: none; 
+  color: #268bd2;
+  border-bottom: 1px dotted #268bd2;
+  }
