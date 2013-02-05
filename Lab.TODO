@@ -61,7 +61,8 @@ New Design Prototypes:
  ☐ Need sample category list page?
 
  Migrate to Octopress:
- ☐ Keep syntax coloring
+ ☐ Keep syntax coloring for different code block types
+ ☐ Keep other plugins: images, blockquotes, tweets, 
  ☐ Keep pagination?
 
 Main Lab Homepage:
@@ -85,13 +86,11 @@ Pages:
 
   ADD Compass Vertical Rhythm Page
 
- Misc:
+Misc:
  ☐ Remove un-needed Javascript from all pages
  ☐ Remove all experimental Sass (comments)
  ☐ HTML Tables
  ☐ Write the README when I finish. Make repo public and publish
-
-
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
