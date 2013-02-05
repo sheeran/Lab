@@ -35,12 +35,11 @@ New Design Prototypes:
  ☐ Finish Footer
  ☐ Refactor Prototype-specific Sass
  ☐ Address all TODO / FIXME things
- ☐ Assign title variable for H2s, with appropriate sans fallback
  ☐ Fix vertical rhythm
  ☐ Need to tweak $break-2 back a bit to get full layout at 1024
  ☐ Add Mint to each page
  ☐ Icon fonts?
- ☐ Typekit
+ ☐ Assign title variable for H2s, with appropriate sans fallback
  ☐ Add About Page
 
  Home Page:
@@ -69,6 +68,7 @@ Main Lab Homepage:
  ☐ Rewrite copy
    ☐ Tools
    ☐ Github
+ ☐ Tweak <dt> sizes, make a tad bigger
  ☐ Do the footer
  ☐ Link to GitHub Repo  
 
@@ -82,8 +82,6 @@ Pages:
    ☐ Fix title on version 2 page
 
   Specimans
-  ☐ Headlines: More, bigger sizes, Sentence Case
-  ☐ Use inuit.css font mixins here.
 
   ADD Compass Vertical Rhythm Page
 
@@ -93,8 +91,13 @@ Pages:
  ☐ HTML Tables
  ☐ Write the README when I finish. Make repo public and publish
 
+
+
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ Typecast specimens for Typekit @done (13-02-05 00:02)
+ ✔ Headlines: More, bigger sizes, Sentence Case @done (13-02-05 00:02)
+ ✔ Use inuit.css font mixins here. @done (13-02-05 00:02)
  ✔ Remove all Sass for two-list version of site @done (13-01-27 20:50)
  ✔ Projects @done (13-01-27 20:51)
  ✔ Resources @done (13-01-27 20:51)

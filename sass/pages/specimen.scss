@@ -1,71 +1,126 @@
-@import "../resets/meyer";
+@import "../resets/normalize_v2";
 
-// ***** variables *****
+// ***** inuit.css stuff *****
 
-$base-font-size: 	  16px;
-$base-line-height: 	1.5; 	//24px becomes vertical rhythm
+$base-font-size:    16px!default;
+$base-line-height:  24px!default;
+
+$base-spacing-unit: $base-line-height!default;
+$half-spacing-unit: $base-spacing-unit / 2!default;
+$line-height-ratio: $base-line-height / $base-font-size;
+
+@mixin font-size($font-size){
+    font-size:$font-size;
+    font-size:($font-size / $base-font-size)*1rem;
+    line-height:ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+}
+
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dl,
+blockquote,p,address,
+table,
+fieldset,figure,
+pre,
+%sass-margin-bottom,
+.media,
+.island,
+.islet{
+		margin-top: 0;
+    margin-bottom:$base-spacing-unit;
+    margin-bottom:($base-spacing-unit / $base-font-size)*1rem;
+    
+    .islet &{
+        margin-bottom:$base-spacing-unit / 2;
+        margin-bottom:(($base-spacing-unit / $base-font-size) / 2)*1rem;
+    }
+}
+
+@mixin rounded($radius:4px) {
+  -webkit-border-radius : $radius;
+     -moz-border-radius : $radius;
+          border-radius : $radius; 
+  }
+
 $base-font-family:	Georgia, sans-serif;
-$base-font-color:	  #333;
-$base-bg-color:	    #fff;
+$base-font-color:	  #586e75;
+$base-bg-color:	    #fdf6e3;
 
-$h1-size:		        24px;
-$h2-size:		        20px;
+$h1-size:		        28px; // Page Title
+$h2-size:		        24px; // Section Titles
+$heading-color:     #073642;
+//$h3-size:               ;
+//$h4-size:               ;
+//$h5-size:               ;
+//$h6-size:               ;
 $caption-size:		  14px;
-$caption-color:		  lighten($base-font-color, 20);
+$caption-color:		   #93a1a1; //lighten($base-font-color, 20)
 
 // TITLE Samples
 
 $title-font-size: 	28px;
-$title-line-height:	1.0em;	//add a function that keeps LH in sync with vert rhythm?
-$title-font-color: 	#040;
+$title-font-color: 	darken(#2aa198, 10);
 
-$title-case1-ff:		"adelle";
-$title-case2-ff:		"proxima-nova";
-$title-case3-ff:		"ff-tisa-web-pro";
-$title-case4-ff:		"alternate-gothic-no-3-d";
-$title-case5-ff:		$base-font-family;
-$title-case6-ff:		"bebas-neue";	
+$title-case1-ff:		"adelle", serif;
+$title-case2-ff:		"proxima-nova", sans-serif;
+$title-case3-ff:		"ff-tisa-web-pro", serif;
+$title-case4-ff:		Georgia, serif;
+$title-case5-ff:		"alternate-gothic-no-3-d", sans-serif;
+$title-case6-ff:		"bebas-neue", sans-serif;	
 
 // TEXT Samples
+
+$text-sample-size:  16px;
+$text-sample-color: #586e75;
 
 $text-case1-ff:		  "adelle";
 $text-case2-ff:		  "proxima-nova";
 $text-case3-ff:		  "ff-tisa-web-pro";
 $text-case4-ff:		  Corbel;
-$text-case5-ff:		  $base-font-family;
+$text-case5-ff:		  Georgia;
+$text-case6-ff:     Cambria;
 
 // Code Samples
 
 $code-font-size:    14px;
-$code-case1-ff:     "Anonymous Pro", monospace;
-$code-case2-ff:     "DejaVu Sans Mono", monospace;
+$code-bg-color:     #002b36;
+$code-font-color:   #839496;
+
+$code-case0-ff:     Menlo, monospace;
+$code-case1-ff:     'Anonymous Pro', monospace;
+$code-case2-ff:     'DejaVu Sans Mono', monospace;
 $code-case3-ff:     Inconsolata, monospace;
 $code-case4-ff:     Monaco, monospace;
 $code-case5-ff:     Consolas, monospace;
 
 
 /* ----- Baseline Page Styles ----- */
+
+html{
+  font:#{($base-font-size/16px)*1em}/#{$line-height-ratio};
+  font-family: $base-font-family;
+  overflow-y:scroll;
+  min-height:100%;
+}
+
 body	{
-	font-size: $base-font-size;
-	line-height: $base-line-height;
-	font-family: $base-font-family;
+	@include font-size(16px);
 	background-color: $base-bg-color;
 	color: $base-font-color;
 	}
 
 #wrap	{
-	width: 960px;
+	width: 1000px;
 	margin: 24px auto;
 	}
 
 .titles	{
 	float: left;
-	width: 46%;
+	width: 48%;
 	}
 
 .text	{
 	float: right;
-	width: 46%;
+	width: 48%;
 	}
 
 footer	{
@@ -73,25 +128,19 @@ footer	{
 	}
 
 h1	{
-	font-size: $h1-size;
-	line-height: 48px;
-	margin-bottom: 1.0em;
+	@include font-size($h1-size);
+	color: $heading-color;
 	}
 
 h2	{
-	font-size: $h2-size;
-	line-height: 1.2em;
-	margin-top: 1.5em;
-	margin-bottom: 1.2em;
+	@include font-size($h2-size);
+	color: $heading-color;
 	border-bottom: 1px dotted #555;
 	font-style: italic;
 	}
 
-p	{
-	margin-bottom: 1.5em;
-	}
 	
-.intro  {width: 46%;}
+.intro  {width: 48%;}
 
 .speciman	{
 	letter-spacing: 0.3em;
@@ -99,11 +148,9 @@ p	{
 	}
 
 .caption	{
-	font-size: $caption-size;
-	line-height: 1.7142em;
+	@include font-size($caption-size);
 	font-style: italic;
 	color: $caption-color;
-	margin-bottom: 1.7142em;
 	}
 	
 em  {font-style: italic;}
@@ -120,35 +167,48 @@ strong  {font-weight: bold;}
 /* ----- Title Styles ----- */
 
 h3	{
-	font-size: $title-font-size;
-	line-height: $title-line-height;
+	@include font-size($title-font-size);
 	color: $title-font-color;
+	font-weight: normal;;
 	}
 
-h3.title-case1	{font-family: $title-case1-ff;}
-h3.title-case2	{font-family: $title-case2-ff;}
-h3.title-case3	{font-family: $title-case3-ff;}
-h3.title-case4	{font-family: $title-case4-ff;}
-h3.title-case5	{font-family: $title-case5-ff;}
-h3.title-case6	{font-family: $title-case6-ff;}
+h3.title-case1	{font-family: $title-case1-ff; margin-bottom: 0;}
+h3.title-case2	{font-family: $title-case2-ff; margin-bottom: 0;}
+h3.title-case3	{font-family: $title-case3-ff; margin-bottom: 0;}
+h3.title-case4	{font-family: $title-case4-ff; margin-bottom: 0;}
+h3.title-case5	{font-family: $title-case5-ff; margin-bottom: 0;}
+h3.title-case6	{font-family: $title-case6-ff; margin-bottom: 0;}
 
 /* ----- Text Styles ----- */
 
-p.text-case1	{font-family:  $text-case1-ff;}
-p.text-case2	{font-family:  $text-case2-ff;}
-p.text-case3	{font-family:  $text-case3-ff;}
-p.text-case4	{font-family:  $text-case4-ff;}
-p.text-case5	{font-family:  $text-case5-ff;}
+.sample {
+	@include font-size($text-sample-size);
+	color: $text-sample-color;
+}
+
+p.text-case1	{@extend .sample; font-family:  $text-case1-ff;}
+p.text-case2	{@extend .sample; font-family:  $text-case2-ff;}
+p.text-case3	{@extend .sample; font-family:  $text-case3-ff;}
+p.text-case4	{@extend .sample; font-family:  $text-case4-ff;}
+p.text-case5	{@extend .sample; font-family:  $text-case5-ff;}
+p.text-case6	{@extend .sample; font-family:  $text-case6-ff;}
 
 /* ----- Code Styles ----- */
 
-pre {
-	font-size: $code-font-size;
+pre, {
+	@include font-size($code-font-size);
+	width: 80%;
+	background-color: $code-bg-color;
+	color: $code-font-color;
+	margin-bottom: 0;
+	padding-left: 12px;
+	@include rounded(5px);
 }
 
-pre.code-case1  {font-family: $code-case1-ff;}
-pre.code-case2  {font-family: $code-case2-ff;}
-pre.code-case3  {font-family: $code-case3-ff;}
-pre.code-case4  {font-family: $code-case4-ff;}
-pre.code-case5  {font-family: $code-case5-ff;}
+pre.code-case0 code {font-family: $code-case0-ff;}
+pre.code-case1 code {font-family: $code-case1-ff;}
+pre.code-case2 code {font-family: $code-case2-ff;}
+pre.code-case3 code {font-family: $code-case3-ff;}
+pre.code-case4 code {font-family: $code-case4-ff;}
+pre.code-case5 code {font-family: $code-case5-ff;}
 
