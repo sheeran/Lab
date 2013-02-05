@@ -22,9 +22,9 @@ The Laboratory:
      --> Need a basic module that is full width at 4,6,8 and 8 cols @12 with 3col sidebar
  
  ☐ Sass structure:
-   ☐ Organize/separate Lab from Prototypes?
+   ☐ Organize/separate Lab from Redesign?
    ☐ Rename 'master.scss'
- ☐ Kit files for footer, header...from Prototype design
+ ☐ Kit files for footer, header...from Redesign --> will translate well to Octo-includes
  ☐ Find new Vertical Rhythm Safari/Chrome helper.
  ☐ Organize Typekit
 
@@ -33,24 +33,21 @@ New Design Prototypes:
  General:
  ☐ Convert type mixins to inuit.css
  ☐ Finish Footer
- ☐ Refactor Prototype-specific Sass
+ ☐ Refactor Redesign-specific Sass
  ☐ Address all TODO / FIXME things
  ☐ Fix vertical rhythm
  ☐ Need to tweak $break-2 back a bit to get full layout at 1024
- ☐ Add Mint to each page
  ☐ Icon fonts?
  ☐ Assign title variable for H2s, with appropriate sans fallback
  ☐ Add About Page
 
  Home Page:
  ☐ Add search, RSS feeds
- ☐ Covert footnote HTML to kramdown format
  ☐ Need to make tags with articles into links
  ☐ Will article list have 'more' links for all entries?
    ☐ Could protect sidenotes/image captions
 
  Single Article Page:
- ☐ Covert footnote HTML to kramdown format
  ☐ Figure/figure caption
  ☐ Fancy <hr>'s ? or use inuit.css (in objects/rules.scss)
  ☐ Text Shadow on titles?
@@ -60,10 +57,16 @@ New Design Prototypes:
  ☐ Need to make tags with articles into links
  ☐ Need sample category list page?
 
+ Octopress Plugin Test Article:
+ ☐ Images
+ ☐ All different codeblocks
+ ☐ blockquotes (to include tweets)
+
  Migrate to Octopress:
  ☐ Keep syntax coloring for different code block types
  ☐ Keep other plugins: images, blockquotes, tweets, 
- ☐ Keep pagination?
+ ☐ Keep pagination? 
+ ☐ Don't forget Disqus comments
 
 Main Lab Homepage:
  ☐ Rewrite copy
@@ -87,13 +90,15 @@ Pages:
   ADD Compass Vertical Rhythm Page
 
 Misc:
- ☐ Remove un-needed Javascript from all pages
  ☐ Remove all experimental Sass (comments)
  ☐ HTML Tables
  ☐ Write the README when I finish. Make repo public and publish
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ Covert footnote HTML to kramdown format @done (13-02-05 15:15)
+ ✔ Add Mint to each page @done (13-02-05 14:21)
+ ✔ Remove un-needed Javascript from all pages @done (13-02-05 14:21)
  ✔ Typecast specimens for Typekit @done (13-02-05 00:02)
  ✔ Headlines: More, bigger sizes, Sentence Case @done (13-02-05 00:02)
  ✔ Use inuit.css font mixins here. @done (13-02-05 00:02)

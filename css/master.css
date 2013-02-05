@@ -916,29 +916,24 @@ pre code {
   .noted:after {
     clear: both; }
 
+sup {
+  top: -0.3em;
+  font-size: 90%; }
+
+sup a, sup a:link {
+  padding-left: 5px; }
+
 .footnotes {
   font-size: 0.875em;
-  line-height: 1.71429em; }
+  line-height: 1.71429em;
+  padding-top: 12px;
+  border-top: 2px solid #eee8d5; }
 
-a.footnote {
-  border-bottom: none;
-  font-size: 90%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-  top: -0.4em; }
+.footnotes p {
+  margin-bottom: 12px; }
 
-a.reversefootnote {
+a[rel="reference"] {
   text-decoration: none; }
-
-.fn-hr {
-  display: block;
-  margin: 1.5em 0;
-  width: 47.61905%;
-  padding: 0;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #93a1a1; }
 
 footer p,
 footer ul {
