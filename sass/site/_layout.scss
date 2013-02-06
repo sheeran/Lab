@@ -48,7 +48,7 @@ nav { @include clearfix; }
 .entrydate,
 .entrytags  { display: block;}
 .entrytags  { margin-bottom:24px;}
-.test-list  { margin-left: 0; }
+.entry-list  { margin-left: 0; }
 .tagslist li,
 .pinboard li  { display: inline;}
 
@@ -75,7 +75,7 @@ footer .inner {
   .description { float: right; text-align: right; }
  
  // Archives Page 
-  .test-list   {
+  .entry-list   {
     @include span-columns(4, $break-0);
     @include push(2, $break-0);
   }
@@ -86,7 +86,7 @@ footer .inner {
     text-align: right;
   }
 
-  .test-list h2 { float: right; width: 100%;}
+  .entry-list h2 { float: right; width: 100%;}
 }
 
 /* -------- @Break-1 = 8 Columns (680px) --------- */
@@ -97,7 +97,7 @@ footer .inner {
   .logo     {@include span-columns(4, $break-1); text-align: left;}
   nav       {@include span-columns(4 omega, $break-1); margin-left: 0;}
 
-  .social   {clear: both; @include clearfix;}
+  //.social   {@include clearfix;}
   .sb-module      {@include span-columns(4, $break-1);}
   .sb-module-end  {@include span-columns(4 omega, $break-1);}
 
@@ -146,7 +146,7 @@ footer .inner {
   .posts-full { @include span-columns(8, $break-2);}
   
   .sidebar    { @include span-columns(3 omega, $break-2);}
-  .social {clear: none; @include span-columns(3 omega, 3);}
+ // .social {clear: none; @include span-columns(3 omega, 3);}
   .sb-module,
   .sb-module-end {@include span-columns(3, 3);}
 
@@ -171,7 +171,7 @@ footer .inner {
 
   .archives  { @include span-columns(8, $break-2);}
 
-  .test-list {
+  .entry-list {
     @include span-columns(6, 8);
     @include push(2, 8);
   }

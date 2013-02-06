@@ -45,27 +45,6 @@ nav {
 #lab .lab_tab a:hover,
 #about .about_tab a:hover { border-bottom: 0;}
 
-// Search Box
-
-form {
-  margin: 0;
-  padding: 0;
-}
-
-.search {
-  margin: 0;
-  padding: 0;
-  width: 148px;
-}
-
-fieldset  {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-// Hidden border so content does not move down
-//#article .home_tab { border-bottom: 5px solid $body-color;}
 
 // Main Footer
 
@@ -79,15 +58,31 @@ footer  {
 
 /* ---------- @Elements ---------- */
 
-// Section Headings on Home 
+// Sidebar Sub-Modules 
 .heading  {
   border-bottom: 5px solid $accent-color;
   margin-bottom: 19px;
 }
 
+.label  {
+  font-weight: normal;
+  font-size: em(20);
+  line-height: lh(1, 20);
+  font-style: italic;
+  color: $heading-text-color;
+  margin-bottom: 0;
+}
+
 .description {
   margin-top: 2px;
   margin-bottom: 0;
+}
+
+.light  {   // NOTE: Rename/modularize small, light text?;
+  color: $light-color;
+  font-size: em(14);
+  font-style: italic;
+  line-height: lh(1.0, 14);
 }
 
 .tagslist { margin-left: 0; }
@@ -155,6 +150,26 @@ a.pin-tag  {
 
 a.pin-tag:hover {border-bottom: 1px dotted $tag-color;}
 
+// Search Box
+// TODO: Style the Search Module, make it portable
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.search {
+  margin: 0;
+  padding: 0;
+  width: 148px;
+}
+
+fieldset  {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 /* ---------- @Lab Items ---------- */
 // NOTE: Should Lab-specific styles be in a separate partial?
 
@@ -175,7 +190,7 @@ ul.pinboard a:hover {
   border-bottom: 1px dotted #268bd2;
   }
 
-.lab-list dt a {
+.lab-list dt a { //TODO: Convert this font-size to something;
   font-size: 18px;
 }
 

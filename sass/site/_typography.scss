@@ -20,7 +20,7 @@ h2 a:link,
 h2 a:visited  {color: $title-color; text-decoration: none;}
 h2 a:hover    {color: $link-color-hover;}
 
-/* ---------- @Typography ---------- */
+/* ---------- @Type-Headlines ---------- */
 
 // NOTE: Old, replace with inuit.scss mixin
 
@@ -53,7 +53,7 @@ h2 {
   &:after { content: "\0020 \00BB "; }
   }
 
-.archives .test-list h2 { margin-bottom: 0;}
+.archives .entry-list h2 { margin-bottom: 0;}
 
   
 .entry h3 {
@@ -77,16 +77,9 @@ h2 {
   text-transform: lowercase;
   }
 
-.label  {
-  font-weight: normal;
-  font-size: em(20);
-  line-height: lh(1, 20);
-  font-style: italic;
-  color: $heading-text-color;
-  margin-bottom: 0;
-}
 
-/* -- Text Styles -- */
+
+/* ---------- @Type-Blog-Entries ---------- */
 
 p, blockquote, ol, ul, pre, dl  {
   margin-bottom: $base-lh;
@@ -97,16 +90,9 @@ blockquote  {
   font-style: italic;
   padding-left: 0.7em;
   border-left: 3px solid $accent-color;
-  //margin-left: 0.7em;  //FIXME: Remove margin and have border flush left;
   margin-bottom: $base-lh;
   }
 
-.light  {   // TODO: Rename this as well, and move to elements with the rest of sb-module stuff?;
-  color: $light-color;
-  font-size: em(14);
-  font-style: italic;
-  line-height: lh(1.0, 14);
-}
 
 .sc {
   text-transform: lowercase;
