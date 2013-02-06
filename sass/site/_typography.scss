@@ -78,14 +78,13 @@ h2 {
   }
 
 
-
 /* ---------- @Type-Blog-Entries ---------- */
 
 p, blockquote, ol, ul, pre, dl  {
   margin-bottom: $base-lh;
   }
       
-blockquote  {
+.entry blockquote  {
   color: $light-color;
   font-style: italic;
   padding-left: 0.7em;
@@ -190,19 +189,5 @@ sup a, sup a:link {
 }
 
 a[rel="reference"]	{text-decoration: none;}
-  
-// Footer 
-// FIXME: Testing incremental leading here  
 
-footer p,
-footer ul {
-  font-size: em(15);
-  line-height: incr(15, 4, 5);
-}
-
-.fine-print {
-  clear: left;
-  border-top: 1px dotted #586e75;
-  padding-top: 5px;
-}
 

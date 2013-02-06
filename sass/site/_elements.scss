@@ -56,6 +56,65 @@ footer  {
   border-top: 5px solid $accent-color-dark;
 }
 
+footer h3 {
+  font-size: em($h3-size);
+  color: #b58900;
+  margin-bottom: 6px;
+}
+
+// FIXME: Testing incremental leading here  
+
+footer p,
+footer ul {
+  font-size: em(15);
+  line-height: incr(15, 4, 5);
+}
+
+.wisdom {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.cite::before {
+  content: "— "
+}
+
+.crap {
+  margin-bottom: 48px;
+}
+
+.fine-print {
+  clear: both;
+  border-top: 1px dotted #586e75;
+  padding-top: 5px;
+}
+
+footer ul {
+  margin-left: 0;
+}
+
+// Search Box
+// TODO: Style the Search Module, make it portable
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.search {
+  @include rounded();
+  box-sizing: border-box;
+  margin-bottom: 0px;
+  padding: 3px 3px 3px 3px;
+  width: 100%;
+}
+
+fieldset  {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 /* ---------- @Elements ---------- */
 
 // Sidebar Sub-Modules 
@@ -150,26 +209,6 @@ a.pin-tag  {
 
 a.pin-tag:hover {border-bottom: 1px dotted $tag-color;}
 
-// Search Box
-// TODO: Style the Search Module, make it portable
-
-form {
-  margin: 0;
-  padding: 0;
-}
-
-.search {
-  margin: 0;
-  padding: 0;
-  width: 148px;
-}
-
-fieldset  {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
 /* ---------- @Lab Items ---------- */
 
 // Pinboard Links on Lab Home Page
@@ -178,17 +217,9 @@ fieldset  {
 ul.pinboard {margin-left: 0;}
 ul.pinboard a,
 ul.pinboard a:link,
-ul.pinboard a:visited {
-  color: #002b36;
-  font-weight: normal;
-  text-decoration: underline;
-  }
-ul.pinboard a:hover {
-  text-decoration: none; 
-  color: #268bd2;
-  border-bottom: 1px dotted #268bd2;
-  }
+ul.pinboard a:visited { text-decoration: none; }
 
+.lab-list dt,
 .lab-list dt a { //TODO: Convert this font-size to something;
   font-size: 18px;
 }
