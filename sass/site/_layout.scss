@@ -48,7 +48,7 @@ nav { @include clearfix; }
 .entrydate,
 .entrytags  { display: block;}
 .entrytags  { margin-bottom:24px;}
-.test-list   { margin-left: 0; }
+.test-list  { margin-left: 0; }
 .tagslist li,
 .pinboard li  { display: inline;}
 
@@ -70,7 +70,7 @@ footer .inner {
     -webkit-transition-property: margin;  
     -webkit-transition-duration: 500ms;  
   }
-  .heading  { @include clearfix; }
+  .heading     { @include clearfix; }
   .heading h3  { float: left; }
   .description { float: right; text-align: right; }
  

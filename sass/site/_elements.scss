@@ -155,8 +155,11 @@ a.pin-tag  {
 
 a.pin-tag:hover {border-bottom: 1px dotted $tag-color;}
 
+/* ---------- @Lab Items ---------- */
+// NOTE: Should Lab-specific styles be in a separate partial?
+
 // Pinboard Links on Lab Home Page
-// FIXME: Variable for these PB link colors?;
+// FIXME: Variable for these PB link colors?
 
 ul.pinboard {margin-left: 0;}
 ul.pinboard a,
@@ -171,3 +174,8 @@ ul.pinboard a:hover {
   color: #268bd2;
   border-bottom: 1px dotted #268bd2;
   }
+
+.lab-list dt a {
+  font-size: 18px;
+}
+

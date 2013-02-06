@@ -1070,6 +1070,7 @@ a.pin-tag {
 a.pin-tag:hover {
   border-bottom: 1px dotted #dc322f; }
 
+/* ---------- @Lab Items ---------- */
 ul.pinboard {
   margin-left: 0; }
 
@@ -1084,6 +1085,9 @@ ul.pinboard a:hover {
   text-decoration: none;
   color: #268bd2;
   border-bottom: 1px dotted #268bd2; }
+
+.lab-list dt a {
+  font-size: 18px; }
 
 .comments {
   padding-top: 3.0em;
