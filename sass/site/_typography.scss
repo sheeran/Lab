@@ -156,6 +156,16 @@ pre code {line-height: 1.5em;}
   //margin-bottom: lh(1, 14);
 }
 
+.tags a,
+.tags a:link,
+.tags a:visited { color: $light-color;}
+
+.tags a:hover {
+  color: $link-color-hover;
+  border-bottom: 1px dotted $link-color-hover;
+  text-decoration: none;
+  }
+
 .noted  { float: right; @include clearfix;}
 
 sup   {

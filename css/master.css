@@ -905,6 +905,16 @@ pre code {
   margin-left: 0;
   padding-bottom: 2px; }
 
+.tags a,
+.tags a:link,
+.tags a:visited {
+  color: #93a1a1; }
+
+.tags a:hover {
+  color: #268bd2;
+  border-bottom: 1px dotted #268bd2;
+  text-decoration: none; }
+
 .noted {
   float: right;
   *zoom: 1; }
