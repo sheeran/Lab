@@ -45,7 +45,7 @@ h2 {
   }
 
 .linked h2  { 
-  color: $tag-color; // Color for the :after content -- >>;
+  color: $link-color-hover; // Color for the :after content -- >>;
   font-size: em(20);
   line-height: lh(1, 20);
   margin-bottom: lh(1, 20);

@@ -774,7 +774,7 @@ h2 {
   margin-bottom: 1em; }
 
 .linked h2 {
-  color: #dc322f;
+  color: #268bd2;
   font-size: 1.25em;
   line-height: 1.2em;
   margin-bottom: 1.2em; }
@@ -965,6 +965,7 @@ footer {
 
 footer h3 {
   font-size: 1.125em;
+  font-weight: normal;
   color: #b58900;
   margin-bottom: 6px; }
 
@@ -1080,12 +1081,13 @@ a.pin-title {
     margin-bottom: 0; }
 
 a.pin-tag {
-  color: #dc322f;
+  color: #93a1a1;
   font-weight: normal;
   text-decoration: none; }
 
 a.pin-tag:hover {
-  border-bottom: 1px dotted #dc322f; }
+  color: #268bd2;
+  border-bottom: 1px dotted #268bd2; }
 
 /* ---------- @Lab Items ---------- */
 ul.pinboard {

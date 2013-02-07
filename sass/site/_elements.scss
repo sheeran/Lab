@@ -58,6 +58,7 @@ footer  {
 
 footer h3 {
   font-size: em($h3-size);
+  font-weight: normal;
   color: #b58900;
   margin-bottom: 6px;
 }
@@ -202,12 +203,15 @@ a.pin-title {
 }
 
 a.pin-tag  {
-  color: $tag-color; // FIXME: Do these PB tags really need to be red?;
+  color: $light-color; // FIXME: Do these PB tags really need to be red?;
   font-weight: normal;
   text-decoration: none;
 }  
 
-a.pin-tag:hover {border-bottom: 1px dotted $tag-color;}
+a.pin-tag:hover {
+  color: $link-color-hover;
+  border-bottom: 1px dotted $link-color-hover;
+}
 
 /* ---------- @Lab Items ---------- */
 
