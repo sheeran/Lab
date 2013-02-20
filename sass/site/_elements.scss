@@ -223,8 +223,9 @@ ul.pinboard a,
 ul.pinboard a:link,
 ul.pinboard a:visited { text-decoration: none; }
 
+//TODO: Convert this font-size to a mixin
 .lab-list dt,
-.lab-list dt a { //TODO: Convert this font-size to something;
+.lab-list dt a { 
   font-size: 18px;
 }
 
