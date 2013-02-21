@@ -15,7 +15,7 @@ environment = :development
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
 
-line_comments = false
+line_comments = true
 color_output = false
 
 

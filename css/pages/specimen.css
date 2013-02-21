@@ -5,6 +5,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
+/* line 22, ../../sass/resets/_normalize_v2.scss */
 article,
 aside,
 details,
@@ -22,6 +23,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
+/* line 32, ../../sass/resets/_normalize_v2.scss */
 audio,
 canvas,
 video {
@@ -31,6 +33,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
+/* line 41, ../../sass/resets/_normalize_v2.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -38,6 +41,7 @@ audio:not([controls]) {
 /**
  * Address styling not present in IE 8/9.
  */
+/* line 50, ../../sass/resets/_normalize_v2.scss */
 [hidden] {
   display: none; }
 
@@ -49,6 +53,7 @@ audio:not([controls]) {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+/* line 64, ../../sass/resets/_normalize_v2.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -60,6 +65,7 @@ html {
 /**
  * Remove default margin.
  */
+/* line 74, ../../sass/resets/_normalize_v2.scss */
 body {
   margin: 0; }
 
@@ -69,12 +75,14 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
+/* line 86, ../../sass/resets/_normalize_v2.scss */
 a:focus {
   outline: thin dotted; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
+/* line 95, ../../sass/resets/_normalize_v2.scss */
 a:active,
 a:hover {
   outline: 0; }
@@ -86,6 +94,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
+/* line 108, ../../sass/resets/_normalize_v2.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -93,12 +102,14 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
+/* line 117, ../../sass/resets/_normalize_v2.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
+/* line 126, ../../sass/resets/_normalize_v2.scss */
 b,
 strong {
   font-weight: bold; }
@@ -106,12 +117,14 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
+/* line 134, ../../sass/resets/_normalize_v2.scss */
 dfn {
   font-style: italic; }
 
 /**
  * Address differences between Firefox and other browsers.
  */
+/* line 142, ../../sass/resets/_normalize_v2.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -120,6 +133,7 @@ hr {
 /**
  * Address styling not present in IE 8/9.
  */
+/* line 152, ../../sass/resets/_normalize_v2.scss */
 mark {
   background: #ff0;
   color: #000; }
@@ -127,6 +141,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
+/* line 164, ../../sass/resets/_normalize_v2.scss */
 code,
 kbd,
 pre,
@@ -137,24 +152,28 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
+/* line 173, ../../sass/resets/_normalize_v2.scss */
 pre {
   white-space: pre-wrap; }
 
 /**
  * Set consistent quote types.
  */
+/* line 181, ../../sass/resets/_normalize_v2.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
+/* line 189, ../../sass/resets/_normalize_v2.scss */
 small {
   font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
+/* line 198, ../../sass/resets/_normalize_v2.scss */
 sub,
 sup {
   font-size: 75%;
@@ -162,9 +181,11 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
+/* line 205, ../../sass/resets/_normalize_v2.scss */
 sup {
   top: -0.5em; }
 
+/* line 209, ../../sass/resets/_normalize_v2.scss */
 sub {
   bottom: -0.25em; }
 
@@ -174,12 +195,14 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
+/* line 221, ../../sass/resets/_normalize_v2.scss */
 img {
   border: 0; }
 
 /**
  * Correct overflow displayed oddly in IE 9.
  */
+/* line 229, ../../sass/resets/_normalize_v2.scss */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -189,6 +212,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
+/* line 241, ../../sass/resets/_normalize_v2.scss */
 figure {
   margin: 0; }
 
@@ -198,6 +222,7 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
+/* line 253, ../../sass/resets/_normalize_v2.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -207,6 +232,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
+/* line 264, ../../sass/resets/_normalize_v2.scss */
 legend {
   border: 0;
   /* 1 */
@@ -218,6 +244,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
+/* line 278, ../../sass/resets/_normalize_v2.scss */
 button,
 input,
 select,
@@ -233,6 +260,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
+/* line 290, ../../sass/resets/_normalize_v2.scss */
 button,
 input {
   line-height: normal; }
@@ -243,6 +271,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
+/* line 302, ../../sass/resets/_normalize_v2.scss */
 button,
 select {
   text-transform: none; }
@@ -254,6 +283,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
+/* line 317, ../../sass/resets/_normalize_v2.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -266,6 +296,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
+/* line 327, ../../sass/resets/_normalize_v2.scss */
 button[disabled],
 html input[disabled] {
   cursor: default; }
@@ -274,6 +305,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
+/* line 337, ../../sass/resets/_normalize_v2.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -286,6 +318,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
+/* line 348, ../../sass/resets/_normalize_v2.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -298,6 +331,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
+/* line 361, ../../sass/resets/_normalize_v2.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -305,6 +339,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
+/* line 370, ../../sass/resets/_normalize_v2.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -314,6 +349,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
+/* line 380, ../../sass/resets/_normalize_v2.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -326,10 +362,12 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
+/* line 393, ../../sass/resets/_normalize_v2.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 27, ../../sass/pages/specimen.scss */
 h1, h2, h3, h4, h5, h6, hgroup,
 ul, ol, dl,
 blockquote, p, address,
@@ -342,6 +380,7 @@ pre,
   margin-top: 0;
   margin-bottom: 24px;
   margin-bottom: 1.5rem; }
+  /* line 32, ../../sass/pages/specimen.scss */
   .islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup, .islet
   ul, .islet ol, .islet dl, .islet
   blockquote, .islet p, .islet address, .islet
@@ -355,12 +394,14 @@ pre,
     margin-bottom: 0.75rem; }
 
 /* ----- Baseline Page Styles ----- */
+/* line 98, ../../sass/pages/specimen.scss */
 html {
   font: 1em/1.5;
   font-family: Georgia, sans-serif;
   overflow-y: scroll;
   min-height: 100%; }
 
+/* line 105, ../../sass/pages/specimen.scss */
 body {
   font-size: 16px;
   font-size: 1rem;
@@ -368,27 +409,33 @@ body {
   background-color: #fdf6e3;
   color: #586e75; }
 
+/* line 111, ../../sass/pages/specimen.scss */
 #wrap {
   width: 1000px;
   margin: 24px auto; }
 
+/* line 116, ../../sass/pages/specimen.scss */
 .titles {
   float: left;
   width: 48%; }
 
+/* line 121, ../../sass/pages/specimen.scss */
 .text {
   float: right;
   width: 48%; }
 
+/* line 126, ../../sass/pages/specimen.scss */
 footer {
   clear: both; }
 
+/* line 130, ../../sass/pages/specimen.scss */
 h1 {
   font-size: 28px;
   font-size: 1.75rem;
   line-height: 1.71429;
   color: #073642; }
 
+/* line 135, ../../sass/pages/specimen.scss */
 h2 {
   font-size: 24px;
   font-size: 1.5rem;
@@ -397,13 +444,16 @@ h2 {
   border-bottom: 1px dotted #555;
   font-style: italic; }
 
+/* line 143, ../../sass/pages/specimen.scss */
 .intro {
   width: 48%; }
 
+/* line 145, ../../sass/pages/specimen.scss */
 .speciman {
   letter-spacing: 0.3em;
   margin-bottom: 0; }
 
+/* line 150, ../../sass/pages/specimen.scss */
 .caption {
   font-size: 14px;
   font-size: 0.875rem;
@@ -411,18 +461,22 @@ h2 {
   font-style: italic;
   color: #93a1a1; }
 
+/* line 156, ../../sass/pages/specimen.scss */
 em {
   font-style: italic; }
 
+/* line 157, ../../sass/pages/specimen.scss */
 strong {
   font-weight: bold; }
 
+/* line 159, ../../sass/pages/specimen.scss */
 .smallcaps {
   font-variant: small-caps;
   text-transform: lowercase;
   font-size: 18px; }
 
 /* ----- Title Styles ----- */
+/* line 169, ../../sass/pages/specimen.scss */
 h3 {
   font-size: 28px;
   font-size: 1.75rem;
@@ -430,56 +484,70 @@ h3 {
   color: #1f7972;
   font-weight: normal; }
 
+/* line 175, ../../sass/pages/specimen.scss */
 h3.title-case1 {
   font-family: "adelle", serif;
   margin-bottom: 0; }
 
+/* line 176, ../../sass/pages/specimen.scss */
 h3.title-case2 {
   font-family: "proxima-nova", sans-serif;
   margin-bottom: 0; }
 
+/* line 177, ../../sass/pages/specimen.scss */
 h3.title-case3 {
   font-family: "ff-tisa-web-pro", serif;
   margin-bottom: 0; }
 
+/* line 178, ../../sass/pages/specimen.scss */
 h3.title-case4 {
   font-family: Georgia, serif;
   margin-bottom: 0; }
 
+/* line 179, ../../sass/pages/specimen.scss */
 h3.title-case5 {
   font-family: "alternate-gothic-no-3-d", sans-serif;
   margin-bottom: 0; }
 
+/* line 180, ../../sass/pages/specimen.scss */
 h3.title-case6 {
   font-family: "bebas-neue", sans-serif;
   margin-bottom: 0; }
 
 /* ----- Text Styles ----- */
+/* line 184, ../../sass/pages/specimen.scss */
 .sample, p.text-case1, p.text-case2, p.text-case3, p.text-case4, p.text-case5, p.text-case6 {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
   color: #586e75; }
 
+/* line 189, ../../sass/pages/specimen.scss */
 p.text-case1 {
   font-family: "adelle"; }
 
+/* line 190, ../../sass/pages/specimen.scss */
 p.text-case2 {
   font-family: "proxima-nova"; }
 
+/* line 191, ../../sass/pages/specimen.scss */
 p.text-case3 {
   font-family: "ff-tisa-web-pro"; }
 
+/* line 192, ../../sass/pages/specimen.scss */
 p.text-case4 {
   font-family: Corbel; }
 
+/* line 193, ../../sass/pages/specimen.scss */
 p.text-case5 {
   font-family: Georgia; }
 
+/* line 194, ../../sass/pages/specimen.scss */
 p.text-case6 {
   font-family: Cambria; }
 
 /* ----- Code Styles ----- */
+/* line 198, ../../sass/pages/specimen.scss */
 pre {
   font-size: 14px;
   font-size: 0.875rem;
@@ -493,20 +561,26 @@ pre {
   -moz-border-radius: 5px;
   border-radius: 5px; }
 
+/* line 208, ../../sass/pages/specimen.scss */
 pre.code-case0 code {
   font-family: Menlo, monospace; }
 
+/* line 209, ../../sass/pages/specimen.scss */
 pre.code-case1 code {
   font-family: "Anonymous Pro", monospace; }
 
+/* line 210, ../../sass/pages/specimen.scss */
 pre.code-case2 code {
   font-family: "DejaVu Sans Mono", monospace; }
 
+/* line 211, ../../sass/pages/specimen.scss */
 pre.code-case3 code {
   font-family: Inconsolata, monospace; }
 
+/* line 212, ../../sass/pages/specimen.scss */
 pre.code-case4 code {
   font-family: Monaco, monospace; }
 
+/* line 213, ../../sass/pages/specimen.scss */
 pre.code-case5 code {
   font-family: Consolas, monospace; }

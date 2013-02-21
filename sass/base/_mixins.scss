@@ -5,16 +5,33 @@
 
 // 1. TYPOGRAPHY -----------------------------------
 
+// Font Mixin from inuit.css
+
+@mixin font-size($font-size){
+    font-size:$font-size;
+    font-size:($font-size / $base-font-size)*1rem;
+    line-height:ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+}
+
+// Mixin to set margins as multiples of line-height.
+
+@mixin vert ($top-mult: 1, $bottom-mult: 1){
+  margin-top: ($base-spacing-unit * $top-mult);
+  margin-top: (($base-spacing-unit / $base-font-size) * $top-mult)*1rem;
+  margin-bottom: ($base-spacing-unit * $bottom-mult);
+  margin-bottom: (($base-spacing-unit / $base-font-size) * $bottom-mult)*1rem;
+}
+
 // Convert Pixels to EMs (Desired = Target / Context)
 
-@function em($target, $context: $base-font){
-	@if $target == 0 {@return 0}
-	@return ($target / $context) + 0em;
-  }
+// @function em($target, $context: $base-font){
+// 	@if $target == 0 {@return 0}
+// 	@return ($target / $context) + 0em;
+//   }
 
 
 // Maintain vertical rhythm with Line Height - '$amount' can be used as a multipler
-// TODO: change to inuit.css mixin that combines font-size and LH better
+// FIXME: change to inuit.css mixin that combines font-size and LH better
 
 @function lh($amount: 1, $context: $base-lh){
 	@return em($base-vr * $amount, $context)
@@ -22,7 +39,6 @@
 
 // Incremental Leading
 // Every 'x' line of affected element will align with every 'y' line of main text
-// NOTE: Can this be done with inuit.css?
 
 @function incr($new-size: 14, $x: 4, $y: 5){
   @return (1em * (($base-vr / $new-size) * ($x / $y)))

@@ -5,6 +5,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
+/* line 22, ../sass/resets/_normalize_v2.scss */
 article,
 aside,
 details,
@@ -22,6 +23,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
+/* line 32, ../sass/resets/_normalize_v2.scss */
 audio,
 canvas,
 video {
@@ -31,6 +33,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
+/* line 41, ../sass/resets/_normalize_v2.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -38,6 +41,7 @@ audio:not([controls]) {
 /**
  * Address styling not present in IE 8/9.
  */
+/* line 50, ../sass/resets/_normalize_v2.scss */
 [hidden] {
   display: none; }
 
@@ -49,6 +53,7 @@ audio:not([controls]) {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+/* line 64, ../sass/resets/_normalize_v2.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -60,6 +65,7 @@ html {
 /**
  * Remove default margin.
  */
+/* line 74, ../sass/resets/_normalize_v2.scss */
 body {
   margin: 0; }
 
@@ -69,12 +75,14 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
+/* line 86, ../sass/resets/_normalize_v2.scss */
 a:focus {
   outline: thin dotted; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
+/* line 95, ../sass/resets/_normalize_v2.scss */
 a:active,
 a:hover {
   outline: 0; }
@@ -86,6 +94,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
+/* line 108, ../sass/resets/_normalize_v2.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -93,12 +102,14 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
+/* line 117, ../sass/resets/_normalize_v2.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
+/* line 126, ../sass/resets/_normalize_v2.scss */
 b,
 strong {
   font-weight: bold; }
@@ -106,12 +117,14 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
+/* line 134, ../sass/resets/_normalize_v2.scss */
 dfn {
   font-style: italic; }
 
 /**
  * Address differences between Firefox and other browsers.
  */
+/* line 142, ../sass/resets/_normalize_v2.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -120,6 +133,7 @@ hr {
 /**
  * Address styling not present in IE 8/9.
  */
+/* line 152, ../sass/resets/_normalize_v2.scss */
 mark {
   background: #ff0;
   color: #000; }
@@ -127,6 +141,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
+/* line 164, ../sass/resets/_normalize_v2.scss */
 code,
 kbd,
 pre,
@@ -137,24 +152,28 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
+/* line 173, ../sass/resets/_normalize_v2.scss */
 pre {
   white-space: pre-wrap; }
 
 /**
  * Set consistent quote types.
  */
+/* line 181, ../sass/resets/_normalize_v2.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
+/* line 189, ../sass/resets/_normalize_v2.scss */
 small {
   font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
+/* line 198, ../sass/resets/_normalize_v2.scss */
 sub,
 sup {
   font-size: 75%;
@@ -162,9 +181,11 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
+/* line 205, ../sass/resets/_normalize_v2.scss */
 sup {
   top: -0.5em; }
 
+/* line 209, ../sass/resets/_normalize_v2.scss */
 sub {
   bottom: -0.25em; }
 
@@ -174,12 +195,14 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
+/* line 221, ../sass/resets/_normalize_v2.scss */
 img {
   border: 0; }
 
 /**
  * Correct overflow displayed oddly in IE 9.
  */
+/* line 229, ../sass/resets/_normalize_v2.scss */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -189,6 +212,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
+/* line 241, ../sass/resets/_normalize_v2.scss */
 figure {
   margin: 0; }
 
@@ -198,6 +222,7 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
+/* line 253, ../sass/resets/_normalize_v2.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -207,6 +232,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
+/* line 264, ../sass/resets/_normalize_v2.scss */
 legend {
   border: 0;
   /* 1 */
@@ -218,6 +244,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
+/* line 278, ../sass/resets/_normalize_v2.scss */
 button,
 input,
 select,
@@ -233,6 +260,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
+/* line 290, ../sass/resets/_normalize_v2.scss */
 button,
 input {
   line-height: normal; }
@@ -243,6 +271,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
+/* line 302, ../sass/resets/_normalize_v2.scss */
 button,
 select {
   text-transform: none; }
@@ -254,6 +283,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
+/* line 317, ../sass/resets/_normalize_v2.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -266,6 +296,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
+/* line 327, ../sass/resets/_normalize_v2.scss */
 button[disabled],
 html input[disabled] {
   cursor: default; }
@@ -274,6 +305,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
+/* line 337, ../sass/resets/_normalize_v2.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -286,6 +318,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
+/* line 348, ../sass/resets/_normalize_v2.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -298,6 +331,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
+/* line 361, ../sass/resets/_normalize_v2.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -305,6 +339,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
+/* line 370, ../sass/resets/_normalize_v2.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -314,6 +349,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
+/* line 380, ../sass/resets/_normalize_v2.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -326,10 +362,12 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
+/* line 393, ../sass/resets/_normalize_v2.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 12, ../sass/base/_global.scss */
 html, body, div, span, object,
 h1, h2, h3, h4, h5, h6,
 p, blockquote, ol, ul, dl, dt, dd, pre,
@@ -341,47 +379,83 @@ footer, header, hgroup, menu, nav, section {
   padding: 0;
   border: 0; }
 
-html {
-  font-size: 100%; }
+/* line 24, ../sass/base/_global.scss */
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl,
+blockquote, p, address,
+table,
+fieldset, figure,
+pre, img,
+.base-margin,
+nav {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
 
+/* line 29, ../sass/base/_global.scss */
+.half-margin, .footnotes p {
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem; }
+
+/* line 34, ../sass/base/_global.scss */
+.twice-margin, .posts-full article {
+  margin-bottom: 48px;
+  margin-bottom: 3rem; }
+
+/* line 39, ../sass/base/_global.scss */
+html {
+  font: 1em/1.5 serif;
+  overflow-y: scroll;
+  min-height: 100%; }
+
+/* line 45, ../sass/base/_global.scss */
 body {
   background: #fdf6e3 url(img/bg.jpg);
   color: #586e75;
   font-family: "ff-tisa-web-pro", Cambria, Georgia, serif;
-  font-size: 1em;
-  line-height: 1.5em; }
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; }
 
+/* line 54, ../sass/base/_global.scss */
 a, a:link, a:visited {
   color: #073642;
   font-weight: normal;
   text-decoration: underline; }
 
+/* line 60, ../sass/base/_global.scss */
 a:hover {
   color: #268bd2;
   border-bottom: 1px dotted #268bd2;
   text-decoration: none; }
 
+/* line 69, ../sass/base/_global.scss */
 ol,
 ul {
-  margin-left: 1.5em; }
+  margin-left: 24px;
+  margin-left: 1.5rem; }
 
+/* line 74, ../sass/base/_global.scss */
 ul {
   list-style: none; }
 
+/* line 76, ../sass/base/_global.scss */
 .entry ul {
   list-style: square; }
 
+/* line 78, ../sass/base/_global.scss */
 .entry ul li ul {
   list-style: circle;
-  margin-left: 3em;
+  margin-left: 48px;
   margin-bottom: 0; }
 
+/* line 84, ../sass/base/_global.scss */
 ol li ol {
   list-style: upper-alpha;
-  margin-left: 3em;
+  margin-left: 48px;
   margin-bottom: 0; }
 
 /* -------- @Mobile First Layout (328px) --------- */
+/* line 9, ../sass/site/_layout.scss */
 #wrap {
   *zoom: 1;
   max-width: 20.5em;
@@ -390,7 +464,7 @@ ol li ol {
   padding-right: 1.5em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.5em;
+  margin-top: 24px;
   -webkit-background-origin: content;
   -moz-background-origin: content;
   -ms-background-origin: content-box;
@@ -399,20 +473,25 @@ ol li ol {
   -webkit-background-clip: content-box;
   -moz-background-clip: content-box;
   background-clip: content-box; }
+  /* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   #wrap:after {
     content: "";
     display: table;
     clear: both; }
   @media (min-width: 31.5em) {
+    /* line 9, ../sass/site/_layout.scss */
     #wrap {
       max-width: 31.5em; } }
   @media (min-width: 42.5em) {
+    /* line 9, ../sass/site/_layout.scss */
     #wrap {
       max-width: 42.5em; } }
   @media (min-width: 64.5em) {
+    /* line 9, ../sass/site/_layout.scss */
     #wrap {
       max-width: 64.5em; } }
   @media (min-width: 31.5em) {
+    /* line 9, ../sass/site/_layout.scss */
     #wrap {
       -webkit-background-origin: content;
       -moz-background-origin: content;
@@ -423,6 +502,7 @@ ol li ol {
       -moz-background-clip: content-box;
       background-clip: content-box; } }
   @media (min-width: 42.5em) {
+    /* line 9, ../sass/site/_layout.scss */
     #wrap {
       -webkit-background-origin: content;
       -moz-background-origin: content;
@@ -433,6 +513,7 @@ ol li ol {
       -moz-background-clip: content-box;
       background-clip: content-box; } }
   @media (min-width: 64.5em) {
+    /* line 9, ../sass/site/_layout.scss */
     #wrap {
       -webkit-background-origin: content;
       -moz-background-origin: content;
@@ -443,26 +524,34 @@ ol li ol {
       -moz-background-clip: content-box;
       background-clip: content-box; } }
 
+/* line 24, ../sass/site/_layout.scss */
 #content {
   *zoom: 1;
   padding-top: 0px; }
+  /* line 59, ../sass/base/_mixins.scss */
   #content:before, #content:after {
     content: " ";
     display: table; }
+  /* line 60, ../sass/base/_mixins.scss */
   #content:after {
     clear: both; }
 
+/* line 26, ../sass/site/_layout.scss */
 .logo {
   text-align: center; }
 
+/* line 28, ../sass/site/_layout.scss */
 nav {
   *zoom: 1; }
+  /* line 59, ../sass/base/_mixins.scss */
   nav:before, nav:after {
     content: " ";
     display: table; }
+  /* line 60, ../sass/base/_mixins.scss */
   nav:after {
     clear: both; }
 
+/* line 30, ../sass/site/_layout.scss */
 .primary-nav li {
   width: 19.5122%;
   float: left;
@@ -470,33 +559,38 @@ nav {
   display: inline;
   text-align: center;
   text-transform: uppercase; }
+  /* line 34, ../sass/site/_layout.scss */
   .primary-nav li:last-child {
     margin-right: 0; }
 
+/* line 37, ../sass/site/_layout.scss */
 .date {
   margin-bottom: 0; }
 
+/* line 39, ../sass/site/_layout.scss */
 .tags li {
   display: inline;
   margin-right: 5px; }
 
-.posts-full article {
-  margin-bottom: 3em; }
-
+/* line 50, ../sass/site/_layout.scss */
 .entrydate,
 .entrytags {
   display: block; }
 
+/* line 51, ../sass/site/_layout.scss */
 .entrytags {
   margin-bottom: 24px; }
 
+/* line 52, ../sass/site/_layout.scss */
 .entry-list {
   margin-left: 0; }
 
+/* line 54, ../sass/site/_layout.scss */
 .tagslist li,
 .pinboard li {
   display: inline; }
 
+/* line 58, ../sass/site/_layout.scss */
 footer .inner {
   *zoom: 1;
   max-width: 20.5em;
@@ -505,22 +599,27 @@ footer .inner {
   padding-right: 1.5em;
   margin-left: auto;
   margin-right: auto; }
+  /* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   footer .inner:after {
     content: "";
     display: table;
     clear: both; }
   @media (min-width: 31.5em) {
+    /* line 58, ../sass/site/_layout.scss */
     footer .inner {
       max-width: 31.5em; } }
   @media (min-width: 42.5em) {
+    /* line 58, ../sass/site/_layout.scss */
     footer .inner {
       max-width: 42.5em; } }
   @media (min-width: 64.5em) {
+    /* line 58, ../sass/site/_layout.scss */
     footer .inner {
       max-width: 64.5em; } }
 
 /* -------- @Break-0 = 6 Columns (504px) --------- */
 @media (min-width: 31.5em) {
+  /* line 66, ../sass/site/_layout.scss */
   nav {
     margin-left: 17.46032%;
     margin-right: 17.46032%;
@@ -530,27 +629,34 @@ footer .inner {
     -webkit-transition-property: margin;
     -webkit-transition-duration: 500ms; }
 
+  /* line 74, ../sass/site/_layout.scss */
   .heading {
     *zoom: 1; }
+    /* line 59, ../sass/base/_mixins.scss */
     .heading:before, .heading:after {
       content: " ";
       display: table; }
+    /* line 60, ../sass/base/_mixins.scss */
     .heading:after {
       clear: both; }
 
+  /* line 75, ../sass/site/_layout.scss */
   .heading h3 {
     float: left; }
 
+  /* line 76, ../sass/site/_layout.scss */
   .description {
     float: right;
     text-align: right; }
 
+  /* line 79, ../sass/site/_layout.scss */
   .entry-list {
     width: 65.07937%;
     float: left;
     margin-right: 4.7619%;
     margin-left: 34.92063%; }
 
+  /* line 84, ../sass/site/_layout.scss */
   .entrydate {
     width: 46.34146%;
     float: left;
@@ -558,51 +664,62 @@ footer .inner {
     margin-left: -53.65854%;
     text-align: right; }
 
+  /* line 90, ../sass/site/_layout.scss */
   .entry-list h2 {
     float: right;
     width: 100%; } }
 /* -------- @Break-1 = 8 Columns (680px) --------- */
 @media (min-width: 42.5em) {
+  /* line 97, ../sass/site/_layout.scss */
   header {
     *zoom: 1; }
+    /* line 59, ../sass/base/_mixins.scss */
     header:before, header:after {
       content: " ";
       display: table; }
+    /* line 60, ../sass/base/_mixins.scss */
     header:after {
       clear: both; }
 
+  /* line 98, ../sass/site/_layout.scss */
   .logo {
     width: 48.23529%;
     float: left;
     margin-right: 3.52941%;
     text-align: left; }
 
+  /* line 99, ../sass/site/_layout.scss */
   nav {
     width: 48.23529%;
     float: right;
     margin-right: 0;
     margin-left: 0; }
 
+  /* line 102, ../sass/site/_layout.scss */
   .sb-module {
     width: 48.23529%;
     float: left;
     margin-right: 3.52941%; }
 
+  /* line 103, ../sass/site/_layout.scss */
   .sb-module-end {
     width: 48.23529%;
     float: right;
     margin-right: 0; }
 
+  /* line 105, ../sass/site/_layout.scss */
   article {
     width: 74.11765%;
     float: left;
     margin-right: 3.52941%;
     margin-left: 25.88235%; }
 
+  /* line 110, ../sass/site/_layout.scss */
   article h2 {
     float: right;
     width: 100%; }
 
+  /* line 113, ../sass/site/_layout.scss */
   .meta,
   .sidenote,
   .caption {
@@ -612,23 +729,28 @@ footer .inner {
     margin-left: -34.92063%;
     text-align: right; }
 
+  /* line 119, ../sass/site/_layout.scss */
   .date {
-    margin-bottom: 1.33333em; }
+    margin-bottom: 24px; }
 
+  /* line 120, ../sass/site/_layout.scss */
   .tags li {
     display: block;
     margin-right: 0; }
 
+  /* line 124, ../sass/site/_layout.scss */
   .archives {
     width: 74.11765%;
     float: left;
     margin-right: 3.52941%; }
 
+  /* line 125, ../sass/site/_layout.scss */
   #posts .sidebar {
     width: 22.35294%;
     float: right;
     margin-right: 0; }
 
+  /* line 127, ../sass/site/_layout.scss */
   .entrydate {
     width: 46.34146%;
     float: left;
@@ -636,77 +758,91 @@ footer .inner {
     margin-left: -53.65854%;
     text-align: right; }
 
+  /* line 134, ../sass/site/_layout.scss */
   .tagslist li,
   .pinboard li {
     display: block; }
 
+  /* line 137, ../sass/site/_layout.scss */
   .intro {
     width: 48.23529%;
     float: left;
     margin-right: 3.52941%; }
 
+  /* line 138, ../sass/site/_layout.scss */
   .stuff {
     width: 48.23529%;
     float: right;
     margin-right: 0; }
 
+  /* line 139, ../sass/site/_layout.scss */
   .crap {
     width: 100%;
     float: left;
     margin-right: 3.52941%; } }
 /* -------- @Break-2 = 12 Columns (1032px) -------- */
 @media (min-width: 64.5em) {
+  /* line 145, ../sass/site/_layout.scss */
   nav {
     width: 31.78295%;
     float: right;
     margin-right: 0;
     margin-left: 0; }
 
+  /* line 147, ../sass/site/_layout.scss */
   .posts-full {
     width: 65.89147%;
     float: left;
     margin-right: 2.32558%; }
 
+  /* line 149, ../sass/site/_layout.scss */
   .sidebar {
     width: 23.25581%;
     float: right;
     margin-right: 0; }
 
+  /* line 152, ../sass/site/_layout.scss */
   .sb-module,
   .sb-module-end {
     width: 100%;
     float: left;
     margin-right: 10%; }
 
+  /* line 154, ../sass/site/_layout.scss */
   #home-long article {
     width: 74.11765%;
     float: left;
     margin-right: 3.52941%;
     margin-left: 25.88235%; }
 
+  /* line 160, ../sass/site/_layout.scss */
   article {
     width: 48.83721%;
     float: left;
     margin-right: 2.32558%;
     margin-left: 25.5814%; }
 
+  /* line 166, ../sass/site/_layout.scss */
   .sidenoteright {
     width: 30.15873%;
     float: right;
     margin-right: 0;
     margin-right: -34.92063%; }
 
+  /* line 173, ../sass/site/_layout.scss */
   .archives {
     width: 65.89147%;
     float: left;
     margin-right: 2.32558%; }
 
+  /* line 175, ../sass/site/_layout.scss */
   .entry-list {
     width: 74.11765%;
     float: left;
     margin-right: 3.52941%;
     margin-left: 25.88235%; }
 
+  /* line 180, ../sass/site/_layout.scss */
   .entrydate {
     width: 30.15873%;
     float: left;
@@ -714,145 +850,181 @@ footer .inner {
     margin-left: -34.92063%;
     text-align: right; }
 
+  /* line 188, ../sass/site/_layout.scss */
   .intro {
     width: 31.78295%;
     float: left;
     margin-right: 2.32558%; }
 
+  /* line 189, ../sass/site/_layout.scss */
   .stuff {
     width: 31.78295%;
     float: left;
     margin-right: 2.32558%; }
 
+  /* line 190, ../sass/site/_layout.scss */
   .crap {
     width: 31.78295%;
     float: right;
     margin-right: 0; }
 
+  /* line 191, ../sass/site/_layout.scss */
   .fine-print {
     clear: both; } }
 /* ------------- @Links ------------ */
+/* line 10, ../sass/site/_typography.scss */
 header a,
 header a:link,
 header a:visited {
   text-decoration: none; }
 
+/* line 13, ../sass/site/_typography.scss */
 .tagslist li a,
 .tagslist li a {
   text-decoration: none; }
 
+/* line 16, ../sass/site/_typography.scss */
 footer a,
 footer a:link {
   color: #268bd2; }
 
+/* line 20, ../sass/site/_typography.scss */
 h2 a,
 h2 a:link,
 h2 a:visited {
   color: #2aa198;
   text-decoration: none; }
 
+/* line 21, ../sass/site/_typography.scss */
 h2 a:hover {
   color: #268bd2; }
 
 /* ---------- @Type-Headlines ---------- */
+/* line 26, ../sass/site/_typography.scss */
 h1 {
-  font-size: 2em;
-  line-height: 1.5em;
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   text-shadow: 0px 3px 2px #eee8d5; }
   @media (min-width: 31.5em) {
+    /* line 26, ../sass/site/_typography.scss */
     h1 {
-      font-size: 2.375em;
-      line-height: 1.26316em; } }
+      font-size: 38px;
+      font-size: 2.375rem;
+      line-height: 1.26316; } }
 
+/* line 37, ../sass/site/_typography.scss */
 h2 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
   color: #2aa198;
-  font-size: 1.5em;
-  font-weight: normal;
-  line-height: 1em;
-  margin-bottom: 1em; }
+  font-weight: normal; }
 
+/* line 44, ../sass/site/_typography.scss */
 .linked h2 {
-  color: #268bd2;
-  font-size: 1.25em;
-  line-height: 1.2em;
-  margin-bottom: 1.2em; }
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: #268bd2; }
+  /* line 50, ../sass/site/_typography.scss */
   .linked h2:hover {
     font-style: italic; }
+  /* line 51, ../sass/site/_typography.scss */
   .linked h2:after {
     content: "\0020 \00BB "; }
 
+/* line 54, ../sass/site/_typography.scss */
 .archives .entry-list h2 {
   margin-bottom: 0; }
 
+/* line 57, ../sass/site/_typography.scss */
 .entry h3 {
-  font-weight: bold;
-  font-size: 1.125em;
-  line-height: 1.33333em;
-  margin-top: 2em;
-  margin-bottom: 0.66667em; }
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  margin-top: 36px;
+  margin-top: 2.25rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+  font-weight: bold; }
 
+/* line 67, ../sass/site/_typography.scss */
 .entry h4 {
   font-weight: normal;
-  text-transform: uppercase;
-  margin-bottom: 1.5em; }
+  text-transform: uppercase; }
 
+/* line 73, ../sass/site/_typography.scss */
 .entry h5 {
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.26316;
+  margin-bottom: 0;
   font-weight: bold;
-  font-size: 1.1875em;
   font-variant: small-caps;
   text-transform: lowercase; }
 
 /* ---------- @Type-Blog-Entries ---------- */
-p, blockquote, ol, ul, pre, dl {
-  margin-bottom: 1.5em; }
-
+/* line 88, ../sass/site/_typography.scss */
 .entry blockquote {
   color: #93a1a1;
   font-style: italic;
   padding-left: 0.7em;
-  border-left: 3px solid #eee8d5;
-  margin-bottom: 1.5em; }
+  border-left: 3px solid #eee8d5; }
 
+/* line 97, ../sass/site/_typography.scss */
 .sc {
   text-transform: lowercase;
   font-variant: small-caps;
-  font-size: 1.1875em; }
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.26316; }
 
+/* line 103, ../sass/site/_typography.scss */
 hr {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1.5em 0;
+  margin: 24px 0;
   padding: 0; }
 
+/* line 114, ../sass/site/_typography.scss */
 pre, code {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
   color: #859900;
-  font-family: "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, sans-serif;
-  font-size: 0.875em;
-  margin-bottom: 1.71429em; }
+  font-family: "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, sans-serif; }
 
+/* line 122, ../sass/site/_typography.scss */
 pre {
   background-color: #eee8d5;
   border: 1px solid #93a1a1;
-  padding: 0.78571em 1.71429em; }
+  padding: 11px 24px; }
 
+/* line 129, ../sass/site/_typography.scss */
 code {
   line-height: 1; }
 
+/* line 130, ../sass/site/_typography.scss */
 pre code {
   line-height: 1.5em; }
 
+/* line 136, ../sass/site/_typography.scss */
 .meta,
 .sidenote,
 .caption {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
   color: #93a1a1;
   font-style: italic;
-  font-size: 0.875em;
-  line-height: 1.71429em;
   *zoom: 1; }
+  /* line 59, ../sass/base/_mixins.scss */
   .meta:before, .meta:after,
   .sidenote:before,
   .sidenote:after,
@@ -860,83 +1032,102 @@ pre code {
   .caption:after {
     content: " ";
     display: table; }
+  /* line 60, ../sass/base/_mixins.scss */
   .meta:after,
   .sidenote:after,
   .caption:after {
     clear: both; }
 
+/* line 146, ../sass/site/_typography.scss */
 .date {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
   color: #586e75;
   font-style: normal;
-  font-size: 1.28571em;
-  line-height: 1.33333em;
   margin-top: 2px; }
 
+/* line 155, ../sass/site/_typography.scss */
 .tags {
   margin-top: -2px;
   margin-left: 0;
   padding-bottom: 2px; }
 
+/* line 164, ../sass/site/_typography.scss */
 .tags a,
 .tags a:link,
 .tags a:visited {
   color: #93a1a1; }
 
+/* line 166, ../sass/site/_typography.scss */
 .tags a:hover {
   color: #268bd2;
   border-bottom: 1px dotted #268bd2;
   text-decoration: none; }
 
+/* line 172, ../sass/site/_typography.scss */
 .noted {
   float: right;
   *zoom: 1; }
+  /* line 59, ../sass/base/_mixins.scss */
   .noted:before, .noted:after {
     content: " ";
     display: table; }
+  /* line 60, ../sass/base/_mixins.scss */
   .noted:after {
     clear: both; }
 
+/* line 174, ../sass/site/_typography.scss */
 sup {
   top: -0.3em;
   font-size: 90%; }
 
+/* line 179, ../sass/site/_typography.scss */
 sup a, sup a:link {
   padding-left: 5px; }
 
+/* line 183, ../sass/site/_typography.scss */
 .footnotes {
-  font-size: 0.875em;
-  line-height: 1.71429em;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
   padding-top: 12px;
   border-top: 2px solid #eee8d5; }
 
-.footnotes p {
-  margin-bottom: 12px; }
-
+/* line 196, ../sass/site/_typography.scss */
 a[rel="reference"] {
   text-decoration: none; }
 
 /* ---------- @Site-wide Elements ---------- */
+/* line 8, ../sass/site/_elements.scss */
 .masthead {
   box-sizing: border-box;
-  margin-bottom: 1.5em; }
+  margin-bottom: 24px; }
 
+/* line 13, ../sass/site/_elements.scss */
 .tagline {
   margin-bottom: 0;
   font-style: italic; }
 
+/* line 15, ../sass/site/_elements.scss */
 nav {
-  font-size: 1.125em;
-  line-height: 2.66667em;
-  margin-bottom: 1.6em; }
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  line-height: 2; }
 
+/* line 24, ../sass/site/_elements.scss */
 .primary-nav {
-  padding-top: 0.66667em;
+  padding-top: 12px;
   margin-bottom: 0;
   margin-left: 0; }
+  /* line 29, ../sass/site/_elements.scss */
   .primary-nav li {
     line-height: 24px; }
+  /* line 30, ../sass/site/_elements.scss */
   .primary-nav li a {
     display: block; }
+  /* line 31, ../sass/site/_elements.scss */
   .primary-nav li a:hover {
     border-bottom: 5px solid #268bd2;
     transition-property: all;
@@ -945,17 +1136,20 @@ nav {
     -webkit-transition-property: border;
     -webkit-transition-duration: 500ms; }
 
+/* line 44, ../sass/site/_elements.scss */
 #posts .post_tab,
 #lab .lab_tab,
 #about .about_tab {
   border-bottom: 5px solid #eee8d5; }
 
+/* line 49, ../sass/site/_elements.scss */
 #home .home_tab a:hover,
 #posts .post_tab a:hover,
 #lab .lab_tab a:hover,
 #about .about_tab a:hover {
   border-bottom: 0; }
 
+/* line 54, ../sass/site/_elements.scss */
 footer {
   margin-top: 48px;
   padding-top: 1.5em;
@@ -963,39 +1157,48 @@ footer {
   color: #839496;
   border-top: 5px solid #586e75; }
 
+/* line 62, ../sass/site/_elements.scss */
 footer h3 {
-  font-size: 1.125em;
+  font-size: em(18px);
   font-weight: normal;
   color: #b58900;
   margin-bottom: 6px; }
 
+/* line 72, ../sass/site/_elements.scss */
 footer p,
 footer ul {
-  font-size: 0.9375em;
+  font-size: em(15);
   line-height: 1.28em; }
 
+/* line 77, ../sass/site/_elements.scss */
 .wisdom {
   font-style: italic;
   margin-bottom: 0; }
 
+/* line 82, ../sass/site/_elements.scss */
 .cite::before {
   content: "— "; }
 
+/* line 86, ../sass/site/_elements.scss */
 .crap {
   margin-bottom: 48px; }
 
+/* line 90, ../sass/site/_elements.scss */
 .fine-print {
   clear: both;
   border-top: 1px dotted #586e75;
   padding-top: 5px; }
 
+/* line 96, ../sass/site/_elements.scss */
 footer ul {
   margin-left: 0; }
 
+/* line 103, ../sass/site/_elements.scss */
 form {
   margin: 0;
   padding: 0; }
 
+/* line 108, ../sass/site/_elements.scss */
 .search {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1005,147 +1208,181 @@ form {
   padding: 3px 3px 3px 3px;
   width: 100%; }
 
+/* line 116, ../sass/site/_elements.scss */
 fieldset {
   margin: 0;
   padding: 0;
   border: none; }
 
 /* ---------- @Elements ---------- */
+/* line 125, ../sass/site/_elements.scss */
 .heading {
   border-bottom: 5px solid #eee8d5;
   margin-bottom: 19px; }
 
+/* line 130, ../sass/site/_elements.scss */
 .label {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2;
   font-weight: normal;
-  font-size: 1.25em;
-  line-height: 1.2em;
   font-style: italic;
   color: #1a6091;
   margin-bottom: 0; }
 
+/* line 140, ../sass/site/_elements.scss */
 .description {
   margin-top: 2px;
   margin-bottom: 0; }
 
+/* line 145, ../sass/site/_elements.scss */
 .light {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
   color: #93a1a1;
-  font-size: 0.875em;
-  font-style: italic;
-  line-height: 1.71429em; }
+  font-style: italic; }
 
+/* line 153, ../sass/site/_elements.scss */
 .tagslist {
   margin-left: 0; }
 
+/* line 155, ../sass/site/_elements.scss */
 .entry img {
   float: right;
   width: 97.863248%;
   background-color: #eee8d5;
   border: 1px solid #93a1a1;
-  padding: 4px;
-  margin-bottom: 1.5em; }
+  padding: 4px; }
 
+/* line 163, ../sass/site/_elements.scss */
 .art {
   width: 99.031008%;
   background-color: #eee8d5;
   border: 1px solid #93a1a1;
-  padding: 4px;
-  margin-bottom: 1.5em; }
+  padding: 4px; }
 
+/* line 173, ../sass/site/_elements.scss */
 #tweets,
 #pinboard_linkroll {
-  font-size: 0.875em;
+  font-size: 14px;
   line-height: 1.37143em; }
 
+/* line 178, ../sass/site/_elements.scss */
 #tweets {
   padding-top: 4.2px;
   margin-bottom: 2.74286em; }
 
+/* line 183, ../sass/site/_elements.scss */
 #tweets ul {
   margin-left: 0; }
 
+/* line 187, ../sass/site/_elements.scss */
 #tweets ul li {
   margin-bottom: 1.37143em; }
 
+/* line 192, ../sass/site/_elements.scss */
 #tweets a,
 a.pin-title {
   color: #268bd2;
   font-weight: normal;
   text-decoration: none; }
 
+/* line 198, ../sass/site/_elements.scss */
 #pinboard_linkroll {
   padding-top: 5px; }
 
+/* line 202, ../sass/site/_elements.scss */
 .pin-item {
   margin-bottom: 1.37143em; }
+  /* line 205, ../sass/site/_elements.scss */
   .pin-item p {
     margin-bottom: 0; }
 
+/* line 208, ../sass/site/_elements.scss */
 a.pin-tag {
   color: #93a1a1;
   font-weight: normal;
   text-decoration: none; }
 
+/* line 214, ../sass/site/_elements.scss */
 a.pin-tag:hover {
   color: #268bd2;
   border-bottom: 1px dotted #268bd2; }
 
 /* ---------- @Lab Items ---------- */
+/* line 224, ../sass/site/_elements.scss */
 ul.pinboard {
   margin-left: 0; }
 
+/* line 227, ../sass/site/_elements.scss */
 ul.pinboard a,
 ul.pinboard a:link,
 ul.pinboard a:visited {
   text-decoration: none; }
 
+/* line 230, ../sass/site/_elements.scss */
 .lab-list dt,
 .lab-list dt a {
-  font-size: 18px; }
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.26316; }
 
+/* line 6, ../sass/site/_comments.scss */
 .comments {
   padding-top: 3.0em;
   margin-bottom: 3.0em; }
 
+/* line 11, ../sass/site/_comments.scss */
 .comment-text p:last-child {
-  margin-bottom: 0.75em; }
+  margin-bottom: em(12, 16); }
 
+/* line 13, ../sass/site/_comments.scss */
 .comment-data {
   position: relative;
-  padding-bottom: 0.625em;
+  padding-bottom: em(10, 16);
   border-bottom: 3px solid #eee8d5;
-  margin-bottom: 1.5em; }
+  margin-bottom: em(24, 16); }
 
+/* line 21, ../sass/site/_comments.scss */
 .comment-date {
   display: inline-block;
   margin-left: 0.5em;
   color: #93a1a1; }
 
+/* line 27, ../sass/site/_comments.scss */
 .comment-number {
   display: block;
   position: absolute;
   bottom: 10px;
   right: 0;
-  font-size: 1.5em;
+  font-size: em(24);
   font-style: italic; }
 
+/* line 36, ../sass/site/_comments.scss */
 .comment-number a {
   color: #eee8d5;
   text-decoration: none; }
 
+/* line 37, ../sass/site/_comments.scss */
 .comment-number a:hover {
   color: #268bd2; }
 
+/* line 38, ../sass/site/_comments.scss */
 .jabba .comment-number a {
   color: #dc322f;
   text-decoration: none; }
 
+/* line 39, ../sass/site/_comments.scss */
 .jabba .comment-number a:hover {
   color: #dc322f; }
 
 @media (min-width: 42.5em) {
+  /* line 48, ../sass/site/_comments.scss */
   .comment {
     clear: both; }
 
+  /* line 50, ../sass/site/_comments.scss */
   .comment-text {
     float: right;
     width: 100%;
@@ -1153,9 +1390,11 @@ ul.pinboard a:visited {
     border-bottom: 3px solid #eee8d5;
     margin-bottom: 21px; }
 
+  /* line 58, ../sass/site/_comments.scss */
   .comment-text p:last-child {
-    margin-bottom: 1.5em; }
+    margin-bottom: em(24, 16); }
 
+  /* line 60, ../sass/site/_comments.scss */
   .comment-data {
     width: 30.15873%;
     float: left;
@@ -1165,17 +1404,22 @@ ul.pinboard a:visited {
     border-bottom: none;
     margin-bottom: 0; }
 
+  /* line 68, ../sass/site/_comments.scss */
   .comment-number {
     position: static; } }
+/* line 8, ../sass/site/_testing.scss */
 .else {
-  font-size: 0.875em;
+  font-size: em(14);
   line-height: 1.37143em; }
 
+/* line 13, ../sass/site/_testing.scss */
 .noted-on-right {
   float: left;
   *zoom: 1; }
+  /* line 59, ../sass/base/_mixins.scss */
   .noted-on-right:before, .noted-on-right:after {
     content: " ";
     display: table; }
+  /* line 60, ../sass/base/_mixins.scss */
   .noted-on-right:after {
     clear: both; }

@@ -8,7 +8,7 @@
 
 #wrap {
   @include container ($total-columns, $break-0, $break-1, $break-2);
-  margin-top: $base-lh;
+  margin-top: $base-spacing-unit;
   @include susy-grid-background;
   @include at-breakpoint($break-0)  {
     @include susy-grid-background;
@@ -41,16 +41,17 @@ nav { @include clearfix; }
   margin-right: 5px;
 }
 
-.posts-full article { margin-bottom: 2 * $base-lh;}  // NOTE: Old, replace with inuit.scss mixin
+//TODO: Zero out margin on H2s in early breaks and bring back later;
+.posts-full article { @extend .twice-margin;} 
 
 // Archive Page
 
 .entrydate,
-.entrytags  { display: block;}
-.entrytags  { margin-bottom:24px;}
+.entrytags   { display: block;}
+.entrytags   { margin-bottom: $base-spacing-unit;}
 .entry-list  { margin-left: 0; }
 .tagslist li,
-.pinboard li  { display: inline;}
+.pinboard li { display: inline;}
 
 // Footer
 
@@ -115,7 +116,7 @@ footer .inner {
     text-align: right;
   }
 
-  .date { margin-bottom: lh(1, 18); }
+  .date { margin-bottom: $base-spacing-unit; }
   .tags li {display: block; margin-right: 0;}
 
 // Archives Page 
@@ -182,8 +183,8 @@ footer .inner {
     text-align: right;
   }
 
-  // Footer
-
+// Footer
+// TODO: Rename these classes in footer;
   .intro  { @include span-columns(4, $break-2);}
   .stuff  { @include span-columns(4, $break-2);}
   .crap   { @include span-columns(4 omega, $break-2);}

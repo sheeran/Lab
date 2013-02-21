@@ -5,6 +5,12 @@
 
 // 1. TYPOGRAPHY -----------------------------------
 
+$base-font-size   : 16px!default;
+$base-line-height : 24px!default;
+
+$base-spacing-unit: $base-line-height!default;
+$half-spacing-unit: $base-spacing-unit / 2!default;
+$line-height-ratio: $base-line-height / $base-font-size;
 
 $base-perc  : 100%;  // Set to 62.5% for the 'html' element to use 'rem' mixin 
 $base-font  : 16;
@@ -16,12 +22,12 @@ $sans-ff    : "proxima-nova", Corbel, sans-serif;
 $title-ff   : "adelle", Georgia, serif;
 $code-ff    : "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, sans-serif;
 
-$h1-size    : 32; // Site Title
-$h2-size    : 24; // Article Titles
-$h3-size    : 18; // Article Sub-heading
-$h4-size    : 16; // Article Sub-heading
-$h5-size    : 19; // Article Sub-heading (Small Caps)
-//$h6-size    : ; // TODO: Use these in the footer or something?
+$h1-size    : 32px; // Site Title
+$h2-size    : 24px; // Article Titles
+$h3-size    : 18px; // Article Sub-heading
+$h4-size    : 16px; // Article Sub-heading
+$h5-size    : 19px; // Article Sub-heading (Small Caps)
+//$h6-size    : ; // TODO: Use these h6s in the footer or something?
 
 
 // 2. COLOR ----------------------------------------

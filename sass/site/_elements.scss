@@ -7,19 +7,22 @@
 
 .masthead {
   box-sizing: border-box; 
-  margin-bottom: $base-lh; 
+  margin-bottom: $base-spacing-unit; 
 }
 
 .tagline  { margin-bottom: 0; font-style: italic;}
 
 nav {
-  font-size: em(18);
-  line-height: lh(2, 18);
-  margin-bottom: lh(1.2, 18);
+  @include font-size(18px);
+  line-height: 2;
+  @extend .base-margin;
+  //font-size: em(18);
+  //line-height: lh(2, 18);
+  //margin-bottom: lh(1.2, 18);
 }
 
 .primary-nav  {
-  padding-top: em(12, 18);
+  padding-top: $half-spacing-unit;
   margin-bottom: 0;
   margin-left: 0;
 
@@ -125,9 +128,10 @@ fieldset  {
 }
 
 .label  {
+  @include font-size(20px);
   font-weight: normal;
-  font-size: em(20);
-  line-height: lh(1, 20);
+  //font-size: em(20);
+  //line-height: lh(1, 20);
   font-style: italic;
   color: $heading-text-color;
   margin-bottom: 0;
@@ -139,10 +143,11 @@ fieldset  {
 }
 
 .light  {   // NOTE: Rename/modularize small, light text?;
+  @include font-size(14px);
   color: $light-color;
-  font-size: em(14);
+  //font-size: em(14);
   font-style: italic;
-  line-height: lh(1.0, 14);
+  //line-height: lh(1.0, 14);
 }
 
 .tagslist { margin-left: 0; }
@@ -153,7 +158,6 @@ fieldset  {
 	background-color: $accent-color;
 	border: 1px solid $accent-border;
 	padding: 4px;
-	margin-bottom: em(24); // NOTE: Old, replace with inuit.scss mixin
 	}
 
 .art  {
@@ -161,14 +165,13 @@ fieldset  {
   background-color: $accent-color;
   border: 1px solid $accent-border;
   padding: 4px;
-  margin-bottom: em(24); // NOTE: Old, replace with inuit.scss mixin
 }
 
 // Twitter.js and Pinboard Links
-// NOTE: Old, replace with inuit.scss mixin
+// TODO: Create a inuit-based incremental leading mixin?
 #tweets,
 #pinboard_linkroll {
-  font-size: em(14); 
+  font-size: 14px; 
   line-height: incr(14, 4, 5);
 }
 
@@ -223,9 +226,8 @@ ul.pinboard a,
 ul.pinboard a:link,
 ul.pinboard a:visited { text-decoration: none; }
 
-//TODO: Convert this font-size to a mixin
 .lab-list dt,
 .lab-list dt a { 
-  font-size: 18px;
+  @include font-size(19px);
 }
 
