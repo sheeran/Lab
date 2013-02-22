@@ -8,23 +8,25 @@
 $base-font-size   : 16px!default;
 $base-line-height : 24px!default;
 
-$base-spacing-unit: $base-line-height!default;
-$half-spacing-unit: $base-spacing-unit / 2!default;
-$line-height-ratio: $base-line-height / $base-font-size;
-
-
-$serif-ff   : "ff-tisa-web-pro", Cambria, Georgia, serif;
-$sans-ff    : "proxima-nova", Corbel, sans-serif;
-$title-ff   : "adelle", Georgia, serif;
-$code-ff    : "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, sans-serif;
+$fs-small   : 14px;
+$fs-big     : 19px;
 
 $h1-size    : 32px; // Site Title
 $h2-size    : 24px; // Article Titles
 $h3-size    : 19px; // Article Sub-heading
 $h4-size    : 16px; // Article Sub-heading
 $h5-size    : 19px; // Article Sub-heading (Small Caps)
-//$h6-size    : ; // TODO: Use these h6s in the footer or something?
-//TODO: Make a 'small text' variable;
+$h6-size    : 19px; // Footer Sections
+
+$base-spacing-unit: $base-line-height!default;
+$half-spacing-unit: $base-spacing-unit / 2!default;
+$line-height-ratio: $base-line-height / $base-font-size;
+
+$serif-ff   : "ff-tisa-web-pro", Cambria, Georgia, serif;
+$sans-ff    : "proxima-nova", Corbel, sans-serif;
+$title-ff   : "adelle", Georgia, serif;
+$code-ff    : "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, sans-serif;
+
 
 // 2. COLOR ----------------------------------------
 

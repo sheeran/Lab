@@ -392,63 +392,84 @@ nav {
   margin-bottom: 1.5rem; }
 
 /* line 29, ../sass/base/_global.scss */
-.half-margin, .footnotes p {
-  margin-bottom: 12px;
-  margin-bottom: 0.75rem; }
-
-/* line 34, ../sass/base/_global.scss */
-.twice-margin, .posts-full article {
-  margin-bottom: 48px;
-  margin-bottom: 3rem; }
-
-/* line 39, ../sass/base/_global.scss */
 html {
   font: 1em/1.5 serif;
   overflow-y: scroll;
   min-height: 100%; }
 
-/* line 45, ../sass/base/_global.scss */
+/* line 35, ../sass/base/_global.scss */
 body {
   background: #fdf6e3 url(img/bg.jpg);
   color: #586e75;
-  font-family: "ff-tisa-web-pro", Cambria, Georgia, serif;
+  font-family: "proxima-nova", Corbel, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
-/* line 54, ../sass/base/_global.scss */
+/* line 44, ../sass/base/_global.scss */
+.small-fs, .light, .meta,
+.sidenote,
+.caption, .description, .entrytags, .footnotes {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429; }
+
+/* line 48, ../sass/base/_global.scss */
+.big-fs, .date {
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.26316; }
+
+/* line 52, ../sass/base/_global.scss */
+.half-margin, .footnotes p {
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem; }
+
+/* line 57, ../sass/base/_global.scss */
+.twice-margin, .posts-full article {
+  margin-bottom: 48px;
+  margin-bottom: 3rem; }
+
+/* line 62, ../sass/base/_global.scss */
+.light, .meta,
+.sidenote,
+.caption, .description, .entrytags {
+  color: #93a1a1;
+  font-style: italic; }
+
+/* line 70, ../sass/base/_global.scss */
 a, a:link, a:visited {
   color: #073642;
   font-weight: normal;
   text-decoration: underline; }
 
-/* line 60, ../sass/base/_global.scss */
+/* line 76, ../sass/base/_global.scss */
 a:hover {
   color: #268bd2;
   border-bottom: 1px dotted #268bd2;
   text-decoration: none; }
 
-/* line 69, ../sass/base/_global.scss */
+/* line 85, ../sass/base/_global.scss */
 ol,
 ul {
   margin-left: 24px;
   margin-left: 1.5rem; }
 
-/* line 74, ../sass/base/_global.scss */
+/* line 90, ../sass/base/_global.scss */
 ul {
   list-style: none; }
 
-/* line 76, ../sass/base/_global.scss */
+/* line 92, ../sass/base/_global.scss */
 .entry ul {
   list-style: square; }
 
-/* line 78, ../sass/base/_global.scss */
+/* line 94, ../sass/base/_global.scss */
 .entry ul li ul {
   list-style: circle;
   margin-left: 48px;
   margin-bottom: 0; }
 
-/* line 84, ../sass/base/_global.scss */
+/* line 100, ../sass/base/_global.scss */
 ol li ol {
   list-style: upper-alpha;
   margin-left: 48px;
@@ -941,7 +962,7 @@ h2 {
 .archives .entry-list h2 {
   margin-bottom: 0; }
 
-/* line 53, ../sass/site/_typography.scss */
+/* line 52, ../sass/site/_typography.scss */
 .entry h3 {
   font-size: 19px;
   font-size: 1.1875rem;
@@ -952,12 +973,12 @@ h2 {
   margin-bottom: 0.75rem;
   font-weight: bold; }
 
-/* line 59, ../sass/site/_typography.scss */
+/* line 58, ../sass/site/_typography.scss */
 .entry h4 {
   font-weight: normal;
   text-transform: uppercase; }
 
-/* line 64, ../sass/site/_typography.scss */
+/* line 63, ../sass/site/_typography.scss */
 .entry h5 {
   font-size: 19px;
   font-size: 1.1875rem;
@@ -967,15 +988,24 @@ h2 {
   font-variant: small-caps;
   text-transform: lowercase; }
 
+/* line 71, ../sass/site/_typography.scss */
+h6 {
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.26316;
+  font-weight: normal;
+  color: #b58900;
+  margin-bottom: 6px; }
+
 /* ---------- @Type-Blog-Entries ---------- */
-/* line 75, ../sass/site/_typography.scss */
+/* line 80, ../sass/site/_typography.scss */
 .entry blockquote {
   color: #93a1a1;
   font-style: italic;
   padding-left: 0.7em;
   border-left: 3px solid #eee8d5; }
 
-/* line 83, ../sass/site/_typography.scss */
+/* line 88, ../sass/site/_typography.scss */
 .sc {
   text-transform: lowercase;
   font-variant: small-caps;
@@ -983,7 +1013,7 @@ h2 {
   font-size: 1.1875rem;
   line-height: 1.26316; }
 
-/* line 89, ../sass/site/_typography.scss */
+/* line 94, ../sass/site/_typography.scss */
 hr {
   display: block;
   height: 1px;
@@ -992,7 +1022,7 @@ hr {
   margin: 24px 0;
   padding: 0; }
 
-/* line 100, ../sass/site/_typography.scss */
+/* line 105, ../sass/site/_typography.scss */
 pre, code {
   font-size: 14px;
   font-size: 0.875rem;
@@ -1000,29 +1030,24 @@ pre, code {
   color: #859900;
   font-family: "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, sans-serif; }
 
-/* line 106, ../sass/site/_typography.scss */
+/* line 111, ../sass/site/_typography.scss */
 pre {
   background-color: #eee8d5;
   border: 1px solid #93a1a1;
   padding: 11px 24px; }
 
-/* line 113, ../sass/site/_typography.scss */
+/* line 118, ../sass/site/_typography.scss */
 code {
   line-height: 1; }
 
-/* line 114, ../sass/site/_typography.scss */
+/* line 119, ../sass/site/_typography.scss */
 pre code {
   line-height: 1.5em; }
 
-/* line 120, ../sass/site/_typography.scss */
+/* line 125, ../sass/site/_typography.scss */
 .meta,
 .sidenote,
 .caption {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.71429;
-  color: #93a1a1;
-  font-style: italic;
   *zoom: 1; }
   /* line 36, ../sass/base/_mixins.scss */
   .meta:before, .meta:after,
@@ -1038,34 +1063,31 @@ pre code {
   .caption:after {
     clear: both; }
 
-/* line 127, ../sass/site/_typography.scss */
+/* line 130, ../sass/site/_typography.scss */
 .date {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.33333;
   color: #586e75;
   font-style: normal;
   margin-top: 2px; }
 
-/* line 134, ../sass/site/_typography.scss */
+/* line 137, ../sass/site/_typography.scss */
 .tags {
   margin-top: -2px;
   margin-left: 0;
   padding-bottom: 2px; }
 
-/* line 142, ../sass/site/_typography.scss */
+/* line 145, ../sass/site/_typography.scss */
 .tags a,
 .tags a:link,
 .tags a:visited {
   color: #93a1a1; }
 
-/* line 144, ../sass/site/_typography.scss */
+/* line 147, ../sass/site/_typography.scss */
 .tags a:hover {
   color: #268bd2;
   border-bottom: 1px dotted #268bd2;
   text-decoration: none; }
 
-/* line 150, ../sass/site/_typography.scss */
+/* line 153, ../sass/site/_typography.scss */
 .noted {
   float: right;
   *zoom: 1; }
@@ -1077,24 +1099,21 @@ pre code {
   .noted:after {
     clear: both; }
 
-/* line 152, ../sass/site/_typography.scss */
+/* line 155, ../sass/site/_typography.scss */
 sup {
   top: -0.3em;
   font-size: 90%; }
 
-/* line 157, ../sass/site/_typography.scss */
+/* line 160, ../sass/site/_typography.scss */
 sup a, sup a:link {
   padding-left: 5px; }
 
-/* line 161, ../sass/site/_typography.scss */
+/* line 164, ../sass/site/_typography.scss */
 .footnotes {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.71429;
   padding-top: 12px;
   border-top: 2px solid #eee8d5; }
 
-/* line 171, ../sass/site/_typography.scss */
+/* line 174, ../sass/site/_typography.scss */
 a[rel="reference"] {
   text-decoration: none; }
 
@@ -1157,51 +1176,35 @@ footer {
   color: #839496;
   border-top: 5px solid #586e75; }
 
-/* line 59, ../sass/site/_elements.scss */
-footer h3 {
-  font-size: 19px;
-  font-size: 1.1875rem;
-  line-height: 1.26316;
-  font-weight: normal;
-  color: #b58900;
-  margin-bottom: 6px; }
-
-/* line 69, ../sass/site/_elements.scss */
-footer p,
-footer ul {
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.6; }
-
-/* line 73, ../sass/site/_elements.scss */
+/* line 66, ../sass/site/_elements.scss */
 .wisdom {
   font-style: italic;
   margin-bottom: 0; }
 
-/* line 78, ../sass/site/_elements.scss */
+/* line 71, ../sass/site/_elements.scss */
 .cite::before {
   content: "— "; }
 
-/* line 82, ../sass/site/_elements.scss */
+/* line 75, ../sass/site/_elements.scss */
 .crap {
   margin-bottom: 48px; }
 
-/* line 86, ../sass/site/_elements.scss */
+/* line 79, ../sass/site/_elements.scss */
 .fine-print {
   clear: both;
   border-top: 1px dotted #586e75;
   padding-top: 5px; }
 
-/* line 92, ../sass/site/_elements.scss */
+/* line 85, ../sass/site/_elements.scss */
 footer ul {
   margin-left: 0; }
 
-/* line 99, ../sass/site/_elements.scss */
+/* line 92, ../sass/site/_elements.scss */
 form {
   margin: 0;
   padding: 0; }
 
-/* line 104, ../sass/site/_elements.scss */
+/* line 97, ../sass/site/_elements.scss */
 .search {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1211,19 +1214,19 @@ form {
   padding: 3px 3px 3px 3px;
   width: 100%; }
 
-/* line 112, ../sass/site/_elements.scss */
+/* line 105, ../sass/site/_elements.scss */
 fieldset {
   margin: 0;
   padding: 0;
   border: none; }
 
 /* ---------- @Elements ---------- */
-/* line 121, ../sass/site/_elements.scss */
+/* line 114, ../sass/site/_elements.scss */
 .heading {
   border-bottom: 5px solid #eee8d5;
   margin-bottom: 19px; }
 
-/* line 126, ../sass/site/_elements.scss */
+/* line 119, ../sass/site/_elements.scss */
 .label {
   font-size: 20px;
   font-size: 1.25rem;
@@ -1233,24 +1236,16 @@ fieldset {
   color: #1a6091;
   margin-bottom: 0; }
 
-/* line 134, ../sass/site/_elements.scss */
+/* line 127, ../sass/site/_elements.scss */
 .description {
   margin-top: 2px;
   margin-bottom: 0; }
 
-/* line 139, ../sass/site/_elements.scss */
-.light {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.71429;
-  color: #93a1a1;
-  font-style: italic; }
-
-/* line 145, ../sass/site/_elements.scss */
+/* line 135, ../sass/site/_elements.scss */
 .tagslist {
   margin-left: 0; }
 
-/* line 147, ../sass/site/_elements.scss */
+/* line 137, ../sass/site/_elements.scss */
 .entry img {
   float: right;
   width: 97.863248%;
@@ -1258,74 +1253,74 @@ fieldset {
   border: 1px solid #93a1a1;
   padding: 4px; }
 
-/* line 155, ../sass/site/_elements.scss */
+/* line 145, ../sass/site/_elements.scss */
 .art {
   width: 99.031008%;
   background-color: #eee8d5;
   border: 1px solid #93a1a1;
   padding: 4px; }
 
-/* line 165, ../sass/site/_elements.scss */
+/* line 155, ../sass/site/_elements.scss */
 #tweets,
 #pinboard_linkroll {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429; }
 
-/* line 169, ../sass/site/_elements.scss */
+/* line 159, ../sass/site/_elements.scss */
 #tweets {
   padding-top: 4.2px;
   margin-bottom: 38px; }
 
-/* line 174, ../sass/site/_elements.scss */
+/* line 164, ../sass/site/_elements.scss */
 #tweets ul {
   margin-left: 0; }
 
-/* line 178, ../sass/site/_elements.scss */
+/* line 168, ../sass/site/_elements.scss */
 #tweets ul li {
   margin-bottom: 19px; }
 
-/* line 183, ../sass/site/_elements.scss */
+/* line 173, ../sass/site/_elements.scss */
 #tweets a,
 a.pin-title {
   color: #268bd2;
   font-weight: normal;
   text-decoration: none; }
 
-/* line 189, ../sass/site/_elements.scss */
+/* line 179, ../sass/site/_elements.scss */
 #pinboard_linkroll {
   padding-top: 5px; }
 
-/* line 193, ../sass/site/_elements.scss */
+/* line 183, ../sass/site/_elements.scss */
 .pin-item {
   margin-bottom: 19px; }
-  /* line 196, ../sass/site/_elements.scss */
+  /* line 186, ../sass/site/_elements.scss */
   .pin-item p {
     margin-bottom: 0; }
 
-/* line 199, ../sass/site/_elements.scss */
+/* line 189, ../sass/site/_elements.scss */
 a.pin-tag {
   color: #93a1a1;
   font-weight: normal;
   text-decoration: none; }
 
-/* line 205, ../sass/site/_elements.scss */
+/* line 195, ../sass/site/_elements.scss */
 a.pin-tag:hover {
   color: #268bd2;
   border-bottom: 1px dotted #268bd2; }
 
 /* ---------- @Lab Items ---------- */
-/* line 215, ../sass/site/_elements.scss */
+/* line 205, ../sass/site/_elements.scss */
 ul.pinboard {
   margin-left: 0; }
 
-/* line 218, ../sass/site/_elements.scss */
+/* line 208, ../sass/site/_elements.scss */
 ul.pinboard a,
 ul.pinboard a:link,
 ul.pinboard a:visited {
   text-decoration: none; }
 
-/* line 221, ../sass/site/_elements.scss */
+/* line 211, ../sass/site/_elements.scss */
 .lab-list dt,
 .lab-list dt a {
   font-size: 19px;

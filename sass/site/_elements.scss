@@ -56,19 +56,12 @@ footer  {
   border-top: 5px solid $accent-color-dark;
 }
 
-footer h3 {
-  @include font-size($h3-size);
-  font-weight: normal;
-  color: #b58900;
-  margin-bottom: 6px;
-}
-
 // FIXME: Testing incremental leading here  
 
-footer p,
-footer ul {
-  @include font-size(15px)
-}
+// footer p,
+// footer ul {
+//   @extend .small-fs;
+// }
 
 .wisdom {
   font-style: italic;
@@ -132,16 +125,13 @@ fieldset  {
 }
 
 .description {
+  @extend .light;
   margin-top: 2px;
   margin-bottom: 0;
 }
 
-.light  {   // NOTE: Rename/modularize small, light text?;
-  @include font-size(14px);
-  color: $light-color;
-  font-style: italic;
-}
-
+// Archives Page
+.entrytags { @extend .light; }
 .tagslist { margin-left: 0; }
 
 .entry img	{

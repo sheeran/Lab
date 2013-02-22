@@ -26,6 +26,29 @@ pre, img,
   margin-bottom:($base-spacing-unit / $base-font-size)*1rem;
 }
 
+html {
+  font:#{($base-font-size/16px)*1em}/#{$line-height-ratio} serif;
+  overflow-y:scroll;
+  min-height:100%;
+}
+
+body {
+  background: $body-color url(img/bg.jpg);
+  color: $text-color;
+  font-family: $sans-ff;
+  @include font-size(16px);
+}
+
+// Global Typography Definitions
+
+.small-fs {
+  @include font-size($fs-small);
+}
+
+.big-fs {
+  @include font-size($fs-big);
+}
+
 .half-margin {
   margin-bottom:$base-spacing-unit / 2;
   margin-bottom:(($base-spacing-unit / $base-font-size) / 2)*1rem;
@@ -36,17 +59,10 @@ pre, img,
   margin-bottom:(2 * $base-spacing-unit / $base-font-size)*1rem;
 }
 
-html {
-  font:#{($base-font-size/16px)*1em}/#{$line-height-ratio} serif;
-  overflow-y:scroll;
-  min-height:100%;
-}
-
-body {
-  background: $body-color url(img/bg.jpg);
-  color: $text-color;
-  font-family: $serif-ff;
-  @include font-size(16px);
+.light  {
+  @extend .small-fs;
+  color: $light-color;
+  font-style: italic;
 }
 
 // Default Link Styles

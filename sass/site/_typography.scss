@@ -48,7 +48,6 @@ h2 {
   }
 
 .archives .entry-list h2 { margin-bottom: 0;}
-
   
 .entry h3 {
   @include font-size($h3-size);
@@ -69,6 +68,12 @@ h2 {
   text-transform: lowercase;
   }
 
+h6 {
+  @include font-size($h6-size);
+  font-weight: normal;
+  color: #b58900;
+  margin-bottom: 6px;
+}
 
 /* ---------- @Type-Blog-Entries ---------- */
       
@@ -118,14 +123,12 @@ pre code {line-height: 1.5em;}
 .meta,
 .sidenote,
 .caption  {
-  @include font-size(14px);
-  color: $light-color;
-  font-style: italic;
+  @extend .light;
   @include clearfix;
   }
 
 .date  {
-  @include font-size(18px);
+  @extend .big-fs;
   color: $text-color;
   font-style: normal;
   margin-top: 2px;   
@@ -159,7 +162,7 @@ sup a, sup a:link {
 }
 
 .footnotes  {
-  @include font-size(14px);
+  @extend .small-fs;
   padding-top: 12px;
   border-top: 2px solid $accent-color;
 } 
