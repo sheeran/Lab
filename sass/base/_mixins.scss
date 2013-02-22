@@ -22,35 +22,12 @@
   margin-bottom: (($base-spacing-unit / $base-font-size) * $bottom-mult)*1rem;
 }
 
-// Convert Pixels to EMs (Desired = Target / Context)
-
-// @function em($target, $context: $base-font){
-// 	@if $target == 0 {@return 0}
-// 	@return ($target / $context) + 0em;
-//   }
-
-
-// Maintain vertical rhythm with Line Height - '$amount' can be used as a multipler
-// FIXME: change to inuit.css mixin that combines font-size and LH better
-
-@function lh($amount: 1, $context: $base-lh){
-	@return em($base-vr * $amount, $context)
-  }
-
 // Incremental Leading
 // Every 'x' line of affected element will align with every 'y' line of main text
 
-@function incr($new-size: 14, $x: 4, $y: 5){
-  @return (1em * (($base-vr / $new-size) * ($x / $y)))
-  }
-
-
-// This assumes font-size = 62.5% on html element
-
-@mixin rem($size: 16){
-  font-size : #{$size}px;
-  font-size : #{$size / 10}rem; 
-  }
+//@function incr($new-size: 14, $x: 4, $y: 5){
+//  @return (1em * (($base-vr / $new-size) * ($x / $y)))
+//  }
 
 // 2. General Mixins ------------------------------
 

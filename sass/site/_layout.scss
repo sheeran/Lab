@@ -162,7 +162,7 @@ footer .inner {
     @include push(3, $break-2);
   }
 
-// Experiment
+// TODO: Get rid of right sidenotes;
   .sidenoteright  {
     @include span-columns (2 omega, $post-columns);
     @include pull(2, $post-columns, right);

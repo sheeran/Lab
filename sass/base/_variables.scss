@@ -12,10 +12,6 @@ $base-spacing-unit: $base-line-height!default;
 $half-spacing-unit: $base-spacing-unit / 2!default;
 $line-height-ratio: $base-line-height / $base-font-size;
 
-$base-perc  : 100%;  // Set to 62.5% for the 'html' element to use 'rem' mixin 
-$base-font  : 16;
-$base-lh    : 1.5em;  
-$base-vr    : 24;    // 16 * 1.5 = 24px
 
 $serif-ff   : "ff-tisa-web-pro", Cambria, Georgia, serif;
 $sans-ff    : "proxima-nova", Corbel, sans-serif;
@@ -24,11 +20,11 @@ $code-ff    : "DejaVu Sans Mono", Consolas, Monaco, "Courier New", monospace, sa
 
 $h1-size    : 32px; // Site Title
 $h2-size    : 24px; // Article Titles
-$h3-size    : 18px; // Article Sub-heading
+$h3-size    : 19px; // Article Sub-heading
 $h4-size    : 16px; // Article Sub-heading
 $h5-size    : 19px; // Article Sub-heading (Small Caps)
 //$h6-size    : ; // TODO: Use these h6s in the footer or something?
-
+//TODO: Make a 'small text' variable;
 
 // 2. COLOR ----------------------------------------
 
