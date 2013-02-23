@@ -50,7 +50,7 @@ nav {
 
 footer  {
   margin-top: 48px;
-  padding-top: 1.5em;
+  padding-top: 19px;
   background: $body-color-dark;
   color: $text-color-dark;
   border-top: 5px solid $accent-color-dark;
@@ -113,7 +113,7 @@ fieldset  {
 // Sidebar Sub-Modules 
 .heading  {
   border-bottom: 5px solid $accent-color;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 }
 
 .label  {
@@ -132,7 +132,10 @@ fieldset  {
 
 // Archives Page
 .entrytags { @extend .light; }
+
 .tagslist { margin-left: 0; }
+
+.tagslist li { margin-right: 5px; }
 
 .entry img	{
 	float: right;
@@ -153,11 +156,11 @@ fieldset  {
 // FIXME: Create a inuit-based incremental leading mixin?
 #tweets,
 #pinboard_linkroll {
-  @include font-size(14px); 
+  @include font-size($fs-small); 
 }
 
 #tweets {
-  padding-top: 4.2px;
+  padding-top: 0px;
   margin-bottom: 38px
 }
 
@@ -187,7 +190,8 @@ a.pin-title {
 }
 
 a.pin-tag  {
-  color: $light-color; // FIXME: Do these PB tags really need to be red?;
+  color: $light-color;
+  font-style: italic;
   font-weight: normal;
   text-decoration: none;
 }  
@@ -200,7 +204,6 @@ a.pin-tag:hover {
 /* ---------- @Lab Items ---------- */
 
 // Pinboard Links on Lab Home Page
-// FIXME: Variable for these PB link colors?
 
 ul.pinboard {margin-left: 0;}
 ul.pinboard a,

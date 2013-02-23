@@ -34,6 +34,8 @@ nav { @include clearfix; }
   &:last-child {margin-right: 0;}
 }
 
+.art { display: none;}
+
 .date { margin-bottom:0;}
 
 .tags li {
@@ -43,6 +45,7 @@ nav { @include clearfix; }
 
 //TODO: Zero out margin on H2s in early breaks and bring back later;
 .posts-full article { @extend .twice-margin;} 
+.posts-full article h2 { margin-bottom: 0; }
 
 // Archive Page
 
@@ -98,6 +101,8 @@ footer .inner {
   .logo     {@include span-columns(4, $break-1); text-align: left;}
   nav       {@include span-columns(4 omega, $break-1); margin-left: 0;}
 
+  .art { display: block;}
+
   //.social   {@include clearfix;}
   .sb-module      {@include span-columns(4, $break-1);}
   .sb-module-end  {@include span-columns(4 omega, $break-1);}
@@ -106,6 +111,8 @@ footer .inner {
     @include span-columns($post-columns, $break-1);
     @include push(2, $break-1);
   }
+
+  .posts-full article h2 { margin-bottom: $base-spacing-unit; }
 
   article h2 {float: right; width: 100%;}
   .meta,

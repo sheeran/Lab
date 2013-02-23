@@ -15,6 +15,8 @@ header a:visited  { text-decoration: none; }
 footer a,
 footer a:link { color: $link-color-hover;}
 
+h1 a:hover    {border-bottom: 0;}
+
 h2 a,
 h2 a:link,
 h2 a:visited  {color: $title-color; text-decoration: none;}
@@ -27,8 +29,8 @@ h1  {
   @include font-size($h1-size);
   margin-bottom: 0;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  text-shadow: 0px 3px 2px $accent-color;
+  letter-spacing: 0.06em;
+  text-shadow: 0px 2px 2px $accent-color;
   @include at-breakpoint($break-0) {
     @include font-size(38px);
   }
@@ -66,13 +68,14 @@ h2 {
   font-weight: bold;
   font-variant: small-caps;
   text-transform: lowercase;
+  letter-spacing: 0.05em;
   }
 
 h6 {
   @include font-size($h6-size);
   font-weight: normal;
   color: #b58900;
-  margin-bottom: 6px;
+  margin-bottom: 0;
 }
 
 /* ---------- @Type-Blog-Entries ---------- */

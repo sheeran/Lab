@@ -35,7 +35,7 @@ html {
 body {
   background: $body-color url(img/bg.jpg);
   color: $text-color;
-  font-family: $sans-ff;
+  font-family: $serif-ff;
   @include font-size(16px);
 }
 
@@ -93,13 +93,13 @@ ul  {list-style: none;}
 
 .entry ul li ul {
   list-style: circle;
-  margin-left: (2 * $base-spacing-unit);
+  margin-left: ($base-spacing-unit);
   margin-bottom: 0;
   }
 
 ol li ol {
   list-style: upper-alpha;
-  margin-left: (2 * $base-spacing-unit);
+  margin-left: ($base-spacing-unit);
   margin-bottom: 0;
   }
 
